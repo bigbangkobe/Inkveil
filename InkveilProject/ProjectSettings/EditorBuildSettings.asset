@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 99248abd31b333e479fd91eef2229527
+  - enabled: 0
+    path: Assets/Scenes/Main.unity
+    guid: 9990a826dec2ad04c83a71e7d6135736
+  - enabled: 1
+    path: Assets/Scenes/UI.unity
+    guid: b36fee5528603674fa15aae4fff51817
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_sanlu2_Moring_01/Scene_Standard_sanlu2_Moring_01.unity
+    guid: 09e791c5b12701d4db6fbe975a8fa31e
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_chenzhan_Afternoon_01/Scene_Standard_chenzhan_Afternoon_01.unity
+    guid: ba364be9d219faf41ab2a1a7743f1206
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_xinshou_Afternoon_01/Scene_Standard_xinshou_Afternoon_01.unity
+    guid: 7a32eacb379962c44bc04408728a6695
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_xinshou_Night_01/Scene_Standard_xinshou_Night_01.unity
+    guid: b3aacce9077509d41b6178e6a9db30bd
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_shuilu_Night_01/Scene_Standard_shuilu_Night_01.unity
+    guid: 45fbe87b6e70c5e46949099a88f9ae6a
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_xinshou_Moring_01/Scene_Standard_xinshou_Moring_01.unity
+    guid: 3679b5a3dbcea574d9b6c8a52a553bc9
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_shandong_Moring_01/Scene_Standard_shandong_Moring_01.unity
+    guid: 57a62c3aa24e98f43b78f3dacacabf2e
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_shuilu_Moring_01/Scene_Standard_shuilu_Moring_01.unity
+    guid: 790fa56211cba0948baea98b5ab389dc
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_shuilu_Afternoon_01/Scene_Standard_shuilu_Afternoon_01.unity
+    guid: cc60629b39c18b34daf07654d3791be3
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_shandong_Night_01/Scene_Standard_shandong_Night_01.unity
+    guid: 232cffd66aefdc44cbc964fedcc2c0ae
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_sanlu2_Night_01/Scene_Standard_sanlu2_Night_01.unity
+    guid: 8c535df831288f044b16120699f4354a
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_shandong_Afternoon_01/Scene_Standard_shandong_Afternoon_01.unity
+    guid: 282c592445a5e8247934caa5c27a5f4d
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_chenzhan_Moring_01/Scene_Standard_chenzhan_Moring_01.unity
+    guid: 9cb53c593ba908d46b4d30a6eb34e457
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_chenzhan_Night_01/Scene_Standard_chenzhan_Night_01.unity
+    guid: 08954db06f626b94f89eea487b0e4e3c
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_sanlu1_Night_01/Scene_Standard_sanlu1_Night_01.unity
+    guid: a4683236fa218d54cafead7795cb58bf
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_sanlu2_Afternoon_03/Scene_Standard_sanlu2_Afternoon_03.unity
+    guid: 08f9d512d26dd2d4eb434c35e152b9ff
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_sanlu1_Afternoon_01/Scene_Standard_sanlu1_Afternoon_01.unity
+    guid: fbf4f96781982f34cba0148f980eea7f
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_sanlu1_Moring_01/Scene_Standard_sanlu1_Moring_01.unity
+    guid: 52fe539f3f17e4e4d826bb3c55f7c604
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_erlu2_Night_01/Scene_Standard_erlu2_Night_01.unity
+    guid: 632cdea1066361543b5310bc825aa503
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_erlu2_Afternoon_01/Scene_Standard_erlu2_Afternoon_01.unity
+    guid: cded4205febc80142af89c48af1631ed
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_erlu1_Night_01/Scene_Standard_erlu1_Night_01.unity
+    guid: 3a686ea3689eb474d9d23d2785410b3d
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_emeng_Night_01/Scene_Standard_emeng_Night_01.unity
+    guid: c244a4f283949644ab4e309004e00c94
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_erlu2_Moring_01/Scene_Standard_erlu2_Moring_01.unity
+    guid: cd2af8479e64ec94398d2bd8b8887730
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_erlu1_Moring_01/Scene_Standard_erlu1_Moring_01.unity
+    guid: df9fa15091a5e74439fec27542e31fb2
+  - enabled: 0
+    path: Assets/Scenes/Scene_Standard_erlu1_Afternoon_01/Scene_Standard_erlu1_Afternoon_01.unity
+    guid: 5733a63708a08b245b09ea3811aa3221
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 22bb50a2de2d83d469242a633bd6997e, type: 2}

@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Config
+  m_EditorClassIdentifier: 
+  m_GroupName: Config
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b372c739d0dea004998f5d275cce56bc
+  m_SerializeEntries:
+  - m_GUID: 05959f7e2eb02c34e862dc253f2d84e4
+    m_Address: Config/stage_rewards_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 081d0ce6f0aea2842bb077119bbb5857
+    m_Address: Config/property_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0868e0f405b64ae4694f74b5ebf94511
+    m_Address: Config/stage_rewards_abyss_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 105acb5b5993a3d4b9118588fafa62b2
+    m_Address: Config/resourcesConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 193b8762608acef4d9f1715a8adb64e1
+    m_Address: Config/language
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2623b7a7ec0bbf0459c107cf2a895a83
+    m_Address: Config/shield_growth_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b799f691125d2f4ca40289aa4143087
+    m_Address: Config/daily_tasks_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43c8df28641cc434a8ed0c4d6949cb2f
+    m_Address: Config/level_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5249b3596582f444582687d72830405d
+    m_Address: Config/weapon_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5552ae2e179545441a4cf68a996d6228
+    m_Address: Config/stage_rewards_difficulty_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58b0a73981b5fde4ab011bcd695e4512
+    m_Address: Config/magic_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61b514fbc996ae842b64111fafe28dad
+    m_Address: Config/playerAssets
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6760d3f686552fb4999614d7cf843266
+    m_Address: Config/shop_system_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68d1170a9b9c4ec4fa02205dcd3e61b2
+    m_Address: Config/onboarding_guide_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85df351240822ec46a217af83d7b471a
+    m_Address: Config/lottery_CardPools
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d438ef171d8c4f448ef36d2f9933338
+    m_Address: Config/stage_rewards_common_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9955730c46694184ab72a3589e641f36
+    m_Address: Config/sign_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e6567bb9cc0f3643bb3997965f06d5f
+    m_Address: Config/sign_rewards_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1f6b47b38f86654d8f69f6d459fcb68
+    m_Address: Config/lottery_probability_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac0f3e11507801143a2d497b6c2b10eb
+    m_Address: Config/enemy_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad163f8c5235e1747a3489b2b2a272d1
+    m_Address: Config/shop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5de92fe712e4be46aa33bfebf86f9ed
+    m_Address: Config/enemyGroup_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bca95da658c28c849883d5402631c412
+    m_Address: Config/guide_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dff85bb2467702b4889e9451cb58aaee
+    m_Address: Config/god_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ecb586fcba98e5a4a8e95692782ee504
+    m_Address: Config/player_levels_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: da8b6e14e8dfbe342aadee3a4d8e30e5, type: 2}
+    - {fileID: 11400000, guid: 1657ad1bfc1bbbd4fbea11ff46e95782, type: 2}

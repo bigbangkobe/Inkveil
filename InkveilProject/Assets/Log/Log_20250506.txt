@@ -1,0 +1,1043 @@
+[19:22:00.3610] ==========Game Start==========
+[19:22:00.3800] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:00.3851] [Log] 敌人配置加载完成，总计15条记录
+[19:22:00.3861] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:00.3901] [Log] 武器配置加载完成，总计7件武器
+[19:22:00.3949] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:01.4288] [Log] 加载VFX_Nature_Flash特效资源成功
+[19:22:01.4523] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[19:22:12.3704] [Log] OnApplicationQuit
+[19:22:12.3717] ==========Game Exit==========
+
+[19:22:15.4756] ==========Game Start==========
+[19:22:15.4934] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:15.4979] [Log] 敌人配置加载完成，总计15条记录
+[19:22:15.4979] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:15.5020] [Log] 武器配置加载完成，总计7件武器
+[19:22:15.5065] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:16.2937] [Log] 加载VFX_Nature_Flash特效资源成功
+[19:22:16.3298] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[19:22:50.3941] [Log] OnApplicationQuit
+[19:22:50.3986] ==========Game Exit==========
+
+[19:22:53.4834] ==========Game Start==========
+[19:22:53.4996] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:53.5038] [Log] 敌人配置加载完成，总计15条记录
+[19:22:53.5054] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:53.5084] [Log] 武器配置加载完成，总计7件武器
+[19:22:53.5124] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[19:22:54.1630] [Log] 加载VFX_Nature_Flash特效资源成功
+[19:22:54.1844] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[19:24:03.3960] [Log] OnApplicationQuit
+[19:24:03.3982] ==========Game Exit==========
+
+[20:07:59.8107] ==========Game Start==========
+[20:07:59.8288] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:07:59.8343] [Log] 敌人配置加载完成，总计15条记录
+[20:07:59.8353] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:07:59.8393] [Log] 武器配置加载完成，总计7件武器
+[20:07:59.8438] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:08:00.7688] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:08:00.7999] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:08:05.8910] [Log] OnApplicationQuit
+[20:08:05.8930] ==========Game Exit==========
+
+[20:08:15.7662] ==========Game Start==========
+[20:08:15.7857] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:08:15.7902] [Log] 敌人配置加载完成，总计15条记录
+[20:08:15.7912] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:08:15.7942] [Log] 武器配置加载完成，总计7件武器
+[20:08:15.7992] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:08:16.7765] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:08:16.7977] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:08:21.9719] [Log] OnApplicationQuit
+[20:08:21.9744] ==========Game Exit==========
+
+[20:08:47.1475] ==========Game Start==========
+[20:08:47.1666] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:08:47.1712] [Log] 敌人配置加载完成，总计15条记录
+[20:08:47.1722] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:08:47.1763] [Log] 武器配置加载完成，总计7件武器
+[20:08:47.1808] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:08:48.2657] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:08:48.2821] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:09:01.0316] [Log] OnApplicationQuit
+[20:09:01.0356] ==========Game Exit==========
+
+[20:10:36.5811] ==========Game Start==========
+[20:10:36.6022] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:10:36.6067] [Log] 敌人配置加载完成，总计15条记录
+[20:10:36.6077] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:10:36.6105] [Log] 武器配置加载完成，总计7件武器
+[20:10:36.6166] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:10:36.7874] [Error] 不存在该音效资源MainBG
+[20:10:37.5436] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:10:37.5609] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:11:09.0156] [Log] OnApplicationQuit
+[20:11:09.0191] ==========Game Exit==========
+
+[20:12:08.8664] ==========Game Start==========
+[20:12:08.8854] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:12:08.8904] [Log] 敌人配置加载完成，总计15条记录
+[20:12:08.8914] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:12:08.8949] [Log] 武器配置加载完成，总计7件武器
+[20:12:08.9004] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:12:09.7794] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:12:09.7939] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:12:10.6114] [Error] 不存在该音效资源MainBG
+[20:12:53.4231] [Warning] Assets\Scripts\Other\TimeUtils.cs(59,28): warning CS0618: 'TimeZone' is obsolete: 'System.TimeZone has been deprecated.  Please investigate the use of System.TimeZoneInfo instead.'
+[20:12:53.4231] [Warning] Assets\Scripts\InkveilProject\Scripts\Enemy\Manager\EnemyManager.cs(20,18): warning CS0414: The field 'EnemyManager.m_ElitesUnlocked' is assigned but its value is never used
+[20:12:53.4231] [Warning] Assets\Scripts\InkveilProject\Scripts\God\GodBase.cs(20,18): warning CS0414: The field 'GodBase.m_IsOnCooldown' is assigned but its value is never used
+[20:12:53.4241] [Warning] Assets\Scripts\Framework\System\Effect\EffectSystem.cs(12,18): warning CS0414: The field 'EffectSystem.LOG_GET' is assigned but its value is never used
+[20:12:53.4241] [Warning] Assets\Scripts\InkveilProject\Scripts\Enemy\Manager\EnemyManager.cs(19,19): warning CS0414: The field 'EnemyManager.m_LastDifficultyIncreaseTime' is assigned but its value is never used
+[20:12:53.4241] [Warning] Assets\Scripts\InkveilProject\Scripts\Enemy\Manager\EnemyManager.cs(16,19): warning CS0414: The field 'EnemyManager.m_NextSpawnTime' is assigned but its value is never used
+[20:12:53.4241] [Warning] Assets\Scripts\InkveilProject\Scripts\Enemy\Manager\EnemyManager.cs(18,19): warning CS0414: The field 'EnemyManager.m_DifficultyScale' is assigned but its value is never used
+[20:12:53.4241] [Warning] Assets\Scripts\InkveilProject\Scripts\Enemy\EnemyBase.cs(54,35): warning CS0414: The field 'EnemyBase.m_ShowDebugInfo' is assigned but its value is never used
+[20:13:15.2474] ==========Game Start==========
+[20:13:15.2674] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:13:15.2729] [Log] 敌人配置加载完成，总计15条记录
+[20:13:15.2739] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:13:15.2774] [Log] 武器配置加载完成，总计7件武器
+[20:13:15.2819] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:13:16.0299] [Log] 加载音乐对象成功BOSSBG
+[20:13:16.0497] [Log] 加载音乐对象成功CombatBG
+[20:13:16.0572] [Log] 加载音乐对象成功Duojian
+[20:13:16.0723] [Log] 加载音乐对象成功God
+[20:13:16.0899] [Log] 加载音乐对象成功Gun
+[20:13:16.1087] [Log] 加载音乐对象成功Knife
+[20:13:16.1253] [Log] 加载音乐对象成功MainBG
+[20:13:16.1415] [Log] 加载音乐对象成功Stick
+[20:13:16.1580] [Log] 加载音乐对象成功Sword
+[20:13:16.1752] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:13:16.1918] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:13:27.0897] [Log] OnApplicationQuit
+[20:13:27.0917] ==========Game Exit==========
+
+[20:15:15.0576] ==========Game Start==========
+[20:15:15.0757] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:15:15.0812] [Log] 敌人配置加载完成，总计15条记录
+[20:15:15.0812] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:15:15.0855] [Log] 武器配置加载完成，总计7件武器
+[20:15:15.0930] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:15:15.8979] [Log] 加载音乐对象成功BOSSBG
+[20:15:15.9108] [Log] 加载音乐对象成功CombatBG
+[20:15:15.9275] [Log] 加载音乐对象成功Duojian
+[20:15:15.9438] [Log] 加载音乐对象成功God
+[20:15:15.9607] [Log] 加载音乐对象成功Gun
+[20:15:15.9779] [Log] 加载音乐对象成功Knife
+[20:15:15.9937] [Log] 加载音乐对象成功MainBG
+[20:15:16.0103] [Log] 加载音乐对象成功Stick
+[20:15:16.0274] [Log] 加载音乐对象成功Sword
+[20:15:16.0439] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:15:16.0610] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:15:24.5384] [Log] OnApplicationQuit
+[20:15:24.5430] ==========Game Exit==========
+
+[20:18:30.7670] ==========Game Start==========
+[20:18:30.7870] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:18:30.7925] [Log] 敌人配置加载完成，总计15条记录
+[20:18:30.7925] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:18:30.7965] [Log] 武器配置加载完成，总计7件武器
+[20:18:30.8015] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:18:31.5883] [Log] 加载音乐对象成功BOSSBG
+[20:18:31.6100] [Log] 加载音乐对象成功CombatBG
+[20:18:31.6142] [Log] 加载音乐对象成功Duojian
+[20:18:31.6353] [Log] 加载音乐对象成功God
+[20:18:31.6513] [Log] 加载音乐对象成功Gun
+[20:18:31.6689] [Log] 加载音乐对象成功Knife
+[20:18:31.6844] [Log] 加载音乐对象成功MainBG
+[20:18:31.7015] [Log] 加载音乐对象成功Stick
+[20:18:31.7180] [Log] 加载音乐对象成功Sword
+[20:18:31.7355] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:18:31.7515] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:18:36.6406] [Log] OnApplicationQuit
+[20:18:36.6446] ==========Game Exit==========
+
+[20:19:19.2103] ==========Game Start==========
+[20:19:19.2294] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:19:19.2355] [Log] 敌人配置加载完成，总计15条记录
+[20:19:19.2370] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:19:19.2400] [Log] 武器配置加载完成，总计7件武器
+[20:19:19.2460] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:19:20.0472] [Log] 加载音乐对象成功BOSSBG
+[20:19:20.0597] [Log] 加载音乐对象成功CombatBG
+[20:19:20.0782] [Log] 加载音乐对象成功Duojian
+[20:19:20.0898] [Log] 加载音乐对象成功God
+[20:19:20.1105] [Log] 加载音乐对象成功Gun
+[20:19:20.1270] [Log] 加载音乐对象成功Knife
+[20:19:20.1427] [Log] 加载音乐对象成功MainBG
+[20:19:20.1604] [Log] 加载音乐对象成功Stick
+[20:19:20.1778] [Log] 加载音乐对象成功Sword
+[20:19:20.1936] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:19:20.2103] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:19:33.6187] [Log] OnApplicationQuit
+[20:19:33.6207] ==========Game Exit==========
+
+[20:19:56.1251] ==========Game Start==========
+[20:19:56.1452] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:19:56.1497] [Log] 敌人配置加载完成，总计15条记录
+[20:19:56.1507] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:19:56.1542] [Log] 武器配置加载完成，总计7件武器
+[20:19:56.1598] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:19:56.9403] [Log] 加载音乐对象成功BOSSBG
+[20:19:56.9646] [Log] 加载音乐对象成功CombatBG
+[20:19:56.9702] [Log] 加载音乐对象成功Duojian
+[20:19:56.9878] [Log] 加载音乐对象成功God
+[20:19:57.0057] [Log] 加载音乐对象成功Gun
+[20:19:57.0203] [Log] 加载音乐对象成功Knife
+[20:19:57.0380] [Log] 加载音乐对象成功MainBG
+[20:19:57.0545] [Log] 加载音乐对象成功Stick
+[20:19:57.0745] [Log] 加载音乐对象成功Sword
+[20:19:57.0880] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:19:57.1035] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:20:01.9627] [Log] OnApplicationQuit
+[20:20:01.9652] ==========Game Exit==========
+
+[20:30:32.8067] ==========Game Start==========
+[20:30:32.8263] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:30:32.8328] [Log] 敌人配置加载完成，总计15条记录
+[20:30:32.8338] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:30:32.8383] [Log] 武器配置加载完成，总计7件武器
+[20:30:32.8442] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:30:33.7234] [Log] 加载音乐对象成功BOSSBG
+[20:30:33.7526] [Log] 加载音乐对象成功CombatBG
+[20:30:33.7606] [Log] 加载音乐对象成功Duojian
+[20:30:33.7762] [Log] 加载音乐对象成功God
+[20:30:33.7943] [Log] 加载音乐对象成功Gun
+[20:30:33.8090] [Log] 加载音乐对象成功Knife
+[20:30:33.8280] [Log] 加载音乐对象成功MainBG
+[20:30:33.8440] [Log] 加载音乐对象成功Stick
+[20:30:33.8603] [Log] 加载音乐对象成功Sword
+[20:30:33.8789] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:30:33.8947] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:30:55.1171] [Log] OnApplicationQuit
+[20:30:55.1206] ==========Game Exit==========
+
+[20:31:24.2559] ==========Game Start==========
+[20:31:24.2770] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:31:24.2825] [Log] 敌人配置加载完成，总计15条记录
+[20:31:24.2835] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:31:24.2880] [Log] 武器配置加载完成，总计7件武器
+[20:31:24.2930] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:31:25.1292] [Log] 加载音乐对象成功BOSSBG
+[20:31:25.1592] [Log] 加载音乐对象成功CombatBG
+[20:31:25.1657] [Log] 加载音乐对象成功Duojian
+[20:31:25.1839] [Log] 加载音乐对象成功God
+[20:31:25.1980] [Log] 加载音乐对象成功Gun
+[20:31:25.2145] [Log] 加载音乐对象成功Knife
+[20:31:25.2336] [Log] 加载音乐对象成功MainBG
+[20:31:25.2490] [Log] 加载音乐对象成功Stick
+[20:31:25.2670] [Log] 加载音乐对象成功Sword
+[20:31:25.2840] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:31:25.2987] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:31:51.3506] [Log] Unauthorized device detected, Id: d3ee76c6, please add debug authorization and reconnect.
+[20:31:52.3579] [Log] Unauthorized device detected, Id: d3ee76c6, please add debug authorization and reconnect.
+[20:31:53.3622] [Log] Unauthorized device detected, Id: d3ee76c6, please add debug authorization and reconnect.
+[20:32:53.9662] [Warning] The GUID inside 'Assets/Resources.meta' cannot be extracted by the YAML Parser. Attempting to extract it via string matching instead. Please verify the file does not contain unexpected data.
+[20:32:53.9848] [Warning] The GUID inside 'Assets/Resources.meta' cannot be extracted by the YAML Parser. Attempting to extract it via string matching instead. Please verify the file does not contain unexpected data.
+[20:33:02.4362] [Warning] The GUID inside 'Assets/Resources.meta' cannot be extracted by the YAML Parser. Attempting to extract it via string matching instead. Please verify the file does not contain unexpected data.
+[20:33:07.7240] [Log] OnApplicationQuit
+[20:33:07.7296] ==========Game Exit==========
+
+[20:33:11.4046] ==========Game Start==========
+[20:33:11.4233] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:33:11.4283] [Log] 敌人配置加载完成，总计15条记录
+[20:33:11.4293] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:33:11.4323] [Log] 武器配置加载完成，总计7件武器
+[20:33:11.4381] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:33:12.2770] [Log] 加载音乐对象成功BOSSBG
+[20:33:12.3096] [Log] 加载音乐对象成功CombatBG
+[20:33:12.3182] [Log] 加载音乐对象成功Duojian
+[20:33:12.3338] [Log] 加载音乐对象成功God
+[20:33:12.3489] [Log] 加载音乐对象成功Gun
+[20:33:12.3659] [Log] 加载音乐对象成功Knife
+[20:33:12.3827] [Log] 加载音乐对象成功MainBG
+[20:33:12.3990] [Log] 加载音乐对象成功Stick
+[20:33:12.4181] [Log] 加载音乐对象成功Sword
+[20:33:12.4327] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:33:12.4493] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:33:36.9081] [Log] OnApplicationQuit
+[20:33:36.9137] ==========Game Exit==========
+
+[20:35:12.2855] ==========Game Start==========
+[20:35:12.3068] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:35:12.3123] [Log] 敌人配置加载完成，总计15条记录
+[20:35:12.3144] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:35:12.3180] [Log] 武器配置加载完成，总计7件武器
+[20:35:12.3240] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:35:13.1343] [Log] 加载音乐对象成功BOSSBG
+[20:35:13.1636] [Log] 加载音乐对象成功CombatBG
+[20:35:13.1696] [Log] 加载音乐对象成功Duojian
+[20:35:13.1897] [Log] 加载音乐对象成功God
+[20:35:13.2034] [Log] 加载音乐对象成功Gun
+[20:35:13.2206] [Log] 加载音乐对象成功Knife
+[20:35:13.2377] [Log] 加载音乐对象成功MainBG
+[20:35:13.2548] [Log] 加载音乐对象成功Stick
+[20:35:13.2693] [Log] 加载音乐对象成功Sword
+[20:35:13.2856] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:35:13.3024] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:35:37.9576] [Log] OnApplicationQuit
+[20:35:37.9631] ==========Game Exit==========
+
+[20:35:52.4268] ==========Game Start==========
+[20:35:52.4466] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:35:52.4516] [Log] 敌人配置加载完成，总计15条记录
+[20:35:52.4536] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:35:52.4571] [Log] 武器配置加载完成，总计7件武器
+[20:35:52.4617] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:35:53.2928] [Log] 加载音乐对象成功BOSSBG
+[20:35:53.3234] [Log] 加载音乐对象成功CombatBG
+[20:35:53.3309] [Log] 加载音乐对象成功Duojian
+[20:35:53.3478] [Log] 加载音乐对象成功God
+[20:35:53.3631] [Log] 加载音乐对象成功Gun
+[20:35:53.3786] [Log] 加载音乐对象成功Knife
+[20:35:53.3976] [Log] 加载音乐对象成功MainBG
+[20:35:53.4141] [Log] 加载音乐对象成功Stick
+[20:35:53.4311] [Log] 加载音乐对象成功Sword
+[20:35:53.4492] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:35:53.4642] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:36:26.7870] [Log] OnApplicationQuit
+[20:36:26.7910] ==========Game Exit==========
+
+[20:36:45.0169] ==========Game Start==========
+[20:36:45.0384] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:36:45.0435] [Log] 敌人配置加载完成，总计15条记录
+[20:36:45.0435] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:36:45.0470] [Log] 武器配置加载完成，总计7件武器
+[20:36:45.0525] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:36:45.8808] [Log] 加载音乐对象成功BOSSBG
+[20:36:45.9134] [Log] 加载音乐对象成功CombatBG
+[20:36:45.9211] [Log] 加载音乐对象成功Duojian
+[20:36:45.9374] [Log] 加载音乐对象成功God
+[20:36:45.9539] [Log] 加载音乐对象成功Gun
+[20:36:45.9710] [Log] 加载音乐对象成功Knife
+[20:36:45.9885] [Log] 加载音乐对象成功MainBG
+[20:36:46.0036] [Log] 加载音乐对象成功Stick
+[20:36:46.0201] [Log] 加载音乐对象成功Sword
+[20:36:46.0386] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:36:46.0541] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:37:22.8527] [Log] OnApplicationQuit
+[20:37:22.8983] ==========Game Exit==========
+
+[20:37:49.9936] ==========Game Start==========
+[20:37:50.0175] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:37:50.0215] [Log] 敌人配置加载完成，总计15条记录
+[20:37:50.0225] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:37:50.0267] [Log] 武器配置加载完成，总计7件武器
+[20:37:50.0317] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:37:50.8309] [Log] 加载音乐对象成功BOSSBG
+[20:37:50.8526] [Log] 加载音乐对象成功CombatBG
+[20:37:50.8674] [Log] 加载音乐对象成功Duojian
+[20:37:50.8830] [Log] 加载音乐对象成功God
+[20:37:50.9022] [Log] 加载音乐对象成功Gun
+[20:37:50.9173] [Log] 加载音乐对象成功Knife
+[20:37:50.9340] [Log] 加载音乐对象成功MainBG
+[20:37:50.9507] [Log] 加载音乐对象成功Stick
+[20:37:50.9675] [Log] 加载音乐对象成功Sword
+[20:37:50.9830] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:37:51.0008] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:38:10.2785] [Log] OnApplicationQuit
+[20:38:10.2810] ==========Game Exit==========
+
+[20:38:30.0900] ==========Game Start==========
+[20:38:30.1103] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:38:30.1154] [Log] 敌人配置加载完成，总计15条记录
+[20:38:30.1164] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:38:30.1194] [Log] 武器配置加载完成，总计7件武器
+[20:38:30.1243] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:38:30.9641] [Log] 加载音乐对象成功BOSSBG
+[20:38:30.9841] [Log] 加载音乐对象成功CombatBG
+[20:38:31.0012] [Log] 加载音乐对象成功Duojian
+[20:38:31.0183] [Log] 加载音乐对象成功God
+[20:38:31.0329] [Log] 加载音乐对象成功Gun
+[20:38:31.0519] [Log] 加载音乐对象成功Knife
+[20:38:31.0674] [Log] 加载音乐对象成功MainBG
+[20:38:31.0839] [Log] 加载音乐对象成功Stick
+[20:38:31.1006] [Log] 加载音乐对象成功Sword
+[20:38:31.1167] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:38:31.1341] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:38:44.5454] [Log] OnApplicationQuit
+[20:38:44.5474] ==========Game Exit==========
+
+[20:38:47.9659] ==========Game Start==========
+[20:38:47.9854] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:38:47.9909] [Log] 敌人配置加载完成，总计15条记录
+[20:38:47.9924] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:38:47.9970] [Log] 武器配置加载完成，总计7件武器
+[20:38:48.0025] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[20:38:48.8635] [Log] 加载音乐对象成功BOSSBG
+[20:38:48.8906] [Log] 加载音乐对象成功CombatBG
+[20:38:48.8991] [Log] 加载音乐对象成功Duojian
+[20:38:48.9155] [Log] 加载音乐对象成功God
+[20:38:48.9301] [Log] 加载音乐对象成功Gun
+[20:38:48.9462] [Log] 加载音乐对象成功Knife
+[20:38:48.9654] [Log] 加载音乐对象成功MainBG
+[20:38:48.9821] [Log] 加载音乐对象成功Stick
+[20:38:48.9978] [Log] 加载音乐对象成功Sword
+[20:38:49.0144] [Log] 加载VFX_Nature_Flash特效资源成功
+[20:38:49.0330] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[20:39:27.3428] [Log] OnApplicationQuit
+[20:39:27.3483] ==========Game Exit==========
+
+[21:40:35.9224] ==========Game Start==========
+[21:40:35.9470] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:40:35.9510] [Log] 敌人配置加载完成，总计15条记录
+[21:40:35.9526] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:40:35.9568] [Log] 武器配置加载完成，总计7件武器
+[21:40:35.9618] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:40:36.9888] [Log] 加载音乐对象成功BOSSBG
+[21:40:37.0364] [Log] 加载音乐对象成功CombatBG
+[21:40:37.0440] [Log] 加载音乐对象成功Duojian
+[21:40:37.0588] [Log] 加载音乐对象成功God
+[21:40:37.0709] [Log] 加载音乐对象成功Gun
+[21:40:37.0890] [Log] 加载音乐对象成功Knife
+[21:40:37.1101] [Log] 加载音乐对象成功MainBG
+[21:40:37.1227] [Log] 加载音乐对象成功Stick
+[21:40:37.1409] [Log] 加载音乐对象成功Sword
+[21:40:37.1590] [Log] 加载VFX_Nature_Flash特效资源成功
+[21:40:37.1820] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[21:40:37.5624] [Log] 点击商城按钮事件
+[21:40:38.3541] [Log] 点击商城按钮事件
+[21:40:38.6214] [Log] 点击商城按钮事件
+[21:40:39.0210] [Log] 点击商城按钮事件
+[21:40:39.3542] [Log] 点击每日福利按钮事件
+[21:40:39.5531] [Log] 点击每日福利按钮事件
+[21:40:40.1040] [Log] 点击排行按钮事件
+[21:40:40.3051] [Log] 点击排行按钮事件
+[21:40:40.6701] [Log] 点击分享按钮事件
+[21:40:40.8372] [Log] 点击分享按钮事件
+[21:40:41.2871] [Log] 点击分享按钮事件
+[21:40:41.4718] [Log] 点击分享按钮事件
+[21:41:17.2679] [Log] 点击商城按钮事件
+[21:41:17.7631] [Log] 点击商城按钮事件
+[21:41:26.2790] [Log] OnApplicationQuit
+[21:41:26.2810] ==========Game Exit==========
+
+[21:41:30.7138] ==========Game Start==========
+[21:41:30.7384] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:41:30.7431] [Log] 敌人配置加载完成，总计15条记录
+[21:41:30.7431] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:41:30.7466] [Log] 武器配置加载完成，总计7件武器
+[21:41:30.7516] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:41:31.8619] [Log] 加载音乐对象成功BOSSBG
+[21:41:31.8860] [Log] 加载音乐对象成功CombatBG
+[21:41:31.9090] [Log] 加载音乐对象成功Duojian
+[21:41:31.9175] [Log] 加载音乐对象成功God
+[21:41:31.9362] [Log] 加载音乐对象成功Gun
+[21:41:31.9509] [Log] 加载音乐对象成功Knife
+[21:41:31.9704] [Log] 加载音乐对象成功MainBG
+[21:41:31.9847] [Log] 加载音乐对象成功Stick
+[21:41:32.0043] [Log] 加载音乐对象成功Sword
+[21:41:32.0184] [Log] 加载VFX_Nature_Flash特效资源成功
+[21:41:32.0329] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[21:42:00.4627] [Log] OnApplicationQuit
+[21:42:00.4672] ==========Game Exit==========
+
+[21:42:24.9511] ==========Game Start==========
+[21:42:24.9749] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:42:24.9790] [Log] 敌人配置加载完成，总计15条记录
+[21:42:24.9805] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:42:24.9835] [Log] 武器配置加载完成，总计7件武器
+[21:42:24.9875] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:42:26.0565] [Log] 加载音乐对象成功BOSSBG
+[21:42:26.1053] [Log] 加载音乐对象成功CombatBG
+[21:42:26.1128] [Log] 加载音乐对象成功Duojian
+[21:42:26.1298] [Log] 加载音乐对象成功God
+[21:42:26.1453] [Log] 加载音乐对象成功Gun
+[21:42:26.1685] [Log] 加载音乐对象成功Knife
+[21:42:26.1851] [Log] 加载音乐对象成功MainBG
+[21:42:26.1931] [Log] 加载音乐对象成功Stick
+[21:42:26.2086] [Log] 加载音乐对象成功Sword
+[21:42:26.2231] [Log] 加载VFX_Nature_Flash特效资源成功
+[21:42:26.2562] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[21:42:59.7037] [Log] OnApplicationQuit
+[21:42:59.7077] ==========Game Exit==========
+
+[21:43:03.2295] ==========Game Start==========
+[21:43:03.2585] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:43:03.2650] [Log] 敌人配置加载完成，总计15条记录
+[21:43:03.2660] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:43:03.2696] [Log] 武器配置加载完成，总计7件武器
+[21:43:03.2741] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:43:04.3285] [Log] 加载音乐对象成功BOSSBG
+[21:43:04.3501] [Log] 加载音乐对象成功CombatBG
+[21:43:04.3657] [Log] 加载音乐对象成功Duojian
+[21:43:04.3828] [Log] 加载音乐对象成功God
+[21:43:04.3989] [Log] 加载音乐对象成功Gun
+[21:43:04.4153] [Log] 加载音乐对象成功Knife
+[21:43:04.4333] [Log] 加载音乐对象成功MainBG
+[21:43:04.4488] [Log] 加载音乐对象成功Stick
+[21:43:04.4668] [Log] 加载音乐对象成功Sword
+[21:43:04.4828] [Log] 加载VFX_Nature_Flash特效资源成功
+[21:43:04.4983] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[21:43:40.8086] [Log] OnApplicationQuit
+[21:43:40.8126] ==========Game Exit==========
+
+[21:44:00.2498] ==========Game Start==========
+[21:44:00.2770] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:44:00.2812] [Log] 敌人配置加载完成，总计15条记录
+[21:44:00.2812] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:44:00.2852] [Log] 武器配置加载完成，总计7件武器
+[21:44:00.2908] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[21:44:01.3494] [Log] 加载音乐对象成功BOSSBG
+[21:44:01.3930] [Log] 加载音乐对象成功CombatBG
+[21:44:01.4005] [Log] 加载音乐对象成功Duojian
+[21:44:01.4160] [Log] 加载音乐对象成功God
+[21:44:01.4340] [Log] 加载音乐对象成功Gun
+[21:44:01.4485] [Log] 加载音乐对象成功Knife
+[21:44:01.4650] [Log] 加载音乐对象成功MainBG
+[21:44:01.4842] [Log] 加载音乐对象成功Stick
+[21:44:01.5008] [Log] 加载音乐对象成功Sword
+[21:44:01.5154] [Log] 加载VFX_Nature_Flash特效资源成功
+[21:44:01.5326] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[21:44:30.6641] [Log] OnApplicationQuit
+[21:44:30.6676] ==========Game Exit==========
+
+[22:00:24.3613] ==========Game Start==========
+[22:00:24.3873] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:00:24.3934] [Log] 敌人配置加载完成，总计15条记录
+[22:00:24.3943] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:00:24.3984] [Log] 武器配置加载完成，总计7件武器
+[22:00:24.4039] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:00:25.5303] [Log] 加载音乐对象成功BOSSBG
+[22:00:25.5604] [Log] 加载音乐对象成功CombatBG
+[22:00:25.5699] [Log] 加载音乐对象成功Duojian
+[22:00:25.5859] [Log] 加载音乐对象成功God
+[22:00:25.6025] [Log] 加载音乐对象成功Gun
+[22:00:25.6316] [Log] 加载音乐对象成功Knife
+[22:00:25.6386] [Log] 加载音乐对象成功MainBG
+[22:00:25.6555] [Log] 加载音乐对象成功Stick
+[22:00:25.6724] [Log] 加载音乐对象成功Sword
+[22:00:25.6992] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:00:25.7072] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:00:53.3698] [Log] OnApplicationQuit
+[22:00:53.3723] ==========Game Exit==========
+
+[22:10:18.6753] ==========Game Start==========
+[22:10:18.6993] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:10:18.7039] [Log] 敌人配置加载完成，总计15条记录
+[22:10:18.7049] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:10:18.7099] [Log] 武器配置加载完成，总计7件武器
+[22:10:18.7144] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:10:19.9715] [Log] 加载音乐对象成功BOSSBG
+[22:10:20.2293] [Error] 不存在该音效资源MainBG
+[22:10:20.2700] [Error] 不存在该音效资源CombatBG
+[22:10:20.6174] [Log] 加载音乐对象成功CombatBG
+[22:10:20.6279] [Log] 加载音乐对象成功Duojian
+[22:10:20.6668] [Log] 加载音乐对象成功God
+[22:10:20.7091] [Log] 加载音乐对象成功Gun
+[22:10:20.7488] [Log] 加载音乐对象成功Knife
+[22:10:20.7855] [Log] 加载音乐对象成功MainBG
+[22:10:20.8268] [Log] 加载音乐对象成功Stick
+[22:10:20.8352] [Log] 加载音乐对象成功Sword
+[22:10:20.8507] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:10:20.8729] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:11:06.3884] [Log] OnApplicationQuit
+[22:11:06.3909] ==========Game Exit==========
+
+[22:11:10.2097] ==========Game Start==========
+[22:11:10.2349] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:11:10.2399] [Log] 敌人配置加载完成，总计15条记录
+[22:11:10.2409] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:11:10.2444] [Log] 武器配置加载完成，总计7件武器
+[22:11:10.2499] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:11:11.1998] [Log] 加载音乐对象成功BOSSBG
+[22:11:11.2197] [Log] 加载音乐对象成功CombatBG
+[22:11:11.2332] [Log] 加载音乐对象成功Duojian
+[22:11:11.2513] [Log] 加载音乐对象成功God
+[22:11:11.2693] [Log] 加载音乐对象成功Gun
+[22:11:11.2858] [Log] 加载音乐对象成功Knife
+[22:11:11.3028] [Log] 加载音乐对象成功MainBG
+[22:11:11.3189] [Log] 加载音乐对象成功Stick
+[22:11:11.3349] [Log] 加载音乐对象成功Sword
+[22:11:11.3529] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:11:11.3694] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:11:45.8947] [Log] OnApplicationQuit
+[22:11:45.8998] ==========Game Exit==========
+
+[22:14:25.1870] ==========Game Start==========
+[22:14:25.2145] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:14:25.2195] [Log] 敌人配置加载完成，总计15条记录
+[22:14:25.2205] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:14:25.2246] [Log] 武器配置加载完成，总计7件武器
+[22:14:25.2291] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:14:26.1490] [Log] 加载音乐对象成功BOSSBG
+[22:14:26.1719] [Log] 加载音乐对象成功CombatBG
+[22:14:26.1898] [Log] 加载音乐对象成功Duojian
+[22:14:26.2059] [Log] 加载音乐对象成功God
+[22:14:26.2228] [Log] 加载音乐对象成功Gun
+[22:14:26.2374] [Log] 加载音乐对象成功Knife
+[22:14:26.2538] [Log] 加载音乐对象成功MainBG
+[22:14:26.2701] [Log] 加载音乐对象成功Stick
+[22:14:26.2842] [Log] 加载音乐对象成功Sword
+[22:14:26.2987] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:14:26.3154] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:14:57.9033] [Log] OnApplicationQuit
+[22:14:57.9083] ==========Game Exit==========
+
+[22:18:23.8032] ==========Game Start==========
+[22:18:23.8303] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:18:23.8363] [Log] 敌人配置加载完成，总计15条记录
+[22:18:23.8373] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:18:23.8408] [Log] 武器配置加载完成，总计7件武器
+[22:18:23.8459] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:18:24.8456] [Log] 加载音乐对象成功BOSSBG
+[22:18:25.1541] [Error] 不存在该音效资源MainBG
+[22:18:25.1970] [Error] 不存在该音效资源CombatBG
+[22:18:25.4688] [Log] 加载音乐对象成功CombatBG
+[22:18:25.4843] [Log] 加载音乐对象成功Duojian
+[22:18:25.5003] [Log] 加载音乐对象成功God
+[22:18:25.5178] [Log] 加载音乐对象成功Gun
+[22:18:25.5335] [Log] 加载音乐对象成功Knife
+[22:18:25.5506] [Log] 加载音乐对象成功MainBG
+[22:18:25.5678] [Log] 加载音乐对象成功Stick
+[22:18:25.5849] [Log] 加载音乐对象成功Sword
+[22:18:25.6010] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:18:25.6173] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:18:39.3775] [Log] OnApplicationQuit
+[22:18:39.3810] ==========Game Exit==========
+
+[22:19:09.0211] ==========Game Start==========
+[22:19:09.0476] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:19:09.0543] [Log] 敌人配置加载完成，总计15条记录
+[22:19:09.0543] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:19:09.0593] [Log] 武器配置加载完成，总计7件武器
+[22:19:09.0648] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:19:09.9876] [Log] 加载音乐对象成功BOSSBG
+[22:19:10.0354] [Log] 加载音乐对象成功CombatBG
+[22:19:10.0523] [Log] 加载音乐对象成功Duojian
+[22:19:10.0699] [Log] 加载音乐对象成功God
+[22:19:10.0860] [Log] 加载音乐对象成功Gun
+[22:19:10.1005] [Log] 加载音乐对象成功Knife
+[22:19:10.1188] [Log] 加载音乐对象成功MainBG
+[22:19:10.1358] [Log] 加载音乐对象成功Stick
+[22:19:10.1524] [Log] 加载音乐对象成功Sword
+[22:19:10.1667] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:19:10.1817] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:20:07.1841] [Log] OnApplicationQuit
+[22:20:07.1867] ==========Game Exit==========
+
+[22:23:17.0921] ==========Game Start==========
+[22:23:17.1222] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:23:17.1273] [Log] 敌人配置加载完成，总计15条记录
+[22:23:17.1283] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:23:17.1318] [Log] 武器配置加载完成，总计7件武器
+[22:23:17.1363] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:23:18.0409] [Log] 加载音乐对象成功BOSSBG
+[22:23:18.0598] [Log] 加载音乐对象成功CombatBG
+[22:23:18.0757] [Log] 加载音乐对象成功Duojian
+[22:23:18.0923] [Log] 加载音乐对象成功God
+[22:23:18.1083] [Log] 加载音乐对象成功Gun
+[22:23:18.1220] [Log] 加载音乐对象成功Knife
+[22:23:18.1423] [Log] 加载音乐对象成功MainBG
+[22:23:18.1569] [Log] 加载音乐对象成功Stick
+[22:23:18.1759] [Log] 加载音乐对象成功Sword
+[22:23:18.1907] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:23:18.2094] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:23:28.8090] [Log] OnApplicationQuit
+[22:23:28.8120] ==========Game Exit==========
+
+[22:23:50.4217] ==========Game Start==========
+[22:23:50.4529] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:23:50.4591] [Log] 敌人配置加载完成，总计15条记录
+[22:23:50.4601] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:23:50.4636] [Log] 武器配置加载完成，总计7件武器
+[22:23:50.4686] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:23:51.4872] [Log] 加载音乐对象成功BOSSBG
+[22:23:51.5451] [Log] 加载音乐对象成功CombatBG
+[22:23:51.5627] [Log] 加载音乐对象成功Duojian
+[22:23:51.5652] [Log] 加载音乐对象成功God
+[22:23:51.5839] [Log] 加载音乐对象成功Gun
+[22:23:51.6010] [Log] 加载音乐对象成功Knife
+[22:23:51.6166] [Log] 加载音乐对象成功MainBG
+[22:23:51.6385] [Log] 加载音乐对象成功Stick
+[22:23:52.5382] [Log] 加载音乐对象成功Sword
+[22:23:52.5527] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:23:52.5698] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:24:13.9271] [Log] OnApplicationQuit
+[22:24:13.9305] ==========Game Exit==========
+
+[22:24:46.2952] ==========Game Start==========
+[22:24:46.3251] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:24:46.3299] [Log] 敌人配置加载完成，总计15条记录
+[22:24:46.3309] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:24:46.3354] [Log] 武器配置加载完成，总计7件武器
+[22:24:46.3401] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:24:47.3984] [Log] 加载音乐对象成功BOSSBG
+[22:24:47.7106] [Error] 不存在该音效资源MainBG
+[22:24:47.7540] [Error] 不存在该音效资源CombatBG
+[22:24:48.1251] [Log] 加载音乐对象成功CombatBG
+[22:24:48.2099] [Log] 加载音乐对象成功Duojian
+[22:24:48.2765] [Log] 加载音乐对象成功God
+[22:24:48.2840] [Log] 加载音乐对象成功Gun
+[22:24:48.2987] [Log] 加载音乐对象成功Knife
+[22:24:48.3170] [Log] 加载音乐对象成功MainBG
+[22:24:48.3327] [Log] 加载音乐对象成功Stick
+[22:24:48.3495] [Log] 加载音乐对象成功Sword
+[22:24:48.3676] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:24:48.3838] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:24:55.6569] [Log] OnApplicationQuit
+[22:24:55.6604] ==========Game Exit==========
+
+[22:24:59.4853] ==========Game Start==========
+[22:24:59.5148] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:24:59.5198] [Log] 敌人配置加载完成，总计15条记录
+[22:24:59.5208] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:24:59.5248] [Log] 武器配置加载完成，总计7件武器
+[22:24:59.5298] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:25:00.5048] [Log] 加载音乐对象成功BOSSBG
+[22:25:00.5539] [Log] 加载音乐对象成功CombatBG
+[22:25:00.5597] [Log] 加载音乐对象成功Duojian
+[22:25:00.5797] [Log] 加载音乐对象成功God
+[22:25:00.5914] [Log] 加载音乐对象成功Gun
+[22:25:00.6098] [Log] 加载音乐对象成功Knife
+[22:25:00.6263] [Log] 加载音乐对象成功MainBG
+[22:25:00.6393] [Log] 加载音乐对象成功Stick
+[22:25:00.6608] [Log] 加载音乐对象成功Sword
+[22:25:00.6734] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:25:00.6930] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:25:26.2076] [Log] OnApplicationQuit
+[22:25:26.2126] ==========Game Exit==========
+
+[22:44:53.9000] ==========Game Start==========
+[22:44:53.9310] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:44:53.9356] [Log] 敌人配置加载完成，总计15条记录
+[22:44:53.9366] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:44:53.9406] [Log] 武器配置加载完成，总计7件武器
+[22:44:53.9449] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:44:54.9963] [Log] 加载音乐对象成功BOSSBG
+[22:44:55.0255] [Log] 加载音乐对象成功CombatBG
+[22:44:55.0703] [Log] 加载音乐对象成功Duojian
+[22:44:55.0790] [Log] 加载音乐对象成功God
+[22:44:55.0955] [Log] 加载音乐对象成功Gun
+[22:44:55.1100] [Log] 加载音乐对象成功Knife
+[22:44:55.1456] [Log] 加载音乐对象成功MainBG
+[22:44:55.1521] [Log] 加载音乐对象成功Stick
+[22:44:55.1701] [Log] 加载音乐对象成功Sword
+[22:44:55.1902] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:44:55.2037] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:45:30.6914] [Log] OnApplicationQuit
+[22:45:30.6944] ==========Game Exit==========
+
+[22:48:28.4325] ==========Game Start==========
+[22:48:28.4652] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:48:28.4697] [Log] 敌人配置加载完成，总计15条记录
+[22:48:28.4712] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:48:28.4744] [Log] 武器配置加载完成，总计7件武器
+[22:48:28.4799] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:48:29.8280] [Log] 加载音乐对象成功BOSSBG
+[22:48:29.8913] [Log] 加载音乐对象成功CombatBG
+[22:48:29.9008] [Log] 加载音乐对象成功Duojian
+[22:48:29.9174] [Log] 加载音乐对象成功God
+[22:48:29.9314] [Log] 加载音乐对象成功Gun
+[22:48:29.9608] [Log] 加载音乐对象成功Knife
+[22:48:29.9674] [Log] 加载音乐对象成功MainBG
+[22:48:29.9946] [Log] 加载音乐对象成功Stick
+[22:48:30.0011] [Log] 加载音乐对象成功Sword
+[22:48:30.0166] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:48:30.0278] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:49:07.8046] [Log] OnApplicationQuit
+[22:49:07.8102] ==========Game Exit==========
+
+[22:49:24.8763] ==========Game Start==========
+[22:49:24.9066] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:49:24.9116] [Log] 敌人配置加载完成，总计15条记录
+[22:49:24.9116] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:49:24.9151] [Log] 武器配置加载完成，总计7件武器
+[22:49:24.9202] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:49:26.0166] [Log] 加载音乐对象成功BOSSBG
+[22:49:26.0706] [Log] 加载音乐对象成功CombatBG
+[22:49:26.0786] [Log] 加载音乐对象成功Duojian
+[22:49:26.0946] [Log] 加载音乐对象成功God
+[22:49:26.1121] [Log] 加载音乐对象成功Gun
+[22:49:26.1278] [Log] 加载音乐对象成功Knife
+[22:49:26.1442] [Log] 加载音乐对象成功MainBG
+[22:49:26.1619] [Log] 加载音乐对象成功Stick
+[22:49:26.1777] [Log] 加载音乐对象成功Sword
+[22:49:26.1955] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:49:26.2104] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:49:41.4504] [Log] OnApplicationQuit
+[22:49:41.4551] ==========Game Exit==========
+
+[22:57:14.7411] ==========Game Start==========
+[22:57:14.7717] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:57:14.7763] [Log] 敌人配置加载完成，总计15条记录
+[22:57:14.7773] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:57:14.7808] [Log] 武器配置加载完成，总计7件武器
+[22:57:14.7848] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:57:15.9828] [Log] 加载音乐对象成功BOSSBG
+[22:57:16.0074] [Log] 加载音乐对象成功CombatBG
+[22:57:16.0230] [Log] 加载音乐对象成功Duojian
+[22:57:16.0451] [Log] 加载音乐对象成功God
+[22:57:16.0563] [Log] 加载音乐对象成功Gun
+[22:57:16.0734] [Log] 加载音乐对象成功Knife
+[22:57:16.0909] [Log] 加载音乐对象成功MainBG
+[22:57:16.1066] [Log] 加载音乐对象成功Stick
+[22:57:16.1237] [Log] 加载音乐对象成功Sword
+[22:57:16.1399] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:57:16.1579] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:58:10.4906] [Log] OnApplicationQuit
+[22:58:10.5351] ==========Game Exit==========
+
+[22:58:47.2382] ==========Game Start==========
+[22:58:47.2700] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:58:47.2745] [Log] 敌人配置加载完成，总计15条记录
+[22:58:47.2760] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:58:47.2790] [Log] 武器配置加载完成，总计7件武器
+[22:58:47.2845] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[22:58:48.4269] [Log] 加载音乐对象成功BOSSBG
+[22:58:48.4856] [Log] 加载音乐对象成功CombatBG
+[22:58:48.4940] [Log] 加载音乐对象成功Duojian
+[22:58:48.5083] [Log] 加载音乐对象成功God
+[22:58:48.5238] [Log] 加载音乐对象成功Gun
+[22:58:48.5405] [Log] 加载音乐对象成功Knife
+[22:58:48.5556] [Log] 加载音乐对象成功MainBG
+[22:58:48.5724] [Log] 加载音乐对象成功Stick
+[22:58:48.6009] [Log] 加载音乐对象成功Sword
+[22:58:48.6079] [Log] 加载VFX_Nature_Flash特效资源成功
+[22:58:48.6327] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[22:59:12.8684] [Log] OnApplicationQuit
+[22:59:12.8709] ==========Game Exit==========
+
+[23:00:54.8577] ==========Game Start==========
+[23:00:54.8957] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:00:54.9011] [Log] 敌人配置加载完成，总计15条记录
+[23:00:54.9021] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:00:54.9063] [Log] 武器配置加载完成，总计7件武器
+[23:00:54.9138] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:00:56.0317] [Log] 加载音乐对象成功BOSSBG
+[23:00:56.0934] [Log] 加载音乐对象成功CombatBG
+[23:00:56.1024] [Log] 加载音乐对象成功Duojian
+[23:00:56.1167] [Log] 加载音乐对象成功God
+[23:00:56.1325] [Log] 加载音乐对象成功Gun
+[23:00:56.1522] [Log] 加载音乐对象成功Knife
+[23:00:56.1686] [Log] 加载音乐对象成功MainBG
+[23:00:56.1864] [Log] 加载音乐对象成功Stick
+[23:00:56.2046] [Log] 加载音乐对象成功Sword
+[23:00:56.2255] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:00:56.2450] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:01:09.8159] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:11.4968] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:13.1947] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:14.8934] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:16.5970] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:18.2607] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:19.9721] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:21.6546] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:39.7523] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:41.4532] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:43.2689] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:44.9531] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:46.7293] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:01:47.8358] [Log] OnApplicationQuit
+[23:01:47.8403] ==========Game Exit==========
+
+[23:01:53.0607] ==========Game Start==========
+[23:01:53.0939] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:01:53.0989] [Log] 敌人配置加载完成，总计15条记录
+[23:01:53.0999] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:01:53.1040] [Log] 武器配置加载完成，总计7件武器
+[23:01:53.1085] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:01:54.1440] [Log] 加载音乐对象成功BOSSBG
+[23:01:54.2066] [Log] 加载音乐对象成功CombatBG
+[23:01:54.2131] [Log] 加载音乐对象成功Duojian
+[23:01:54.2367] [Log] 加载音乐对象成功God
+[23:01:54.2523] [Log] 加载音乐对象成功Gun
+[23:01:54.2653] [Log] 加载音乐对象成功Knife
+[23:01:54.2798] [Log] 加载音乐对象成功MainBG
+[23:01:54.2933] [Log] 加载音乐对象成功Stick
+[23:01:54.3134] [Log] 加载音乐对象成功Sword
+[23:01:54.3300] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:01:54.3620] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:02:08.5598] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:02:10.2384] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:02:10.2404] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:02:12.1273] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:02:15.4375] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:02:17.0878] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:02:18.7880] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:02:20.4736] [Exception] UnassignedReferenceException: The variable m_HitEffect of EnemyBase has not been assigned.
+You probably need to assign the m_HitEffect variable of the EnemyBase script in the inspector.
+[23:02:20.5078] [Log] OnApplicationQuit
+[23:02:20.5107] ==========Game Exit==========
+
+[23:02:44.7245] ==========Game Start==========
+[23:02:44.7585] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:02:44.7632] [Log] 敌人配置加载完成，总计15条记录
+[23:02:44.7644] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:02:44.7679] [Log] 武器配置加载完成，总计7件武器
+[23:02:44.7724] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:02:45.8358] [Log] 加载音乐对象成功BOSSBG
+[23:02:45.8932] [Log] 加载音乐对象成功CombatBG
+[23:02:45.8996] [Log] 加载音乐对象成功Duojian
+[23:02:45.9111] [Log] 加载音乐对象成功God
+[23:02:45.9351] [Log] 加载音乐对象成功Gun
+[23:02:45.9481] [Log] 加载音乐对象成功Knife
+[23:02:45.9623] [Log] 加载音乐对象成功MainBG
+[23:02:45.9821] [Log] 加载音乐对象成功Stick
+[23:02:45.9961] [Log] 加载音乐对象成功Sword
+[23:02:46.0122] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:02:46.0332] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:03:01.8919] [Error] Material 'monster_06 (Instance)' with Shader 'Unlit/Transparent Cutout' doesn't have a color property '_Color'
+[23:03:01.8939] [Error] Material 'monster_06 (Instance)' with Shader 'Unlit/Transparent Cutout' doesn't have a color property '_Color'
+[23:03:07.0108] [Error] Material 'monster_06 (Instance)' with Shader 'Unlit/Transparent Cutout' doesn't have a color property '_Color'
+[23:03:10.3773] [Error] Material 'monster_06 (Instance)' with Shader 'Unlit/Transparent Cutout' doesn't have a color property '_Color'
+[23:03:14.5410] [Log] OnApplicationQuit
+[23:03:14.5470] ==========Game Exit==========
+
+[23:07:25.3744] ==========Game Start==========
+[23:07:25.4099] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:07:25.4144] [Log] 敌人配置加载完成，总计15条记录
+[23:07:25.4154] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:07:25.4209] [Log] 武器配置加载完成，总计7件武器
+[23:07:25.4254] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:07:26.6018] [Log] 加载音乐对象成功BOSSBG
+[23:07:26.6765] [Log] 加载音乐对象成功CombatBG
+[23:07:26.6855] [Log] 加载音乐对象成功Duojian
+[23:07:26.6995] [Log] 加载音乐对象成功God
+[23:07:26.7140] [Log] 加载音乐对象成功Gun
+[23:07:26.7319] [Log] 加载音乐对象成功Knife
+[23:07:26.7489] [Log] 加载音乐对象成功MainBG
+[23:07:26.7640] [Log] 加载音乐对象成功Stick
+[23:07:26.7865] [Log] 加载音乐对象成功Sword
+[23:07:26.7996] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:07:26.8168] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:08:26.6757] [Log] 游戏胜利！
+[23:12:09.8350] [Warning] [Worker0] BuildSettingData uses the CustomEditor attribute but does not inherit from Editor.
+You must inherit from Editor. See the Editor class script documentation.
+[23:12:25.0603] [Log] OnApplicationQuit
+[23:12:25.0628] ==========Game Exit==========
+
+[23:27:39.1311] ==========Game Start==========
+[23:27:39.1701] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:27:39.1752] [Log] 敌人配置加载完成，总计15条记录
+[23:27:39.1762] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:27:39.1822] [Log] 武器配置加载完成，总计7件武器
+[23:27:39.1867] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:27:40.5347] [Log] 加载音乐对象成功BOSSBG
+[23:27:40.5585] [Log] 加载音乐对象成功CombatBG
+[23:27:40.5792] [Log] 加载音乐对象成功Duojian
+[23:27:40.6000] [Log] 加载音乐对象成功God
+[23:27:40.6066] [Log] 加载音乐对象成功Gun
+[23:27:40.6308] [Log] 加载音乐对象成功Knife
+[23:27:40.6488] [Log] 加载音乐对象成功MainBG
+[23:27:40.6553] [Log] 加载音乐对象成功Stick
+[23:27:40.6782] [Log] 加载音乐对象成功Sword
+[23:27:40.6903] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:27:40.7125] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:28:56.4494] [Assert] Invalid AABB inAABB
+[23:28:58.2324] [Log] Game Over
+[23:28:58.2356] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[23:29:11.2937] [Assert] Invalid AABB inAABB
+[23:29:12.0280] [Log] OnApplicationQuit
+[23:29:12.0331] ==========Game Exit==========
+
+[23:31:07.8018] ==========Game Start==========
+[23:31:07.8417] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:31:07.8467] [Log] 敌人配置加载完成，总计15条记录
+[23:31:07.8477] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:31:07.8518] [Log] 武器配置加载完成，总计7件武器
+[23:31:07.8563] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:31:09.2244] [Log] 加载音乐对象成功BOSSBG
+[23:31:09.2561] [Log] 加载音乐对象成功CombatBG
+[23:31:09.2765] [Log] 加载音乐对象成功Duojian
+[23:31:09.2867] [Log] 加载音乐对象成功God
+[23:31:09.3059] [Log] 加载音乐对象成功Gun
+[23:31:09.3199] [Log] 加载音乐对象成功Knife
+[23:31:09.3356] [Log] 加载音乐对象成功MainBG
+[23:31:09.3531] [Log] 加载音乐对象成功Stick
+[23:31:09.3698] [Log] 加载音乐对象成功Sword
+[23:31:09.3898] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:31:09.4044] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:32:27.0328] [Log] OnApplicationQuit
+[23:32:27.0396] ==========Game Exit==========
+
+[23:32:37.6304] ==========Game Start==========
+[23:32:37.6746] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:32:37.6799] [Log] 敌人配置加载完成，总计15条记录
+[23:32:37.6809] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:32:37.6845] [Log] 武器配置加载完成，总计7件武器
+[23:32:37.6890] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:32:39.1058] [Log] 加载音乐对象成功BOSSBG
+[23:32:39.1415] [Log] 加载音乐对象成功CombatBG
+[23:32:39.1514] [Log] 加载音乐对象成功Duojian
+[23:32:39.1674] [Log] 加载音乐对象成功God
+[23:32:39.1824] [Log] 加载音乐对象成功Gun
+[23:32:39.2021] [Log] 加载音乐对象成功Knife
+[23:32:39.2174] [Log] 加载音乐对象成功MainBG
+[23:32:39.2365] [Log] 加载音乐对象成功Stick
+[23:32:39.2516] [Log] 加载音乐对象成功Sword
+[23:32:39.2706] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:32:39.2876] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:33:32.2522] [Log] Game Over
+[23:33:32.4178] [Log] Game Over
+[23:33:32.8165] [Log] Game Over
+[23:34:36.8707] [Log] OnApplicationQuit
+[23:34:36.8748] ==========Game Exit==========
+
+[23:40:11.8198] ==========Game Start==========
+[23:40:11.8598] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:40:11.8663] [Log] 敌人配置加载完成，总计15条记录
+[23:40:11.8678] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:40:11.8713] [Log] 武器配置加载完成，总计7件武器
+[23:40:11.8783] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:40:13.1750] [Log] 加载音乐对象成功BOSSBG
+[23:40:13.2537] [Log] 加载音乐对象成功CombatBG
+[23:40:13.2628] [Log] 加载音乐对象成功Duojian
+[23:40:13.2739] [Log] 加载音乐对象成功God
+[23:40:13.3059] [Log] 加载音乐对象成功Gun
+[23:40:13.3144] [Log] 加载音乐对象成功Knife
+[23:40:13.3271] [Log] 加载音乐对象成功MainBG
+[23:40:13.3436] [Log] 加载音乐对象成功Stick
+[23:40:13.3611] [Log] 加载音乐对象成功Sword
+[23:40:13.3812] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:40:13.3987] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:41:09.6262] [Log] Game Over
+[23:41:10.3592] [Log] Game Over
+[23:41:57.8823] [Log] Game Over
+[23:42:02.2474] [Error] Scene 'Main' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+[23:42:11.4506] [Log] OnApplicationQuit
+[23:42:11.4544] ==========Game Exit==========
+
+[23:58:09.1967] ==========Game Start==========
+[23:58:09.2453] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:58:09.2503] [Log] 敌人配置加载完成，总计15条记录
+[23:58:09.2524] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:58:09.2569] [Log] 武器配置加载完成，总计7件武器
+[23:58:09.2614] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[23:58:10.7542] [Log] 加载音乐对象成功BOSSBG
+[23:58:10.8013] [Log] 加载音乐对象成功CombatBG
+[23:58:10.8365] [Log] 加载音乐对象成功Duojian
+[23:58:10.8421] [Log] 加载音乐对象成功God
+[23:58:10.8619] [Log] 加载音乐对象成功Gun
+[23:58:10.8788] [Log] 加载音乐对象成功Knife
+[23:58:10.8921] [Log] 加载音乐对象成功MainBG
+[23:58:10.9047] [Log] 加载音乐对象成功Stick
+[23:58:10.9330] [Log] 加载音乐对象成功Sword
+[23:58:10.9418] [Log] 加载VFX_Nature_Flash特效资源成功
+[23:58:10.9642] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[23:59:31.1688] [Log] 游戏胜利！
+[23:59:43.7904] [Log] OnApplicationQuit
+[23:59:43.7969] ==========Game Exit==========
+

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 11500000, guid: 69d5f9b9079f4e2488d4c146034440be, type: 3}
+  m_Name: BuildSettingData
+  m_EditorClassIdentifier: 
+  packageSVN: 
+  packageName: Inkveil-1.0.3
+  productName: Inkveil-1.0.3
+  androidVersion: 1.0.3
+  iOSVersion: 1.0.3
+  buildPath: AssetBundle
+  variant: bundle
+  manifest: manifest
+  testDataName: Txt_20230208
+  config: config.json
+  buildOptions: 0
+  assetBundleSettings:
+  - name: Config
+    path: Assets/Resources/Config
+    searchPattern: .json
+    searchOption: 1
+    buildType: 0
+    processorType: ConfigProcessor

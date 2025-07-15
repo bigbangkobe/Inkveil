@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Effect
+  m_EditorClassIdentifier: 
+  m_GroupName: Effect
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d19b257fe5ffb794689766aa6745f501
+  m_SerializeEntries:
+  - m_GUID: 0945105a42553834887a02faedb927af
+    m_Address: Effect/VFX_Nature_Projectile_Only
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20236526dc26ce24e81b09459199ad2d
+    m_Address: Effect/VFX_Nature_Flash
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24b7b8788c44f6745a6637375880dd88
+    m_Address: Effect/GroundExplSkill
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30077e5551b1d924e874e42ae2abd5eb
+    m_Address: Effect/GroundHit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37e6f0455a9ac134ea7b44397e8b2a21
+    m_Address: Effect/Sword Slash 4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7692431a0adb22a47911ba61d22e8068
+    m_Address: Effect/Slash wave green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa5a6a3b180b30446b4f9d9de2e541db
+    m_Address: Effect/Sword Slash 5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b82cd2b4065453642b544125b7754d5f
+    m_Address: Effect/Lightning front attack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ddd250f12a23b634ca7d900cc16c3d35
+    m_Address: Effect/Lightning strike 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 068256f246cc9934d836a69a0455b861, type: 2}
+    - {fileID: 11400000, guid: 4c8001f165d248644b00aade38ba9ec8, type: 2}

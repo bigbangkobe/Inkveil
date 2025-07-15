@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Enemy
+  m_EditorClassIdentifier: 
+  m_GroupName: Enemy
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 6e644bac529ee09448066a2730ddaa39
+  m_SerializeEntries:
+  - m_GUID: 050cdb46dd9042c4490eaad8050aeac3
+    m_Address: Enemy/demonGeneral
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27082df10e97e6541bd5378bbcdee4af
+    m_Address: Enemy/berserkerBear
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 338e6ddacae18044785e892bd1fe5913
+    m_Address: Enemy/inkFox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40f73b75c7732d442abc05aa5355c136
+    m_Address: Enemy/doubleDemonKing
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52594285c8a1c114aa18ff6bbbfec251
+    m_Address: Enemy/demonKing
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78a8851e7a19ddc4cb8b5d0499736d20
+    m_Address: Enemy/tripleDemon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 806f0cf664f33c744b68b41eb452c06b
+    m_Address: Enemy/inkTiger
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8926cef68a5cb2249be8d3beaa3320c9
+    m_Address: Enemy/tripleDemonKing
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a21212d712aef94ab6ee681c668d144
+    m_Address: Enemy/inkCow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95c3c9f9198e13d44986d16e5cfcbd99
+    m_Address: Enemy/ninja
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acc6a6b5faea14248811fdc1e4e18afe
+    m_Address: Enemy/inkPig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ccff9d446455918409129808fa97678d
+    m_Address: Enemy/warrior
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dcda264832e78254ba355da55bda1a2e
+    m_Address: Enemy/inkChicken
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0dcf032ec18fb446b16817322f68dd0
+    m_Address: Enemy/bigDemon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3ec157d557b9604cac7f3d805478327
+    m_Address: Enemy/doubleDemon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f84e7c76e7d24c74c9be790d38e215d2
+    m_Address: Enemy/EnemyUI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 48c180b12cc434e498182ac5876b153c, type: 2}
+    - {fileID: 11400000, guid: b70604f2fa821de479777b369f532315, type: 2}

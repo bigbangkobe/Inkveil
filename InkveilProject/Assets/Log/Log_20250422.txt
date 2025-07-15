@@ -1,0 +1,177 @@
+[01:17:03.1358] ==========Game Start==========
+[01:17:03.1564] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:17:03.1618] [Log] 敌人配置加载完成，总计15条记录
+[01:17:03.1628] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:17:03.1663] [Log] 武器配置加载完成，总计7件武器
+[01:17:03.1706] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:17:04.2287] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:17:04.2531] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:17:06.5637] [Log] OnApplicationQuit
+[01:17:06.5659] ==========Game Exit==========
+
+[01:17:15.8175] ==========Game Start==========
+[01:17:15.8375] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:17:15.8435] [Log] 敌人配置加载完成，总计15条记录
+[01:17:15.8445] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:17:15.8486] [Log] 武器配置加载完成，总计7件武器
+[01:17:15.8542] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:17:16.9451] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:17:16.9814] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:17:18.8525] [Log] OnApplicationQuit
+[01:17:18.8550] ==========Game Exit==========
+
+[01:38:41.5507] ==========Game Start==========
+[01:38:41.5710] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:38:41.5755] [Log] 敌人配置加载完成，总计15条记录
+[01:38:41.5765] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:38:41.5800] [Log] 武器配置加载完成，总计7件武器
+[01:38:41.5846] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:38:42.4726] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:38:42.5010] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:39:10.7821] [Log] OnApplicationQuit
+[01:39:10.7841] ==========Game Exit==========
+
+[01:39:32.7462] ==========Game Start==========
+[01:39:32.7660] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:39:32.7710] [Log] 敌人配置加载完成，总计15条记录
+[01:39:32.7710] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:39:32.7746] [Log] 武器配置加载完成，总计7件武器
+[01:39:32.7806] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:39:33.6573] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:39:33.6737] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:40:18.9599] [Log] OnApplicationQuit
+[01:40:18.9630] ==========Game Exit==========
+
+[01:41:34.2586] ==========Game Start==========
+[01:41:34.2802] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:41:34.2853] [Log] 敌人配置加载完成，总计15条记录
+[01:41:34.2863] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:41:34.2904] [Log] 武器配置加载完成，总计7件武器
+[01:41:34.2939] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:41:35.3994] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:41:35.4451] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:42:06.6847] [Log] OnApplicationQuit
+[01:42:06.6868] ==========Game Exit==========
+
+[01:42:19.2440] ==========Game Start==========
+[01:42:19.2673] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:42:19.2734] [Log] 敌人配置加载完成，总计15条记录
+[01:42:19.2744] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:42:19.2779] [Log] 武器配置加载完成，总计7件武器
+[01:42:19.2839] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:42:20.1843] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:42:20.2126] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:42:55.6406] [Log] OnApplicationQuit
+[01:42:55.6426] ==========Game Exit==========
+
+[01:43:06.9375] ==========Game Start==========
+[01:43:06.9588] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:43:06.9653] [Log] 敌人配置加载完成，总计15条记录
+[01:43:06.9658] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:43:06.9689] [Log] 武器配置加载完成，总计7件武器
+[01:43:06.9734] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:43:07.8404] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:43:07.8605] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:43:43.3767] [Log] OnApplicationQuit
+[01:43:43.3812] ==========Game Exit==========
+
+[01:44:37.0266] ==========Game Start==========
+[01:44:37.0472] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:44:37.0522] [Log] 敌人配置加载完成，总计15条记录
+[01:44:37.0533] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:44:37.0578] [Log] 武器配置加载完成，总计7件武器
+[01:44:37.0624] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:44:37.9343] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:44:37.9791] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:45:20.9837] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[01:45:22.7813] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[01:45:24.5981] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[01:45:26.4169] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[01:45:28.2495] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[01:45:30.0636] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[01:45:31.8972] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[01:45:44.2443] [Log] OnApplicationQuit
+[01:45:44.2499] ==========Game Exit==========
+
+[01:46:52.6115] ==========Game Start==========
+[01:46:52.6323] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:46:52.6368] [Log] 敌人配置加载完成，总计15条记录
+[01:46:52.6384] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:46:52.6414] [Log] 武器配置加载完成，总计7件武器
+[01:46:52.6460] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:46:53.5594] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:46:53.5795] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:47:25.5349] [Log] OnApplicationQuit
+[01:47:25.5384] ==========Game Exit==========
+
+[01:47:44.6015] ==========Game Start==========
+[01:47:44.6236] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:47:44.6296] [Log] 敌人配置加载完成，总计15条记录
+[01:47:44.6306] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:47:44.6342] [Log] 武器配置加载完成，总计7件武器
+[01:47:44.6398] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:47:45.5656] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:47:45.5857] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:48:14.1159] [Log] OnApplicationQuit
+[01:48:14.1199] ==========Game Exit==========
+
+[01:49:29.3983] ==========Game Start==========
+[01:49:29.4195] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:49:29.4240] [Log] 敌人配置加载完成，总计15条记录
+[01:49:29.4255] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:49:29.4287] [Log] 武器配置加载完成，总计7件武器
+[01:49:29.4332] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:49:30.3138] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:49:30.3523] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:50:24.9975] [Log] 游戏胜利！
+[01:50:27.0267] [Log] OnApplicationQuit
+[01:50:27.0287] ==========Game Exit==========
+
+[01:52:44.1946] ==========Game Start==========
+[01:52:44.2167] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:52:44.2218] [Log] 敌人配置加载完成，总计15条记录
+[01:52:44.2228] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:52:44.2248] [Log] 武器配置加载完成，总计7件武器
+[01:52:44.2310] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[01:52:45.1397] [Log] 加载VFX_Nature_Flash特效资源成功
+[01:52:45.1741] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[01:53:13.8265] [Log] OnApplicationQuit
+[01:53:13.8285] ==========Game Exit==========
+
+[02:09:34.8635] ==========Game Start==========
+[02:09:34.8862] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:09:34.8908] [Log] 敌人配置加载完成，总计15条记录
+[02:09:34.8919] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:09:34.8954] [Log] 武器配置加载完成，总计7件武器
+[02:09:34.9009] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:09:35.9075] [Log] 加载VFX_Nature_Flash特效资源成功
+[02:09:35.9473] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[02:09:36.7849] [Exception] NullReferenceException: Object reference not set to an instance of an object
+[02:09:54.7394] [Log] OnApplicationQuit
+[02:09:54.7429] ==========Game Exit==========
+
+[02:10:08.4052] ==========Game Start==========
+[02:10:08.4289] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:10:08.4334] [Log] 敌人配置加载完成，总计15条记录
+[02:10:08.4349] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:10:08.4400] [Log] 武器配置加载完成，总计7件武器
+[02:10:08.4445] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:10:09.3679] [Log] 加载VFX_Nature_Flash特效资源成功
+[02:10:09.3858] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[02:10:43.3912] [Log] 按钮
+[02:10:48.4582] [Log] C:/Users/pc/AppData/LocalLow/DefaultCompany/InkveilProject/profiler_20250422021048.log
+[02:11:26.1141] [Log] 游戏胜利！
+[02:11:36.9664] [Log] OnApplicationQuit
+[02:11:36.9715] ==========Game Exit==========
+
+[02:13:25.6681] ==========Game Start==========
+[02:13:25.6932] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:13:25.6983] [Log] 敌人配置加载完成，总计15条记录
+[02:13:25.6993] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:13:25.7028] [Log] 武器配置加载完成，总计7件武器
+[02:13:25.7066] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[02:13:26.9542] [Log] 加载VFX_Nature_Flash特效资源成功
+[02:13:26.9770] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[02:14:08.3146] [Log] OnApplicationQuit
+[02:14:08.3166] ==========Game Exit==========
+

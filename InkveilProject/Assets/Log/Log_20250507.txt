@@ -1,0 +1,1364 @@
+[00:00:06.1441] ==========Game Start==========
+[00:00:06.1893] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:00:06.1948] [Log] 敌人配置加载完成，总计15条记录
+[00:00:06.1958] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:00:06.1994] [Log] 武器配置加载完成，总计7件武器
+[00:00:06.2029] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:00:07.5653] [Log] 加载音乐对象成功BOSSBG
+[00:00:07.6649] [Log] 加载音乐对象成功CombatBG
+[00:00:07.6730] [Log] 加载音乐对象成功Duojian
+[00:00:07.6988] [Log] 加载音乐对象成功God
+[00:00:07.7243] [Log] 加载音乐对象成功Gun
+[00:00:07.7526] [Log] 加载音乐对象成功Knife
+[00:00:07.7626] [Log] 加载音乐对象成功MainBG
+[00:00:07.7787] [Log] 加载音乐对象成功Stick
+[00:00:07.8062] [Log] 加载音乐对象成功Sword
+[00:00:07.8173] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:00:07.8333] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[00:01:07.5284] [Log] 游戏胜利！
+[00:01:09.7279] [Log] 加载音乐对象成功BOSSBG
+[00:01:09.7459] [Log] 加载音乐对象成功CombatBG
+[00:01:09.7612] [Log] 加载音乐对象成功Duojian
+[00:01:09.7773] [Log] 加载音乐对象成功God
+[00:01:09.7938] [Log] 加载音乐对象成功Gun
+[00:01:09.8104] [Log] 加载音乐对象成功Knife
+[00:01:09.8274] [Log] 加载音乐对象成功MainBG
+[00:01:09.8439] [Log] 加载音乐对象成功Stick
+[00:01:09.8604] [Log] 加载音乐对象成功Sword
+[00:01:09.8774] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:09.8804] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:09.8930] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:09.8940] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:09.9111] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:09.9111] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:09.9262] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:09.9277] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:09.9431] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:09.9441] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:09.9608] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:09.9618] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:09.9772] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:09.9772] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:09.9944] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:09.9954] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.0111] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.0111] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.0278] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.0278] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.0440] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.0450] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.0614] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.0629] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.0754] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.0774] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.0930] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.0940] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.1126] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.1126] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.1273] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.1283] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.1425] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.1440] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.1611] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.1611] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.1760] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.1775] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.1943] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.1953] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.2109] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.2119] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.2275] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.2288] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.2440] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.2440] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.2614] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.2624] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.2774] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.2779] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.2939] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.2949] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.3105] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.3105] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.3276] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.3286] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.3451] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.3461] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.3596] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.3606] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.3776] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.3776] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.3951] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.3961] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.4112] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.4122] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.4272] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.4277] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.4444] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.4444] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.4610] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.4610] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.4762] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.4772] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.4942] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.4952] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.5115] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.5115] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.5263] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.5278] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.5436] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.5447] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.5607] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.5622] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.5762] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.5777] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.5942] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.5952] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.6103] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.6118] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.6263] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.6274] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.6442] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.6442] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.6612] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.6622] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.6789] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.6799] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.6942] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.6952] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.7099] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.7109] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.7261] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.7277] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.7433] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.7433] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.7595] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.7605] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.7775] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.7785] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.7940] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.7950] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.8105] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.8120] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.8264] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.8275] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.8428] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.8438] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.8599] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.8609] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.8776] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.8776] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.8941] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.8951] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.9111] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.9121] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.9275] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.9290] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.9432] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.9442] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.9610] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.9610] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.9775] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.9785] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:10.9951] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:10.9961] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.0096] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.0106] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.0274] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.0274] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.0442] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.0442] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.0610] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.0620] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.0758] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.0773] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.0929] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.0939] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.1101] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.1111] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.1274] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.1284] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.1452] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.1462] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.1597] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.1607] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.1764] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.1774] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.1939] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.1939] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.2096] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.2107] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.2258] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.2273] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.2435] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.2445] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.2598] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.2608] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.2776] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.2786] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.2938] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.2948] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.3111] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.3121] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.3273] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.3283] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.3427] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.3442] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.3599] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.3619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.3781] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.3791] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.3926] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.3936] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.4095] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.4105] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.4275] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.4275] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.4440] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.4450] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.4605] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.4620] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.4787] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.4787] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.4929] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.4939] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.5104] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.5104] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.5282] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.5282] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.5447] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.5457] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.5602] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.5602] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.5772] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.5782] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.5928] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.5938] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.6093] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.6108] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.6274] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.6284] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.6440] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.6450] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.6611] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.6621] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.6787] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.6797] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.6941] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.6951] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.7097] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.7097] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.7263] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.7273] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.7441] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.7441] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.7596] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.7606] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.7771] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.7776] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.7941] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.7951] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.8112] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.8122] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.8275] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.8285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.8440] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.8450] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.8596] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.8606] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.8759] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.8759] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.8929] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.8939] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.9100] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.9110] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.9282] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.9292] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.9429] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.9439] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.9604] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.9604] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.9775] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.9775] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:11.9940] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:11.9940] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.0106] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.0106] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.0272] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.0283] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.0428] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.0438] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.0601] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.0611] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.0775] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.0785] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.0941] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.0951] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.1111] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.1121] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.1274] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.1284] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.1434] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.1444] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.1619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.1629] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.1774] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.1774] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.1948] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.1958] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.2114] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.2114] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.2261] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.2261] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.2428] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.2438] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.2604] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.2614] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.2760] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.2775] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.2921] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.2931] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.3096] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.3106] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.3285] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.3285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.3430] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.3440] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.3605] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.3605] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.3785] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.3785] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.3945] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.3955] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.4106] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.4121] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.4276] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.4286] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.4449] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.4449] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.4819] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.4819] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.4904] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.4919] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.5075] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.5085] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.5240] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.5250] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.5405] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.5420] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.5575] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.5585] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.5741] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.5751] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.5906] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.5906] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.6075] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.6085] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.6241] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.6251] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.6402] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.6414] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.6576] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.6586] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.6737] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.6748] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.6908] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.6918] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.7074] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.7079] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.7241] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.7251] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.7406] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.7421] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.7577] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.7577] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.7742] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.7752] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.7917] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.7927] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.8077] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.8087] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.8240] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.8250] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.8402] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.8412] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.8575] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.8580] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.8744] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.8754] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.8903] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.8913] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.9074] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.9084] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.9246] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.9256] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.9406] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.9421] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.9576] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.9586] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.9742] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.9742] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:12.9918] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:12.9918] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.0075] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.0085] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.0230] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.0245] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.0400] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.0410] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.0574] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.0589] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.0736] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.0748] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.0911] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.0921] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.1073] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.1078] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.1239] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.1249] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.1404] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.1419] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.1575] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.1585] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.1745] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.1755] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.1911] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.1921] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.2077] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.2087] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.2238] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.2247] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.2399] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.2419] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.2580] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.2580] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.2738] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.2748] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.2903] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.2918] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.3077] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.3087] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.3234] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.3249] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.3409] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.3419] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.3572] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.3582] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.3740] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.3750] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.3906] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.3906] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.4072] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.4082] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.4240] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.4250] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.4405] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.4420] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.4575] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.4585] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.4741] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.4751] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.4906] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.4921] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.5073] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.5083] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.5249] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.5259] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.5404] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.5404] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.5574] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.5584] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.5739] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.5749] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.5904] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.5919] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.6074] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.6084] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.6240] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.6240] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.6406] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.6416] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.6574] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.6574] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.6744] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.6744] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.6906] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.6916] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.7061] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.7076] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.7238] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.7248] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.7404] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.7414] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.7580] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.7590] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.7743] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.7753] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.7910] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.7910] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.8075] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.8075] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.8245] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.8245] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.8403] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.8413] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.8574] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.8574] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.8742] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.8752] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.9199] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.9199] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.9234] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.9244] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.9385] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.9395] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.9551] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.9561] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.9728] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.9728] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:13.9894] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:13.9904] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.0059] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.0069] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.0229] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.0239] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.0394] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.0404] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.0561] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.0561] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.0718] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.0728] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.0896] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.0896] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.1060] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.1075] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.1235] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.1235] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.1394] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.1404] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.1565] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.1575] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.1727] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.1727] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.1891] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.1901] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.2062] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.2062] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.2229] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.2240] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.2396] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.2406] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.2562] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.2572] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.2722] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.2732] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.2897] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.2897] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.3060] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.3060] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.3229] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.3229] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.3391] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.3401] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.3563] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.3573] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.3716] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.3731] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.3888] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.3898] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.4061] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.4076] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.4232] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.4232] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.4387] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.4397] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.4562] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.4572] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.4719] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.4730] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.4885] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.4895] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.5060] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.5070] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.5230] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.5240] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.5395] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.5395] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.5560] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.5571] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.5731] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.5741] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.5901] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.5911] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.6068] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.6073] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.6225] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.6235] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.6396] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.6407] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.6553] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.6563] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.6733] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.6743] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.6883] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.6900] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.7060] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.7060] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.7221] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.7231] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.7396] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.7406] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.7561] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.7571] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.7732] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.7742] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.7897] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.7897] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.8061] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.8061] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.8224] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.8234] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.8397] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.8408] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.8553] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.8562] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.8736] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.8736] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.8887] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.8897] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.9058] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.9058] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.9225] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.9235] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.9395] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.9405] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.9560] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.9570] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.9722] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.9732] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:14.9882] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:14.9897] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.0058] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.0058] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.0222] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.0232] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.0389] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.0399] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.0562] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.0562] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.0729] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.0741] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.0886] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.0902] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.1063] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.1063] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.1220] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.1230] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.1383] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.1398] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.1562] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.1562] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.1725] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.1725] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.1895] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.1905] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.2052] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.2062] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.2220] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.2230] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.2404] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.2414] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.2569] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.2574] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.2729] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.2739] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.2884] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.2894] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.3058] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.3058] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.3226] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.3236] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.3388] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.3398] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.3562] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.3572] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.3721] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.3731] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.3899] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.3899] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.4060] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.4060] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.4220] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.4230] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.4395] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.4395] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.4560] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.4570] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.4721] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.4731] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.4897] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.4897] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.5062] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.5073] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.5219] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.5229] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.5394] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.5405] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.5565] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.5565] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.5730] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.5730] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.5887] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.5897] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.6057] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.6067] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.6234] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.6244] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.6389] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.6399] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.6567] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.6577] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.6734] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.6734] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.6895] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.6905] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.7061] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.7061] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.7226] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.7237] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.7407] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.7407] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.7567] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.7577] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.7721] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.7731] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.7883] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.7898] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.8061] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.8061] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.8218] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.8234] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.8388] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.8398] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.8559] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.8574] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.8721] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.8731] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.8891] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.8901] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.9062] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.9072] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.9237] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.9237] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.9407] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.9407] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.9559] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.9569] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.9725] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.9735] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:15.9891] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:15.9891] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.0064] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.0074] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.0219] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.0229] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.0387] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.0399] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.0565] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.0575] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.0725] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.0735] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.0888] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.0898] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.1055] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.1075] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.1221] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.1231] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.1406] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.1406] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.1551] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.1561] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.1734] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.1734] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.1895] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.1895] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.2056] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.2056] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.2224] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.2224] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.2398] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.2408] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.2573] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.2573] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.2729] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.2739] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.2889] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.2899] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.3060] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.3060] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.3229] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.3240] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.3387] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.3397] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.3552] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.3562] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.3733] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.3743] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.3886] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.3896] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.4061] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.4061] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.4227] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.4237] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.4395] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.4395] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.4556] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.4566] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.4729] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.4739] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.4888] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.4898] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.5051] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.5061] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.5221] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.5231] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.5398] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.5408] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.5569] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.5574] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.5729] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.5739] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.5895] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.5905] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.6050] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.6060] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.6220] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.6230] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.6385] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.6395] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.6551] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.6561] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.6731] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.6741] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.6887] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.6932] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.7073] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.7083] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.7215] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.7225] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.7397] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.7418] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.7550] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.7560] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.7917] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.7927] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.7958] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.7983] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.8113] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.8123] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.8274] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.8284] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.8439] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.8449] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.8604] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.8619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.8785] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.8795] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.8951] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.8961] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.9106] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.9121] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.9283] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.9283] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.9448] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.9458] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.9618] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.9618] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.9776] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.9786] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:16.9951] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:16.9951] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.0123] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.0133] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.0285] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.0285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.0441] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.0456] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.0619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.0619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.0773] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.0790] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.0954] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.0964] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.1123] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.1123] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.1274] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.1289] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.1436] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.1447] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.1610] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.1620] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.1779] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.1789] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.1950] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.1950] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.2121] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.2131] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.2283] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.2293] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.2448] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.2448] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.2603] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.2618] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.2783] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.2793] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.2949] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.2959] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.3104] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.3119] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.3284] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.3284] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.3449] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.3459] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.3619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.3629] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.3784] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.3794] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.3950] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.3960] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.4120] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.4130] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.4283] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.4293] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.4439] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.4449] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.4604] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.4619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.4784] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.4784] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.4951] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.4961] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.5117] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.5127] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.5287] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.5287] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.5454] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.5454] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.5617] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.5627] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.5789] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.5789] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.5952] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.5952] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.6108] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.6118] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.6275] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.6285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.6450] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.6460] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.6620] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.6630] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.6776] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.6786] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.6952] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.6952] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.7117] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.7132] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.7282] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.7292] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.7457] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.7467] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.7618] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.7628] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.7773] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.7793] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.7948] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.7948] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.8103] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.8118] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.8293] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.8293] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.8438] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.8448] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.8619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.8629] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.8784] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.8784] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.8951] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.8966] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.9121] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.9131] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.9282] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.9292] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.9461] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.9461] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.9611] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.9626] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.9776] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.9776] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:17.9947] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:17.9959] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.0120] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.0120] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.0281] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.0281] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.0450] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.0460] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.0622] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.0633] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.0773] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.0783] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.0949] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.0959] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.1119] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.1119] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.1284] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.1294] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.1459] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.1469] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.1604] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.1619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.1786] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.1796] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.1950] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.1960] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.2117] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.2122] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.2274] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.2284] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.2452] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.2452] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.2615] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.2615] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.2777] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.2787] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.2947] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.2957] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.3118] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.3128] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.3283] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.3293] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.3435] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.3450] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.3617] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.3627] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.3786] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.3786] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.3944] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.3954] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.4115] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.4115] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.4277] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.4288] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.4449] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.4449] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.4611] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.4621] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.4785] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.4795] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.4949] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.4949] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.5115] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.5125] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.5278] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.5288] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.5446] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.5456] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.5618] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.5618] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.5783] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.5793] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.5948] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.5958] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.6128] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.6128] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.6274] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.6286] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.6449] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.6459] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.6610] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.6620] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.6784] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.6784] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.6950] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.6960] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.7111] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.7121] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.7281] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.7281] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.7448] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.7458] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.7613] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.7623] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.7782] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.7792] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.7947] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.7957] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.8117] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.8127] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.8284] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.8294] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.8455] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.8455] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.8622] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.8632] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.8783] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.8793] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.8953] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.8963] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.9117] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.9127] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.9273] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.9283] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.9449] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.9449] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.9621] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.9621] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.9781] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.9791] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:18.9947] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:18.9957] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.0117] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.0127] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.0282] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.0292] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.0452] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.0462] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.0619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.0619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.0773] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.0789] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.0947] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.0957] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.1120] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.1130] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.1283] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.1283] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.1449] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.1449] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.1619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.1629] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.1776] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.1786] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.1947] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.1957] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.2115] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.2125] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.2282] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.2282] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.2450] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.2460] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.2616] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.2626] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.2785] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.2795] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.2942] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.2952] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.3120] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.3120] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.3292] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.3302] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.3447] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.3457] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.3618] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.3628] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.3783] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.3793] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.3949] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.3959] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.4104] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.4119] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.4283] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.4293] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.4449] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.4459] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.4611] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.4621] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.4785] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.4785] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.4948] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.4958] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.5112] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.5122] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.5275] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.5285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.5450] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.5450] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.5605] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.5620] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.5786] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.5786] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.5946] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.5966] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.6116] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.6126] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.6285] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.6285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.6449] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.6459] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.6613] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.6623] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.6786] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.6786] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.6942] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.6954] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.7111] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.7121] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.7285] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.7295] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.7444] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.7454] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.7619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.7619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.7784] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.7784] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.7950] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.7950] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.8105] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.8120] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.8275] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.8285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.8450] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.8460] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.8620] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.8620] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.8785] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.8785] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.8951] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.8961] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.9109] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.9121] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.9285] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.9285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.9441] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.9451] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.9619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.9619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.9781] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.9791] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:19.9949] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:19.9959] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.0120] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.0120] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.0285] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.0285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.0450] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.0450] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.0620] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.0630] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.0775] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.0790] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.0951] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.0951] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.1113] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.1123] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.1285] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.1295] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.1434] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.1444] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.1619] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.1619] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.1787] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.1787] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.1949] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.1959] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.2116] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.2126] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.2285] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.2285] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.2450] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:01:20.2460] [Exception] ArgumentException: An item with the same key has already been added. Key: VFX_Nature_Flash
+[00:01:20.2776] [Log] OnApplicationQuit
+[00:01:20.2798] ==========Game Exit==========
+
+[00:05:17.0839] ==========Game Start==========
+[00:05:17.1361] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:05:17.1426] [Log] 敌人配置加载完成，总计15条记录
+[00:05:17.1441] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:05:17.1476] [Log] 武器配置加载完成，总计7件武器
+[00:05:17.1526] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:05:18.4610] [Log] 加载音乐对象成功BOSSBG
+[00:05:18.4929] [Log] 加载音乐对象成功CombatBG
+[00:05:18.5175] [Log] 加载音乐对象成功Duojian
+[00:05:18.5272] [Log] 加载音乐对象成功God
+[00:05:18.5517] [Log] 加载音乐对象成功Gun
+[00:05:18.5655] [Log] 加载音乐对象成功Knife
+[00:05:18.5893] [Log] 加载音乐对象成功MainBG
+[00:05:18.6039] [Log] 加载音乐对象成功Stick
+[00:05:18.6184] [Log] 加载音乐对象成功Sword
+[00:05:18.6319] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:05:18.6504] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[00:06:45.6876] [Log] 游戏胜利！
+[00:08:38.5129] [Log] OnApplicationQuit
+[00:08:38.5169] ==========Game Exit==========
+
+[00:08:38.5214] [Error] Some objects were not cleaned up when closing the scene. (Did you spawn new GameObjects from OnDestroy?)
+The following scene GameObjects were found:
+New Game Object
+
+[00:19:01.6395] ==========Game Start==========
+[00:19:01.6871] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:19:01.6936] [Log] 敌人配置加载完成，总计15条记录
+[00:19:01.6946] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:19:01.6986] [Log] 武器配置加载完成，总计7件武器
+[00:19:01.7041] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:19:03.3244] [Log] 加载音乐对象成功BOSSBG
+[00:19:03.3489] [Log] 加载音乐对象成功CombatBG
+[00:19:03.3745] [Log] 加载音乐对象成功Duojian
+[00:19:03.3861] [Log] 加载音乐对象成功God
+[00:19:03.4347] [Log] 加载音乐对象成功Gun
+[00:19:03.5038] [Log] 加载音乐对象成功Knife
+[00:19:03.5128] [Log] 加载音乐对象成功MainBG
+[00:19:03.5315] [Log] 加载音乐对象成功Stick
+[00:19:03.5451] [Log] 加载音乐对象成功Sword
+[00:19:03.5613] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:19:03.5775] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[00:20:45.6038] [Log] Look rotation viewing vector is zero
+[00:20:45.6209] [Log] Look rotation viewing vector is zero
+[00:21:08.5843] [Warning] The GUID inside 'Assets/Resources.meta' cannot be extracted by the YAML Parser. Attempting to extract it via string matching instead. Please verify the file does not contain unexpected data.
+[00:21:08.7139] [Log] OnApplicationQuit
+[00:21:08.7174] ==========Game Exit==========
+
+[00:21:15.0114] ==========Game Start==========
+[00:21:15.0658] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:21:15.0737] [Log] 敌人配置加载完成，总计15条记录
+[00:21:15.0757] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:21:15.0805] [Log] 武器配置加载完成，总计7件武器
+[00:21:15.0866] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:21:16.5961] [Log] 加载音乐对象成功BOSSBG
+[00:21:16.7044] [Log] 加载音乐对象成功CombatBG
+[00:21:16.7149] [Log] 加载音乐对象成功Duojian
+[00:21:16.7264] [Log] 加载音乐对象成功God
+[00:21:16.7605] [Log] 加载音乐对象成功Gun
+[00:21:16.7676] [Log] 加载音乐对象成功Knife
+[00:21:16.7947] [Log] 加载音乐对象成功MainBG
+[00:21:16.8017] [Log] 加载音乐对象成功Stick
+[00:21:16.8212] [Log] 加载音乐对象成功Sword
+[00:21:16.8357] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:21:17.0924] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[00:21:38.8436] [Log] OnApplicationQuit
+[00:21:38.8496] ==========Game Exit==========
+
+[00:22:38.9921] ==========Game Start==========
+[00:22:39.0525] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:22:39.0575] [Log] 敌人配置加载完成，总计15条记录
+[00:22:39.0586] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:22:39.0640] [Log] 武器配置加载完成，总计7件武器
+[00:22:39.0695] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[00:22:40.7649] [Log] 加载音乐对象成功BOSSBG
+[00:22:40.8012] [Log] 加载音乐对象成功CombatBG
+[00:22:40.8244] [Log] 加载音乐对象成功Duojian
+[00:22:40.8334] [Log] 加载音乐对象成功God
+[00:22:40.8480] [Log] 加载音乐对象成功Gun
+[00:22:40.8645] [Log] 加载音乐对象成功Knife
+[00:22:40.8790] [Log] 加载音乐对象成功MainBG
+[00:22:40.9024] [Log] 加载音乐对象成功Stick
+[00:22:40.9215] [Log] 加载音乐对象成功Sword
+[00:22:40.9403] [Log] 加载VFX_Nature_Flash特效资源成功
+[00:22:40.9565] [Log] 加载VFX_Nature_Projectile_Only特效资源成功
+[00:24:04.4470] [Log] 游戏胜利！
+[00:25:06.1876] [Exception] MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.
+[00:25:25.9759] [Warning] The GUID inside 'Assets/Resources.meta' cannot be extracted by the YAML Parser. Attempting to extract it via string matching instead. Please verify the file does not contain unexpected data.
+[00:25:27.8231] [Log] OnApplicationQuit
+[00:25:27.8296] ==========Game Exit==========
+

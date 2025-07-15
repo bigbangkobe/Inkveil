@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8105801921231597378
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_Twirl Portal SD 4
+  m_Shader: {fileID: -6465566751694194690, guid: 983e32d6b20ee1d4ca2389a874e794af,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Dissolve_Texture:
+        m_Texture: {fileID: 2800000, guid: b8845045224735e4bb3c3b28bfee421e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Edge_Texture:
+        m_Texture: {fileID: 2800000, guid: 84943d24f2426024f824b6c92096d091, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Guide_Texture:
+        m_Texture: {fileID: 2800000, guid: 9f7bfc0362efd3b48981065dc42fe6de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
+        m_Texture: {fileID: 2800000, guid: acd68d3cb6afb1e45868b5bb1e6863e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_873ca2e3a4ec4223b72d08587c2354c0_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 84943d24f2426024f824b6c92096d091, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_89044c30c9d94e45b6148a3841eeee1b_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 84943d24f2426024f824b6c92096d091, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_9e014b7c2ce740d0ad8a0783a6d4e63d_Out_0_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 4a8e0d7e36c436a4583b7e4359b527d8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Dissolve_Amount: 0
+    - _Dissolve_Tilling: 1.54
+    - _Edge_Power: 0.507
+    - _Edge_Straight: 0.51
+    - _Edge_Tilling: 1
+    - _Edge_Width: 0.468
+    - _Guide_Tilling: 0.77
+    - _Noise_Power: 4.16
+    - _Noise_Rotation: -0.14
+    - _Noise_Tilling: 2
+    - _Nosie_Twirl_Strength: 8.72
+    - _Portal_Size: 0.881
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Rotation_Speed: 0.09
+    - _Transparent_Center: 0
+    - _Twirl_Fade_Power: 0.59
+    - _Twirl_Strength: 15.81
+    - _Use_Triplanar_UV_s: 0
+    - _Visibility_Power: 1.63
+    m_Colors:
+    - _Center_Color: {r: 0, g: 11.349494, b: 15.999998, a: 0}
+    - _Color: {r: 1, g: 0, b: 0, a: 0}
+    - _Color_1: {r: 0, g: 0, b: 0, a: 0}
+    - _Depth_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Dissolve_Color: {r: 0, g: 0.5234069, b: 3.9999995, a: 0}
+    - _Edge_Rotation: {r: -0.1, g: 0.1, b: 0, a: 0}
+  m_BuildTextureStacks: []

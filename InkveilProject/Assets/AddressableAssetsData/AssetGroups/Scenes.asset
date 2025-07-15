@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Scenes
+  m_EditorClassIdentifier: 
+  m_GroupName: Scenes
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8d53b900a032ff849930d5059a27991f
+  m_SerializeEntries:
+  - m_GUID: 08954db06f626b94f89eea487b0e4e3c
+    m_Address: Scene_Standard_chenzhan_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08f9d512d26dd2d4eb434c35e152b9ff
+    m_Address: Scene_Standard_sanlu2_Afternoon_03
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09e791c5b12701d4db6fbe975a8fa31e
+    m_Address: Scene_Standard_sanlu2_Moring_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 232cffd66aefdc44cbc964fedcc2c0ae
+    m_Address: Scene_Standard_shandong_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 282c592445a5e8247934caa5c27a5f4d
+    m_Address: Scene_Standard_shandong_Afternoon_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3679b5a3dbcea574d9b6c8a52a553bc9
+    m_Address: Scene_Standard_xinshou_Moring_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a686ea3689eb474d9d23d2785410b3d
+    m_Address: Scene_Standard_erlu1_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45fbe87b6e70c5e46949099a88f9ae6a
+    m_Address: Scene_Standard_shuilu_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52fe539f3f17e4e4d826bb3c55f7c604
+    m_Address: Scene_Standard_sanlu1_Moring_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5733a63708a08b245b09ea3811aa3221
+    m_Address: Scene_Standard_erlu1_Afternoon_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57a62c3aa24e98f43b78f3dacacabf2e
+    m_Address: Scene_Standard_shandong_Moring_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 632cdea1066361543b5310bc825aa503
+    m_Address: Scene_Standard_erlu2_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 790fa56211cba0948baea98b5ab389dc
+    m_Address: Scene_Standard_shuilu_Moring_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a32eacb379962c44bc04408728a6695
+    m_Address: Scene_Standard_xinshou_Afternoon_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c535df831288f044b16120699f4354a
+    m_Address: Scene_Standard_sanlu2_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99248abd31b333e479fd91eef2229527
+    m_Address: LoadingScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9990a826dec2ad04c83a71e7d6135736
+    m_Address: Main
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9cb53c593ba908d46b4d30a6eb34e457
+    m_Address: Scene_Standard_chenzhan_Moring_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4683236fa218d54cafead7795cb58bf
+    m_Address: Scene_Standard_sanlu1_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3aacce9077509d41b6178e6a9db30bd
+    m_Address: Scene_Standard_xinshou_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba364be9d219faf41ab2a1a7743f1206
+    m_Address: Scene_Standard_chenzhan_Afternoon_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c244a4f283949644ab4e309004e00c94
+    m_Address: Scene_Standard_emeng_Night_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc60629b39c18b34daf07654d3791be3
+    m_Address: Scene_Standard_shuilu_Afternoon_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd2af8479e64ec94398d2bd8b8887730
+    m_Address: Scene_Standard_erlu2_Moring_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cded4205febc80142af89c48af1631ed
+    m_Address: Scene_Standard_erlu2_Afternoon_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df9fa15091a5e74439fec27542e31fb2
+    m_Address: Scene_Standard_erlu1_Moring_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbf4f96781982f34cba0148f980eea7f
+    m_Address: Scene_Standard_sanlu1_Afternoon_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5b4d6c78fe2e27b448e5d817806b7365, type: 2}
+    - {fileID: 11400000, guid: 48bc5311ba6457749a51e6982cf0ac44, type: 2}
