@@ -30,9 +30,9 @@ public class SignPanel : BaseUI
         UpdateSignUI();
     }
 
-    private void InitConfig()
+    private async void InitConfig()
     {
-        string signInfoAsset = ResourceService.Load<TextAsset>(ConfigDefine.signInfo).text;
+        string signInfoAsset = (await ResourceService.LoadAsync<TextAsset>(ConfigDefine.signInfo)).text;
 
         if (signInfoAsset == null)
         {

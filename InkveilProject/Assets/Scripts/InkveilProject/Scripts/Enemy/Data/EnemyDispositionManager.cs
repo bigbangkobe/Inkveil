@@ -3,28 +3,28 @@ using Framework;
 using LitJson;
 using UnityEngine;
 using System;
-using System.Threading.Tasks;
 
 public class EnemyDispositionManager : Singleton<EnemyDispositionManager>
 {
+    // 使用双重字典提高查询效率
     private Dictionary<string, EnemyInfo> m_NameEnemyDict = new Dictionary<string, EnemyInfo>();
     private Dictionary<int, EnemyInfo> m_IdEnemyDict = new Dictionary<int, EnemyInfo>();
     private Dictionary<int, List<EnemyInfo>> m_TypeEnemyDict = new Dictionary<int, List<EnemyInfo>>();
 
+    // 资源引用跟踪
     private TextAsset m_EnemyConfigAsset;
     private bool m_IsInitialized = false;
 
     /// <summary>
-    /// 异步初始化敌人配置系统
+    /// 初始化敌人配置系统
     /// </summary>
-    public async Task OnInitAsync()
+    public async void OnItin()
     {
         if (m_IsInitialized) return;
         try
         {
-            // 异步加载配置文本
-            var handle = ResourceService.LoadAsync<TextAsset>(ConfigDefine.enemyInfo);
-            m_EnemyConfigAsset = await handle.Task;
+             // Resources同步加载
+            m_EnemyConfigAsset = await ResourceService.LoadAsync<TextAsset>(ConfigDefine.enemyInfo);
 
             if (m_EnemyConfigAsset == null)
             {
@@ -32,7 +32,6 @@ public class EnemyDispositionManager : Singleton<EnemyDispositionManager>
                 return;
             }
 
-            // 解析 JSON
             var enemyList = JsonMapper.ToObject<List<EnemyInfo>>(m_EnemyConfigAsset.text);
             if (enemyList == null || enemyList.Count == 0)
             {
@@ -40,27 +39,32 @@ public class EnemyDispositionManager : Singleton<EnemyDispositionManager>
                 return;
             }
 
-            // 构建索引
+            // 多维度数据组织
             foreach (var enemy in enemyList)
             {
+                // 数据校验
                 if (string.IsNullOrEmpty(enemy.enemyName))
                 {
                     Debug.LogWarning("发现无名敌人配置，已跳过");
                     continue;
                 }
+
                 if (m_NameEnemyDict.ContainsKey(enemy.enemyName))
                 {
                     Debug.LogError($"敌人名称重复：{enemy.enemyName}");
                     continue;
                 }
+
+                // 主索引
                 m_NameEnemyDict[enemy.enemyName] = enemy;
                 m_IdEnemyDict[enemy.enemyID] = enemy;
-                if (!m_TypeEnemyDict.TryGetValue(enemy.enemyType, out var list))
+
+                // 类型索引
+                if (!m_TypeEnemyDict.ContainsKey(enemy.enemyType))
                 {
-                    list = new List<EnemyInfo>();
-                    m_TypeEnemyDict[enemy.enemyType] = list;
+                    m_TypeEnemyDict[enemy.enemyType] = new List<EnemyInfo>();
                 }
-                list.Add(enemy);
+                m_TypeEnemyDict[enemy.enemyType].Add(enemy);
             }
 
             m_IsInitialized = true;
@@ -99,11 +103,14 @@ public class EnemyDispositionManager : Singleton<EnemyDispositionManager>
     /// </summary>
     public void OnClear()
     {
+        // 释放资源引用
         if (m_EnemyConfigAsset != null)
         {
-            ResourceService.UnloadAsset(m_EnemyConfigAsset);
+            Resources.UnloadAsset(m_EnemyConfigAsset);
             m_EnemyConfigAsset = null;
         }
+
+        // 清空数据
         m_NameEnemyDict.Clear();
         m_IdEnemyDict.Clear();
         m_TypeEnemyDict.Clear();

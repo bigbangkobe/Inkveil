@@ -77,7 +77,7 @@ public class ButtonEventTrigger : MonoBehaviour ,IPointerDownHandler,IPointerUpH
     /// 弹起
     /// </summary>
     /// <param name="pointerEventData"></param>
-    public void OnPointerUp(PointerEventData pointerEventData)
+    public async void OnPointerUp(PointerEventData pointerEventData)
     {
 		if (PointerDownCallBack != null)
 			return;
@@ -85,7 +85,7 @@ public class ButtonEventTrigger : MonoBehaviour ,IPointerDownHandler,IPointerUpH
 		if (isClick)
             return;
         TimerObject timerObject = null;
-        timerObject = TimerSystem.Start(delegate (object obj) 
+        timerObject = await TimerSystem.Start(delegate (object obj) 
         {
             tweenTransform.localScale = preSize;
             timerObject.Stop();

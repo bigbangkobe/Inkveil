@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class PropertyManager : MonoSingleton<PropertyManager>
 {
-    public async void OnInit() 
+    public void OnInit() 
     {
-        await PropertyDispositionManager.instance.OnInitAsync();
+        PropertyDispositionManager.instance.OnInit();
     }
 
     internal void Clear()

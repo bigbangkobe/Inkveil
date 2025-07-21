@@ -4,6 +4,7 @@ using Framework;
 using UnityEngine.Events;
 using System;
 using DG.Tweening;
+using System.Threading.Tasks;
 
 public class OnboardingGuidePanel : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class OnboardingGuidePanel : MonoBehaviour
     public Image m_Image;
     public bool isLinding = false;
 
-    void Start()
+    async void Start()
     {
         m_Image = GetComponent<Image>();
 
@@ -36,8 +37,8 @@ public class OnboardingGuidePanel : MonoBehaviour
         {
             if (isLinding)
             {
-                TimerSystem.Start((x) => {
-                    m_Image.DOColor(Color.black * 0, 2).OnComplete(() => {
+                await TimerSystem.Start((x) => {
+                    m_Image.DOColor(Color.black * 0, 2).OnComplete(async () => {
                         StartGuide();
                         m_Image.enabled = false;
                     });
@@ -65,10 +66,10 @@ public class OnboardingGuidePanel : MonoBehaviour
         }
     }
 
-    public void StartGuide()
+    public async void StartGuide()
     {
         if (GuideDispositionManager.instance.isGuide) return;
-        Guide guide = GuideDispositionManager.instance.StartOnboardingGuide();
+        Guide guide = GuideDispositionManager.instance.StartonboardingGuide();
 
         if (guide == null) return;
         if (onEvent != null && index < onEvent.Length)
@@ -81,12 +82,12 @@ public class OnboardingGuidePanel : MonoBehaviour
         {
             m_huli.gameObject.SetActive(true);
             m_Text.text = guide.guideText;
-            SoundObject sound = SoundSystem.instance.Play(guide.sound);
+            SoundObject sound = await SoundSystem.instance.Play(guide.sound);
             sound.onStopEvent += OnSoundEndHandler;
         }
         else
         {
-            SoundObject sound = SoundSystem.instance.Play(guide.sound);
+            SoundObject sound = await SoundSystem.instance.Play(guide.sound);
             sound.onStopEvent += OnSoundEndHandler;
         }
     }

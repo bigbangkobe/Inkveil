@@ -18,47 +18,52 @@ MonoBehaviour:
   m_GUID: d19b257fe5ffb794689766aa6745f501
   m_SerializeEntries:
   - m_GUID: 0945105a42553834887a02faedb927af
-    m_Address: Effect/VFX_Nature_Projectile_Only
+    m_Address: VFX_Nature_Projectile_Only
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 20236526dc26ce24e81b09459199ad2d
-    m_Address: Effect/VFX_Nature_Flash
+    m_Address: VFX_Nature_Flash
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 24b7b8788c44f6745a6637375880dd88
-    m_Address: Effect/GroundExplSkill
+    m_Address: GroundExplSkill
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 30077e5551b1d924e874e42ae2abd5eb
-    m_Address: Effect/GroundHit
+    m_Address: GroundHit
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 37e6f0455a9ac134ea7b44397e8b2a21
-    m_Address: Effect/Sword Slash 4
+    m_Address: Sword Slash 4
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7692431a0adb22a47911ba61d22e8068
-    m_Address: Effect/Slash wave green
+    m_Address: Slash wave green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7df9a22a1a8e59a46a9691c10fb88f7d
+    m_Address: Temporary explosion
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aa5a6a3b180b30446b4f9d9de2e541db
-    m_Address: Effect/Sword Slash 5
+    m_Address: Sword Slash 5
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b82cd2b4065453642b544125b7754d5f
-    m_Address: Effect/Lightning front attack
+    m_Address: Lightning front attack
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ddd250f12a23b634ca7d900cc16c3d35
-    m_Address: Effect/Lightning strike 2
+    m_Address: Lightning strike 2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

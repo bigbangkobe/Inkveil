@@ -1,237 +1,310 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
+using System.Threading.Tasks;
 
 namespace Framework
 {
     /// <summary>
-    /// 音效系统 （单例 + 对象池 + Addressables 预加载）
+    /// 音效系统
     /// </summary>
-    public sealed class SoundSystem : MonoSingleton<SoundSystem>
+    public sealed class SoundSystem : MonoSingleton<SoundSystem>, IResLoadListener
     {
-        // 对象池，用来复用 SoundObject
-        private ObjectPool m_SoundPool;
-        // 缓存所有预加载好的 AudioClip
+
+        /// <summary>
+        /// 音效对象池
+        /// </summary>
+        private ObjectPool m_SoundPool = new ObjectPool(OnSoundConstruct, OnSoundDestroy, OnSoundEnabled, OnSoundDisabled);
+
+        /// <summary>
+        /// 音乐资源管理字典
+        /// </summary>
         private Dictionary<string, AudioClip> soundDic = new Dictionary<string, AudioClip>();
 
-        // 当前播放的 BGM 对象
-        private SoundObject BgmSoundObject;
-        // 正在播放的 SFX 列表
+        private SoundObject BgmSoundObject = null;
         private List<SoundObject> effectSoundObjectList = new List<SoundObject>();
 
-        // 用户设置的音量
-        private float m_BgmVolume;
-        private float m_SfxVolume;
+        private float m_BgmVolume = 1;
+        private float m_SfxVolume = 1;
 
-        // 需要预加载的所有 Addressables Key
-        private readonly string[] audioKeys = new[]
-        {
-            "BOSSBG", "CombatBG", "Duojian", "God", "Gun", "Knife", "MainBG", "Stick", "Sword",
-            "我这是在哪", "你醒来啦", "墨妖来了", "呼(语气词) 先把小怪清理掉就行啦", "妖王怎么就出现啦",
-            "怪物太多的时候 可以使用祈愿令哦", "我们胜利啦", "可以点祈愿按钮去抽取神将哦", "快去看看商城吧",
-            "按成长按钮可提升属性哦", "战斗一次花费五点体力哦", "战斗分为普通级 困难级 深渊级哦",
-            "肃清墨妖", "我们继续努力吧", "战斗失败了 唉", "恭喜抽到了神将关羽", "恭喜抽到了神将悟空",
-            "恭喜抽到了神将杨戬", "恭喜抽到了神将哪吒", "中坛元帅", "二郎真君", "武圣关羽", "齐天大圣",
-            "修行者", "别打扰我 我在休息", "勇气让我们前行", "呜呜 嘟嘟", "想看我长大的样子吗", "战斗吧",
-            "琴声真好听呀", "长辈跟我说 相逢便是缘"
-        };
-
+        /// <summary>
+        /// 初始化音乐
+        /// </summary>
         public void OnInit()
         {
-
+            //加载音乐
+            ResMgr.Instance.Load("BOSSBG", this, typeof(AudioClip));
+            ResMgr.Instance.Load("CombatBG", this, typeof(AudioClip));
+            ResMgr.Instance.Load("Duojian", this, typeof(AudioClip));
+            ResMgr.Instance.Load("God", this, typeof(AudioClip));
+            ResMgr.Instance.Load("Gun", this, typeof(AudioClip));
+            ResMgr.Instance.Load("Knife", this, typeof(AudioClip));
+            ResMgr.Instance.Load("MainBG", this, typeof(AudioClip));
+            ResMgr.Instance.Load("Stick", this, typeof(AudioClip));
+            ResMgr.Instance.Load("Sword", this, typeof(AudioClip));
+            ResMgr.Instance.Load("我这是在哪", this, typeof(AudioClip));
+            ResMgr.Instance.Load("你醒来啦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("墨妖来了", this, typeof(AudioClip));
+            ResMgr.Instance.Load("呼(语气词) 先把小怪清理掉就行啦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("妖王怎么就出现啦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("怪物太多的时候 可以使用祈愿令哦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("我们胜利啦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("可以点祈愿按钮去抽取神将哦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("快去看看商城吧", this, typeof(AudioClip));
+            ResMgr.Instance.Load("按成长按钮可提升属性哦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("战斗一次花费五点体力哦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("战斗分为普通级 困难级 深渊级哦", this, typeof(AudioClip));
+            ResMgr.Instance.Load("肃清墨妖", this, typeof(AudioClip));
+            ResMgr.Instance.Load("我们继续努力吧", this, typeof(AudioClip));
+            ResMgr.Instance.Load("战斗失败了 唉", this, typeof(AudioClip));
+            ResMgr.Instance.Load("恭喜抽到了神将关羽", this, typeof(AudioClip));
+            ResMgr.Instance.Load("恭喜抽到了神将悟空", this, typeof(AudioClip));
+            ResMgr.Instance.Load("恭喜抽到了神将杨戬", this, typeof(AudioClip));
+            ResMgr.Instance.Load("恭喜抽到了神将哪吒", this, typeof(AudioClip));
+            ResMgr.Instance.Load("中坛元帅", this, typeof(AudioClip));
+            ResMgr.Instance.Load("二郎真君", this, typeof(AudioClip));
+            ResMgr.Instance.Load("武圣关羽", this, typeof(AudioClip));
+            ResMgr.Instance.Load("齐天大圣", this, typeof(AudioClip));
+            ResMgr.Instance.Load("修行者", this, typeof(AudioClip));
+            ResMgr.Instance.Load("别打扰我 我在休息", this, typeof(AudioClip));
+            ResMgr.Instance.Load("勇气让我们前行", this, typeof(AudioClip));
+            ResMgr.Instance.Load("呜呜 嘟嘟", this, typeof(AudioClip));
+            ResMgr.Instance.Load("想看我长大的样子吗", this, typeof(AudioClip));
+            ResMgr.Instance.Load("战斗吧", this, typeof(AudioClip));
+            ResMgr.Instance.Load("琴声真好听呀", this, typeof(AudioClip));
+            ResMgr.Instance.Load("长辈跟我说 相逢便是缘", this, typeof(AudioClip));
         }
 
         protected override void Awake()
         {
             base.Awake();
-            // 读取用户设置的音量
-            m_BgmVolume = PlayerPrefs.GetFloat("BgmVolume", 1f);
-            m_SfxVolume = PlayerPrefs.GetFloat("SfxVolume", 1f);
 
-            // 初始化对象池
-            m_SoundPool = new ObjectPool(
-                OnSoundConstruct, OnSoundDestroy, OnSoundEnabled, OnSoundDisabled
-            );
-        }
-
-        private void Start()
-        {
-            // 启动时预加载所有音频
-            StartCoroutine(PreloadAudioCoroutine());
+            m_BgmVolume = PlayerPrefs.GetFloat("BgmVolume",1);
+            m_SfxVolume = PlayerPrefs.GetFloat("SfxVolume",1);
         }
 
         /// <summary>
-        /// 批量异步预加载所有 Addressables 音频
+        /// 销毁回调
         /// </summary>
-        private IEnumerator PreloadAudioCoroutine()
+        private void OnDestroy()
         {
-            // 1. 初始化 Addressables
-            var initHandle = Addressables.InitializeAsync();
-            yield return initHandle;
-            if (initHandle.Status != AsyncOperationStatus.Succeeded)
-            {
-                Debug.LogError("[SoundSystem] Addressables 初始化失败");
-                yield break;
-            }
-
-            // 2. 发起所有加载请求
-            var handles = new List<AsyncOperationHandle<AudioClip>>();
-            foreach (var key in audioKeys)
-            {
-                handles.Add(Addressables.LoadAssetAsync<AudioClip>(key));
-            }
-
-            // 3. 等待全部完成
-            foreach (var handle in handles)
-                yield return handle;
-
-            // 4. 缓存结果
-            foreach (var handle in handles)
-            {
-                if (handle.Status == AsyncOperationStatus.Succeeded &&
-                    handle.Result != null)
-                {
-                    soundDic[handle.Result.name] = handle.Result;
-                }
-                else
-                {
-                    Debug.LogError($"[SoundSystem] 预加载失败: {handle.DebugName} -> {handle.OperationException}");
-                }
-            }
-
-            Debug.Log("[SoundSystem] 预加载完成，已缓存 " + soundDic.Count + " 个音频");
+            Clear();
         }
 
         /// <summary>
-        /// 播放音效／背景音乐
+        /// 播放音效
         /// </summary>
-        /// <param name="audioClipName">Addressables Key</param>
-        /// <param name="volume">播放音量（0-1）</param>
-        /// <param name="loop">是否循环</param>
-        /// <param name="isBG">是否作为 BGM</param>
-        public SoundObject Play(string audioClipName,
-                                float volume = 1f,
-                                bool loop = false,
-                                bool isBG = false)
+        /// <param name="audioClipName">音效包名</param>
+        /// <param name="loop">是否循环播放</param>
+        /// <returns>返回音效对象</returns>
+        public async Task<SoundObject> Play(string audioClipName, float volume = 1.0f, bool loop = false, bool isBG = false)
         {
-            if (!soundDic.TryGetValue(audioClipName, out var clip) || clip == null)
+            if (!soundDic.ContainsKey(audioClipName))
             {
-                Debug.LogError($"[SoundSystem] 不存在音效资源: {audioClipName}");
+                Debug.LogError("不存在该音效资源" + audioClipName);
                 return null;
             }
+            AudioClip resource = soundDic[audioClipName];
+            SoundObject soundObject = await instance.m_SoundPool.GetAsync(audioClipName) as SoundObject;
 
-            // 从池里获取一个 SoundObject
-            var soundObject = m_SoundPool.Get(audioClipName) as SoundObject;
-
-            if (isBG)
-            {
-                // 如果已有 BGM，先停掉
+            if (isBG) {
                 BgmSoundObject?.Stop();
                 BgmSoundObject = soundObject;
-                // 使用全局 BGM 音量
-                soundObject.SetVolume(m_BgmVolume * volume);
+                soundObject.SetVolume(m_BgmVolume);
             }
             else
             {
                 effectSoundObjectList.Add(soundObject);
-                soundObject.SetVolume(m_SfxVolume * volume);
+                soundObject.SetVolume(m_SfxVolume);
             }
 
-            soundObject.SetAudioClip(clip);
+            soundObject.SetAudioClip(resource);
             soundObject.SetLoop(loop);
             soundObject.Play();
+
             return soundObject;
         }
 
-        #region 对象池回调
-
-        private static object OnSoundConstruct(object key)
-        {
-            // 新建一个 GameObject 并挂上 SoundObject（会自动添加 AudioSource）
-            var go = new GameObject(key as string);
-            go.transform.SetParent(instance.transform, false);
-            return go.AddComponent<SoundObject>();
-        }
-
-        private static void OnSoundDestroy(object obj, object _ = null)
-        {
-            // 强制销毁
-            (obj as SoundObject)?.Stop(destroy: true);
-        }
-
-        private static void OnSoundEnabled(object obj, object _ = null)
-        {
-            // 注册播放结束回调
-            (obj as SoundObject).onStopEvent += OnSoundStop;
-        }
-
-        private static void OnSoundDisabled(object obj, object _ = null)
-        {
-            // （目前无需额外操作）
-        }
-
-        private static void OnSoundStop(SoundObject so)
-        {
-            if (so == instance.BgmSoundObject)
-                instance.BgmSoundObject = null;
-            else
-                instance.effectSoundObjectList.Remove(so);
-
-            instance.m_SoundPool.Remove(so);
-        }
-
-        #endregion
-
-        #region 额外控制接口
-
-        /// <summary>停止并回收所有音效／BGM</summary>
-        public void Clear()
-        {
-            BgmSoundObject?.Stop(destroy: true);
-            foreach (var so in effectSoundObjectList)
-                so.Stop(destroy: true);
-
-            m_SoundPool.Clear();
-            effectSoundObjectList.Clear();
-            BgmSoundObject = null;
-        }
-
-        /// <summary>设置 BGM 音量</summary>
-        public void SetBgmVolume(float value)
+        public void SetBgmSound(float value) 
         {
             m_BgmVolume = value;
-            PlayerPrefs.SetFloat("BgmVolume", value);
-            if (BgmSoundObject != null)
-                BgmSoundObject.SetVolume(m_BgmVolume);
+            BgmSoundObject?.SetVolume(m_BgmVolume);
         }
 
-        /// <summary>设置 SFX 音量</summary>
-        public void SetSfxVolume(float value)
+        public void SetSfxSound(float value)
         {
             m_SfxVolume = value;
-            PlayerPrefs.SetFloat("SfxVolume", value);
         }
 
-        /// <summary>全局 BGM 开关</summary>
-        public void AllBgmToggle(bool isOn)
+        /// <summary>
+		/// 音效停止回调
+		/// </summary>
+		/// <param name="soundObject">音效对象</param>
+		private static void OnSoundStop(SoundObject soundObject)
         {
-            if (BgmSoundObject == null) return;
-            if (isOn) BgmSoundObject.UnPause();
-            else BgmSoundObject.Pause();
-        }
-
-        /// <summary>全局 SFX 开关</summary>
-        public void AllSoundEffectToggle(bool isOn)
-        {
-            foreach (var so in effectSoundObjectList)
+            if (soundObject.gameObject.name == "bgm")
             {
-                if (isOn) so.UnPause();
-                else so.Pause();
+                instance.BgmSoundObject = null;
+            }
+            else
+            {
+                if (instance.effectSoundObjectList.Contains(soundObject))
+                {
+                    instance.effectSoundObjectList.Remove(soundObject);
+                }
+            }
+            instance.m_SoundPool.Remove(soundObject);
+        }
+
+        public void Clear()
+        {
+            // 停止并回收 BGM
+            if (BgmSoundObject != null)
+            {
+                BgmSoundObject.Stop(true); // true = 强制停止
+                m_SoundPool.Remove(BgmSoundObject);
+                BgmSoundObject = null;
+            }
+
+            // 停止并回收所有音效
+            for (int i = effectSoundObjectList.Count - 1; i >= 0; i--)
+            {
+                SoundObject soundObject = effectSoundObjectList[i];
+                if (soundObject != null)
+                {
+                    soundObject.Stop(true);
+                    m_SoundPool.Remove(soundObject);
+                }
+            }
+            effectSoundObjectList.Clear();
+
+            // 清空对象池（彻底销毁或重置）
+            m_SoundPool.Clear();
+        }
+
+
+        /// <summary>
+        /// 音效构造回调
+        /// </summary>
+        /// <returns>返回音效对象</returns>
+        private static Task<object> OnSoundConstruct(object obj)
+        {
+            string audioClipName = obj as string;
+
+            GameObject gameObject = new GameObject(audioClipName);
+            gameObject.transform.SetParent(instance.transform, false);
+
+            SoundObject soundObject = gameObject.AddComponent<SoundObject>();
+            return Task.FromResult<object>(soundObject); // ✅ 正确包裹，非 async 版本
+        }
+
+
+        /// <summary>
+        /// 音效销毁回调
+        /// </summary>
+        /// <param name="obj">对象</param>
+        private static void OnSoundDestroy(object obj, object o = null)
+        {
+            SoundObject soundObject = obj as SoundObject;
+            soundObject.Stop(true);
+        }
+
+        /// <summary>
+        /// 音效开启回调
+        /// </summary>
+        /// <param name="obj">对象</param>
+        private static void OnSoundEnabled(object obj, object o = null)
+        {
+            SoundObject soundObject = obj as SoundObject;
+            soundObject.onStopEvent += OnSoundStop;
+        }
+
+        /// <summary>
+        /// 音效关闭回调
+        /// </summary>
+        /// <param name="obj">对象</param>
+        private static void OnSoundDisabled(object obj, object o = null)
+        {
+
+        }
+
+        public void Finish(object asset, string name)
+        {
+            Debug.Log("加载音乐对象成功" + name);
+            AudioClip audioClip = asset as AudioClip;
+            soundDic[name] = audioClip;
+        }
+
+        public void Failure()
+        {
+            Debug.LogError("加载音乐对象失败" + name);
+        }
+
+        /// <summary>
+        /// 点击按钮音效
+        /// </summary>
+        public void OnButtonClickSound()
+        {
+            //SoundObject soundObject = Play(SoundDefine.BUTTON_CLICK_SOUND);
+            //soundObject.SetVolume(0.5f);
+        }
+
+        /// <summary>
+        /// 设置Bgm的音量大小
+        /// </summary>
+        /// <param name="soundName"></param>
+        /// <param name="val"></param>
+        public void SetBgmVolume(float val)
+        {
+            if (BgmSoundObject != null)
+            {
+                BgmSoundObject.SetVolume(val);
             }
         }
 
-        #endregion
+        /// <summary>
+        /// 所有BGM开关
+        /// </summary>
+        /// <param name="isOn"></param>
+        public void AllBgmToggle(bool isOn)
+        {
+            if (BgmSoundObject != null)
+            {
+                if (isOn)
+                {
+                    BgmSoundObject.UnPause();
+                }
+                else
+                {
+                    BgmSoundObject.Pause();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 所有音效开关
+        /// </summary>
+        /// <param name="isOn"></param>
+        public void AllSoundEffectToggle(bool isOn)
+        {
+            if (effectSoundObjectList.Count > 0)
+            {
+                for (int i = 0; i < effectSoundObjectList.Count; i++)
+                {
+                    SoundObject soundObject = effectSoundObjectList[i];
+                    //if(soundObject.gameObject.name == "fight_bgm" && GameConfig.gameState == GameState.Pause)
+                    //{
+                    //    continue;
+                    //}
+                    if (isOn)
+                    {
+                        soundObject.UnPause();
+                    }
+                    else
+                    {
+                        soundObject.Pause();
+                    }
+                }
+            }
+        }
     }
 }

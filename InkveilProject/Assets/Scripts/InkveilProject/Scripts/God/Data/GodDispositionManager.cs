@@ -2,7 +2,6 @@
 using Framework;
 using LitJson;
 using UnityEngine;
-using System.Threading.Tasks;
 
 public class GodDispositionManager : Singleton<GodDispositionManager>
 {
@@ -17,17 +16,15 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
     private bool m_IsInitialized = false;
 
     /// <summary>
-    /// 异步初始化神明配置系统
+    /// 初始化神明配置系统
     /// </summary>
-    public async Task OnInitAsync()
+    public async void OnInit()
     {
         if (m_IsInitialized) return;
 
         try
         {
-            // 异步加载配置文件
-            var handle = ResourceService.LoadAsync<TextAsset>(ConfigDefine.godInfo);
-            m_ConfigAsset = await handle.Task;
+            m_ConfigAsset = await ResourceService.LoadAsync<TextAsset>(ConfigDefine.godInfo);
 
             if (m_ConfigAsset == null)
             {
@@ -44,11 +41,13 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
 
             foreach (var god in godList)
             {
+                // 数据校验
                 if (m_IdGodDict.ContainsKey(god.godID))
                 {
                     Debug.LogError($"神明ID重复：{god.godID}");
                     continue;
                 }
+
                 if (string.IsNullOrEmpty(god.godName))
                 {
                     Debug.LogWarning("发现无名神明配置，已跳过");
@@ -68,28 +67,14 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
             Debug.LogError($"神明配置初始化异常：{ex}");
         }
 
-        // 设置默认当前神明，可根据需要改为外部调用
         SetCurGod("哪吒");
     }
 
-    /// <summary>
-    /// 设置当前神明
-    /// </summary>
-    public void SetCurGod(string name)
+    public void SetCurGod(string name) 
     {
-        if (!m_IsInitialized)
-        {
-            Debug.LogWarning("神明配置未初始化");
-            return;
-        }
         if (m_NameGodDict.TryGetValue(name, out var god))
         {
-            curGod = god;
-        }
-        else
-        {
-            Debug.LogWarning($"未找到神明：{name}");
-        }
+            curGod = god;        }
     }
 
     /// <summary>
@@ -117,7 +102,7 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
     {
         if (m_ConfigAsset != null)
         {
-            ResourceService.UnloadAsset(m_ConfigAsset);
+            Resources.UnloadAsset(m_ConfigAsset);
             m_ConfigAsset = null;
         }
 

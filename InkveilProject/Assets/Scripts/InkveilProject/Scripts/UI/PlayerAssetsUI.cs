@@ -13,16 +13,14 @@ public class PlayerAssetsUI : MonoBehaviour
 
     private PlayerAssetsInfo m_PlayerAssetsInfo;
 
-
-
-    private async void Awake()
+    private void Awake()
     {
-        PlayerDispositionManager.instance.onPlayerAssetsChanged += OnPlayerAssetsChangde;
+        PlayerDispositionManager.instance.onPlayerAssetsChangde += OnPlayerAssetsChangde;
     }
 
     private void OnDestroy()
     {
-        PlayerDispositionManager.instance.onPlayerAssetsChanged -= OnPlayerAssetsChangde;
+        PlayerDispositionManager.instance.onPlayerAssetsChangde -= OnPlayerAssetsChangde;
     }
 
     private void OnPlayerAssetsChangde()

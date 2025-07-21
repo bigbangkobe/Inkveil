@@ -1,21 +1,19 @@
-﻿using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
-using System;
-using System.Reflection;
+﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Framework
 {
     /// <summary>
-    /// 资源加载信息（适配Addressables系统）
+    /// 资源加载信息
     /// </summary>
     public class RequestInfo
     {
         /// <summary>
-        /// Addressables异步操作句柄
+        /// 模拟的资源反馈信息（为了兼容旧逻辑，不再访问其 .asset）
         /// </summary>
-        public AsyncOperationHandle Handle { get; private set; }
+        public ResourceRequest request;
 
         /// <summary>
         /// 是否常驻内存
@@ -25,7 +23,7 @@ namespace Framework
         /// <summary>
         /// 加载完成之后的回调
         /// </summary>
-        public List<IResLoadListener> listeners;
+        public List<IResLoadListener> linsteners;
 
         /// <summary>
         /// 资源名称
@@ -33,139 +31,91 @@ namespace Framework
         public string assetName;
 
         /// <summary>
-        /// 资源完整路径
-        /// </summary>
-        public string assetFullName => ResMgr.Instance.GetFileFullName(assetName);
-
-        /// <summary>
         /// 资源类型
         /// </summary>
         public Type type;
 
         /// <summary>
-        /// 资源是否加载完成
+        /// 是否加载完成（用于替代 request.isDone）
         /// </summary>
-        public bool IsDone => Handle.IsValid() && Handle.IsDone;
+        private bool _isDone = false;
 
         /// <summary>
-        /// 加载到的资源
+        /// 加载完成的资源对象
         /// </summary>
-        public object Asset => Handle.IsValid() && Handle.Status == AsyncOperationStatus.Succeeded
-                                ? Handle.Result
-                                : null;
+        private UnityEngine.Object _loadedAsset;
 
         /// <summary>
-        /// 添加事件到事件列表中
+        /// 是否加载完成
+        /// </summary>
+        public bool IsDone => _isDone;
+
+        /// <summary>
+        /// 加载到的资源对象（对外访问）
+        /// </summary>
+        public object Asset => _loadedAsset;
+
+        /// <summary>
+        /// 添加加载监听者
         /// </summary>
         public void AddListener(IResLoadListener listener)
         {
-            listeners ??= new List<IResLoadListener>();
-            if (!listeners.Contains(listener))
-                listeners.Add(listener);
+            if (linsteners == null)
+            {
+                linsteners = new List<IResLoadListener> { listener };
+            }
+            else if (!linsteners.Contains(listener))
+            {
+                linsteners.Add(listener);
+            }
+        }
+
+        /// <summary>
+        /// 获取资源路径（异步）
+        /// </summary>
+        public async Task<string> GetAssetFullNameAsync()
+        {
+            return await ResMgr.Instance.GetFileFullName(assetName);
         }
 
         /// <summary>
         /// 异步加载资源
         /// </summary>
-        public void LoadAsync()
+        public async void LoadAsync()
         {
-            if (type == null || !typeof(UnityEngine.Object).IsAssignableFrom(type))
+            try
             {
-                Debug.LogError($"无效的资源类型: {type}");
-                return;
-            }
-
-            // 修复：使用正确的参数类型获取方法
-            MethodInfo method = GetLoadAssetAsyncMethod(type);
-            if (method == null)
-            {
-                Debug.LogError($"找不到匹配的LoadAssetAsync方法: {type}");
-                return;
-            }
-            Debug.Log($"LoadAssetAsync assetFullName: {assetFullName}");
-
-            // 1) 调用泛型方法并获得返回值
-            object rawHandle = method.Invoke(null, new object[] { assetFullName });
-            // 2) 用 dynamic 触发 AsyncOperationHandle<T> -> AsyncOperationHandle 的隐式转换
-            dynamic dynHandle = rawHandle;
-            Handle = dynHandle;
-
-            // 添加完成回调
-            Handle.Completed += OnLoadComplete;
-        }
-
-        /// <summary>
-        /// 获取正确的LoadAssetAsync方法（解决歧义问题）
-        /// </summary>
-        private MethodInfo GetLoadAssetAsyncMethod(Type resourceType)
-        {
-            // 尝试获取参数类型为 object 的泛型方法
-            MethodInfo method = typeof(Addressables).GetMethod(
-                "LoadAssetAsync",
-                BindingFlags.Public | BindingFlags.Static,
-                null,
-                new Type[] { typeof(object) },
-                null
-            );
-            if (method != null)
-                return method.MakeGenericMethod(resourceType);
-
-            // 备选方案：扫描所有泛型方法定义
-            foreach (var m in typeof(Addressables).GetMethods(BindingFlags.Public | BindingFlags.Static))
-            {
-                if (m.Name == "LoadAssetAsync"
-                    && m.IsGenericMethodDefinition
-                    && m.GetParameters().Length == 1
-                    && m.GetParameters()[0].ParameterType == typeof(object))
+                if (type == null)
                 {
-                    return m.MakeGenericMethod(resourceType);
+                    Debug.LogWarning($"[RequestInfo] type 为 null，默认使用 GameObject 类型: {assetName}");
+                    type = typeof(GameObject);
                 }
+
+                string fullPath = await GetAssetFullNameAsync();
+                var loadedAsset = await ResourceService.LoadAsync(fullPath, type);
+
+                _loadedAsset = loadedAsset;
+
+                // 构造一个假的 ResourceRequest（兼容旧逻辑，但不再访问其 .asset）
+                var fakeRequest = new FakeResourceRequest();
+                fakeRequest.SetAsset(loadedAsset);
+                request = fakeRequest;
+
+                _isDone = true;
+
+                //// 通知监听者
+                //if (linsteners != null)
+                //{
+                //    foreach (var listener in linsteners)
+                //    {
+                //        listener?.OnLoaded(loadedAsset);
+                //    }
+                //}
             }
-
-            return null;
-        }
-
-        private void OnLoadComplete(AsyncOperationHandle handle)
-        {
-            if (handle.Status == AsyncOperationStatus.Succeeded)
+            catch (Exception ex)
             {
-                Debug.Log($"资源加载成功: {assetFullName}");
-                NotifyListeners(true);
+                Debug.LogError($"加载资源失败: {assetName}，错误: {ex.Message}");
             }
-            else
-            {
-                Debug.LogError($"资源加载失败: {assetFullName}");
-                NotifyListeners(false);
-            }
-        }
-
-        private void NotifyListeners(bool success)
-        {
-            if (listeners == null) return;
-
-            foreach (var listener in listeners)
-            {
-                try
-                {
-                    if (success)
-                        listener.Finish(Handle.Result, assetName);
-                    else
-                        listener.Failure();
-                }
-                catch (Exception e)
-                {
-                    Debug.LogError($"通知监听器时发生错误: {e}");
-                }
-            }
-        }
-
-        /// <summary>
-        /// 释放资源
-        /// </summary>
-        public void Release()
-        {
-            if (Handle.IsValid())
-                Addressables.Release(Handle);
         }
     }
 }

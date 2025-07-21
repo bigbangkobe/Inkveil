@@ -21,8 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader Graphs_Twirl Portal SD 4
-  m_Shader: {fileID: -6465566751694194690, guid: 983e32d6b20ee1d4ca2389a874e794af,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: 915dbeeb122bfc94fbd284a681211ed6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -37,6 +36,30 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 2800000, guid: 9f7bfc0362efd3b48981065dc42fe6de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 2800000, guid: 9f7bfc0362efd3b48981065dc42fe6de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Dissolve_Texture:
         m_Texture: {fileID: 2800000, guid: b8845045224735e4bb3c3b28bfee421e, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -45,12 +68,36 @@ Material:
         m_Texture: {fileID: 2800000, guid: 84943d24f2426024f824b6c92096d091, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Guide_Texture:
+        m_Texture: {fileID: 2800000, guid: 9f7bfc0362efd3b48981065dc42fe6de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: cede877bce4af3947b501ea1ee8a71f0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
         m_Texture: {fileID: 2800000, guid: 9f7bfc0362efd3b48981065dc42fe6de, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
         m_Texture: {fileID: 2800000, guid: acd68d3cb6afb1e45868b5bb1e6863e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_873ca2e3a4ec4223b72d08587c2354c0_Texture_1_Texture2D:
@@ -79,31 +126,55 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _Dissolve: 0.5
+    - _DissolveThreshold: 0.5
     - _Dissolve_Amount: 0
     - _Dissolve_Tilling: 1.54
+    - _DstBlend: 0
+    - _EdgeWidth: 0.05
     - _Edge_Power: 0.507
     - _Edge_Straight: 0.51
     - _Edge_Tilling: 1
     - _Edge_Width: 0.468
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
     - _Guide_Tilling: 0.77
+    - _Metallic: 0
+    - _Mode: 0
     - _Noise_Power: 4.16
     - _Noise_Rotation: -0.14
     - _Noise_Tilling: 2
     - _Nosie_Twirl_Strength: 8.72
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
     - _Portal_Size: 0.881
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rotation_Speed: 0.09
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Threshold: 0.5
     - _Transparent_Center: 0
+    - _TwirlSpeed: 1
+    - _TwirlStrength: 2
     - _Twirl_Fade_Power: 0.59
     - _Twirl_Strength: 15.81
+    - _UVSec: 0
     - _Use_Triplanar_UV_s: 0
     - _Visibility_Power: 1.63
+    - _ZWrite: 1
     m_Colors:
     - _Center_Color: {r: 0, g: 11.349494, b: 15.999998, a: 0}
     - _Color: {r: 1, g: 0, b: 0, a: 0}
     - _Color_1: {r: 0, g: 0, b: 0, a: 0}
     - _Depth_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Dissolve_Color: {r: 0, g: 0.5234069, b: 3.9999995, a: 0}
+    - _EdgeColor: {r: 0.36271802, g: 0.41442508, b: 0.5377358, a: 1}
     - _Edge_Rotation: {r: -0.1, g: 0.1, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

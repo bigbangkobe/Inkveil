@@ -173,9 +173,9 @@ public class WeaponBase : MonoBehaviour
         };
     }
 
-    private void SetupVisuals()
+    private async void SetupVisuals()
     {
-        var weaponSprite = ResourceService.Load<Sprite>(m_WeaponInfo.iconPath);
+        var weaponSprite = await ResourceService.LoadAsync<Sprite>(m_WeaponInfo.iconPath);
         if (weaponSprite != null)
         {
             m_SpriteRenderer.sprite = weaponSprite;

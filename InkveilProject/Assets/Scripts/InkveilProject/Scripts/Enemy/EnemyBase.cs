@@ -3,6 +3,7 @@ using Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -36,7 +37,7 @@ public class EnemyBase : MonoBehaviour
 
     // 技能与召唤
     private Coroutine m_SkillCoroutine;
-    private List<GameObject> m_SummonedUnits = new();
+    private List<GameObject> m_SummonedUnits = new List<GameObject>();
 
     // 短暂免疫检测
     private float m_LastHitTime;
@@ -163,11 +164,11 @@ public class EnemyBase : MonoBehaviour
         {
             m_PortalInstance = Instantiate(m_PortalEffectPrefab, transform.position, Quaternion.identity);
             m_PortalInstance.transform.position = transform.position + Vector3.up * 1;
-            m_PortalInstance.transform.localScale = Vector3.one * 5f;
+            m_PortalInstance.transform.localScale = Vector3.one * 1f;
 
             // 传送门动画
             DOTween.Sequence()
-                .Append(m_PortalInstance.transform.DOScale(Vector3.one * 4f, 0.5f).SetEase(Ease.OutBack))
+                .Append(m_PortalInstance.transform.DOScale(Vector3.one * 1f, 0.5f).SetEase(Ease.OutBack))
                 .AppendInterval(0.5f);
         }
 
@@ -261,7 +262,7 @@ public class EnemyBase : MonoBehaviour
 
     #region 战斗系统
 
-    public void TakeDamage(float damage, bool isDivineAttack = false)
+    public async Task TakeDamage(float damage, bool isDivineAttack = false)
     {
         if (m_IsImmune || m_CurrentState == EnemyState.Dead) return;
 
@@ -303,7 +304,7 @@ public class EnemyBase : MonoBehaviour
         }
 
         // 更新UI
-        EnemyUI enemyUI = EnemyUIManager.instance.GetEnemyUIByName("EnemyUI");
+        EnemyUI enemyUI = await EnemyUIManager.instance.GetEnemyUIByName("EnemyUI");
         enemyUI.transform.position = m_EnemyUI.transform.position;
         enemyUI.OnDemage(actualDamage, m_CurrentHP, m_MaxHP, false, CriticalLevel.Normal);
 

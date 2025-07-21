@@ -1,6 +1,7 @@
 ﻿using Framework;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class GodManager : MonoBehaviour
@@ -58,11 +59,11 @@ public class GodManager : MonoBehaviour
     /// </summary>
     /// <param name="name">名称</param>
     /// <returns></returns>
-    public GodBase GetGodByName(string name)
+    public async Task<GodBase> GetGodByName(string name)
     {
         GodInfo godInfo = GodDispositionManager.instance.GetGodByName(name);
         ObjectPool GodPool = GetGodPool(name);
-        GodBase God = GodPool.Get(name) as GodBase;
+        GodBase God = await GodPool.GetAsync(name) as GodBase;
         God.transform.position = m_GodPoint.position;
         God.OnInit(godInfo);
         GodList.Add(God);
@@ -141,7 +142,7 @@ public class GodManager : MonoBehaviour
     /// </summary>
     /// <param name="arg"></param>
     /// <returns></returns>
-    private object OnGodConstruct(object arg)
+    private async Task<object> OnGodConstruct(object arg)
     {
         string name = arg.ToString();
         GameObject gameObject;
@@ -152,7 +153,7 @@ public class GodManager : MonoBehaviour
             string path = God.prefabPath;
             if (!string.IsNullOrEmpty(path))
             {
-                gameObject = ResourceService.Load<GameObject>(path);
+                gameObject = await ResourceService.LoadAsync<GameObject>(path);
                 if (gameObject) m_GodPrefabDic.Add(name, gameObject);
                 else return null;
             }
@@ -167,5 +168,10 @@ public class GodManager : MonoBehaviour
         go.SetActive(false);
         GodBase god = go.GetComponent<GodBase>();
         return god;
+    }
+
+    internal Transform GetInitPoint()
+    {
+        return m_GodPoint;
     }
 }

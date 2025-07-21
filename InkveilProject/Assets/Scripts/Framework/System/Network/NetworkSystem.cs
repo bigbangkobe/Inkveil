@@ -225,7 +225,7 @@ namespace Framework
 			}
 			else if (method == UnityWebRequest.kHttpVerbPOST)
 			{
-				request = UnityWebRequest.PostWwwForm(url, data);
+				request = UnityWebRequest.Post(url, data);
 			}
 			else
 			{

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 namespace Framework
 {
@@ -39,6 +41,7 @@ namespace Framework
             ResMgr.Instance.Load("Sword Slash 4", this, typeof(GameObject));
             ResMgr.Instance.Load("Sword Slash 5", this, typeof(GameObject));
             ResMgr.Instance.Load("Lightning strike 2", this, typeof(GameObject));
+            ResMgr.Instance.Load("Temporary explosion", this, typeof(GameObject));
         }
 
         /// <summary>
@@ -46,10 +49,11 @@ namespace Framework
         /// </summary>
         /// <param name="name">特效名称</param>
         /// <returns></returns>
-        public EffectObject GetEffect(string name)
+        public async Task<EffectObject> GetEffect(string name)
         {
+			Debug.Log("获得特效对象:" + name);
             ObjectPool effectPool = GetEffectPool(name);
-            EffectObject effectObject = effectPool.Get(name) as EffectObject;
+            EffectObject effectObject = await effectPool.GetAsync(name) as EffectObject;
             return effectObject;
         }
 
@@ -69,10 +73,10 @@ namespace Framework
 		/// </summary>
 		/// <param name="name">特效名</param>
 		/// <returns>返回特效对象</returns>
-		public EffectObject Play(string name)
+		public async Task<EffectObject> Play(string name)
 		{
 			ObjectPool effectPool = GetEffectPool(name);
-			EffectObject effectObject = effectPool.Get(name) as EffectObject;
+			EffectObject effectObject = await effectPool.GetAsync(name) as EffectObject;
 			effectObject.Play();
 
 			return effectObject;
@@ -140,33 +144,42 @@ namespace Framework
 			return effectPool;
 		}
 
-		/// <summary>
-		/// 特效构造回调
-		/// </summary>
-		/// <returns>返回特效对象</returns>
-		private object OnEffectConstruct(object obj)
-		{
+        /// <summary>
+        /// 特效构造回调
+        /// </summary>
+        /// <returns>返回特效对象</returns>
+        private Task<object> OnEffectConstruct(object obj)
+        {
             string name = obj as string;
-            GameObject gameObject = effectPrefabDic[name];
-            if (gameObject == null)
+
+            if (string.IsNullOrEmpty(name))
             {
-                Debug.LogError("从资源中读取特效资源失败");
-                return null;
+                Debug.LogError("特效名为空！");
+                return Task.FromResult<object>(null);
             }
+
+            if (!effectPrefabDic.TryGetValue(name, out GameObject gameObject) || gameObject == null)
+            {
+                Debug.LogError($"从资源中读取特效资源失败：{name}");
+                return Task.FromResult<object>(null);
+            }
+
             GameObject go = GameObject.Instantiate(gameObject);
-            go.transform.SetParent(transform);
+            go.transform.SetParent(transform, false);
             go.SetActive(false);
             go.name = name;
+
             EffectObject effectObject = new EffectObject(go);
+            return Task.FromResult<object>(effectObject);
+        }
 
-			return effectObject;
-		}
 
-		/// <summary>
-		/// 特效销毁回调
-		/// </summary>
-		/// <param name="obj">对象</param>
-		private void OnEffectDestroy(object obj, object o = null)
+
+        /// <summary>
+        /// 特效销毁回调
+        /// </summary>
+        /// <param name="obj">对象</param>
+        private void OnEffectDestroy(object obj, object o = null)
 		{
 			EffectObject effectObject = obj as EffectObject;
 			effectObject.Stop();

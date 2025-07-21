@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using System.Threading.Tasks;
 
 namespace Framework
 {
@@ -191,7 +192,7 @@ namespace Framework
 		/// <summary>
 		/// 更新选项
 		/// </summary>
-		private void UpdateToggle()
+		private async void UpdateToggle()
 		{
 			if (m_TogglePool == null
 				|| m_ToggleList.Count == content.childCount)
@@ -206,7 +207,7 @@ namespace Framework
 			for (int i = 0; i < content.childCount; ++i)
 			{
 				m_ChildList.Add(content.GetChild(i));
-				Toggle toggle = m_TogglePool.Get() as Toggle;
+				Toggle toggle = await m_TogglePool.GetAsync() as Toggle;
 				toggle.transform.SetSiblingIndex(i);
 				m_ToggleList.Add(toggle);
 			}
@@ -232,15 +233,15 @@ namespace Framework
 			}
 		}
 
-		private object OnToggleConstruct(object obj)
-		{
-			Toggle toggle = Instantiate(m_ToggleAsset, transform);
-			toggle.gameObject.SetActive(false);
+        private Task<object> OnToggleConstruct(object obj)
+        {
+            Toggle toggle = Instantiate(m_ToggleAsset, transform);
+            toggle.gameObject.SetActive(false);
+            return Task.FromResult<object>(toggle);
+        }
 
-			return toggle;
-		}
 
-		private void OnToggleDestroy(object obj, object o = null)
+        private void OnToggleDestroy(object obj, object o = null)
 		{
 			Toggle toggle = obj as Toggle;
 			Destroy(toggle);

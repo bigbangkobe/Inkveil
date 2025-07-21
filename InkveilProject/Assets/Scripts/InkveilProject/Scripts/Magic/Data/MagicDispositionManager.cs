@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using Framework;
 using LitJson;
 using UnityEngine;
@@ -11,22 +10,20 @@ public class MagicDispositionManager : Singleton<MagicDispositionManager>
     private Dictionary<string, MagicInfo> m_NameMagicDict = new Dictionary<string, MagicInfo>();
     private Dictionary<MagicInfo.MagicType, List<MagicInfo>> m_TypeMagicDict = new Dictionary<MagicInfo.MagicType, List<MagicInfo>>();
 
-    // 配置加载状态
+    // 资源管理
     private TextAsset m_ConfigAsset;
     private bool m_IsInitialized = false;
 
     /// <summary>
-    /// 异步初始化法宝配置系统
+    /// 初始化法宝配置系统
     /// </summary>
-    public async Task OnInitAsync()
+    public async void OnInit()
     {
         if (m_IsInitialized) return;
 
         try
         {
-            // 异步加载配置文件
-            var handle = ResourceService.LoadAsync<TextAsset>(ConfigDefine.magicInfo);
-            m_ConfigAsset = await handle.Task;
+            m_ConfigAsset = await ResourceService.LoadAsync<TextAsset>(ConfigDefine.magicInfo);
 
             if (m_ConfigAsset == null)
             {
@@ -34,37 +31,38 @@ public class MagicDispositionManager : Singleton<MagicDispositionManager>
                 return;
             }
 
-            // 解析 JSON 列表
-            var magicList = JsonMapper.ToObject<List<MagicInfo>>(m_ConfigAsset.text) ?? new List<MagicInfo>();
-            if (magicList.Count == 0)
+            var magicList = JsonMapper.ToObject<List<MagicInfo>>(m_ConfigAsset.text);
+            if (magicList == null || magicList.Count == 0)
             {
                 Debug.LogError("法宝配置数据解析失败");
                 return;
             }
 
-            // 建立多维索引
             foreach (var magic in magicList)
             {
+                // 数据校验
                 if (m_IdMagicDict.ContainsKey(magic.magicID))
                 {
                     Debug.LogError($"法宝ID重复：{magic.magicID}");
                     continue;
                 }
+
                 if (string.IsNullOrEmpty(magic.magicName))
                 {
                     Debug.LogWarning("发现无名法宝配置，已跳过");
                     continue;
                 }
 
+                // 建立索引
                 m_IdMagicDict[magic.magicID] = magic;
                 m_NameMagicDict[magic.magicName] = magic;
 
-                if (!m_TypeMagicDict.TryGetValue(magic.magicType, out var list))
+                // 类型索引
+                if (!m_TypeMagicDict.ContainsKey(magic.magicType))
                 {
-                    list = new List<MagicInfo>();
-                    m_TypeMagicDict[magic.magicType] = list;
+                    m_TypeMagicDict[magic.magicType] = new List<MagicInfo>();
                 }
-                list.Add(magic);
+                m_TypeMagicDict[magic.magicType].Add(magic);
             }
 
             m_IsInitialized = true;
@@ -109,11 +107,12 @@ public class MagicDispositionManager : Singleton<MagicDispositionManager>
     public List<MagicInfo> GetUpgradableMagics()
     {
         var result = new List<MagicInfo>();
-        if (!m_IsInitialized) return result;
         foreach (var magic in m_IdMagicDict.Values)
         {
             if (magic.CanUpgrade())
+            {
                 result.Add(magic);
+            }
         }
         return result;
     }
@@ -121,13 +120,14 @@ public class MagicDispositionManager : Singleton<MagicDispositionManager>
     /// <summary>
     /// 清理系统资源
     /// </summary>
-    public void Clear()
+    public void OnClear()
     {
         if (m_ConfigAsset != null)
         {
-            ResourceService.UnloadAsset(m_ConfigAsset);
+            Resources.UnloadAsset(m_ConfigAsset);
             m_ConfigAsset = null;
         }
+
         m_IdMagicDict.Clear();
         m_NameMagicDict.Clear();
         m_TypeMagicDict.Clear();

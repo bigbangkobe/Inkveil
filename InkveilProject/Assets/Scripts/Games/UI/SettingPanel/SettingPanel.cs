@@ -1,9 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Framework;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
 
 public class SettingPanel : BaseUI
 {
@@ -27,16 +29,15 @@ public class SettingPanel : BaseUI
         m_SoundSlider.onValueChanged.AddListener(OnSoundVolumeChanged);
     }
 
-    protected void OnBGVolumeChanged(float value) 
+    protected void OnBGVolumeChanged(float value)
     {
-        SoundSystem.instance.SetBgmVolume(value);
+        SoundSystem.instance.SetBgmSound(value);
     }
 
     protected void OnSoundVolumeChanged(float value)
     {
-        SoundSystem.instance.SetSfxVolume(value);
+        SoundSystem.instance.SetSfxSound(value);
     }
-
 
     protected override void OnDestroy()
     {
@@ -49,7 +50,6 @@ public class SettingPanel : BaseUI
     protected override void OnShowEnable()
     {
         base.OnShowEnable();
-       
     }
 
     /// <summary>
@@ -57,22 +57,62 @@ public class SettingPanel : BaseUI
     /// </summary>
     protected override void OnHideDisable()
     {
-      
         base.OnHideDisable();
     }
 
+    /// <summary>
+    /// 返回按钮点击事件（兼容 Addressables 和 BuildSettings 场景加载）
+    /// </summary>
     private void OnBackButtonClick()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
+        string currentScene = SceneManager.GetActiveScene().name;
 
-        if (sceneName.Equals("Main"))
+        if (currentScene.Equals("Main"))
         {
             gameObject.SetActive(false);
         }
         else
         {
-            SceneManager.LoadSceneAsync("Main");
+            // 兼容两种加载方式
+            if (Application.CanStreamedLevelBeLoaded("Main"))
+            {
+                SceneManager.LoadSceneAsync("Main");
+            }
+            else
+            {
+                StartCoroutine(LoadMainSceneWithAddressables());
+            }
         }
-      
+    }
+
+    /// <summary>
+    /// 使用 Addressables 加载 Main 场景（异步）
+    /// </summary>
+    private IEnumerator LoadMainSceneWithAddressables()
+    {
+        string targetScene = "Main";
+
+        // 可选：预加载依赖资源（如果远程资源或分包部署）
+        var downloadHandle = Addressables.DownloadDependenciesAsync(targetScene);
+        yield return downloadHandle;
+
+        if (downloadHandle.Status != AsyncOperationStatus.Succeeded)
+        {
+            Debug.LogError("依赖资源下载失败！");
+            yield break;
+        }
+
+        // 加载场景（不激活）
+        var loadHandle = Addressables.LoadSceneAsync(targetScene, LoadSceneMode.Single, false);
+        yield return loadHandle;
+
+        if (loadHandle.Status != AsyncOperationStatus.Succeeded)
+        {
+            Debug.LogError($"Addressables 场景加载失败: {targetScene}");
+            yield break;
+        }
+
+        // 激活场景
+        yield return loadHandle.Result.ActivateAsync();
     }
 }

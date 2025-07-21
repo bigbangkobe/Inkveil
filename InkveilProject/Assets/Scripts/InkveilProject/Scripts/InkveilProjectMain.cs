@@ -10,8 +10,7 @@ public class InkveilProjectMain : MonoBehaviour
     {
         Main.instance.OnInit();
         GameManager.instance.OnInit();
-        // ¥•∑¢≥°æ∞º”‘ÿ
-        SceneLoaderManager.instance.LoadSceneDirect();
+
         //Invoke(nameof(OnPlayBg), 0.3f);
     }
 

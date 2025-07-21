@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
 using Framework;
 using LitJson;
 using UnityEngine;
@@ -11,60 +11,58 @@ public class WeaponDispositionManager : Singleton<WeaponDispositionManager>
     private Dictionary<string, WeaponInfo> m_NameWeaponDict = new Dictionary<string, WeaponInfo>();
     private Dictionary<int, List<WeaponInfo>> m_TypeWeaponDict = new Dictionary<int, List<WeaponInfo>>();
 
-    // 配置加载状态
+    // 资源管理
     private TextAsset m_ConfigAsset;
     private bool m_IsInitialized = false;
 
     /// <summary>
-    /// 异步初始化武器配置系统
+    /// 初始化武器配置系统
     /// </summary>
-    public async Task OnInitAsync()
+    public async void OnItin()
     {
         if (m_IsInitialized) return;
 
         try
         {
-            // 异步加载配置文件
-            var handle = ResourceService.LoadAsync<TextAsset>(ConfigDefine.weaponInfo);
-            m_ConfigAsset = await handle.Task;
-
+            m_ConfigAsset = await ResourceService.LoadAsync<TextAsset>(ConfigDefine.weaponInfo);
             if (m_ConfigAsset == null)
             {
                 Debug.LogError($"武器配置文件加载失败：{ConfigDefine.weaponInfo}");
                 return;
             }
 
-            // 解析 JSON 列表
-            var weaponList = JsonMapper.ToObject<List<WeaponInfo>>(m_ConfigAsset.text) ?? new List<WeaponInfo>();
-            if (weaponList.Count == 0)
+            var weaponList = JsonMapper.ToObject<List<WeaponInfo>>(m_ConfigAsset.text);
+            if (weaponList == null || weaponList.Count == 0)
             {
                 Debug.LogError("武器配置数据解析失败");
                 return;
             }
 
-            // 建立索引
             foreach (var weapon in weaponList)
             {
+                // 数据校验
                 if (m_IdWeaponDict.ContainsKey(weapon.weaponID))
                 {
                     Debug.LogError($"武器ID重复：{weapon.weaponID}");
                     continue;
                 }
+
                 if (string.IsNullOrEmpty(weapon.weaponName))
                 {
                     Debug.LogWarning("发现无名武器配置，已跳过");
                     continue;
                 }
 
+                // 建立索引
                 m_IdWeaponDict[weapon.weaponID] = weapon;
                 m_NameWeaponDict[weapon.weaponName] = weapon;
 
-                if (!m_TypeWeaponDict.TryGetValue(weapon.weaponType, out var list))
+                // 类型索引
+                if (!m_TypeWeaponDict.ContainsKey(weapon.weaponType))
                 {
-                    list = new List<WeaponInfo>();
-                    m_TypeWeaponDict[weapon.weaponType] = list;
+                    m_TypeWeaponDict[weapon.weaponType] = new List<WeaponInfo>();
                 }
-                list.Add(weapon);
+                m_TypeWeaponDict[weapon.weaponType].Add(weapon);
             }
 
             m_IsInitialized = true;
@@ -109,11 +107,12 @@ public class WeaponDispositionManager : Singleton<WeaponDispositionManager>
     public List<WeaponInfo> GetUpgradableWeapons()
     {
         var result = new List<WeaponInfo>();
-        if (!m_IsInitialized) return result;
         foreach (var weapon in m_IdWeaponDict.Values)
         {
             if (weapon.CanUpgrade())
+            {
                 result.Add(weapon);
+            }
         }
         return result;
     }
@@ -121,25 +120,22 @@ public class WeaponDispositionManager : Singleton<WeaponDispositionManager>
     /// <summary>
     /// 清理系统资源
     /// </summary>
-    public void Clear()
+    public void OnClear()
     {
         if (m_ConfigAsset != null)
         {
-            ResourceService.UnloadAsset(m_ConfigAsset);
+            Resources.UnloadAsset(m_ConfigAsset);
             m_ConfigAsset = null;
         }
+
         m_IdWeaponDict.Clear();
         m_NameWeaponDict.Clear();
         m_TypeWeaponDict.Clear();
         m_IsInitialized = false;
     }
 
-    /// <summary>
-    /// 获取当前武器（示例未实现）
-    /// </summary>
-    public WeaponInfo GetCurWeaponInfo()
+    internal void GetCurWeaponInfo()
     {
-        // TODO: 根据业务返回玩家当前武器信息
-        return null;
+
     }
 }

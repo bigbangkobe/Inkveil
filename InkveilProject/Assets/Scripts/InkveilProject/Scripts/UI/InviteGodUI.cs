@@ -1,6 +1,8 @@
+using Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,15 +17,16 @@ public class InviteGodUI : MonoBehaviour
     private bool isGodActive = false;   // 神明是否在场
     private float chargeProgress = 0f;  // 充能进度(0-1)
     private float durationProgress = 1f; // 持续时间进度(1-0)
-    private float chargeSpeed = 0f;   
-    private float durationSpeed = 0f; 
+    private float chargeSpeed = 0f;
+    private float durationSpeed = 0f;
     private GodBase curGodBase;
+    public GuideHintPanelUI guideHintPanelUI;
 
 
     private void Awake()
     {
         godInfo = GodDispositionManager.instance.curGod;
-        m_InviteGodBtn.onClick.AddListener(OnInviteGodClickHandler);
+        m_InviteGodBtn.onClick.AddListener( ()=> { OnInviteGodClickHandler(); });
         m_DaZhao.onClick.AddListener(OnDaZhaoClickHandler);
 
         // 初始状态
@@ -40,7 +43,7 @@ public class InviteGodUI : MonoBehaviour
             if (chargeProgress < 1f)
             {
                 chargeSpeed += Time.deltaTime;
-                
+
                 chargeProgress = Mathf.Min(1f, chargeSpeed / godInfo.baseCooldown);
                 UpdateUI();
 
@@ -58,7 +61,7 @@ public class InviteGodUI : MonoBehaviour
             {
                 durationSpeed += Time.deltaTime;
 
-                durationProgress = Mathf.Max(0f,1 - durationSpeed / godInfo.baseDuration);
+                durationProgress = Mathf.Max(0f, 1 - durationSpeed / godInfo.baseDuration);
                 UpdateUI();
             }
             else
@@ -69,50 +72,68 @@ public class InviteGodUI : MonoBehaviour
         }
     }
 
-    private void OnDaZhaoClickHandler() 
+    private void OnDaZhaoClickHandler()
     {
+        if (!GuideDispositionManager.instance.isGuide)
+        {
+            guideHintPanelUI.gameObject.SetActive(false);
+        }
         curGodBase.UseSkill();
+
     }
-    private void OnInviteGodClickHandler()
+    private async Task OnInviteGodClickHandler()
     {
         if (chargeProgress >= 1f && !isGodActive)
         {
-            // 召唤神明
             isGodActive = true;
             durationProgress = 1f;
             chargeProgress = 0f;
             m_InviteGodBtn.interactable = false;
 
-            // 这里调用实际召唤逻辑
-            curGodBase = GodManager.instance.GetGodByName(godInfo.godName);
-            curGodBase.Activate();
-
-            switch (godInfo.godName)
+            EffectObject effect = await EffectSystem.instance.GetEffect("Temporary explosion");
+            effect.transform.position = GodManager.instance.GetInitPoint().position;
+            effect.Play();
+            TimerSystem.Start(async (x) =>
             {
-                case "哪吒":
-                    GuideManager.instance.OnPlayRandomGuideByID(7);
-                    break;
-                case "杨戬":
-                    GuideManager.instance.OnPlayRandomGuideByID(8);
-                    break;
-                case "关羽":
-                    GuideManager.instance.OnPlayRandomGuideByID(9);
-                    break;
-                case "悟空":
-                    GuideManager.instance.OnPlayRandomGuideByID(10);
-                    break;
-                default:
-                    break;
-            }
-            curGodBase.OnIsEnergy += OnIsEnergyHandler;
-                
-            UpdateUI();
+                // 召唤神明
+
+
+                // 这里调用实际召唤逻辑
+                curGodBase = await GodManager.instance.GetGodByName(godInfo.godName);
+                curGodBase.Activate();
+
+                switch (godInfo.godName)
+                {
+                    case "哪吒":
+                        GuideManager.instance.OnPlayRandomGuideByID(7);
+                        break;
+                    case "杨戬":
+                        GuideManager.instance.OnPlayRandomGuideByID(8);
+                        break;
+                    case "关羽":
+                        GuideManager.instance.OnPlayRandomGuideByID(9);
+                        break;
+                    case "悟空":
+                        GuideManager.instance.OnPlayRandomGuideByID(10);
+                        break;
+                    default:
+                        break;
+                }
+                curGodBase.OnIsEnergy += OnIsEnergyHandler;
+
+                UpdateUI();
+            }, false, 1.5f);
         }
     }
 
     private void OnIsEnergyHandler(bool obj)
     {
         m_DaZhao.gameObject.SetActive(obj);
+        if (!GuideDispositionManager.instance.isGuide && obj)
+        {
+            guideHintPanelUI.SetPoint(m_DaZhao.transform);
+            GameManager.instance.GameStateEnum = GameConfig.GameState.State.Pause;
+        }
     }
 
     private void OnGodExit()

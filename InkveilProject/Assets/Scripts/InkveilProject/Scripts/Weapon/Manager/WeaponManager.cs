@@ -1,5 +1,6 @@
 ﻿using Framework;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace StarWarsEve
@@ -23,9 +24,9 @@ namespace StarWarsEve
         /// <summary>
         /// 初始化函数
         /// </summary>
-        public async void OnInit()
+        public void OnInit()
         {
-            await WeaponDispositionManager.instance.OnInitAsync();
+            WeaponDispositionManager.instance.OnItin();
         }
 
         protected override void Awake()
@@ -64,11 +65,11 @@ namespace StarWarsEve
         /// </summary>
         /// <param name="name">名称</param>
         /// <returns></returns>
-        public WeaponBase GetWeaponByName(string name)
+        public async Task<WeaponBase> GetWeaponByName(string name)
         {
             WeaponInfo weaponInfo = WeaponDispositionManager.instance.GetWeaponByName(name);
             ObjectPool WeaponPool = GetWeaponPool(name);
-            WeaponBase Weapon = WeaponPool.Get(name) as WeaponBase;
+            WeaponBase Weapon = await WeaponPool.GetAsync(name) as WeaponBase;
             Weapon.OnInit(weaponInfo);
             WeaponList.Add(Weapon);
             return Weapon;
@@ -146,7 +147,7 @@ namespace StarWarsEve
         /// </summary>
         /// <param name="arg"></param>
         /// <returns></returns>
-        private object OnWeaponConstruct(object arg)
+        private async Task<object> OnWeaponConstruct(object arg)
         {
             string name = arg.ToString();
             GameObject gameObject;
@@ -157,7 +158,7 @@ namespace StarWarsEve
                 string path = Weapon.prefabPath;
                 if (!string.IsNullOrEmpty(path))
                 {
-                    gameObject = ResourceService.Load<GameObject>(path);
+                    gameObject = await ResourceService.LoadAsync<GameObject>(path);
                     if (gameObject) m_WeaponPrefabDic.Add(name, gameObject);
                     else return null;
                 }

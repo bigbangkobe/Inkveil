@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Framework;
 using UnityEngine;
 
@@ -30,10 +29,10 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     //============= ºËÐÄÂß¼­ =============
 
-    internal async Task OnInit()
+    internal void OnInit()
     {
-        await LevelDispositionManager.instance.OnInitAsync();
-        await StageRewardsDispositionManager.instance.OnInitAsync();
+        LevelDispositionManager.instance.OnInit();
+        StageRewardsDispositionManager.instance.OnInit();
         EnemyManager.instance.OnEnemyDestroyed += CheckVictoryCondition;
     }
 
@@ -156,6 +155,7 @@ public class LevelManager : MonoSingleton<LevelManager>
                 {
                     for (int i = 0; i < config[1]; i++)
                     {
+                        yield return new WaitForFixedUpdate();
                         SpawnAndTrackEnemy(config[0], waveState);
                     }
                 }
@@ -180,9 +180,9 @@ public class LevelManager : MonoSingleton<LevelManager>
         }
     }
 
-    private void SpawnAndTrackEnemy(int enemyID, WaveState waveState)
+    private async void SpawnAndTrackEnemy(int enemyID, WaveState waveState)
     {
-        EnemyBase enemy = EnemyManager.instance.SpawnEnemy(enemyID, GetRandomSpawnPoint());
+        EnemyBase enemy = await EnemyManager.instance.SpawnEnemy(enemyID, GetRandomSpawnPoint());
         waveState.enemies.Add(enemy);
         enemy.OnDestroyed += () => {
             waveState.enemies.Remove(enemy);

@@ -6,11 +6,11 @@ public class GuideManager : MonoSingleton<GuideManager>
 {
     GuidePanel guidePanel;
 
-    protected override void Awake()
+    protected async override void Awake()
     {
         base.Awake();
 
-        guidePanel = ResourceService.Load<GameObject>("UI/GuidePanel").GetComponent<GuidePanel>();
+        guidePanel = (await ResourceService.LoadAsync<GameObject>("UI/GuidePanel")).GetComponent<GuidePanel>();
         Instantiate(guidePanel.gameObject, transform);
     }
 
@@ -27,7 +27,7 @@ public class GuideManager : MonoSingleton<GuideManager>
 
     public void OnPlayRandomGuideByID(int id)
     {
-        Guide guide = GuideDispositionManager.instance.GetGuideById(id);
+        Guide guide = GuideDispositionManager.instance.GetGuidesID(id);
 
         guidePanel.SetGuide(guide);
     }

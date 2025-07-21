@@ -1,66 +1,56 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using Framework;
 using LitJson;
 using UnityEngine;
 
 public class LotteryDispositionManager : Singleton<LotteryDispositionManager>
 {
-    // 异步加载标志
+    // 资源管理
+    private TextAsset m_ConfigAsset;
     private bool m_IsInitialized = false;
 
-    // 配置数据
-    public List<LotteryProbabilityInfo> LotteryList { get; private set; } = new List<LotteryProbabilityInfo>();
-    public Dictionary<int, List<LotteryCardPools>> LotteryCardPools { get; private set; } = new Dictionary<int, List<LotteryCardPools>>();
+    public List<LotteryProbabilityInfo> LotteryList { get; private set; }
+    public Dictionary<int, List<LotteryCardPools>> LotteryCardPools = new Dictionary<int, List<LotteryCardPools>>();
 
     /// <summary>
-    /// 异步初始化抽奖配置系统
+    /// 初始化抽奖配置系统
     /// </summary>
-    public async Task OnInitAsync()
+    public async void OnInit()
     {
         if (m_IsInitialized) return;
 
         try
         {
-            // 异步加载概率和卡池配置
-            var probHandle = ResourceService.LoadAsync<TextAsset>(ConfigDefine.lottery_probability_info);
-            var poolHandle = ResourceService.LoadAsync<TextAsset>(ConfigDefine.lottery_CardPools);
+            m_ConfigAsset = await ResourceService.LoadAsync<TextAsset>(ConfigDefine.lottery_probability_info);
+            string m_ConfigAssetCardPools = (await ResourceService.LoadAsync<TextAsset>(ConfigDefine.lottery_CardPools)).text;
 
-            TextAsset probAsset = await probHandle.Task;
-            TextAsset poolAsset = await poolHandle.Task;
-
-            if (probAsset == null)
+            if (m_ConfigAsset == null)
             {
-                Debug.LogError($"抽奖概率配置加载失败：{ConfigDefine.lottery_probability_info}");
+                Debug.LogError($"抽奖配置文件加载失败：{ConfigDefine.lottery_probability_info}");
+                return;
+            } 
+
+            LotteryList = JsonMapper.ToObject<List<LotteryProbabilityInfo>>(m_ConfigAsset.text);
+            List<LotteryCardPools> lotteryCardPools = JsonMapper.ToObject<List<LotteryCardPools>>(m_ConfigAssetCardPools);
+            if (LotteryList == null || LotteryList.Count == 0)
+            {
+                Debug.LogError("抽奖配置数据解析失败");
                 return;
             }
-            if (poolAsset == null)
+
+
+            for (int i = 0; i < lotteryCardPools.Count; i++)
             {
-                Debug.LogError($"抽奖卡池配置加载失败：{ConfigDefine.lottery_CardPools}");
-                return;
-            }
-
-            // 解析配置
-            LotteryList = JsonMapper.ToObject<List<LotteryProbabilityInfo>>(probAsset.text)
-                          ?? new List<LotteryProbabilityInfo>();
-
-            var cardPools = JsonMapper.ToObject<List<LotteryCardPools>>(poolAsset.text)
-                            ?? new List<LotteryCardPools>();
-
-            // 建立卡池索引
-            LotteryCardPools.Clear();
-            foreach (var entry in cardPools)
-            {
-                if (!LotteryCardPools.TryGetValue(entry.lotteryGrade, out var list))
+                if (!LotteryCardPools.ContainsKey(lotteryCardPools[i].lotteryGrade))
                 {
-                    list = new List<LotteryCardPools>();
-                    LotteryCardPools[entry.lotteryGrade] = list;
+                    LotteryCardPools[lotteryCardPools[i].lotteryGrade] = new List<LotteryCardPools>();
                 }
-                list.Add(entry);
-            }
 
+                LotteryCardPools[lotteryCardPools[i].lotteryGrade].Add(lotteryCardPools[i]);
+            }
+           
             m_IsInitialized = true;
-            Debug.Log($"抽奖配置加载完成: 概率项{LotteryList.Count}条, 卡池等级{LotteryCardPools.Count}个");
+            Debug.Log($"抽奖配置加载完成，总计{LotteryList.Count}件抽奖");
         }
         catch (System.Exception ex)
         {
@@ -68,13 +58,12 @@ public class LotteryDispositionManager : Singleton<LotteryDispositionManager>
         }
     }
 
+   
     /// <summary>
-    /// 清理资源
+    /// 清理系统资源
     /// </summary>
     public void Clear()
     {
-        LotteryList.Clear();
-        LotteryCardPools.Clear();
-        m_IsInitialized = false;
+        //m_IsInitialized = false;
     }
 }

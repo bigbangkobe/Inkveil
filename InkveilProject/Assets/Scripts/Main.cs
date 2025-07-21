@@ -87,7 +87,7 @@ public sealed class Main : MonoSingleton<Main>
         gameObject.AddComponent<ResMgr>();
     }
 
-	private void Update()
+    private void Update()
 	{
 
 	}

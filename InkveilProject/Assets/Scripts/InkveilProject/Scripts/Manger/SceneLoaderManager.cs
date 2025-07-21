@@ -1,16 +1,14 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System;
 using Framework;
 using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEngine.ResourceManagement.ResourceProviders;
 
 public class SceneLoaderManager : MonoSingleton<SceneLoaderManager>
 {
-    [Header("Settings")]
-    [SerializeField] private float minLoadTime = 2f; // ×îĞ¡¼ÓÔØÊ±¼ä£¨È·±£¼ÓÔØ»­Ãæ¿É¼û£©
+   [Header("Settings")]
+    [SerializeField] private float minLoadTime = 2f; // æœ€å°åŠ è½½æ—¶é—´ï¼ˆç¡®ä¿åŠ è½½ç”»é¢å¯è§ï¼‰
     [SerializeField] private string loadingSceneName = "LoadingScene";
 
     [Header("Events")]
@@ -20,59 +18,61 @@ public class SceneLoaderManager : MonoSingleton<SceneLoaderManager>
 
     private string targetScene = "Main";
     private bool isLoading;
-    private AsyncOperationHandle<SceneInstance> _sceneLoadHandle;
 
     /// <summary>
-    /// ÇĞ»»µ½ĞÂ³¡¾°£¨´ø¼ÓÔØ½çÃæ£©
+    /// åˆ‡æ¢åˆ°æ–°åœºæ™¯ï¼ˆå¸¦åŠ è½½ç•Œé¢ï¼‰
     /// </summary>
+    /// <param name="sceneName">ç›®æ ‡åœºæ™¯åç§°</param>
     public void SwitchToScene(string sceneName)
     {
         if (isLoading) return;
 
         targetScene = sceneName;
         LoadSceneDirect();
+        //StartCoroutine(LoadWithLoadingScreen());
     }
 
     protected override void Awake()
     {
         base.Awake();
+
     }
 
     /// <summary>
-    /// Ö±½Ó¼ÓÔØ³¡¾°
+    /// ç›´æ¥åŠ è½½åœºæ™¯
     /// </summary>
+    /// <param name="sceneName">ç›®æ ‡åœºæ™¯åç§°</param>
     public void LoadSceneDirect()
     {
-        StartCoroutine(WaitLoadSceneDirect());
-   
-    }
-
-    private IEnumerator WaitLoadSceneDirect()
-    {
-        yield return new WaitForSeconds(2);
+        if (isLoading) return;
         if (!GuideDispositionManager.instance.isGuide)
         {
             LevelManager.instance.SetCurLevel(0);
             targetScene = LevelManager.instance.m_CurLevelInfo.sceneName;
         }
-        if (!isLoading)
-        {
-            StartCoroutine(LoadSceneAsync(targetScene, true));
-        }
+        StartCoroutine(LoadSceneAsync(targetScene, true));
     }
 
     private IEnumerator LoadWithLoadingScreen()
     {
         isLoading = true;
 
-        // ´¥·¢¼ÓÔØ¿ªÊ¼ÊÂ¼ş
+        // è§¦å‘åŠ è½½å¼€å§‹äº‹ä»¶
         OnLoadBegin?.Invoke();
 
-        // ¼ÓÔØ¹ı¶É³¡¾°
+        // åŠ è½½è¿‡æ¸¡åœºæ™¯
+        //yield return SceneManager.LoadSceneAsync(loadingSceneName, LoadSceneMode.Additive);
         yield return SceneManager.LoadSceneAsync(loadingSceneName);
 
-        // ¼ÓÔØÄ¿±ê³¡¾°
-        yield return StartCoroutine(LoadSceneAsync(targetScene, true));
+        // å¸è½½å½“å‰åœºæ™¯ï¼ˆä¿ç•™Loadingåœºæ™¯ï¼‰
+        //Scene previousScene = SceneManager.GetActiveScene();
+        //yield return SceneManager.UnloadSceneAsync(previousScene);
+
+        // åŠ è½½ç›®æ ‡åœºæ™¯
+        //yield return StartCoroutine(LoadSceneAsync(targetScene, true));
+
+        // å¸è½½åŠ è½½åœºæ™¯
+        //yield return SceneManager.UnloadSceneAsync(loadingSceneName);
 
         isLoading = false;
     }
@@ -81,86 +81,37 @@ public class SceneLoaderManager : MonoSingleton<SceneLoaderManager>
     {
         float startTime = Time.realtimeSinceStartup;
         float minEndTime = startTime + minLoadTime;
-        float progress = 0f;
+        float progress = 0;
 
-        // µÚÒ»½×¶Î£º×îĞ¡¼ÓÔØÊ±¼äµÈ´ı
         while (Time.realtimeSinceStartup < minEndTime)
         {
-            progress = Mathf.Clamp01((Time.realtimeSinceStartup - startTime) / minLoadTime) * 0.3f;
+            progress = (Time.realtimeSinceStartup - startTime) / minLoadTime * 0.2f;
             if (reportProgress) OnLoadProgress?.Invoke(progress);
             yield return null;
         }
 
-        // µÚ¶ş½×¶Î£º¼ÓÔØ³¡¾°£¨Ê¹ÓÃAddressables£©
-        _sceneLoadHandle = Addressables.LoadSceneAsync(sceneName,
-            LoadSceneMode.Single, false); // ²»×Ô¶¯¼¤»î³¡¾°
-
-        // ¼à¿Ø¼ÓÔØ½ø¶È
-        while (!_sceneLoadHandle.IsDone)
+        int mInLoadssum = 100;
+        while (ResMgr.Instance.mWaitting.Count > 0)
         {
-            float sceneProgress = Mathf.Clamp01(_sceneLoadHandle.PercentComplete / 0.9f);
-            progress = 0.3f + sceneProgress * 0.7f;
-
+            progress = 0.2f + ((1 - ResMgr.Instance.mWaitting.Count / (float)mInLoadssum) * 0.3f);
             if (reportProgress) OnLoadProgress?.Invoke(progress);
             yield return null;
         }
 
-        // È·±£×îĞ¡¼ÓÔØÊ±¼ä
-        while (Time.realtimeSinceStartup < minEndTime)
+        // âœ… Addressables åŠ è½½åœºæ™¯
+        var handle = Addressables.LoadSceneAsync(sceneName, LoadSceneMode.Single, false);
+        while (!handle.IsDone)
         {
+            progress = 0.5f + Mathf.Clamp01(handle.PercentComplete) * 0.5f;
+            if (reportProgress) OnLoadProgress?.Invoke(progress);
             yield return null;
         }
 
-        // ¼¤»î³¡¾°
-        if (_sceneLoadHandle.Status == AsyncOperationStatus.Succeeded)
-        {
-            var sceneInstance = _sceneLoadHandle.Result;
-            yield return sceneInstance.ActivateAsync();
-        }
+        // æ‰‹åŠ¨æ¿€æ´»åœºæ™¯
+        yield return handle.Result.ActivateAsync();
 
-        // Íê³É¼ÓÔØ
-        progress = 1f;
-        if (reportProgress) OnLoadProgress?.Invoke(progress);
-
+        if (reportProgress) OnLoadProgress?.Invoke(1f);
         OnLoadComplete?.Invoke();
-
-        // ÊÍ·Å³¡¾°¾ä±ú£¨¿ÉÑ¡£©
-        // Addressables.Release(_sceneLoadHandle);
     }
 
-    /// <summary>
-    /// Ğ¶ÔØµ±Ç°³¡¾°
-    /// </summary>
-    public void UnloadCurrentScene()
-    {
-        if (_sceneLoadHandle.IsValid())
-        {
-            Addressables.UnloadSceneAsync(_sceneLoadHandle);
-        }
-    }
-
-    /// <summary>
-    /// »ñÈ¡µ±Ç°³¡¾°Ãû³Æ
-    /// </summary>
-    public string GetCurrentSceneName()
-    {
-        return SceneManager.GetActiveScene().name;
-    }
-
-    /// <summary>
-    /// ÖØĞÂ¼ÓÔØµ±Ç°³¡¾°
-    /// </summary>
-    public void ReloadCurrentScene()
-    {
-        SwitchToScene(GetCurrentSceneName());
-    }
-
-    private void OnDestroy()
-    {
-        // È·±£ÊÍ·Å×ÊÔ´
-        if (_sceneLoadHandle.IsValid())
-        {
-            Addressables.Release(_sceneLoadHandle);
-        }
-    }
 }

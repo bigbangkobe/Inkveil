@@ -10,10 +10,10 @@ public class ShopManager : Singleton<ShopManager>
     /// <summary>
     /// 初始化商店系统
     /// </summary>
-    public async void OnInit()
+    public void OnInit()
     {
         // 确保配置管理器初始化
-        await ShopDispositionManager.instance.OnInitAsync();
+        ShopDispositionManager.instance.OnInit();
 
         // 加载购买记录（实际项目中应从持久化存储加载）
         LoadPurchaseRecords();

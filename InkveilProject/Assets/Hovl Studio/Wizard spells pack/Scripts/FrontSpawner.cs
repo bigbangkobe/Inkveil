@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrontSpawner : MonoBehaviour 
+public class FrontSpawner : MonoBehaviour
 {
     public Transform pivot;
     public float speed = 15f;
@@ -22,6 +22,7 @@ public class FrontSpawner : MonoBehaviour
 
     void Start()
     {
+        pivot.transform.position = new Vector3(0, 0, -14f);
         InvokeRepeating("StartAgain", 0f, repeatingTime);
         startSpeed = speed;
         stepPosition = pivot.position;
@@ -39,7 +40,7 @@ public class FrontSpawner : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) return;
+        //if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) return;
         spawnDur -= Time.deltaTime;
         randomTimer += (Time.deltaTime * 2);
         startSpeed = startSpeed * drug;
@@ -81,7 +82,8 @@ public class FrontSpawner : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             // Apply damage to the enemy
-            other.GetComponent<EnemyBase>().TakeDamage((float)godAttackCtrl._godInfo.skillDamageMulti);
+
+            other.GetComponent<EnemyBase>().TakeDamage(!GuideDispositionManager.instance.isGuide ? 9999999999 : (float)godAttackCtrl._godInfo.skillDamageMulti);
         }
     }
 

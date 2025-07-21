@@ -82,6 +82,15 @@ public class GodBase : MonoBehaviour
     {
         EnemyManager.instance.OnEnemyDestroyed += OnEnemyDestroyedHandler;
 
+
+        if (!GuideDispositionManager.instance.isGuide)
+        {
+            TimerSystem.Start((x) =>
+            {
+                AddEnergy(100);
+            }, false, 5);
+        }
+
         ChangeState(GodState.Idle); // 初始化为待机状态
     }
 
@@ -259,7 +268,7 @@ public class GodBase : MonoBehaviour
     }
 
     // 更新状态逻辑
-    private void UpdateState()
+    private async void UpdateState()
     {
         switch (_currentState)
         {
@@ -276,7 +285,7 @@ public class GodBase : MonoBehaviour
                 if (_animationController.GetCurrentAnimationProgress() >= 0.5f && !isAttack)
                 {
                     isAttack = true;
-                    EffectObject effect = EffectSystem.instance.GetEffect(_godInfo.basicAttackEffect);
+                    EffectObject effect = await EffectSystem.instance.GetEffect(_godInfo.basicAttackEffect);
                     effect.gameObject.SetActive(true);
                     GodAttackCtrl bullet3D = effect.gameObject.GetComponent<GodAttackCtrl>();
                     bullet3D.OnInitialFlag(_godInfo, transform, _currentTarget);
@@ -336,11 +345,11 @@ public class GodBase : MonoBehaviour
     }
 
     // 使用技能
-    public virtual void UseSkill()
+    public virtual async void UseSkill()
     {
         if (_currentEnergy < _godInfo.skillEnergy) return;
 
-        EffectObject effect = EffectSystem.instance.GetEffect(_godInfo.skillEffect);
+        EffectObject effect = await EffectSystem.instance.GetEffect(_godInfo.skillEffect);
         effect.gameObject.SetActive(true);
         GodAttackCtrl bullet3D = effect.gameObject.GetComponent<GodAttackCtrl>();
         bullet3D.OnInitialFlag(_godInfo, transform, _currentTarget);

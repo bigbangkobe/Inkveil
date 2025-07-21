@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Framework;
 using System;
 using static UnityEngine.EventSystems.EventTrigger;
+using System.Threading.Tasks;
 
 public class PlayerController : MonoBehaviour
 {
@@ -52,13 +53,14 @@ public class PlayerController : MonoBehaviour
     public int level = 1;
     private float skillBar = 0;
 
-    public float SkillBar 
-    { 
+    public float SkillBar
+    {
         get => skillBar;
-        set { 
+        set
+        {
             skillBar = value;
             onSkillBar?.Invoke(value);
-        } 
+        }
     }
 
     private float inviteGodBar = 0;
@@ -115,11 +117,11 @@ public class PlayerController : MonoBehaviour
     private bool isLeftButtonPressed;
     private bool isRightButtonPressed;
     public bool isGod;
-    private Vector3 initialPoing = new Vector3(0,0,-15);
+    private Vector3 initialPoing = new Vector3(0, 0, -15);
 
     private void Start()
     {
-        transform.parent.position = initialPoing;   
+        transform.parent.position = initialPoing;
         InitializePlaierInfo();
         SetFacingDirection(initialFacing);
         InitializeAnimationStates();
@@ -135,7 +137,7 @@ public class PlayerController : MonoBehaviour
     private void OnEnemyDestroyedHandler()
     {
         SkillBar += 0.02f;
-        if(SkillBar >= 1)
+        if (SkillBar >= 1)
         {
             //ÖØÖÃ×´Ì¬
             SkillBar = 0;
@@ -268,7 +270,7 @@ public class PlayerController : MonoBehaviour
 
         if (playerLevelsInfo == null) return;
         ShieldGrowthInfo shieldGrowthInfo = PlayerManager.instance.GetCurShieldGrowthLevel();
-        curWeaponInfo = PlayerManager.instance.m_WeaponInfo;
+        curWeaponInfo = PlayerManager.instance.WeaponInfo;
         maxHitPoints = playerLevelsInfo.hpBase;
         currentHitPoints = playerLevelsInfo.hpBase;
         AttackSpeedBase = (float)playerLevelsInfo.attackSpeedBase;
@@ -286,7 +288,7 @@ public class PlayerController : MonoBehaviour
 
         if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) { _currentState = PlayerState.Idle; return; }
         SkillBar += Time.deltaTime / 180;
-        if(SkillBar >= 1)
+        if (SkillBar >= 1)
         {
             SkillBar = 0;
         }
@@ -299,7 +301,7 @@ public class PlayerController : MonoBehaviour
         //    InitializePlaierInfo();
         //}
 
-    
+
         HandleInput();
         UpdateMovement();
         UpdateState();
@@ -328,7 +330,7 @@ public class PlayerController : MonoBehaviour
     private void HandleInput()
     {
 
-// Keyboard input
+        // Keyboard input
         float keyboardInput = 0;
         keyboardInput += Input.GetAxisRaw("Horizontal");
         if (isRightButtonPressed) keyboardInput += 1;
@@ -349,7 +351,7 @@ public class PlayerController : MonoBehaviour
                 {
                     keyboardInput += 1; // ÓÒ±ßÆÁÄ» ¡ú ÓÒÒÆ
                 }
-         
+
             }
         }
 
@@ -359,7 +361,7 @@ public class PlayerController : MonoBehaviour
             float mouseX = Input.mousePosition.x;
             float screenMiddle = Screen.width * 0.5f;
 
-            
+
             if (mouseX < screenMiddle)
             {
                 keyboardInput -= 1; // ×ó±ßµã»÷ ¡ú ×óÒÆ
@@ -369,7 +371,7 @@ public class PlayerController : MonoBehaviour
                 keyboardInput += 1; // ÓÒ±ßµã»÷ ¡ú ÓÒÒÆ
             }
         }
-        keyboardInput = Mathf.Clamp(keyboardInput,-1,1);
+        keyboardInput = Mathf.Clamp(keyboardInput, -1, 1);
 
         if (isGod && !GuideDispositionManager.instance.isGuide)
         {
@@ -536,7 +538,7 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// ¸üÐÂ×´Ì¬
     /// </summary>
-    private void UpdateState()
+    private async Task UpdateState()
     {
         switch (_currentState)
         {
@@ -544,7 +546,7 @@ public class PlayerController : MonoBehaviour
                 if (animationController.GetCurrentAnimationProgress() >= 0.5f && !isAttack)
                 {
                     isAttack = true;
-                    EffectObject effect = EffectSystem.instance.GetEffect(curWeaponInfo.trailEffect);
+                    EffectObject effect = await EffectSystem.instance.GetEffect(curWeaponInfo.trailEffect);
                     effect.gameObject.SetActive(true);
                     Bullet3D bullet3D = effect.gameObject.GetComponent<Bullet3D>();
                     bullet3D.transform.position = transform.position + transform.forward * 1 + transform.up * 0.5f;

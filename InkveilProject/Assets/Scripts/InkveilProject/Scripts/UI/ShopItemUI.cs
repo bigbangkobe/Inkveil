@@ -43,7 +43,7 @@ public class ShopItemUI : MonoBehaviour
         }
     }
 
-    public void OnInit(ShopInfo shop) 
+    public async void OnInit(ShopInfo shop) 
     {
         shopInfo = shop;
         propertyInfo = shop.GetPropertyInfo();
@@ -51,7 +51,7 @@ public class ShopItemUI : MonoBehaviour
         m_Title.text = shopInfo.itemName;
         m_Number.text = "X" + shopInfo.number.ToString();
         m_PriceNumber.text = "X" + shopInfo.price.ToString();
-        Sprite iconSprite = ResourceService.Load<Sprite>(propertyInfo.imagePath);
+        Sprite iconSprite = await ResourceService.LoadAsync<Sprite>(propertyInfo.imagePath);
  
        
         if (iconSprite != null && isIcon)

@@ -1,5 +1,6 @@
 ﻿using Framework;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class EnemyUIManager : MonoSingleton<EnemyUIManager>
@@ -38,10 +39,10 @@ public class EnemyUIManager : MonoSingleton<EnemyUIManager>
     /// </summary>
     /// <param name="name">EnemyUI名称</param>
     /// <returns></returns>
-    public EnemyUI GetEnemyUIByName(string name)
+    public async Task<EnemyUI> GetEnemyUIByName(string name)
     {
         ObjectPool enemyUIPool = GetEnemyUIPool(name);
-        EnemyUI enemyUI = enemyUIPool.Get(name) as EnemyUI;
+        EnemyUI enemyUI = await enemyUIPool.GetAsync(name) as EnemyUI;
         m_EnemyUIList.Add(enemyUI);
         return enemyUI;
     }
@@ -106,7 +107,7 @@ public class EnemyUIManager : MonoSingleton<EnemyUIManager>
     /// <summary>
     /// 构造 EnemyUI
     /// </summary>
-    private object OnEnemyUIConstruct(object arg)
+    private async Task<object> OnEnemyUIConstruct(object arg)
     {
         string name = arg.ToString();
         GameObject prefab;
@@ -114,7 +115,7 @@ public class EnemyUIManager : MonoSingleton<EnemyUIManager>
         if (!m_EnemyUIPrefabDic.ContainsKey(name))
         {
             string path = $"Enemy/{name}";
-            prefab = ResourceService.Load<GameObject>(path);
+            prefab = await ResourceService.LoadAsync<GameObject>(path);
             if (prefab)
             {
                 m_EnemyUIPrefabDic.Add(name, prefab);

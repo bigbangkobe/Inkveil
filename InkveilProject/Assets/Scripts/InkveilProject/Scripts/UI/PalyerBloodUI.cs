@@ -10,12 +10,20 @@ public class PalyerBloodUI : MonoBehaviour
     public Image m_ShieldHealthImagae;
     public Image m_HitImagae;
 
+    public bool isHp = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        PlayerController.instance.onSkillBar += OnSkillBarHandler;
-        //PlayerController.instance.onDamage += OnDamageHandler;
-        //PlayerController.instance.onInitial += OnDamageHandler;
+        if (isHp)
+        {
+            PlayerController.instance.onDamage += OnDamageHandler;
+            PlayerController.instance.onInitial += OnDamageHandler;
+        }
+        else
+        {
+            PlayerController.instance.onSkillBar += OnSkillBarHandler;
+        }
     }
 
     private void OnSkillBarHandler(float obj)
@@ -25,9 +33,15 @@ public class PalyerBloodUI : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerController.instance.onSkillBar -= OnSkillBarHandler;
-        //PlayerController.instance.onDamage -= OnDamageHandler;
-        //PlayerController.instance.onInitial -= OnDamageHandler;
+        if (isHp)
+        {
+            PlayerController.instance.onDamage -= OnDamageHandler;
+            PlayerController.instance.onInitial -= OnDamageHandler;
+        }
+        else
+        {
+            PlayerController.instance.onSkillBar -= OnSkillBarHandler;
+        }
     }
 
     private void OnDamageHandler()

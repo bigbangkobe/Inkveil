@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using Framework;
 using LitJson;
 using UnityEngine;
@@ -11,22 +10,20 @@ public class PropertyDispositionManager : Singleton<PropertyDispositionManager>
     private Dictionary<string, PropertyInfo> m_NamePropertyDict = new Dictionary<string, PropertyInfo>();
     private Dictionary<int, List<PropertyInfo>> m_TypePropertyDict = new Dictionary<int, List<PropertyInfo>>();
 
-    // 配置加载状态
+    // 资源管理
     private TextAsset m_ConfigAsset;
     private bool m_IsInitialized = false;
 
     /// <summary>
-    /// 异步初始化物品配置系统
+    /// 初始化物品配置系统
     /// </summary>
-    public async Task OnInitAsync()
+    public async void OnInit()
     {
         if (m_IsInitialized) return;
 
         try
         {
-            // 异步加载配置文件
-            var handle = ResourceService.LoadAsync<TextAsset>(ConfigDefine.propertyInfo);
-            m_ConfigAsset = await handle.Task;
+            m_ConfigAsset = await ResourceService.LoadAsync<TextAsset>(ConfigDefine.propertyInfo);
 
             if (m_ConfigAsset == null)
             {
@@ -34,37 +31,38 @@ public class PropertyDispositionManager : Singleton<PropertyDispositionManager>
                 return;
             }
 
-            // 解析配置列表
-            var propertyList = JsonMapper.ToObject<List<PropertyInfo>>(m_ConfigAsset.text) ?? new List<PropertyInfo>();
-            if (propertyList.Count == 0)
+            var propertyList = JsonMapper.ToObject<List<PropertyInfo>>(m_ConfigAsset.text);
+            if (propertyList == null || propertyList.Count == 0)
             {
                 Debug.LogError("物品配置数据解析失败");
                 return;
             }
 
-            // 建立索引
             foreach (var property in propertyList)
             {
+                // 数据校验
                 if (m_IdPropertyDict.ContainsKey(property.propertyID))
                 {
                     Debug.LogError($"物品ID重复：{property.propertyID}");
                     continue;
                 }
+
                 if (string.IsNullOrEmpty(property.propertyName))
                 {
                     Debug.LogWarning("发现无名物品配置，已跳过");
                     continue;
                 }
 
+                // 建立索引
                 m_IdPropertyDict[property.propertyID] = property;
                 m_NamePropertyDict[property.propertyName] = property;
 
-                if (!m_TypePropertyDict.TryGetValue(property.propertyGrade, out var list))
+                // 类型索引
+                if (!m_TypePropertyDict.ContainsKey(property.propertyGrade))
                 {
-                    list = new List<PropertyInfo>();
-                    m_TypePropertyDict[property.propertyGrade] = list;
+                    m_TypePropertyDict[property.propertyGrade] = new List<PropertyInfo>();
                 }
-                list.Add(property);
+                m_TypePropertyDict[property.propertyGrade].Add(property);
             }
 
             m_IsInitialized = true;
@@ -95,24 +93,25 @@ public class PropertyDispositionManager : Singleton<PropertyDispositionManager>
     }
 
     /// <summary>
-    /// 获取指定品质的物品列表
+    /// 获取指定类型的物品列表
     /// </summary>
-    public List<PropertyInfo> GetPropertiesByGrade(int grade)
+    public List<PropertyInfo> GetPropertysByType(int type)
     {
         if (!m_IsInitialized) return new List<PropertyInfo>();
-        return m_TypePropertyDict.TryGetValue(grade, out var list) ? list : new List<PropertyInfo>();
+        return m_TypePropertyDict.TryGetValue(type, out var list) ? list : new List<PropertyInfo>();
     }
 
     /// <summary>
     /// 清理系统资源
     /// </summary>
-    public void Clear()
+    public void OnClear()
     {
         if (m_ConfigAsset != null)
         {
-            ResourceService.UnloadAsset(m_ConfigAsset);
+            Resources.UnloadAsset(m_ConfigAsset);
             m_ConfigAsset = null;
         }
+
         m_IdPropertyDict.Clear();
         m_NamePropertyDict.Clear();
         m_TypePropertyDict.Clear();

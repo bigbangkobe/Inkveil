@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Framework
@@ -31,7 +32,7 @@ namespace Framework
             Clear();
         }
 
-        public static TimerObject Start(Action<object> timerCallback,bool pause, float time, float interval = 0, int count = 0, object arg = null)
+        public static async Task<TimerObject> Start(Action<object> timerCallback,bool pause, float time, float interval = 0, int count = 0, object arg = null)
         {
             if (timerCallback == null)
             {
@@ -41,7 +42,7 @@ namespace Framework
             }
 
             //启动定时器
-            TimerObject timerObject = instance.m_TimerPool.Get() as TimerObject;
+            TimerObject timerObject = await instance.m_TimerPool.GetAsync() as TimerObject;
             timerObject.StartTimer(timerCallback, pause, time, interval, count, arg);
 
             return timerObject;
@@ -60,12 +61,12 @@ namespace Framework
         /// 定时器构造回调函数
         /// </summary>
         /// <returns>定时器对象</returns>
-        private static object OnTimerConstruct(object obj)
+        private static Task<object> OnTimerConstruct(object obj)
         {
             TimerObject timerObject = instance.gameObject.AddComponent<TimerObject>();
-
-            return timerObject;
+            return Task.FromResult<object>(timerObject);
         }
+
 
         /// <summary>
         /// 定时器摧毁回调

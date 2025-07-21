@@ -1,3 +1,4 @@
+using Framework;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +18,7 @@ public class GuideHintPanelUI : MonoBehaviour
 
     private void OnEnable()
     {
-       
+
 
         if (GameManager.instance.GameStateEnum == GameConfig.GameState.State.Play)
         {
@@ -41,5 +42,23 @@ public class GuideHintPanelUI : MonoBehaviour
             transform.position = vector3.position;
             m_Image.material.SetVector("_Center", new Vector4(transform.localPosition.x, transform.localPosition.y, 0, 0));
         }
+    }
+
+    public void SetWaitPoint(Transform vector3)
+    {
+        if (!GuideDispositionManager.instance.isGuide)
+        {
+            gameObject.SetActive(false);
+            m_Image.raycastTarget = true;
+            TimerSystem.Start((x) =>
+            {
+                gameObject.SetActive(true);
+                transform.position = vector3.position;
+                m_Image.material.SetVector("_Center", new Vector4(transform.localPosition.x, transform.localPosition.y, 0, 0));
+                m_Image.raycastTarget = false;
+            }, false, 2);
+        }
+
+
     }
 }

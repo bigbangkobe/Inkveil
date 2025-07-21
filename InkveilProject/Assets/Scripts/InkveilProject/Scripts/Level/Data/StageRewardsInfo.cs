@@ -73,7 +73,7 @@ public class StageRewardsInfo
     private List<PropertyInfo> rewardsPropertyInfos;
     public List<PropertyInfo> GetRewardsPropertyInfos()
     {
-        List<PropertyInfo> infos = new();
+        List<PropertyInfo> infos = new List<PropertyInfo>();
         if (rewardsPropertyInfos == null)
         {
            

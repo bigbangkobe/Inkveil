@@ -17,5 +17,9 @@ public class InkveilProjectGame : MonoBehaviour
         LevelManager.instance.StartGame();
 
         GodManager.instance.OnInitPoint(m_GodPoint);
+
+        Vector3 vector3 = Camera.main.transform.localPosition;
+        vector3.y = 17;
+        Camera.main.transform.localPosition = vector3;
     }
 }

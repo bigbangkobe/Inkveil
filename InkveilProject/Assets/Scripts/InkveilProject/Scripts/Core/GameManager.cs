@@ -55,7 +55,7 @@ public class GameManager : MonoSingleton<GameManager>
     /// <summary>
     /// ³õÊ¼»¯º¯Êý
     /// </summary>
-    public async void OnInit() 
+    public void OnInit() 
     {
         if (isInltial) return;
         SoundSystem.instance.OnInit();
@@ -63,13 +63,13 @@ public class GameManager : MonoSingleton<GameManager>
         EnemyManager.instance.OnInit();
         WeaponManager.instance.OnInit();
         PlayerManager.instance.OnInit();
-        await LevelManager.instance.OnInit();
+        LevelManager.instance.OnInit();
         PropertyManager.instance.OnInit();
         BagManager.instance.OnInit();
         ShopManager.instance.OnInit();
-        await LotteryDispositionManager.instance.OnInitAsync();
-        await GodDispositionManager.instance.OnInitAsync();
-        await GuideDispositionManager.instance.OnInitAsync();
+        LotteryDispositionManager.instance.OnInit();
+        GodDispositionManager.instance.OnInit();
+        GuideDispositionManager.instance.OnInit();
         GuideManager.instance.OnInit();
         isInltial = true;
     }

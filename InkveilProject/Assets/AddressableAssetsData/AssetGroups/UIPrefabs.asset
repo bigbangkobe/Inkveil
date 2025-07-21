@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UIPrefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: UIPrefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a84eb8d0aa3ed0b47ac4d9b1a7264c3a
+  m_SerializeEntries:
+  - m_GUID: 02d9a51cf4e9ab44b95c127ccb0425a8
+    m_Address: Assets/Prefabs/UI/ShopPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11d82afd56c092645acf5b233537fadc
+    m_Address: Assets/Prefabs/UI/BagPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ab48387cc64c0d479edb100a5a86e6c
+    m_Address: Assets/Prefabs/UI/SettingPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21da48ab36228ce45b70ba56d328d20e
+    m_Address: Assets/Prefabs/UI/SignPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35d4c2e9961f7cf439c54fde4ee4cff5
+    m_Address: Assets/Prefabs/UI/ChouJiangPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b573f3d89cb7ac4cb635476905a2bf4
+    m_Address: Assets/Prefabs/UI/VictoryPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 506d771beffd4f549b4a79804cf247b0
+    m_Address: Assets/Prefabs/UI/GamePanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50ad5eb6bc4b44b4baaab15e50eba757
+    m_Address: Assets/Prefabs/UI/FailPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5649ffd5378c038498f4f56fe405fc58
+    m_Address: Assets/Prefabs/UI/ShopItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 652a45d9990f8a344afb2a258fc9c37e
+    m_Address: Assets/Prefabs/UI/MainPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70b710df256ef374f8101e82029d372e
+    m_Address: Assets/Prefabs/UI/SkillPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 885364565dcfc0840972166be9ce75b1
+    m_Address: Assets/Prefabs/UI/RevivePanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94e73253619824a43a8b55da9123efff
+    m_Address: Assets/Prefabs/UI/RewardCard.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 980f572060b18f34f88ac5709752b3b3
+    m_Address: Assets/Prefabs/UI/BagItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d2c964f20a60b84d9d6f3f704b50484
+    m_Address: Assets/Prefabs/UI/GrowUpPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a11391d9980d382429632f569d59b87f
+    m_Address: Assets/Prefabs/UI/ChengZhanPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de24147e90583314c95c0ea7703aa561
+    m_Address: Assets/Prefabs/UI/GetReadyPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e46a74bfa7cd0394c883b7492ff29c42
+    m_Address: Assets/Prefabs/UI/LoadPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f44a5be34302865448e9cd5bc9927791
+    m_Address: Assets/Prefabs/UI/LevelPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 12980f494634fc14a8958c2e385292eb, type: 2}
+    - {fileID: 11400000, guid: d35bda9e0d71a744e93f5c49ad098daf, type: 2}

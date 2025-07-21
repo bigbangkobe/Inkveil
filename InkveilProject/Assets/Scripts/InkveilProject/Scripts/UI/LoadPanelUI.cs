@@ -9,9 +9,9 @@ public class LoadPanelUI : BaseUI
     [SerializeField] private Text m_Percentage; // 百分比文本
     private void Start()
     {
-        //// 开始加载main场景
-        //LoadMainScene();
-
+        // 开始加载main场景
+        // 延迟加载主场景
+        StartCoroutine(DelayedLoadMainScene(2f));
         // 订阅场景加载事件
         SceneLoaderManager.instance.OnLoadBegin += HandleLoadBegin;
         SceneLoaderManager.instance.OnLoadProgress += UpdateProgress;
@@ -26,6 +26,13 @@ public class LoadPanelUI : BaseUI
         SceneLoaderManager.instance.OnLoadBegin -= HandleLoadBegin;
         SceneLoaderManager.instance.OnLoadProgress -= UpdateProgress;
         SceneLoaderManager.instance.OnLoadComplete -= HandleLoadComplete;
+    }
+
+
+    private IEnumerator DelayedLoadMainScene(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        LoadMainScene();
     }
 
     public void LoadMainScene()

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Duplicate Asset Isolation
+  m_EditorClassIdentifier: 
+  m_GroupName: Duplicate Asset Isolation
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0ca003a616959be46b669b3315a18efc
+  m_SerializeEntries:
+  - m_GUID: 1f5b7db7b580bf3498d49c9c8b0caa58
+    m_Address: Assets/Res/Male/m_hero_01/Materials/m_hero_01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 258eb5e920ae7004b947257cf0888efc
+    m_Address: Assets/Res/Male/m_hero_01/Materials/m_hero_01.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27ebbf25968020a45926639b74e15ff9
+    m_Address: Assets/Res/Male/m_hero_01/idle.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2aa40b5da0252e24a8c285d7016a5da3
+    m_Address: Assets/Res/Male/m_hero_01/m_hero_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35a84227c5d385340a4c12697fd975ad
+    m_Address: Assets/Effect/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Trail.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3877b6435db937c4d9ac14b109602176
+    m_Address: Assets/Effect/ProjectilesFX/VFX_Resources/Shaders/PFX_Trail.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d616a5bc73717943be7579ac4db558f
+    m_Address: Assets/Res/Male/m_hero_01/m_hero_01@attack.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 990426196cc6d264784eac08d855a648
+    m_Address: Assets/Effect/ProjectilesFX/VFX_Resources/Textures/Mask/FX_Mask_1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6db9b1dfdd6c23488cda44ce5a2fcd1
+    m_Address: Assets/Effect/ProjectilesFX/VFX_Resources/Textures/Noise/FX_Noise_3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4109cf71f3430846a95bd25d8b244e8
+    m_Address: Assets/Res/Male/m_hero_01/attack.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e10528cd0b29ac546b4af6a9aed307ba
+    m_Address: Assets/Effect/ProjectilesFX/VFX_Resources/Meshes/SM_Cone_4.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbe63dbbd447070439e83b5a4b6942bb
+    m_Address: Assets/Res/Male/m_hero_01/run.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fed2e8262d31c8b45bc137e4a6cc6556
+    m_Address: Assets/Res/Male/m_hero_01/m_hero_01@idle.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c4c8bc5d52a9ef344a2a7a8c841549e8, type: 2}
+    - {fileID: 11400000, guid: 965453ee653d4974c845a784d44f539b, type: 2}

@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Models
+  m_EditorClassIdentifier: 
+  m_GroupName: Models
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 337d5270b2b35474dbffbc90d4fe5432
+  m_SerializeEntries:
+  - m_GUID: 042e47acb54c14f4ca415ea40a990d7a
+    m_Address: Assets/Avatar_prefab/shenjiang_06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 111dc78988c8cef41bfa44213a800945
+    m_Address: Assets/Avatar_prefab/monster_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d7ae69f5c7f636488f7a216eff10215
+    m_Address: Assets/Avatar_prefab/shenjiang_09.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28a784b108bd0b548b94b6ed6c6c0c3c
+    m_Address: Assets/Avatar_prefab/shenjiang_08.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e9516124332ae242ac40a5b823e7f56
+    m_Address: Assets/Avatar_prefab/monster_renzhe.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5166ecd106353d1418fe86c0ab0dcd17
+    m_Address: Assets/Avatar_prefab/boss_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d5dcec51ef24084e9290a9f1cf63ff5
+    m_Address: Assets/Avatar_prefab/monster_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78df581d09cb2b547be8b081236e6222
+    m_Address: Assets/Avatar_prefab/shenjiang_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 998e68a854550034298b54de9b2cd015
+    m_Address: Assets/Avatar_prefab/monster_wushi.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1d16a74c178cb140b693a176331ab6a
+    m_Address: Assets/Avatar_prefab/shenjiang_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1fd96c350329ff4fb8bb4012c291cc2
+    m_Address: Assets/Avatar_prefab/m_hero_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bcd7faf72f32c424a932f6a8563a7f0a
+    m_Address: Assets/Avatar_prefab/shenjiang_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be1cca3975348064eb7831c57703285c
+    m_Address: Assets/Avatar_prefab/shenjiang_07.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c324b72b3b08a4a4badcff1966298bf8
+    m_Address: Assets/Avatar_prefab/shenjiang_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ccb5e4b08d268604cbac27f6f42c99e2
+    m_Address: Assets/Avatar_prefab/shenjiang_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d02c1127306c66346b8788d82bc9758e
+    m_Address: Assets/Avatar_prefab/boss_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e62c702529403ea47a056324cad53ab6
+    m_Address: Assets/Avatar_prefab/monster_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6a54174bc53b8241a083ae5e39fc6b8
+    m_Address: Assets/Avatar_prefab/monster_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5b6e8121ad9298d46b40897d99a08d64, type: 2}
+    - {fileID: 11400000, guid: ea248904535e2cc4097ca08408b8adf0, type: 2}

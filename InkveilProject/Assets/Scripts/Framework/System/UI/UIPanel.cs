@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using System.Threading.Tasks;
 
 namespace Framework
 {
@@ -191,7 +192,7 @@ namespace Framework
 		/// <param name="childName">面板节点名</param>
 		/// <param name="isAssetBundle">是否资源包</param>
 		/// <returns>返回动态面板</returns>
-		public UIDynamicPanel GetDynamicPanel(Type type, string bundleName, string childName = null, bool isAssetBundle = true)
+		public async Task<UIDynamicPanel> GetDynamicPanel(Type type, string bundleName, string childName = null, bool isAssetBundle = true)
 		{
 			Transform child = GetChild(childName);
 			if (child == null)
@@ -208,7 +209,7 @@ namespace Framework
 			}
 			else
 			{
-				asset = ResourceService.Load<GameObject>(bundleName);
+				asset = await ResourceService.LoadAsync<GameObject>(bundleName);
 			}
 
 			UIDynamicPanel panel = new UIDynamicPanel(type, asset);

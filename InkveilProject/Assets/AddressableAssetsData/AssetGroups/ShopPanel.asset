@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ShopPanel
+  m_EditorClassIdentifier: 
+  m_GroupName: ShopPanel
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ac7fb6a7d75b8cc43a659e2456388b96
+  m_SerializeEntries:
+  - m_GUID: 76ed61c2492c079429631a8db691ae2d
+    m_Address: Assets/Image/ShopPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3de5536159ffb494687adedc72923139, type: 2}
+    - {fileID: 11400000, guid: d10b5b628c73aba42a6e7fb8034eee97, type: 2}

@@ -1,5 +1,6 @@
 ﻿using Framework;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace StarWarsEve
@@ -47,11 +48,11 @@ namespace StarWarsEve
         /// </summary>
         /// <param name="name">名称</param>
         /// <returns></returns>
-        public MagicBase GetMagicByName(string name)
+        public async Task<MagicBase> GetMagicByName(string name)
         {
             MagicInfo magicInfo = MagicDispositionManager.instance.GetMagicByName(name);
             ObjectPool MagicPool = GetMagicPool(name);
-            MagicBase Magic = MagicPool.Get(name) as MagicBase;
+            MagicBase Magic = await MagicPool.GetAsync(name) as MagicBase;
             Magic.OnInit(magicInfo);
             MagicList.Add(Magic);
             return Magic;
@@ -129,7 +130,7 @@ namespace StarWarsEve
         /// </summary>
         /// <param name="arg"></param>
         /// <returns></returns>
-        private object OnMagicConstruct(object arg)
+        private async Task<object> OnMagicConstruct(object arg)
         {
             string name = arg.ToString();
             GameObject gameObject;
@@ -140,7 +141,7 @@ namespace StarWarsEve
                 string path = Magic.prefabPath;
                 if (!string.IsNullOrEmpty(path))
                 {
-                    gameObject = ResourceService.Load<GameObject>(path);
+                    gameObject = await ResourceService.LoadAsync<GameObject>(path);
                     if (gameObject) m_MagicPrefabDic.Add(name, gameObject);
                     else return null;
                 }

@@ -8560,3 +8560,1669 @@ UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngin
 [01:43:45.1302] [Log] OnApplicationQuit
 [01:43:45.1397] ==========Game Exit==========
 
+[11:00:49.6550] ==========Game Start==========
+[11:00:49.6610] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:00:49.6821] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[11:00:49.7179] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:00:49.7224] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:00:50.5250] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=VFX_Nature_Flash
+[11:00:50.5265] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=VFX_Nature_Projectile_Only
+[11:00:50.5280] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=GroundExplSkill
+[11:00:50.5290] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=GroundHit
+[11:00:50.5290] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Lightning front attack
+[11:00:50.5300] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Slash wave green
+[11:00:50.5310] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Sword Slash 4
+[11:00:50.5320] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Sword Slash 5
+[11:00:50.5330] [Error] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Lightning strike 2
+[11:00:50.6868] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[11:00:50.7119] [Log] 敌人配置加载完成，总计15条记录
+[11:00:50.7154] [Error] 敌人名称重复：inkChicken
+[11:00:50.7164] [Error] 敌人名称重复：inkFox
+[11:00:50.7164] [Error] 敌人名称重复：inkPig
+[11:00:50.7176] [Error] 敌人名称重复：inkCow
+[11:00:50.7181] [Error] 敌人名称重复：inkTiger
+[11:00:50.7191] [Error] 敌人名称重复：warrior
+[11:00:50.7191] [Error] 敌人名称重复：ninja
+[11:00:50.7201] [Error] 敌人名称重复：berserkerBear
+[11:00:50.7201] [Error] 敌人名称重复：demonGeneral
+[11:00:50.7211] [Error] 敌人名称重复：doubleDemon
+[11:00:50.7221] [Error] 敌人名称重复：tripleDemon
+[11:00:50.7221] [Error] 敌人名称重复：demonKing
+[11:00:50.7231] [Error] 敌人名称重复：doubleDemonKing
+[11:00:50.7231] [Error] 敌人名称重复：tripleDemonKing
+[11:00:50.7243] [Error] 敌人名称重复：bigDemon
+[11:00:50.7253] [Log] 敌人配置加载完成，总计15条记录
+[11:00:50.7388] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[11:00:50.7528] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[11:00:50.7875] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[11:00:50.7885] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[11:00:50.7905] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8744] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8754] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8769] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8803] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8838] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8853] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8883] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8903] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8929] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8948] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8948] [Log] 武器配置加载完成，总计7件武器
+[11:00:50.8958] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8968] [Error] 武器ID重复：1
+[11:00:50.8975] [Error] 武器ID重复：2
+[11:00:50.8975] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[11:00:50.8985] [Error] 武器ID重复：3
+[11:00:50.8995] [Error] 武器ID重复：4
+[11:00:50.8995] [Error] 武器ID重复：5
+[11:00:50.9005] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9005] [Error] 武器ID重复：6
+[11:00:50.9015] [Error] 武器ID重复：7
+[11:00:50.9015] [Log] 武器配置加载完成，总计7件武器
+[11:00:50.9025] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9047] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9057] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9072] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9102] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9112] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9133] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9153] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9178] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9198] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9218] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9238] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9268] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9298] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9322] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9342] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9357] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9378] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9388] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9388] [Log] 玩家配置系统初始化完成
+[11:00:50.9388] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9413] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[11:00:50.9423] [Log] 玩家配置系统初始化完成
+[11:00:50.9491] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[11:00:50.9501] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[11:00:50.9501] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[11:00:50.9515] [Error] Error: Cannot load audio data for audio clip "God"
+[11:00:50.9566] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:00:50.9656] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[11:00:50.9733] [Error] 关卡ID重复：0
+[11:00:50.9743] [Error] 关卡ID重复：1
+[11:00:50.9748] [Error] 关卡ID重复：2
+[11:00:50.9758] [Error] 关卡ID重复：3
+[11:00:50.9758] [Error] 关卡ID重复：4
+[11:00:50.9768] [Error] 关卡ID重复：5
+[11:00:50.9768] [Error] 关卡ID重复：6
+[11:00:50.9780] [Error] 关卡ID重复：7
+[11:00:50.9790] [Error] 关卡ID重复：8
+[11:00:50.9790] [Error] 关卡ID重复：9
+[11:00:50.9803] [Error] 关卡ID重复：10
+[11:00:50.9803] [Error] 关卡ID重复：11
+[11:00:50.9813] [Error] 关卡ID重复：12
+[11:00:50.9813] [Error] 关卡ID重复：13
+[11:00:50.9823] [Error] 关卡ID重复：14
+[11:00:50.9823] [Error] 关卡ID重复：15
+[11:00:50.9839] [Error] 关卡ID重复：16
+[11:00:50.9844] [Error] 关卡ID重复：17
+[11:00:50.9844] [Error] 关卡ID重复：18
+[11:00:50.9854] [Error] 关卡ID重复：19
+[11:00:50.9854] [Error] 关卡ID重复：20
+[11:00:50.9854] [Error] 关卡ID重复：21
+[11:00:50.9869] [Error] 关卡ID重复：22
+[11:00:50.9869] [Error] 关卡ID重复：23
+[11:00:50.9885] [Error] 关卡ID重复：24
+[11:00:50.9885] [Error] 关卡ID重复：25
+[11:00:50.9894] [Error] 关卡ID重复：26
+[11:00:50.9904] [Error] 关卡ID重复：27
+[11:00:50.9904] [Error] 关卡ID重复：28
+[11:00:50.9914] [Error] 关卡ID重复：29
+[11:00:50.9914] [Error] 关卡ID重复：30
+[11:00:50.9924] [Error] 敌人组合ID重复：1
+[11:00:50.9934] [Error] 敌人组合ID重复：2
+[11:00:50.9945] [Error] 敌人组合ID重复：3
+[11:00:50.9945] [Error] 敌人组合ID重复：4
+[11:00:50.9955] [Error] 敌人组合ID重复：5
+[11:00:50.9955] [Error] 敌人组合ID重复：6
+[11:00:50.9965] [Error] 敌人组合ID重复：7
+[11:00:50.9965] [Error] 敌人组合ID重复：8
+[11:00:50.9982] [Error] 敌人组合ID重复：9
+[11:00:50.9982] [Error] 敌人组合ID重复：10
+[11:00:50.9992] [Error] 敌人组合ID重复：11
+[11:00:50.9992] [Error] 敌人组合ID重复：12
+[11:00:51.0002] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:00:51.0093] [Error] Error: Cannot load audio data for audio clip "Gun"
+[11:00:51.0093] [Error] Error: Cannot load audio data for audio clip "Knife"
+[11:00:51.0103] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[11:00:51.0113] [Error] Error: Cannot load audio data for audio clip "Stick"
+[11:00:51.0113] [Error] Error: Cannot load audio data for audio clip "Sword"
+[11:00:51.0254] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[11:00:51.0254] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[11:00:51.0274] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[11:00:51.0274] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[11:00:51.0284] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[11:00:51.0421] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[11:00:51.0433] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[11:00:51.0443] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[11:00:51.0453] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[11:00:51.0453] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[11:00:51.0667] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[11:00:51.0677] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[11:00:51.0687] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[11:00:51.0687] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[11:00:51.0697] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[11:00:51.0697] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[11:00:51.0712] [Error] [EffectSystem] 预加载失败: VFX_Nature_Flash → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=VFX_Nature_Flash
+[11:00:51.0722] [Error] [EffectSystem] 预加载失败: VFX_Nature_Projectile_Only → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=VFX_Nature_Projectile_Only
+[11:00:51.0722] [Error] [EffectSystem] 预加载失败: GroundExplSkill → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=GroundExplSkill
+[11:00:51.0732] [Error] [EffectSystem] 预加载失败: GroundHit → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=GroundHit
+[11:00:51.0732] [Error] [EffectSystem] 预加载失败: Lightning front attack → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Lightning front attack
+[11:00:51.0742] [Error] [EffectSystem] 预加载失败: Slash wave green → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Slash wave green
+[11:00:51.0752] [Error] [EffectSystem] 预加载失败: Sword Slash 4 → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Sword Slash 4
+[11:00:51.0752] [Error] [EffectSystem] 预加载失败: Sword Slash 5 → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Sword Slash 5
+[11:00:51.0762] [Error] [EffectSystem] 预加载失败: Lightning strike 2 → UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown. No Location found for Key=Lightning strike 2
+[11:00:51.0767] [Log] [EffectSystem] 预加载完成，共缓存 0 个特效
+[11:00:51.0832] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[11:00:51.0842] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[11:00:51.0842] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[11:00:51.0854] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[11:00:51.0859] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[11:00:51.0865] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[11:00:51.0920] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[11:00:51.0930] [Error] Error: Cannot load audio data for audio clip "修行者"
+[11:00:51.0940] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[11:00:51.0940] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[11:00:51.0940] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[11:00:51.0955] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[11:00:51.0955] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[11:00:51.1052] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[11:00:51.1052] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[11:00:51.1097] [Log] 物品配置加载完成，总计11件物品
+[11:00:51.1107] [Error] 物品ID重复：1
+[11:00:51.1117] [Error] 物品ID重复：2
+[11:00:51.1117] [Error] 物品ID重复：3
+[11:00:51.1127] [Error] 物品ID重复：4
+[11:00:51.1137] [Error] 物品ID重复：5
+[11:00:51.1147] [Error] 物品ID重复：6
+[11:00:51.1147] [Error] 物品ID重复：7
+[11:00:51.1158] [Error] 物品ID重复：8
+[11:00:51.1158] [Error] 物品ID重复：9
+[11:00:51.1168] [Error] 物品ID重复：10
+[11:00:51.1168] [Error] 物品ID重复：11
+[11:00:51.1179] [Log] 物品配置加载完成，总计11件物品
+[11:00:51.1204] [Log] 商品配置加载完成，总计12件商品
+[11:00:51.1214] [Log] 商品配置加载完成，总计12件商品
+[11:00:51.1244] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:00:51.1259] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:00:51.1351] [Log] 神明配置加载完成，总计5位神明
+[11:00:51.1376] [Error] 神明ID重复：101
+[11:00:51.1391] [Error] 神明ID重复：201
+[11:00:51.1401] [Error] 神明ID重复：301
+[11:00:51.1401] [Error] 神明ID重复：401
+[11:00:51.1411] [Error] 神明ID重复：501
+[11:00:51.1411] [Log] 神明配置加载完成，总计5位神明
+[11:00:51.1499] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:00:51.1599] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:00:51.6596] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[11:00:55.4187] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:00:55.5001] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:01:03.8406] [Log] OnApplicationQuit
+[11:01:03.8441] ==========Game Exit==========
+
+[11:03:38.6712] ==========Game Start==========
+[11:03:38.6774] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:03:38.6996] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[11:03:38.7191] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:03:38.7226] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:03:39.7807] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[11:03:39.8300] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[11:03:39.8442] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[11:03:39.8780] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[11:03:39.8795] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[11:03:39.8815] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9558] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9579] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9589] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9624] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9654] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9666] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9701] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9721] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9741] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9751] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9771] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9781] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9796] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9827] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9852] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9872] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9882] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9917] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9937] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9947] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9973] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[11:03:39.9993] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0018] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0043] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0063] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0093] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0108] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0128] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0153] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0173] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0198] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0208] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0228] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0244] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[11:03:40.0364] [Log] 敌人配置加载完成，总计15条记录
+[11:03:40.0384] [Error] 敌人名称重复：inkChicken
+[11:03:40.0399] [Error] 敌人名称重复：inkFox
+[11:03:40.0399] [Error] 敌人名称重复：inkPig
+[11:03:40.0409] [Error] 敌人名称重复：inkCow
+[11:03:40.0419] [Error] 敌人名称重复：inkTiger
+[11:03:40.0419] [Error] 敌人名称重复：warrior
+[11:03:40.0429] [Error] 敌人名称重复：ninja
+[11:03:40.0429] [Error] 敌人名称重复：berserkerBear
+[11:03:40.0444] [Error] 敌人名称重复：demonGeneral
+[11:03:40.0444] [Error] 敌人名称重复：doubleDemon
+[11:03:40.0454] [Error] 敌人名称重复：tripleDemon
+[11:03:40.0454] [Error] 敌人名称重复：demonKing
+[11:03:40.0464] [Error] 敌人名称重复：doubleDemonKing
+[11:03:40.0474] [Error] 敌人名称重复：tripleDemonKing
+[11:03:40.0474] [Error] 敌人名称重复：bigDemon
+[11:03:40.0484] [Log] 敌人配置加载完成，总计15条记录
+[11:03:40.0626] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[11:03:40.0641] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[11:03:40.0651] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[11:03:40.0691] [Log] 武器配置加载完成，总计7件武器
+[11:03:40.0706] [Error] 武器ID重复：1
+[11:03:40.0716] [Error] 武器ID重复：2
+[11:03:40.0716] [Error] 武器ID重复：3
+[11:03:40.0726] [Error] 武器ID重复：4
+[11:03:40.0736] [Error] 武器ID重复：5
+[11:03:40.0741] [Error] 武器ID重复：6
+[11:03:40.0741] [Error] 武器ID重复：7
+[11:03:40.0751] [Log] 武器配置加载完成，总计7件武器
+[11:03:40.0805] [Log] 玩家配置系统初始化完成
+[11:03:40.0840] [Log] 玩家配置系统初始化完成
+[11:03:40.0880] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:03:40.0965] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[11:03:40.1041] [Error] 关卡ID重复：0
+[11:03:40.1051] [Error] 关卡ID重复：1
+[11:03:40.1061] [Error] 关卡ID重复：2
+[11:03:40.1061] [Error] 关卡ID重复：3
+[11:03:40.1071] [Error] 关卡ID重复：4
+[11:03:40.1081] [Error] 关卡ID重复：5
+[11:03:40.1081] [Error] 关卡ID重复：6
+[11:03:40.1081] [Error] 关卡ID重复：7
+[11:03:40.1097] [Error] 关卡ID重复：8
+[11:03:40.1107] [Error] 关卡ID重复：9
+[11:03:40.1107] [Error] 关卡ID重复：10
+[11:03:40.1117] [Error] 关卡ID重复：11
+[11:03:40.1117] [Error] 关卡ID重复：12
+[11:03:40.1127] [Error] 关卡ID重复：13
+[11:03:40.1127] [Error] 关卡ID重复：14
+[11:03:40.1139] [Error] 关卡ID重复：15
+[11:03:40.1149] [Error] 关卡ID重复：16
+[11:03:40.1149] [Error] 关卡ID重复：17
+[11:03:40.1159] [Error] 关卡ID重复：18
+[11:03:40.1159] [Error] 关卡ID重复：19
+[11:03:40.1159] [Error] 关卡ID重复：20
+[11:03:40.1174] [Error] 关卡ID重复：21
+[11:03:40.1184] [Error] 关卡ID重复：22
+[11:03:40.1184] [Error] 关卡ID重复：23
+[11:03:40.1184] [Error] 关卡ID重复：24
+[11:03:40.1199] [Error] 关卡ID重复：25
+[11:03:40.1199] [Error] 关卡ID重复：26
+[11:03:40.1209] [Error] 关卡ID重复：27
+[11:03:40.1209] [Error] 关卡ID重复：28
+[11:03:40.1224] [Error] 关卡ID重复：29
+[11:03:40.1224] [Error] 关卡ID重复：30
+[11:03:40.1234] [Error] 敌人组合ID重复：1
+[11:03:40.1244] [Error] 敌人组合ID重复：2
+[11:03:40.1244] [Error] 敌人组合ID重复：3
+[11:03:40.1254] [Error] 敌人组合ID重复：4
+[11:03:40.1264] [Error] 敌人组合ID重复：5
+[11:03:40.1264] [Error] 敌人组合ID重复：6
+[11:03:40.1274] [Error] 敌人组合ID重复：7
+[11:03:40.1274] [Error] 敌人组合ID重复：8
+[11:03:40.1285] [Error] 敌人组合ID重复：9
+[11:03:40.1295] [Error] 敌人组合ID重复：10
+[11:03:40.1300] [Error] 敌人组合ID重复：11
+[11:03:40.1300] [Error] 敌人组合ID重复：12
+[11:03:40.1311] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:03:40.1455] [Error] Error: Cannot load audio data for audio clip "God"
+[11:03:40.1465] [Error] Error: Cannot load audio data for audio clip "Gun"
+[11:03:40.1465] [Error] Error: Cannot load audio data for audio clip "Knife"
+[11:03:40.1477] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[11:03:40.1487] [Error] Error: Cannot load audio data for audio clip "Stick"
+[11:03:40.1487] [Error] Error: Cannot load audio data for audio clip "Sword"
+[11:03:40.1563] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[11:03:40.1575] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[11:03:40.1585] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[11:03:40.1585] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[11:03:40.1595] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[11:03:40.1768] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[11:03:40.1778] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[11:03:40.1778] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[11:03:40.1788] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[11:03:40.1788] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[11:03:40.1961] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[11:03:40.1961] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[11:03:40.1976] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[11:03:40.1986] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[11:03:40.1986] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[11:03:40.2109] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[11:03:40.2119] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[11:03:40.2119] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[11:03:40.2119] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[11:03:40.2135] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[11:03:40.2695] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[11:03:40.2705] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[11:03:40.2715] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[11:03:40.2715] [Error] Error: Cannot load audio data for audio clip "修行者"
+[11:03:40.2725] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[11:03:40.2851] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[11:03:40.2851] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[11:03:40.2861] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[11:03:40.2871] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[11:03:40.2871] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[11:03:40.2950] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[11:03:40.2997] [Log] 物品配置加载完成，总计11件物品
+[11:03:40.3007] [Error] 物品ID重复：1
+[11:03:40.3017] [Error] 物品ID重复：2
+[11:03:40.3022] [Error] 物品ID重复：3
+[11:03:40.3032] [Error] 物品ID重复：4
+[11:03:40.3042] [Error] 物品ID重复：5
+[11:03:40.3042] [Error] 物品ID重复：6
+[11:03:40.3052] [Error] 物品ID重复：7
+[11:03:40.3052] [Error] 物品ID重复：8
+[11:03:40.3067] [Error] 物品ID重复：9
+[11:03:40.3077] [Error] 物品ID重复：10
+[11:03:40.3087] [Error] 物品ID重复：11
+[11:03:40.3087] [Log] 物品配置加载完成，总计11件物品
+[11:03:40.3128] [Log] 商品配置加载完成，总计12件商品
+[11:03:40.3148] [Log] 商品配置加载完成，总计12件商品
+[11:03:40.3178] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:03:40.3198] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:03:40.3581] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[11:03:40.3770] [Log] 神明配置加载完成，总计5位神明
+[11:03:40.3805] [Error] 神明ID重复：101
+[11:03:40.3805] [Error] 神明ID重复：201
+[11:03:40.3815] [Error] 神明ID重复：301
+[11:03:40.3825] [Error] 神明ID重复：401
+[11:03:40.3825] [Error] 神明ID重复：501
+[11:03:40.3835] [Log] 神明配置加载完成，总计5位神明
+[11:03:40.3925] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:03:40.4011] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:03:40.4817] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[11:03:40.8608] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[11:03:44.5260] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:03:44.6057] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:04:34.9881] [Log] OnApplicationQuit
+[11:04:34.9972] ==========Game Exit==========
+
+[11:05:31.8858] ==========Game Start==========
+[11:05:31.8923] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:05:31.9136] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[11:05:31.9318] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:05:31.9363] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:05:32.8968] [Log] 敌人配置加载完成，总计15条记录
+[11:05:32.9003] [Error] 敌人名称重复：inkChicken
+[11:05:32.9013] [Error] 敌人名称重复：inkFox
+[11:05:32.9013] [Error] 敌人名称重复：inkPig
+[11:05:32.9023] [Error] 敌人名称重复：inkCow
+[11:05:32.9023] [Error] 敌人名称重复：inkTiger
+[11:05:32.9033] [Error] 敌人名称重复：warrior
+[11:05:32.9043] [Error] 敌人名称重复：ninja
+[11:05:32.9043] [Error] 敌人名称重复：berserkerBear
+[11:05:32.9053] [Error] 敌人名称重复：demonGeneral
+[11:05:32.9053] [Error] 敌人名称重复：doubleDemon
+[11:05:32.9064] [Error] 敌人名称重复：tripleDemon
+[11:05:32.9074] [Error] 敌人名称重复：demonKing
+[11:05:32.9074] [Error] 敌人名称重复：doubleDemonKing
+[11:05:32.9084] [Error] 敌人名称重复：tripleDemonKing
+[11:05:32.9084] [Error] 敌人名称重复：bigDemon
+[11:05:32.9099] [Log] 敌人配置加载完成，总计15条记录
+[11:05:32.9256] [Log] 武器配置加载完成，总计7件武器
+[11:05:32.9276] [Error] 武器ID重复：1
+[11:05:32.9276] [Error] 武器ID重复：2
+[11:05:32.9292] [Error] 武器ID重复：3
+[11:05:32.9297] [Error] 武器ID重复：4
+[11:05:32.9307] [Error] 武器ID重复：5
+[11:05:32.9307] [Error] 武器ID重复：6
+[11:05:32.9317] [Error] 武器ID重复：7
+[11:05:32.9317] [Log] 武器配置加载完成，总计7件武器
+[11:05:32.9382] [Log] 玩家配置系统初始化完成
+[11:05:32.9407] [Log] 玩家配置系统初始化完成
+[11:05:32.9452] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:05:32.9527] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[11:05:32.9608] [Error] 关卡ID重复：0
+[11:05:32.9618] [Error] 关卡ID重复：1
+[11:05:32.9618] [Error] 关卡ID重复：2
+[11:05:32.9633] [Error] 关卡ID重复：3
+[11:05:32.9633] [Error] 关卡ID重复：4
+[11:05:32.9643] [Error] 关卡ID重复：5
+[11:05:32.9643] [Error] 关卡ID重复：6
+[11:05:32.9653] [Error] 关卡ID重复：7
+[11:05:32.9663] [Error] 关卡ID重复：8
+[11:05:32.9673] [Error] 关卡ID重复：9
+[11:05:32.9673] [Error] 关卡ID重复：10
+[11:05:32.9683] [Error] 关卡ID重复：11
+[11:05:32.9688] [Error] 关卡ID重复：12
+[11:05:32.9698] [Error] 关卡ID重复：13
+[11:05:32.9698] [Error] 关卡ID重复：14
+[11:05:32.9708] [Error] 关卡ID重复：15
+[11:05:32.9708] [Error] 关卡ID重复：16
+[11:05:32.9724] [Error] 关卡ID重复：17
+[11:05:32.9729] [Error] 关卡ID重复：18
+[11:05:32.9739] [Error] 关卡ID重复：19
+[11:05:32.9739] [Error] 关卡ID重复：20
+[11:05:32.9749] [Error] 关卡ID重复：21
+[11:05:32.9759] [Error] 关卡ID重复：22
+[11:05:32.9759] [Error] 关卡ID重复：23
+[11:05:32.9769] [Error] 关卡ID重复：24
+[11:05:32.9779] [Error] 关卡ID重复：25
+[11:05:32.9779] [Error] 关卡ID重复：26
+[11:05:32.9790] [Error] 关卡ID重复：27
+[11:05:32.9800] [Error] 关卡ID重复：28
+[11:05:32.9800] [Error] 关卡ID重复：29
+[11:05:32.9800] [Error] 关卡ID重复：30
+[11:05:32.9814] [Error] 敌人组合ID重复：1
+[11:05:32.9829] [Error] 敌人组合ID重复：2
+[11:05:32.9829] [Error] 敌人组合ID重复：3
+[11:05:32.9839] [Error] 敌人组合ID重复：4
+[11:05:32.9839] [Error] 敌人组合ID重复：5
+[11:05:32.9849] [Error] 敌人组合ID重复：6
+[11:05:32.9859] [Error] 敌人组合ID重复：7
+[11:05:32.9859] [Error] 敌人组合ID重复：8
+[11:05:32.9869] [Error] 敌人组合ID重复：9
+[11:05:32.9869] [Error] 敌人组合ID重复：10
+[11:05:32.9879] [Error] 敌人组合ID重复：11
+[11:05:32.9879] [Error] 敌人组合ID重复：12
+[11:05:32.9894] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:05:33.0369] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[11:05:33.0857] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[11:05:33.1018] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[11:05:33.1363] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[11:05:33.1383] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[11:05:33.1393] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2186] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2196] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2222] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2252] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2278] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2298] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2318] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2338] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2363] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2373] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2398] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2414] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2434] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2459] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2479] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2504] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2514] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2534] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2559] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2579] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2599] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2614] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2634] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2659] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2689] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2710] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2735] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2755] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2775] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2796] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2796] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[11:05:33.2806] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2826] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2841] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[11:05:33.2861] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[11:05:33.3016] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[11:05:33.3026] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[11:05:33.3026] [Error] Error: Cannot load audio data for audio clip "God"
+[11:05:33.3026] [Error] Error: Cannot load audio data for audio clip "Gun"
+[11:05:33.3041] [Error] Error: Cannot load audio data for audio clip "Knife"
+[11:05:33.3051] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[11:05:33.3127] [Error] Error: Cannot load audio data for audio clip "Stick"
+[11:05:33.3142] [Error] Error: Cannot load audio data for audio clip "Sword"
+[11:05:33.3152] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[11:05:33.3152] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[11:05:33.3162] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[11:05:33.3172] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[11:05:33.3272] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[11:05:33.3282] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[11:05:33.3282] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[11:05:33.3292] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[11:05:33.3297] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[11:05:33.3307] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[11:05:33.3482] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[11:05:33.3492] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[11:05:33.3497] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[11:05:33.3507] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[11:05:33.3507] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[11:05:33.3668] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[11:05:33.3678] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[11:05:33.3688] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[11:05:33.3688] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[11:05:33.3699] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[11:05:33.3699] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[11:05:33.3817] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[11:05:33.3817] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[11:05:33.3832] [Error] Error: Cannot load audio data for audio clip "修行者"
+[11:05:33.3832] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[11:05:33.3843] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[11:05:33.3853] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[11:05:33.3974] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[11:05:33.3974] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[11:05:33.3984] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[11:05:33.3984] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[11:05:33.4034] [Log] 物品配置加载完成，总计11件物品
+[11:05:33.4044] [Error] 物品ID重复：1
+[11:05:33.4054] [Error] 物品ID重复：2
+[11:05:33.4054] [Error] 物品ID重复：3
+[11:05:33.4064] [Error] 物品ID重复：4
+[11:05:33.4074] [Error] 物品ID重复：5
+[11:05:33.4074] [Error] 物品ID重复：6
+[11:05:33.4074] [Error] 物品ID重复：7
+[11:05:33.4089] [Error] 物品ID重复：8
+[11:05:33.4099] [Error] 物品ID重复：9
+[11:05:33.4099] [Error] 物品ID重复：10
+[11:05:33.4110] [Error] 物品ID重复：11
+[11:05:33.4120] [Log] 物品配置加载完成，总计11件物品
+[11:05:33.4143] [Log] 商品配置加载完成，总计12件商品
+[11:05:33.4153] [Log] 商品配置加载完成，总计12件商品
+[11:05:33.4189] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:05:33.4209] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[11:05:33.4547] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[11:05:33.4844] [Log] 神明配置加载完成，总计5位神明
+[11:05:33.4875] [Error] 神明ID重复：101
+[11:05:33.4885] [Error] 神明ID重复：201
+[11:05:33.4885] [Error] 神明ID重复：301
+[11:05:33.4900] [Error] 神明ID重复：401
+[11:05:33.4910] [Error] 神明ID重复：501
+[11:05:33.4910] [Log] 神明配置加载完成，总计5位神明
+[11:05:33.4995] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:05:33.5077] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:05:33.6005] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[11:05:34.0045] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[11:05:37.7466] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:05:37.8251] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:07:02.6439] [Log] OnApplicationQuit
+[11:07:02.6539] ==========Game Exit==========
+
+[11:16:27.6784] ==========Game Start==========
+[11:16:27.6839] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:16:31.3493] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[11:16:32.9169] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:16:32.9229] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:16:35.6503] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[11:16:35.6964] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[11:16:35.7104] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[11:16:35.7448] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[11:16:35.7458] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[11:16:35.7478] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8297] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8317] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8333] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8353] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8378] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8398] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8423] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8443] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8463] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8487] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8507] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8507] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8532] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8552] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8578] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8598] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8618] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8651] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8676] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8696] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8716] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8731] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8751] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8787] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8821] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8851] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8871] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8892] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8917] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8932] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8952] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8964] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8984] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[11:16:35.8999] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[11:16:35.9180] [Log] 敌人配置加载完成，总计15条记录
+[11:18:24.8248] [Error] 敌人名称重复：inkChicken
+[11:18:24.8258] [Error] 敌人名称重复：inkFox
+[11:18:24.8268] [Error] 敌人名称重复：inkPig
+[11:18:24.8278] [Error] 敌人名称重复：inkCow
+[11:18:24.8293] [Error] 敌人名称重复：inkTiger
+[11:18:24.8303] [Error] 敌人名称重复：warrior
+[11:18:24.8303] [Error] 敌人名称重复：ninja
+[11:18:24.8318] [Error] 敌人名称重复：berserkerBear
+[11:18:24.8328] [Error] 敌人名称重复：demonGeneral
+[11:18:24.8328] [Error] 敌人名称重复：doubleDemon
+[11:18:24.8344] [Error] 敌人名称重复：tripleDemon
+[11:18:24.8354] [Error] 敌人名称重复：demonKing
+[11:18:24.8354] [Error] 敌人名称重复：doubleDemonKing
+[11:18:24.8363] [Error] 敌人名称重复：tripleDemonKing
+[11:18:24.8373] [Error] 敌人名称重复：bigDemon
+[11:18:24.8373] [Log] 敌人配置加载完成，总计15条记录
+[11:18:24.8568] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[11:18:24.8589] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[11:18:24.8646] [Log] 武器配置加载完成，总计7件武器
+[11:18:24.8668] [Error] 武器ID重复：1
+[11:18:24.8679] [Error] 武器ID重复：2
+[11:18:24.8684] [Error] 武器ID重复：3
+[11:18:24.8694] [Error] 武器ID重复：4
+[11:18:24.8704] [Error] 武器ID重复：5
+[11:18:24.8711] [Error] 武器ID重复：6
+[11:18:24.8721] [Error] 武器ID重复：7
+[11:18:24.8733] [Log] 武器配置加载完成，总计7件武器
+[11:18:24.8799] [Log] 玩家配置系统初始化完成
+[11:18:24.8830] [Log] 玩家配置系统初始化完成
+[11:18:24.8881] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:18:24.8976] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[11:18:24.9067] [Error] 关卡ID重复：0
+[11:18:24.9077] [Error] 关卡ID重复：1
+[11:18:24.9077] [Error] 关卡ID重复：2
+[11:18:24.9087] [Error] 关卡ID重复：3
+[11:18:24.9097] [Error] 关卡ID重复：4
+[11:18:24.9097] [Error] 关卡ID重复：5
+[11:18:24.9107] [Error] 关卡ID重复：6
+[11:18:24.9117] [Error] 关卡ID重复：7
+[11:18:24.9122] [Error] 关卡ID重复：8
+[11:18:24.9132] [Error] 关卡ID重复：9
+[11:18:24.9132] [Error] 关卡ID重复：10
+[11:18:24.9142] [Error] 关卡ID重复：11
+[11:18:24.9152] [Error] 关卡ID重复：12
+[11:18:24.9152] [Error] 关卡ID重复：13
+[11:18:24.9152] [Error] 关卡ID重复：14
+[11:18:24.9167] [Error] 关卡ID重复：15
+[11:18:24.9167] [Error] 关卡ID重复：16
+[11:18:24.9182] [Error] 关卡ID重复：17
+[11:18:24.9182] [Error] 关卡ID重复：18
+[11:18:24.9192] [Error] 关卡ID重复：19
+[11:18:24.9192] [Error] 关卡ID重复：20
+[11:18:24.9202] [Error] 关卡ID重复：21
+[11:18:24.9212] [Error] 关卡ID重复：22
+[11:18:24.9217] [Error] 关卡ID重复：23
+[11:18:24.9217] [Error] 关卡ID重复：24
+[11:18:24.9227] [Error] 关卡ID重复：25
+[11:18:24.9237] [Error] 关卡ID重复：26
+[11:18:24.9237] [Error] 关卡ID重复：27
+[11:18:24.9247] [Error] 关卡ID重复：28
+[11:18:24.9247] [Error] 关卡ID重复：29
+[11:18:24.9262] [Error] 关卡ID重复：30
+[11:18:24.9272] [Error] 敌人组合ID重复：1
+[11:18:24.9272] [Error] 敌人组合ID重复：2
+[11:18:24.9282] [Error] 敌人组合ID重复：3
+[11:18:24.9292] [Error] 敌人组合ID重复：4
+[11:18:24.9292] [Error] 敌人组合ID重复：5
+[11:18:24.9302] [Error] 敌人组合ID重复：6
+[11:18:24.9302] [Error] 敌人组合ID重复：7
+[11:18:24.9312] [Error] 敌人组合ID重复：8
+[11:18:24.9317] [Error] 敌人组合ID重复：9
+[11:18:24.9327] [Error] 敌人组合ID重复：10
+[11:18:24.9327] [Error] 敌人组合ID重复：11
+[11:18:24.9337] [Error] 敌人组合ID重复：12
+[11:18:24.9347] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:18:24.9493] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[11:18:24.9503] [Error] Error: Cannot load audio data for audio clip "God"
+[11:18:24.9503] [Error] Error: Cannot load audio data for audio clip "Gun"
+[11:18:24.9513] [Error] Error: Cannot load audio data for audio clip "Knife"
+[11:18:24.9518] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[11:18:24.9528] [Error] Error: Cannot load audio data for audio clip "Stick"
+[11:18:24.9618] [Error] Error: Cannot load audio data for audio clip "Sword"
+[11:18:24.9628] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[11:18:24.9628] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[11:18:24.9638] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[11:18:24.9638] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[11:18:24.9841] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[11:18:24.9841] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[11:18:24.9856] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[11:18:24.9856] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[11:18:24.9866] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[11:18:24.9866] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[11:18:24.9939] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[11:18:24.9954] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[11:18:24.9964] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[11:18:24.9974] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[11:18:24.9974] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[11:18:24.9984] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[11:18:25.0665] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[11:18:25.0675] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[11:18:25.0690] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[11:18:25.0690] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[11:18:25.0832] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[11:18:25.0848] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[11:18:25.0858] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[11:18:25.0858] [Error] Error: Cannot load audio data for audio clip "修行者"
+[11:18:25.0868] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[11:18:25.0878] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[11:18:25.0953] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[11:18:25.0963] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[11:18:25.0963] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[11:18:25.0973] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[11:18:25.0983] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[11:18:25.1086] [Log] 物品配置加载完成，总计11件物品
+[11:18:25.1106] [Error] 物品ID重复：1
+[11:18:25.1106] [Error] 物品ID重复：2
+[11:18:25.1106] [Error] 物品ID重复：3
+[11:18:25.1122] [Error] 物品ID重复：4
+[11:18:25.1132] [Error] 物品ID重复：5
+[11:18:25.1142] [Error] 物品ID重复：6
+[11:18:25.1142] [Error] 物品ID重复：7
+[11:18:25.1152] [Error] 物品ID重复：8
+[11:18:25.1162] [Error] 物品ID重复：9
+[11:18:25.1162] [Error] 物品ID重复：10
+[11:18:25.1177] [Error] 物品ID重复：11
+[11:18:25.1183] [Log] 物品配置加载完成，总计11件物品
+[11:18:25.1203] [Log] 商品配置加载完成，总计12件商品
+[11:18:25.1234] [Log] 商品配置加载完成，总计12件商品
+[11:18:25.1263] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:18:25.1283] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[11:18:25.1288] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:18:25.1509] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[11:18:25.1578] [Log] 神明配置加载完成，总计5位神明
+[11:18:25.1619] [Error] 神明ID重复：101
+[11:18:25.1629] [Error] 神明ID重复：201
+[11:18:25.1639] [Error] 神明ID重复：301
+[11:18:25.1649] [Error] 神明ID重复：401
+[11:18:25.1649] [Error] 神明ID重复：501
+[11:18:25.1659] [Log] 神明配置加载完成，总计5位神明
+[11:18:25.1849] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:18:25.1939] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:18:25.3085] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[11:18:25.6951] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[11:18:27.7749] [Log] OnApplicationQuit
+[11:18:27.7769] ==========Game Exit==========
+
+[11:18:27.7802] [Error] Some objects were not cleaned up when closing the scene. (Did you spawn new GameObjects from OnDestroy?)
+The following scene GameObjects were found:
+Core
+
+[11:18:47.0819] ==========Game Start==========
+[11:18:47.0884] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:18:47.1163] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[11:18:47.1356] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:18:47.1406] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:18:48.2450] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[11:18:48.2970] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[11:18:48.3126] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[11:18:48.3471] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[11:18:48.3481] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[11:18:48.3501] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4241] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4261] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4276] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4296] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4321] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4336] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4356] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4376] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4398] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4408] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4434] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4453] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4463] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4473] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4497] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4522] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4542] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4562] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4587] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4617] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4632] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4662] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4687] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4708] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4743] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4767] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4788] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4808] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4828] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4848] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4863] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4874] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4894] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[11:18:48.4919] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[11:19:41.1655] [Log] 敌人配置加载完成，总计15条记录
+[11:19:41.1720] [Error] 敌人名称重复：inkChicken
+[11:19:41.1732] [Error] 敌人名称重复：inkFox
+[11:19:41.1741] [Error] 敌人名称重复：inkPig
+[11:19:41.1751] [Error] 敌人名称重复：inkCow
+[11:19:41.1761] [Error] 敌人名称重复：inkTiger
+[11:19:41.1761] [Error] 敌人名称重复：warrior
+[11:19:41.1771] [Error] 敌人名称重复：ninja
+[11:19:41.1781] [Error] 敌人名称重复：berserkerBear
+[11:19:41.1781] [Error] 敌人名称重复：demonGeneral
+[11:19:41.1796] [Error] 敌人名称重复：doubleDemon
+[11:19:41.1796] [Error] 敌人名称重复：tripleDemon
+[11:19:41.1806] [Error] 敌人名称重复：demonKing
+[11:19:41.1821] [Error] 敌人名称重复：doubleDemonKing
+[11:19:41.1831] [Error] 敌人名称重复：tripleDemonKing
+[11:19:41.1831] [Error] 敌人名称重复：bigDemon
+[11:19:43.3329] [Log] 敌人配置加载完成，总计15条记录
+[11:19:43.3419] [Log] 武器配置加载完成，总计7件武器
+[11:19:43.3435] [Error] 武器ID重复：1
+[11:19:43.3445] [Error] 武器ID重复：2
+[11:19:43.3445] [Error] 武器ID重复：3
+[11:19:43.3455] [Error] 武器ID重复：4
+[11:19:43.3465] [Error] 武器ID重复：5
+[11:19:43.3465] [Error] 武器ID重复：6
+[11:19:43.3475] [Error] 武器ID重复：7
+[11:19:43.3480] [Log] 武器配置加载完成，总计7件武器
+[11:19:43.3690] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[11:19:43.3710] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[11:19:43.3789] [Log] 玩家配置系统初始化完成
+[11:19:43.3809] [Log] 玩家配置系统初始化完成
+[11:19:43.3854] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:19:43.3960] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[11:19:43.4050] [Error] 关卡ID重复：0
+[11:19:43.4060] [Error] 关卡ID重复：1
+[11:19:43.4060] [Error] 关卡ID重复：2
+[11:19:43.4070] [Error] 关卡ID重复：3
+[11:19:43.4080] [Error] 关卡ID重复：4
+[11:19:43.4080] [Error] 关卡ID重复：5
+[11:19:43.4090] [Error] 关卡ID重复：6
+[11:19:43.4090] [Error] 关卡ID重复：7
+[11:19:43.4100] [Error] 关卡ID重复：8
+[11:19:43.4100] [Error] 关卡ID重复：9
+[11:19:43.4115] [Error] 关卡ID重复：10
+[11:19:43.4121] [Error] 关卡ID重复：11
+[11:19:43.4121] [Error] 关卡ID重复：12
+[11:19:43.4131] [Error] 关卡ID重复：13
+[11:19:43.4141] [Error] 关卡ID重复：14
+[11:19:43.4141] [Error] 关卡ID重复：15
+[11:19:43.4141] [Error] 关卡ID重复：16
+[11:19:43.4156] [Error] 关卡ID重复：17
+[11:19:43.4161] [Error] 关卡ID重复：18
+[11:19:43.4166] [Error] 关卡ID重复：19
+[11:19:43.4176] [Error] 关卡ID重复：20
+[11:19:43.4176] [Error] 关卡ID重复：21
+[11:19:43.4186] [Error] 关卡ID重复：22
+[11:19:43.4196] [Error] 关卡ID重复：23
+[11:19:43.4196] [Error] 关卡ID重复：24
+[11:19:43.4196] [Error] 关卡ID重复：25
+[11:19:43.4211] [Error] 关卡ID重复：26
+[11:19:43.4211] [Error] 关卡ID重复：27
+[11:19:43.4226] [Error] 关卡ID重复：28
+[11:19:43.4226] [Error] 关卡ID重复：29
+[11:19:43.4236] [Error] 关卡ID重复：30
+[11:19:43.4246] [Error] 敌人组合ID重复：1
+[11:19:43.4246] [Error] 敌人组合ID重复：2
+[11:19:43.4246] [Error] 敌人组合ID重复：3
+[11:19:43.4261] [Error] 敌人组合ID重复：4
+[11:19:43.4271] [Error] 敌人组合ID重复：5
+[11:19:43.4271] [Error] 敌人组合ID重复：6
+[11:19:43.4281] [Error] 敌人组合ID重复：7
+[11:19:43.4281] [Error] 敌人组合ID重复：8
+[11:19:43.4291] [Error] 敌人组合ID重复：9
+[11:19:43.4301] [Error] 敌人组合ID重复：10
+[11:19:43.4301] [Error] 敌人组合ID重复：11
+[11:19:43.4311] [Error] 敌人组合ID重复：12
+[11:19:43.4311] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:19:43.4463] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[11:19:43.4473] [Error] Error: Cannot load audio data for audio clip "God"
+[11:19:43.4483] [Error] Error: Cannot load audio data for audio clip "Gun"
+[11:19:43.4493] [Error] Error: Cannot load audio data for audio clip "Knife"
+[11:19:43.4493] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[11:19:43.4617] [Error] Error: Cannot load audio data for audio clip "Stick"
+[11:19:43.4630] [Error] Error: Cannot load audio data for audio clip "Sword"
+[11:19:43.4630] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[11:19:43.4645] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[11:19:43.4652] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[11:19:43.4772] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[11:19:43.4782] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[11:19:43.4792] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[11:19:43.4803] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[11:19:43.4803] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[11:19:43.4933] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[11:19:43.4943] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[11:19:43.4943] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[11:19:43.4953] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[11:19:43.4963] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[11:19:43.5125] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[11:19:43.5125] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[11:19:43.5135] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[11:19:43.5145] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[11:19:43.5145] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[11:19:43.5155] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[11:19:43.5817] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[11:19:43.5827] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[11:19:43.5837] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[11:19:43.5837] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[11:19:43.5847] [Error] Error: Cannot load audio data for audio clip "修行者"
+[11:19:43.5978] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[11:19:43.5988] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[11:19:43.5998] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[11:19:43.5998] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[11:19:43.5998] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[11:19:43.6073] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[11:19:43.6083] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[11:19:43.6118] [Log] 物品配置加载完成，总计11件物品
+[11:19:43.6128] [Error] 物品ID重复：1
+[11:19:43.6138] [Error] 物品ID重复：2
+[11:19:43.6138] [Error] 物品ID重复：3
+[11:19:43.6154] [Error] 物品ID重复：4
+[11:19:43.6159] [Error] 物品ID重复：5
+[11:19:43.6164] [Error] 物品ID重复：6
+[11:19:43.6174] [Error] 物品ID重复：7
+[11:19:43.6174] [Error] 物品ID重复：8
+[11:19:43.6184] [Error] 物品ID重复：9
+[11:19:43.6194] [Error] 物品ID重复：10
+[11:19:43.6204] [Error] 物品ID重复：11
+[11:19:43.6204] [Log] 物品配置加载完成，总计11件物品
+[11:19:43.6238] [Log] 商品配置加载完成，总计12件商品
+[11:19:43.6253] [Log] 商品配置加载完成，总计12件商品
+[11:19:43.6283] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:19:43.6308] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:19:43.6338] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[11:19:43.6532] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[11:19:43.6796] [Log] 神明配置加载完成，总计5位神明
+[11:19:43.6826] [Error] 神明ID重复：101
+[11:19:43.6826] [Error] 神明ID重复：201
+[11:19:43.6836] [Error] 神明ID重复：301
+[11:19:43.6846] [Error] 神明ID重复：401
+[11:19:43.6846] [Error] 神明ID重复：501
+[11:19:43.6856] [Log] 神明配置加载完成，总计5位神明
+[11:19:43.6934] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:19:43.7021] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:19:43.7919] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[11:19:44.1872] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[11:19:47.6588] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:19:47.7365] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:19:50.1642] [Log] OnApplicationQuit
+[11:19:50.1722] ==========Game Exit==========
+
+[11:21:26.8444] ==========Game Start==========
+[11:21:26.8500] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:21:26.8781] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[11:21:26.8982] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:21:26.9027] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:21:31.5950] [Log] 敌人配置加载完成，总计15条记录
+[11:21:31.8054] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[11:21:31.8109] [Log] 武器配置加载完成，总计7件武器
+[11:21:31.8170] [Log] 玩家配置系统初始化完成
+[11:21:31.8589] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[11:21:31.8761] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[11:21:31.9168] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[11:21:31.9179] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[11:21:31.9204] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[11:21:31.9990] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0010] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0033] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0078] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0098] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0123] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0123] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[11:21:32.0153] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0168] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0188] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:21:32.0188] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0214] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0229] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0249] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0269] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0289] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0289] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[11:21:32.0309] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0341] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0356] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0382] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0415] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0435] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0460] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0481] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0511] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0531] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0556] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0597] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0617] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0637] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0657] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0672] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0692] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0706] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0726] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0741] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[11:21:32.0996] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[11:21:32.1232] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[11:21:32.1252] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[11:21:32.1262] [Error] Error: Cannot load audio data for audio clip "God"
+[11:21:32.1357] [Error] Error: Cannot load audio data for audio clip "Gun"
+[11:21:32.1378] [Error] Error: Cannot load audio data for audio clip "Knife"
+[11:21:32.1378] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[11:21:32.1388] [Error] Error: Cannot load audio data for audio clip "Stick"
+[11:21:32.1499] [Error] Error: Cannot load audio data for audio clip "Sword"
+[11:21:32.1514] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[11:21:32.1524] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[11:21:32.1524] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[11:21:32.1534] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[11:21:32.1534] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[11:21:32.1771] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[11:21:32.1781] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[11:21:32.1791] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[11:21:32.1791] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[11:21:32.1791] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[11:21:32.1806] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[11:21:32.1872] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[11:21:32.1882] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[11:21:32.1882] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[11:21:32.1892] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[11:21:32.1892] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[11:21:32.2117] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[11:21:32.2127] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[11:21:32.2127] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[11:21:32.2142] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[11:21:32.2142] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[11:21:32.2218] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[11:21:32.2234] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[11:21:32.2234] [Error] Error: Cannot load audio data for audio clip "修行者"
+[11:21:32.2244] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[11:21:32.2244] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[11:21:32.2479] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[11:21:32.2489] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[11:21:32.2499] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[11:21:32.2509] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[11:21:32.2509] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[11:21:32.2615] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[11:21:32.3002] [Log] 物品配置加载完成，总计11件物品
+[11:21:32.3047] [Log] 商品配置加载完成，总计12件商品
+[11:21:32.3092] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:21:32.3217] [Log] 神明配置加载完成，总计5位神明
+[11:21:32.3318] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:21:32.4555] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[11:21:32.9795] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[11:21:36.2489] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:21:36.3279] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:21:44.5855] [Log] OnApplicationQuit
+[11:21:44.5896] ==========Game Exit==========
+
+[11:21:49.0095] ==========Game Start==========
+[11:21:49.0150] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:21:49.0382] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[11:21:49.0572] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:21:49.0617] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[11:21:50.1642] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[11:21:50.1857] [Log] 敌人配置加载完成，总计15条记录
+[11:21:50.2198] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[11:21:50.2347] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[11:21:50.2674] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[11:21:50.2694] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[11:21:50.2714] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3488] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3498] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3514] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3534] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3564] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3579] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3599] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3624] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3654] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3669] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3689] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3699] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3725] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3745] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3771] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3800] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3815] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3835] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3855] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3871] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3891] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3916] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3947] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3972] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[11:21:50.3997] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4023] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4043] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4068] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4088] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4113] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4133] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4143] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4153] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4169] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[11:21:50.4179] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[11:21:50.4199] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[11:21:50.4199] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[11:21:50.4209] [Error] Error: Cannot load audio data for audio clip "God"
+[11:21:50.4209] [Error] Error: Cannot load audio data for audio clip "Gun"
+[11:21:50.4254] [Log] 武器配置加载完成，总计7件武器
+[11:21:50.4299] [Log] 玩家配置系统初始化完成
+[11:21:50.4354] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[11:21:50.4445] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[11:21:50.5084] [Error] Error: Cannot load audio data for audio clip "Knife"
+[11:21:50.5094] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[11:21:50.5104] [Error] Error: Cannot load audio data for audio clip "Stick"
+[11:21:50.5104] [Error] Error: Cannot load audio data for audio clip "Sword"
+[11:21:50.5114] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[11:21:50.5114] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[11:21:50.5205] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[11:21:50.5215] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[11:21:50.5225] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[11:21:50.5225] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[11:21:50.5225] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[11:21:50.5355] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[11:21:50.5355] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[11:21:50.5370] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[11:21:50.5375] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[11:21:50.5375] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[11:21:50.5542] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[11:21:50.5552] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[11:21:50.5552] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[11:21:50.5552] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[11:21:50.5567] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[11:21:50.5713] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[11:21:50.5723] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[11:21:50.5733] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[11:21:50.5733] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[11:21:50.5743] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[11:21:50.5853] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[11:21:50.5863] [Error] Error: Cannot load audio data for audio clip "修行者"
+[11:21:50.5869] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[11:21:50.5879] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[11:21:50.5879] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[11:21:50.6029] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[11:21:50.6039] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[11:21:50.6049] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[11:21:50.6049] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[11:21:50.6089] [Log] 物品配置加载完成，总计11件物品
+[11:21:50.6114] [Log] 商品配置加载完成，总计12件商品
+[11:21:50.6154] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[11:21:50.6290] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[11:21:50.6571] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[11:21:50.6804] [Log] 神明配置加载完成，总计5位神明
+[11:21:50.6935] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[11:21:50.8251] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[11:21:51.1856] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[11:21:55.0339] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:21:55.1137] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[11:22:11.1739] [Log] OnApplicationQuit
+[11:22:11.1782] ==========Game Exit==========
+
+[14:08:42.8942] ==========Game Start==========
+[14:08:42.9021] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:08:42.9256] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[14:08:42.9444] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:08:42.9490] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:08:44.3379] [Log] 敌人配置加载完成，总计15条记录
+[14:08:44.3551] [Log] 武器配置加载完成，总计7件武器
+[14:08:44.3621] [Log] 玩家配置系统初始化完成
+[14:08:44.3692] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[14:08:44.3757] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[14:08:44.3802] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[14:08:44.4167] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[14:08:44.4535] [Log] 物品配置加载完成，总计11件物品
+[14:08:44.4571] [Log] 商品配置加载完成，总计12件商品
+[14:08:44.4603] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[14:08:44.4748] [Log] 神明配置加载完成，总计5位神明
+[14:08:44.5074] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[14:08:44.5968] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[14:08:45.1772] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[14:08:49.1658] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:08:49.2501] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:09:05.2805] [Warning] [Worker0] BuildSettingData uses the CustomEditor attribute but does not inherit from Editor.
+You must inherit from Editor. See the Editor class script documentation.
+[14:09:15.1499] [Log] OnApplicationQuit
+[14:09:15.1535] ==========Game Exit==========
+
+[14:11:26.5280] ==========Game Start==========
+[14:11:26.5355] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:11:26.5590] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[14:11:26.5792] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:11:26.5842] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:11:27.5972] [Log] 敌人配置加载完成，总计15条记录
+[14:11:27.6120] [Log] 武器配置加载完成，总计7件武器
+[14:11:27.6185] [Log] 玩家配置系统初始化完成
+[14:11:27.6245] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[14:11:27.6275] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[14:11:27.6345] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[14:11:27.6566] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[14:11:27.6815] [Log] 物品配置加载完成，总计11件物品
+[14:11:27.6860] [Log] 商品配置加载完成，总计12件商品
+[14:11:27.6890] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[14:11:27.7048] [Log] 神明配置加载完成，总计5位神明
+[14:11:27.7199] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[14:11:27.8049] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[14:11:28.3067] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[14:11:32.3864] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:11:32.4638] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:11:43.5961] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:11:44.6103] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:11:45.0943] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:11:46.1258] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:11:46.6122] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:11:47.1902] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:11:47.2344] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:11:47.4655] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:47.4678] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:47.6419] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:11:47.8600] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:47.8610] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:48.1233] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:11:48.2567] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:48.2587] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:48.6101] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:11:48.6602] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:48.6620] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:49.0577] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:49.0597] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:49.1558] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:11:49.4588] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:49.4588] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:49.6267] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:11:49.8583] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:49.8593] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:50.2418] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:50.2438] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:50.6412] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:11:50.6579] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:50.6588] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:51.0621] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:51.0631] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:51.1458] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:11:51.4610] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:51.4630] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:51.8601] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:51.8616] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:11:51.9555] [Log] OnApplicationQuit
+[14:11:51.9600] ==========Game Exit==========
+
+[14:15:10.3725] ==========Game Start==========
+[14:15:10.3790] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:15:10.4023] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[14:15:10.4211] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:15:10.4257] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:15:11.8846] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[14:15:11.9346] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:15:11.9518] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[14:15:11.9870] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[14:15:11.9890] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[14:15:11.9905] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0782] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0802] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0812] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0847] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0887] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0902] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0932] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0957] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0977] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.0982] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1008] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1018] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1043] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1053] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1078] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1088] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1113] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1138] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1158] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1183] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1203] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1232] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1262] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1284] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1309] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1342] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1371] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1392] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1402] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1439] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1459] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1474] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1494] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[14:15:12.1504] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[14:15:12.2191] [Log] 敌人配置加载完成，总计15条记录
+[14:15:12.2247] [Log] 武器配置加载完成，总计7件武器
+[14:15:12.2313] [Log] 玩家配置系统初始化完成
+[14:15:12.2389] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[14:15:12.2479] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[14:15:12.2754] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[14:15:12.2764] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[14:15:12.2774] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[14:15:12.2784] [Error] Error: Cannot load audio data for audio clip "God"
+[14:15:12.2889] [Error] Error: Cannot load audio data for audio clip "Gun"
+[14:15:12.2899] [Error] Error: Cannot load audio data for audio clip "Knife"
+[14:15:12.2910] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[14:15:12.2915] [Error] Error: Cannot load audio data for audio clip "Stick"
+[14:15:12.3069] [Error] Error: Cannot load audio data for audio clip "Sword"
+[14:15:12.3079] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[14:15:12.3089] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[14:15:12.3089] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[14:15:12.3238] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[14:15:12.3248] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[14:15:12.3258] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[14:15:12.3258] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[14:15:12.3403] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[14:15:12.3408] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[14:15:12.3418] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[14:15:12.3418] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[14:15:12.3428] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[14:15:12.3570] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[14:15:12.3570] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[14:15:12.3580] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[14:15:12.3590] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[14:15:12.3600] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[14:15:12.3730] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[14:15:12.3740] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[14:15:12.3750] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[14:15:12.3755] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[14:15:12.3931] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[14:15:12.3931] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[14:15:12.3946] [Error] Error: Cannot load audio data for audio clip "修行者"
+[14:15:12.3956] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[14:15:12.4103] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[14:15:12.4112] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[14:15:12.4122] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[14:15:12.4132] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[14:15:12.4132] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[14:15:12.4202] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[14:15:12.4257] [Log] 物品配置加载完成，总计11件物品
+[14:15:12.4302] [Log] 商品配置加载完成，总计12件商品
+[14:15:12.4348] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[14:15:12.4433] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[14:15:12.4703] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[14:15:12.4925] [Log] 神明配置加载完成，总计5位神明
+[14:15:12.5110] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[14:15:12.6146] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[14:15:12.9480] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[14:15:16.7239] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:15:16.8046] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:15:29.8979] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:15:30.9156] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:15:31.3934] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:15:32.4122] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:15:32.8961] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:15:33.4625] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:15:33.5104] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:15:33.7399] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:33.7420] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:33.9201] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:15:34.1362] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:34.1382] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:34.4031] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:15:34.5354] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:34.5369] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:34.9053] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:15:34.9428] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:34.9448] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:35.3257] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:35.3267] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:35.4391] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:15:35.7257] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:35.7277] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:35.9056] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:15:36.1255] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:36.1265] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:36.5241] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:36.5251] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:36.9214] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:36.9234] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:15:36.9565] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:15:37.3080] [Log] OnApplicationQuit
+[14:15:37.3110] ==========Game Exit==========
+
+[14:15:37.3165] [Error] Some objects were not cleaned up when closing the scene. (Did you spawn new GameObjects from OnDestroy?)
+The following scene GameObjects were found:
+Core
+New Game Object
+
+[14:20:40.9747] ==========Game Start==========
+[14:20:40.9824] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:20:41.0067] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[14:20:41.0268] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:20:41.0313] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:20:42.5773] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[14:20:42.6356] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:20:42.6523] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[14:20:42.6894] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[14:20:42.6914] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[14:20:42.6939] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7773] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7783] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7801] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7831] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7851] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7861] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7891] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7917] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7927] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7947] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7962] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7982] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[14:20:42.7997] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8017] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8043] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8072] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8092] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8118] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8143] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8163] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8183] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8193] [Log] 敌人配置加载完成，总计15条记录
+[14:20:42.8213] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8243] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8265] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8301] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8331] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8357] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8387] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8402] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8422] [Error] Error: Cannot create FMOD::Sound instance for clip "呜呜 嘟嘟" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8447] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8457] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8477] [Log] 武器配置加载完成，总计7件武器
+[14:20:42.8477] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8502] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[14:20:42.8587] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[14:20:42.8602] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[14:20:42.8612] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[14:20:42.8673] [Log] 玩家配置系统初始化完成
+[14:20:42.8729] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[14:20:42.8811] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[14:20:42.8981] [Error] Error: Cannot load audio data for audio clip "God"
+[14:20:42.8991] [Error] Error: Cannot load audio data for audio clip "Gun"
+[14:20:42.9001] [Error] Error: Cannot load audio data for audio clip "Knife"
+[14:20:42.9001] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[14:20:42.9011] [Error] Error: Cannot load audio data for audio clip "Stick"
+[14:20:42.9092] [Error] Error: Cannot load audio data for audio clip "Sword"
+[14:20:42.9102] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[14:20:42.9112] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[14:20:42.9112] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[14:20:42.9128] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[14:20:42.9326] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[14:20:42.9326] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[14:20:42.9336] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[14:20:42.9346] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[14:20:42.9448] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[14:20:42.9448] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[14:20:42.9458] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[14:20:42.9468] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[14:20:42.9468] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[14:20:42.9673] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[14:20:42.9683] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[14:20:42.9683] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[14:20:42.9693] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[14:20:42.9693] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[14:20:42.9768] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[14:20:42.9778] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[14:20:42.9793] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[14:20:42.9793] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[14:20:42.9803] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[14:20:42.9949] [Error] Error: Cannot load audio data for audio clip "修行者"
+[14:20:42.9969] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[14:20:42.9969] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[14:20:42.9979] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[14:20:42.9979] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[14:20:43.0126] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[14:20:43.0136] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[14:20:43.0146] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[14:20:43.0191] [Log] 物品配置加载完成，总计11件物品
+[14:20:43.0222] [Log] 商品配置加载完成，总计12件商品
+[14:20:43.0267] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[14:20:43.0367] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[14:20:43.0713] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[14:20:43.0970] [Log] 神明配置加载完成，总计5位神明
+[14:20:43.1121] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[14:20:43.2059] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[14:20:43.5504] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[14:20:47.3759] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:20:47.4523] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:20:56.6654] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:20:57.6794] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:20:58.1628] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:20:59.1808] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:20:59.6777] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:21:00.2233] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:21:00.2672] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:21:00.6170] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:00.6190] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:00.6963] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:21:01.0100] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:01.0120] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:01.1931] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:21:01.4119] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:01.4129] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:01.7449] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:21:01.7968] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:01.7978] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:02.1966] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:02.1976] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:02.2307] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:21:02.5972] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:02.5992] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:02.6966] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:21:02.9969] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:02.9989] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:03.3994] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:03.4004] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:03.7461] [Log] LegacyAnimationController: 未找到名为 spawn 的动画.
+[14:21:03.8004] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:03.8024] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:04.1832] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:04.1847] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:21:04.2140] [Warning] EnemyBase 缺少 AudioSource，自动添加。
+[14:21:04.4691] [Log] OnApplicationQuit
+[14:21:04.4736] ==========Game Exit==========
+
+[14:21:04.4780] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:21:04.4805] [Error] Some objects were not cleaned up when closing the scene. (Did you spawn new GameObjects from OnDestroy?)
+The following scene GameObjects were found:
+Core
+
+[14:47:30.0638] ==========Game Start==========
+[14:47:30.0699] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:47:30.0930] [Warning] Asset bundles built with build target WebGL may not be compatible with running in the Editor.
+[14:47:30.1139] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:47:30.1184] [Warning] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+[14:47:31.3971] [Error] Error: Cannot create FMOD::Sound instance for clip "BOSSBG" (FMOD error: Unsupported file or audio format. )
+[14:47:31.4199] [Log] 敌人配置加载完成，总计15条记录
+[14:47:31.4610] [Error] Error: Cannot create FMOD::Sound instance for clip "CombatBG" (FMOD error: Unsupported file or audio format. )
+[14:47:31.4775] [Error] Error: Cannot create FMOD::Sound instance for clip "Duojian" (FMOD error: Unsupported file or audio format. )
+[14:47:31.5117] [Error] Error: Cannot create FMOD::Sound instance for clip "God" (FMOD error: Unsupported file or audio format. )
+[14:47:31.5138] [Error] Error: Cannot create FMOD::Sound instance for clip "Gun" (FMOD error: Unsupported file or audio format. )
+[14:47:31.5163] [Error] Error: Cannot create FMOD::Sound instance for clip "Knife" (FMOD error: Unsupported file or audio format. )
+[14:47:31.5985] [Error] Error: Cannot create FMOD::Sound instance for clip "MainBG" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6005] [Error] Error: Cannot create FMOD::Sound instance for clip "Stick" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6020] [Error] Error: Cannot create FMOD::Sound instance for clip "Sword" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6050] [Error] Error: Cannot create FMOD::Sound instance for clip "我这是在哪" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6085] [Error] Error: Cannot create FMOD::Sound instance for clip "你醒来啦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6105] [Error] Error: Cannot create FMOD::Sound instance for clip "墨妖来了" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6130] [Error] Error: Cannot create FMOD::Sound instance for clip "呼(语气词) 先把小怪清理掉就行啦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6150] [Error] Error: Cannot create FMOD::Sound instance for clip "妖王怎么就出现啦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6166] [Error] Error: Cannot create FMOD::Sound instance for clip "怪物太多的时候 可以使用祈愿令哦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6185] [Error] Error: Cannot create FMOD::Sound instance for clip "我们胜利啦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6205] [Error] Error: Cannot create FMOD::Sound instance for clip "可以点祈愿按钮去抽取神将哦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6230] [Error] Error: Cannot create FMOD::Sound instance for clip "快去看看商城吧" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6250] [Error] Error: Cannot create FMOD::Sound instance for clip "按成长按钮可提升属性哦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6265] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗一次花费五点体力哦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6285] [Log] 武器配置加载完成，总计7件武器
+[14:47:31.6285] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗分为普通级 困难级 深渊级哦" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6315] [Error] Error: Cannot create FMOD::Sound instance for clip "肃清墨妖" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6335] [Error] Error: Cannot create FMOD::Sound instance for clip "我们继续努力吧" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6365] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗失败了 唉" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6387] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将关羽" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6427] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将悟空" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6447] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将杨戬" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6482] [Error] Error: Cannot create FMOD::Sound instance for clip "恭喜抽到了神将哪吒" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6512] [Error] Error: Cannot create FMOD::Sound instance for clip "中坛元帅" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6537] [Error] Error: Cannot create FMOD::Sound instance for clip "二郎真君" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6562] [Error] Error: Cannot create FMOD::Sound instance for clip "武圣关羽" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6593] [Error] Error: Cannot create FMOD::Sound instance for clip "齐天大圣" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6613] [Error] Error: Cannot create FMOD::Sound instance for clip "修行者" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6628] [Error] Error: Cannot create FMOD::Sound instance for clip "别打扰我 我在休息" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6648] [Error] Error: Cannot create FMOD::Sound instance for clip "勇气让我们前行" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6663] [Log] 玩家配置系统初始化完成
+[14:47:31.6738] [Error] Error: Cannot create FMOD::Sound instance for clip "想看我长大的样子吗" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6748] [Error] Error: Cannot create FMOD::Sound instance for clip "战斗吧" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6773] [Error] Error: Cannot create FMOD::Sound instance for clip "琴声真好听呀" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6793] [Error] Error: Cannot create FMOD::Sound instance for clip "长辈跟我说 相逢便是缘" (FMOD error: Unsupported file or audio format. )
+[14:47:31.6803] [Error] Error: Cannot load audio data for audio clip "BOSSBG"
+[14:47:31.6848] [Log] 关卡配置加载完成: 共31个关卡, 12个敌人组合
+[14:47:31.6949] [Log] 关卡奖励配置加载完成，共25个关卡奖励
+[14:47:31.7104] [Error] Error: Cannot load audio data for audio clip "CombatBG"
+[14:47:31.7119] [Error] Error: Cannot load audio data for audio clip "Duojian"
+[14:47:31.7119] [Error] Error: Cannot load audio data for audio clip "God"
+[14:47:31.7129] [Error] Error: Cannot load audio data for audio clip "Gun"
+[14:47:31.7284] [Error] Error: Cannot load audio data for audio clip "Knife"
+[14:47:31.7299] [Error] Error: Cannot load audio data for audio clip "MainBG"
+[14:47:31.7310] [Error] Error: Cannot load audio data for audio clip "Stick"
+[14:47:31.7310] [Error] Error: Cannot load audio data for audio clip "Sword"
+[14:47:31.7320] [Error] Error: Cannot load audio data for audio clip "我这是在哪"
+[14:47:31.7468] [Error] Error: Cannot load audio data for audio clip "你醒来啦"
+[14:47:31.7478] [Error] Error: Cannot load audio data for audio clip "墨妖来了"
+[14:47:31.7478] [Error] Error: Cannot load audio data for audio clip "呼(语气词) 先把小怪清理掉就行啦"
+[14:47:31.7488] [Error] Error: Cannot load audio data for audio clip "妖王怎么就出现啦"
+[14:47:31.7636] [Error] Error: Cannot load audio data for audio clip "怪物太多的时候 可以使用祈愿令哦"
+[14:47:31.7646] [Error] Error: Cannot load audio data for audio clip "我们胜利啦"
+[14:47:31.7646] [Error] Error: Cannot load audio data for audio clip "可以点祈愿按钮去抽取神将哦"
+[14:47:31.7646] [Error] Error: Cannot load audio data for audio clip "快去看看商城吧"
+[14:47:31.7661] [Error] Error: Cannot load audio data for audio clip "按成长按钮可提升属性哦"
+[14:47:31.7746] [Error] Error: Cannot load audio data for audio clip "战斗一次花费五点体力哦"
+[14:47:31.7761] [Error] Error: Cannot load audio data for audio clip "战斗分为普通级 困难级 深渊级哦"
+[14:47:31.7771] [Error] Error: Cannot load audio data for audio clip "肃清墨妖"
+[14:47:31.7781] [Error] Error: Cannot load audio data for audio clip "我们继续努力吧"
+[14:47:31.7781] [Error] Error: Cannot load audio data for audio clip "战斗失败了 唉"
+[14:47:31.7958] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将关羽"
+[14:47:31.7969] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将悟空"
+[14:47:31.7969] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将杨戬"
+[14:47:31.7979] [Error] Error: Cannot load audio data for audio clip "恭喜抽到了神将哪吒"
+[14:47:31.7979] [Error] Error: Cannot load audio data for audio clip "中坛元帅"
+[14:47:31.8140] [Error] Error: Cannot load audio data for audio clip "二郎真君"
+[14:47:31.8140] [Error] Error: Cannot load audio data for audio clip "武圣关羽"
+[14:47:31.8155] [Error] Error: Cannot load audio data for audio clip "齐天大圣"
+[14:47:31.8165] [Error] Error: Cannot load audio data for audio clip "修行者"
+[14:47:31.8165] [Error] Error: Cannot load audio data for audio clip "别打扰我 我在休息"
+[14:47:31.8236] [Error] Error: Cannot load audio data for audio clip "勇气让我们前行"
+[14:47:31.8251] [Error] Error: Cannot load audio data for audio clip "呜呜 嘟嘟"
+[14:47:31.8261] [Error] Error: Cannot load audio data for audio clip "想看我长大的样子吗"
+[14:47:31.8271] [Error] Error: Cannot load audio data for audio clip "战斗吧"
+[14:47:31.8445] [Error] Error: Cannot load audio data for audio clip "琴声真好听呀"
+[14:47:31.8455] [Error] Error: Cannot load audio data for audio clip "长辈跟我说 相逢便是缘"
+[14:47:31.8500] [Log] 物品配置加载完成，总计11件物品
+[14:47:31.8545] [Log] 商品配置加载完成，总计12件商品
+[14:47:31.8579] [Log] 抽奖配置加载完成: 概率项3条, 卡池等级3个
+[14:47:31.8674] [Error] Error: Cannot create FMOD::Sound instance for clip "Lightning_3" (FMOD error: Unsupported file or audio format. )
+[14:47:31.9059] [Error] Error: Cannot load audio data for audio clip "Lightning_3"
+[14:47:31.9286] [Log] 神明配置加载完成，总计5位神明
+[14:47:31.9427] [Log] 引导配置加载完成: 共18条通用引导, 13条首次引导
+[14:47:32.0317] [Log] [EffectSystem] 预加载完成，共缓存 9 个特效
+[14:47:32.4083] [Log] [SoundSystem] 预加载完成，已缓存 40 个音频
+[14:47:32.5071] [Log] OnApplicationQuit
+[14:47:32.5101] ==========Game Exit==========
+

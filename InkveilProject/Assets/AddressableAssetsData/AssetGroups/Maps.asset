@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Maps
+  m_EditorClassIdentifier: 
+  m_GroupName: Maps
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 898c550c4a01a6c49ad47e4cfd5cf1ef
+  m_SerializeEntries:
+  - m_GUID: 0b0f502f680b9b3458be2b22e61757b4
+    m_Address: Assets/Stylized Far East/Materials/Textures/13.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0fe38b3f3b66a90489fb0e024b9f5a57
+    m_Address: Assets/Stylized Far East/Materials/Textures/18.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ebe1802dddea8f438636be625ea66c2
+    m_Address: Assets/Stylized Far East/Materials/Textures/21.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20674338d71b3264ca47e4d3d1e192d8
+    m_Address: Assets/Stylized Far East/Materials/Textures/14.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2089b625ec625224ab15bfbedd1973ab
+    m_Address: Assets/Stylized Far East/Materials/Textures/2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c1b67f982d16994982e7476bae5b833
+    m_Address: Assets/Stylized Far East/Materials/Textures/3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 324625aedcba56f4f9b67dcba542d48c
+    m_Address: Assets/Stylized Far East/Materials/Textures/24.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b37d2cff8924954987ac737f014842a
+    m_Address: Assets/Stylized Far East/Materials/Textures/15.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d0ec0723c46c0541872a7e3a3add3bf
+    m_Address: Assets/Stylized Far East/Materials/Textures/6.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e88007e29c9311428d827733128b1c2
+    m_Address: Assets/Stylized Far East/Materials/Textures/16.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c755d39dc248ac44987d2bd6d880a83
+    m_Address: Assets/Stylized Far East/Materials/Textures/4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c9bd51e2daf6264885fae9453632638
+    m_Address: Assets/Stylized Far East/Materials/Textures/19.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8140bc0e90ad6ad4d940934ada6771fb
+    m_Address: Assets/Stylized Far East/Materials/Textures/17.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4d27b8d7777feb4eb30ee6ef50d3395
+    m_Address: Assets/Stylized Far East/Materials/Textures/5.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af8370a6eb423d94abd851bb16b56350
+    m_Address: Assets/Stylized Far East/Materials/Textures/23.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0c0973010eb39c4081657d7a21160bb
+    m_Address: Assets/Stylized Far East/Materials/Textures/22.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3e975a9dea9b7a4f8a4b310fc9658f6
+    m_Address: Assets/Stylized Far East/Materials/Textures/12.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9c53d6d001243d43a5f7fe590e43331
+    m_Address: Assets/Stylized Far East/Materials/Textures/10.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9f6f300da1bf8646b0076c589a3d022
+    m_Address: Assets/Stylized Far East/Materials/Textures/11.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c075f4a1222423b4eb020d1bc67a7874
+    m_Address: Assets/Stylized Far East/Materials/Textures/1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db99b029772e23b4da5d555de6bad025
+    m_Address: Assets/Stylized Far East/Materials/Textures/7.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ddc8ba087e2ef104796a05de33697008
+    m_Address: Assets/Stylized Far East/Materials/Textures/8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eddd82fa605d40c4c86a3307851fc633
+    m_Address: Assets/Stylized Far East/Materials/Textures/25.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f45207016d33b3a45a56a308e67375b6
+    m_Address: Assets/Stylized Far East/Materials/Textures/20.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f54b748d786aa914e824e2b007d5be83
+    m_Address: Assets/Stylized Far East/Materials/Textures/9.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e519368d52fa3d1489b0b9abfafbf3bc, type: 2}
+    - {fileID: 11400000, guid: a4cd72970e053ac4c9e3789179bfc6fe, type: 2}

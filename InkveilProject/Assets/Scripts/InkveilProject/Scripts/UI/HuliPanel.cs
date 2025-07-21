@@ -18,7 +18,7 @@ public class HuliPanel : MonoBehaviour
     }
 
 
-    internal void PlayGuide()
+    internal async void PlayGuide()
     {
         int index = Random.Range(0, guides.Count);
         Guide guide = guides[index];
@@ -27,12 +27,12 @@ public class HuliPanel : MonoBehaviour
         {
             m_huli.gameObject.SetActive(true);
             m_Text.text = guide.guideText;
-            SoundObject sound = SoundSystem.instance.Play(guide.sound);
+            SoundObject sound = await SoundSystem.instance.Play(guide.sound);
             sound.onStopEvent += OnSoundEndHandler;
         }
         else
         {
-            SoundObject sound = SoundSystem.instance.Play(guide.sound);
+            SoundObject sound = await SoundSystem.instance.Play(guide.sound);
             sound.onStopEvent += OnSoundEndHandler;
         }
     }

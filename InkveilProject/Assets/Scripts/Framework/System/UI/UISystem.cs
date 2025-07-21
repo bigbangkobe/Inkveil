@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Framework
 {
@@ -148,7 +149,7 @@ namespace Framework
 		/// <param name="type">面板类型</param>
 		/// <param name="isAssetBundle">是否资源包加载</param>
 		/// <returns>返回面板对象</returns>
-		public static UIPanel Open(string bundleName, Type type, bool isAssetBundle = true)
+		public async static Task<UIPanel> Open(string bundleName, Type type, bool isAssetBundle = true)
 		{
 			UIPanel panel = Get(bundleName);
 			if (panel == null)
@@ -162,7 +163,7 @@ namespace Framework
 				}
 				else
 				{
-					asset = Resources.Load<GameObject>(bundleName);
+					asset = await ResourceService.LoadAsync<GameObject>(bundleName);
 				}
 
 				GameObject gameObject = Instantiate(asset);
@@ -367,28 +368,35 @@ namespace Framework
 			}
 		}
 
-		private static IEnumerator OnLoadComplete(string bundleName, Type type)
-		{
-			ResourceRequest request = Resources.LoadAsync<GameObject>(bundleName);
+        private static IEnumerator OnLoadComplete(string bundleName, Type type)
+        {
+            var handle = ResourceService.LoadAsync<GameObject>(bundleName); // 返回 Task<GameObject>
+            while (!handle.IsCompleted)
+                yield return null;
 
-			yield return request;
+            var loadedAsset = handle.Result;
 
-			GameObject gameObject = Instantiate(request.asset as GameObject);
-			gameObject.name = request.asset.name;
-			gameObject.transform.SetParent(instance.transform, false);
+            var request = new FakeResourceRequest();
+            request.SetAsset(loadedAsset);
 
-			UIPanel panel = Activator.CreateInstance(type) as UIPanel;
-			panel.Init(bundleName, gameObject);
-			instance.m_PanelMap[bundleName] = panel;
-			instance.m_PanelList.Add(panel);
+            yield return request;
 
-			panel.enabled = true;
-			Action<UIPanel> openCallback = instance.m_AsyncCallbackMap[bundleName];
-			if (openCallback != null)
-			{
-				openCallback.Invoke(panel);
-				instance.m_AsyncCallbackMap.Remove(bundleName);
-			}
-		}
-	}
+            GameObject gameObject = UnityEngine.Object.Instantiate(request.asset as GameObject);
+            gameObject.name = request.asset.name;
+            gameObject.transform.SetParent(instance.transform, false);
+
+            UIPanel panel = Activator.CreateInstance(type) as UIPanel;
+            panel.Init(bundleName, gameObject);
+            instance.m_PanelMap[bundleName] = panel;
+            instance.m_PanelList.Add(panel);
+
+            panel.enabled = true;
+            if (instance.m_AsyncCallbackMap.TryGetValue(bundleName, out var openCallback))
+            {
+                openCallback.Invoke(panel);
+                instance.m_AsyncCallbackMap.Remove(bundleName);
+            }
+        }
+
+    }
 }

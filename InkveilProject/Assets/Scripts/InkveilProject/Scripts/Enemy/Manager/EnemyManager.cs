@@ -1,8 +1,9 @@
 ﻿using Framework;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class EnemyManager : MonoSingleton<EnemyManager>
 {
@@ -46,9 +47,9 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// <summary>
     /// 初始化函数
     /// </summary>
-    public async void OnInit()
+    public void OnInit()
     {
-        await EnemyDispositionManager.instance.OnInitAsync();
+        EnemyDispositionManager.instance.OnItin();
     }
 
     protected override void Awake()
@@ -66,9 +67,9 @@ public class EnemyManager : MonoSingleton<EnemyManager>
         Destroy(gameObject);
     }
 
-    internal EnemyBase SpawnEnemy(int id, Transform transform)
+    internal async Task<EnemyBase> SpawnEnemy(int id, Transform transform)
     {
-        EnemyBase enemyBase = GetEnemyByID(id);
+        EnemyBase enemyBase = await GetEnemyByID(id);
         enemyBase.transform.position = transform.position;
         enemyBase.OnDestroyed = HandleEnemyDestroyed;
         return enemyBase;
@@ -82,10 +83,10 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// </summary>
     /// <param name="name">名称</param>
     /// <returns></returns>
-    public EnemyBase GetEnemyByID(int id)
+    public async Task<EnemyBase> GetEnemyByID(int id)
     {
         EnemyInfo enemyInfo = EnemyDispositionManager.instance.GetBaseInfoById(id);
-        return GetEnemyByName(enemyInfo.enemyName);
+        return (await GetEnemyByName(enemyInfo.enemyName));
     }
 
     /// <summary>
@@ -93,11 +94,11 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// </summary>
     /// <param name="name">名称</param>
     /// <returns></returns>
-    public EnemyBase GetEnemyByName(string name)
+    public async Task<EnemyBase> GetEnemyByName(string name)
     {
         EnemyInfo enemy = EnemyDispositionManager.instance.GetBaseInfoByName(name);
         ObjectPool EnemyPool = GetEnemyPool(name);
-        EnemyBase Enemy = EnemyPool.Get(name) as EnemyBase;
+        EnemyBase Enemy = await EnemyPool.GetAsync(name) as EnemyBase;
         Enemy.OnInit(enemy);
 
         // Set random position around spawn point
@@ -278,6 +279,7 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// <param name="arg2">额外参数</param>
     private void OnEnemyDisabled(object arg1, object arg2)
     {
+        if (arg1 == null) return;
         EnemyBase Enemy = arg1 as EnemyBase;
         Enemy.gameObject.SetActive(false);
         Enemy.transform.SetParent(transform);
@@ -290,6 +292,7 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// <param name="arg2">额外参数</param>
     private void OnEnemyEnabled(object arg1, object arg2)
     {
+        if (arg1 == null) return;
         EnemyBase Enemy = arg1 as EnemyBase;
         Enemy.gameObject.SetActive(true);
         //SetRandomPosition(Enemy.transform);
@@ -302,42 +305,61 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// <param name="arg2">额外参数</param>
     private void OnEnemyDestroy(object arg1, object arg2)
     {
+        if (arg1 == null) return;
         EnemyBase Enemy = arg1 as EnemyBase;
         Destroy(Enemy);
     }
 
+    private readonly object _prefabDicLock = new object();
     /// <summary>
     /// Enemy生成构造函数
     /// </summary>
     /// <param name="arg"></param>
     /// <returns></returns>
-    private object OnEnemyConstruct(object arg)
+    private async Task<object> OnEnemyConstruct(object arg)
     {
         string name = arg.ToString();
         GameObject gameObject;
         EnemyInfo enemy = EnemyDispositionManager.instance.GetBaseInfoByName(name);
 
-        if (!m_EnemyPrefabDic.ContainsKey(name))
+        // 双重检查 + 加锁保护
+        if (!m_EnemyPrefabDic.TryGetValue(name, out gameObject))
         {
             string path = enemy.prefabPath;
             if (!string.IsNullOrEmpty(path))
             {
-                gameObject = ResourceService.Load<GameObject>(path);
-                if (gameObject) m_EnemyPrefabDic.Add(name, gameObject);
-                else return null;
+                gameObject = await ResourceService.LoadAsync<GameObject>(path);
+                if (gameObject)
+                {
+                    lock (_prefabDicLock)
+                    {
+                        if (!m_EnemyPrefabDic.ContainsKey(name)) // 二次确认
+                        {
+                            m_EnemyPrefabDic.Add(name, gameObject);
+                        }
+                    }
+                }
+                else
+                {
+                    Debug.LogError($"加载敌人Prefab失败: {name}");
+                    return null;
+                }
             }
         }
-        gameObject = m_EnemyPrefabDic[name];
-        if (gameObject == null)
+        else
         {
-            Debug.LogError("从资源中读取Enemy资源失败");
-            return null;
+            if (gameObject == null)
+            {
+                Debug.LogError("从资源中读取Enemy资源失败");
+                return null;
+            }
         }
-        GameObject go = Instantiate(gameObject, transform);
+
+        // 实例化
+        GameObject go = UnityEngine.Object.Instantiate(m_EnemyPrefabDic[name], transform);
         go.name = name;
         go.SetActive(false);
-        EnemyBase Enemy = go.GetComponent<EnemyBase>();
-        return Enemy;
+        return go.GetComponent<EnemyBase>();
     }
 
     internal void ClearAllEnemies()

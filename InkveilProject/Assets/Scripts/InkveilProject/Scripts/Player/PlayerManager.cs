@@ -4,12 +4,27 @@ public class PlayerManager : MonoSingleton<PlayerManager>
 {
     public int m_PlayerLevel = 1;
     public int m_ShieldGrowthLevel = 1;
-    public WeaponInfo m_WeaponInfo;
+
+    private WeaponInfo m_WeaponInfo;
+    public WeaponInfo WeaponInfo
+    {
+        get
+        {
+            if(m_WeaponInfo == null)
+            {
+                return WeaponDispositionManager.instance.GetWeaponById(1);
+            }
+            else
+            {
+                return m_WeaponInfo;
+            }
+        }
+    }
     
 
-    public async void OnInit() 
+    public void OnInit() 
     {
-        await PlayerDispositionManager.instance.OnInitAsync();
+        PlayerDispositionManager.instance.OnInit();
         m_WeaponInfo = WeaponDispositionManager.instance.GetWeaponById(1);
     }
 

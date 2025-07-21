@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using Framework;
 using LitJson;
 using UnityEngine;
@@ -10,55 +9,54 @@ public class ShopDispositionManager : Singleton<ShopDispositionManager>
     private Dictionary<int, ShopInfo> m_IdShopDict = new Dictionary<int, ShopInfo>();
     private Dictionary<string, ShopInfo> m_NameShopDict = new Dictionary<string, ShopInfo>();
 
-    // 配置数据
-    public List<ShopInfo> ShopList { get; private set; } = new List<ShopInfo>();
-
-    // 加载状态
+    // 资源管理
+    private TextAsset m_ConfigAsset;
     private bool m_IsInitialized = false;
 
+    public List<ShopInfo> ShopList { get; private set; }
+
     /// <summary>
-    /// 异步初始化商品配置系统
+    /// 初始化商品配置系统
     /// </summary>
-    public async Task OnInitAsync()
+    public async void OnInit()
     {
         if (m_IsInitialized) return;
+
         try
         {
-            // 异步加载配置文件
-            var handle = ResourceService.LoadAsync<TextAsset>(ConfigDefine.shopInfo);
-            TextAsset asset = await handle.Task;
+            m_ConfigAsset = await ResourceService.LoadAsync<TextAsset>(ConfigDefine.shopInfo);
 
-            if (asset == null)
+            if (m_ConfigAsset == null)
             {
                 Debug.LogError($"商品配置文件加载失败：{ConfigDefine.shopInfo}");
                 return;
             }
 
-            // 解析配置列表
-            ShopList = JsonMapper.ToObject<List<ShopInfo>>(asset.text) ?? new List<ShopInfo>();
-            if (ShopList.Count == 0)
+            ShopList = JsonMapper.ToObject<List<ShopInfo>>(m_ConfigAsset.text);
+            if (ShopList == null || ShopList.Count == 0)
             {
                 Debug.LogError("商品配置数据解析失败");
                 return;
             }
 
-            // 建立索引
-            m_IdShopDict.Clear();
-            m_NameShopDict.Clear();
-            foreach (var item in ShopList)
+            foreach (var Shop in ShopList)
             {
-                if (m_IdShopDict.ContainsKey(item.shopID))
+                // 数据校验
+                if (m_IdShopDict.ContainsKey(Shop.shopID))
                 {
-                    Debug.LogError($"商品ID重复：{item.shopID}");
+                    Debug.LogError($"商品ID重复：{Shop.shopID}");
                     continue;
                 }
-                if (string.IsNullOrEmpty(item.itemName))
+
+                if (string.IsNullOrEmpty(Shop.itemName))
                 {
                     Debug.LogWarning("发现无名商品配置，已跳过");
                     continue;
                 }
-                m_IdShopDict[item.shopID] = item;
-                m_NameShopDict[item.itemName] = item;
+
+                // 建立索引
+                m_IdShopDict[Shop.shopID] = Shop;
+                m_NameShopDict[Shop.itemName] = Shop;
             }
 
             m_IsInitialized = true;
@@ -76,7 +74,7 @@ public class ShopDispositionManager : Singleton<ShopDispositionManager>
     public ShopInfo GetShopByName(string name)
     {
         if (!m_IsInitialized) return null;
-        return m_NameShopDict.TryGetValue(name, out var info) ? info : null;
+        return m_NameShopDict.TryGetValue(name, out var Shop) ? Shop : null;
     }
 
     /// <summary>
@@ -85,17 +83,22 @@ public class ShopDispositionManager : Singleton<ShopDispositionManager>
     public ShopInfo GetShopById(int id)
     {
         if (!m_IsInitialized) return null;
-        return m_IdShopDict.TryGetValue(id, out var info) ? info : null;
+        return m_IdShopDict.TryGetValue(id, out var Shop) ? Shop : null;
     }
 
     /// <summary>
     /// 清理系统资源
     /// </summary>
-    public void Clear()
+    public void OnClear()
     {
+        if (m_ConfigAsset != null)
+        {
+            Resources.UnloadAsset(m_ConfigAsset);
+            m_ConfigAsset = null;
+        }
+
         m_IdShopDict.Clear();
         m_NameShopDict.Clear();
-        ShopList.Clear();
         m_IsInitialized = false;
     }
 }

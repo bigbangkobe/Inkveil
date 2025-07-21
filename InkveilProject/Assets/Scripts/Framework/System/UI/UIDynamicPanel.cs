@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using System.Threading.Tasks;
 
 namespace Framework
 {
@@ -61,9 +62,9 @@ namespace Framework
 		/// 添加面板
 		/// </summary>
 		/// <returns>返回面板对象</returns>
-		public UIPanel Add()
+		public async Task<UIPanel> Add()
 		{
-			UIPanel panel = m_PanelPool.Get() as UIPanel;
+			UIPanel panel = await m_PanelPool.GetAsync() as UIPanel;
 			m_PanelList.Add(panel);
 
 			return panel;
@@ -92,7 +93,7 @@ namespace Framework
 		/// 面板构造回调
 		/// </summary>
 		/// <returns>返回面板</returns>
-		private object OnPanelConstruct(object obj)
+		private Task<object> OnPanelConstruct(object obj)
 		{
 			GameObject gameObject = UnityEngine.Object.Instantiate(m_PanelPrefab);
 			gameObject.name = m_PanelPrefab.name;
@@ -102,14 +103,14 @@ namespace Framework
 			UIPanel panel = Activator.CreateInstance(m_PanelType) as UIPanel;
 			panel.Init(bundleName, gameObject);
 
-			return panel;
-		}
+            return Task.FromResult<object>(panel); // ✅ 正确包装返回值
+        }
 
-		/// <summary>
-		/// 面板销毁回调
-		/// </summary>
-		/// <param name="obj">对象</param>
-		private void OnPanelDestroy(object obj, object o = null)
+        /// <summary>
+        /// 面板销毁回调
+        /// </summary>
+        /// <param name="obj">对象</param>
+        private void OnPanelDestroy(object obj, object o = null)
 		{
 			UIPanel panel = obj as UIPanel;
 			panel.OnDestroy();

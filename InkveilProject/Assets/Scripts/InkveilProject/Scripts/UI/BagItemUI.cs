@@ -15,7 +15,7 @@ public class BagItemUI : MonoBehaviour
     public Sprite[] gradeColors;
 
     // 初始化UI元素
-    public void OnInit(BagItemInfo itemInfo)
+    public async void OnInit(BagItemInfo itemInfo)
     {
         bagItem = itemInfo;
 
@@ -30,7 +30,7 @@ public class BagItemUI : MonoBehaviour
         // 设置物品图标（假设使用Resources加载）
         if (!string.IsNullOrEmpty(itemInfo.propertyInfo.imagePath))
         {
-            Sprite iconSprite = ResourceService.Load<Sprite>(itemInfo.propertyInfo.imagePath);
+            Sprite iconSprite = await ResourceService.LoadAsync<Sprite>(itemInfo.propertyInfo.imagePath);
             if (iconSprite != null)
             {
                 m_Icon.sprite = iconSprite;

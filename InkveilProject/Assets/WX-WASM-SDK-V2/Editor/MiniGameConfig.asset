@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1795359250, guid: c5cdb7931ecd2214e866f53c165568dc, type: 3}
+  m_Script: {fileID: 1795359250, guid: 1cf430f187a0b40eda7f668318d8be23, type: 3}
   m_Name: MiniGameConfig
   m_EditorClassIdentifier: 
   ProjectConf:
     projectName: "\u58A8\u5996\u6218"
     Appid: wxff459b1f2c3b4f9b
-    CDN: https://cloud1-9g0wtzq3cb7e8005-1369043152.tcloudbaseapp.com
+    CDN: https://cloud1-9g0wtzq3cb7e8005-1369043152.tcloudbaseapp.com/Inkveil/
     assetLoadType: 0
     compressDataPackage: 1
     VideoUrl: 
@@ -25,11 +25,11 @@ MonoBehaviour:
     bundlePathIdentifier: StreamingAssets;
     bundleExcludeExtensions: json;
     AssetsUrl: 
-    MemorySize: 256
+    MemorySize: 512
     HideAfterCallMain: 1
     preloadFiles: 
     Orientation: 0
-    bgImageSrc: Assets/Image/LoadPanel/LoadBG.jpg
+    bgImageSrc: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/images/background.jpg
     dataFileSubPrefix: 
     maxStorage: 200
     defaultReleaseSize: 31457280
@@ -53,7 +53,7 @@ MonoBehaviour:
     Il2CppOptimizeSize: 1
     profilingFuncs: 1
     Webgl2: 1
-    fbslim: 0
+    fbslim: 1
     DeleteStreamingAssets: 1
     ProfilingMemory: 0
     CleanBuild: 0
