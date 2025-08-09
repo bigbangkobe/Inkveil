@@ -21,7 +21,7 @@ MonoBehaviour:
   m_IgnoreUnsupportedFilesInBuild: 0
   m_UniqueBundleIds: 0
   m_NonRecursiveBuilding: 1
-  m_CCDEnabled: 0
+  m_CCDEnabled: 1
   m_maxConcurrentWebRequests: 3
   m_ContiguousBundles: 1
   m_StripUnityVersionFromBundleBuild: 0
@@ -30,12 +30,13 @@ MonoBehaviour:
   m_ShaderBundleCustomNaming: 
   m_MonoScriptBundleNaming: 0
   m_CheckForContentUpdateRestrictionsOption: 0
+  m_BuildAndReleaseBinFileOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
     m_Id: 2106d75ec6938dc4fae69b055df3b8f1
   m_RemoteCatalogLoadPath:
     m_Id: 
-  m_ContentStateBuildPathProfileVariableName: 
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
@@ -61,6 +62,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 89dac2340a1bbf64f9415c579998eb26, type: 2}
   - {fileID: 11400000, guid: 22301d8ffe227274eb1e3c82046dd3f1, type: 2}
   - {fileID: 11400000, guid: f85c7be3354f7664bb9b8446c4d6e446, type: 2}
+  - {fileID: 11400000, guid: 3a425ea70a57d8140971f0bdd2e3882f, type: 2}
   - {fileID: 11400000, guid: 637759e5cbca1594f92b93c1cf5b665b, type: 2}
   - {fileID: 11400000, guid: eca4fda97f85b91469b317466d61d035, type: 2}
   m_BuildSettings:
@@ -83,7 +85,7 @@ MonoBehaviour:
       - m_Id: bb604228f65463644bac345dc7fd84cf
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: f4f0510b16be3e34da399c0460ef1623
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: https://cloud1-9g0wtzq3cb7e8005-1369043152.tcloudbaseapp.com/Inkveil/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: 2106d75ec6938dc4fae69b055df3b8f1
       m_Name: Remote.BuildPath
@@ -125,3 +127,9 @@ MonoBehaviour:
     m_RegisteredServiceTypeRefs:
     - UnityEditor.AddressableAssets.HostingServices.HttpHostingService, Unity.Addressables.Editor
     m_PingTimeoutInMilliseconds: 5000
+  m_CcdManagedData:
+    EnvironmentId: 
+    EnvironmentName: 
+    BucketId: 
+    Badge: 
+    State: 0

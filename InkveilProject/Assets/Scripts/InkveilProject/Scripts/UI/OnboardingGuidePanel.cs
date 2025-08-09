@@ -15,6 +15,7 @@ public class OnboardingGuidePanel : MonoBehaviour
         public UnityEvent onEnd;
     }
     public GameObject m_target;
+    public GameObject m_setGame;
     public GameObject m_huli;
     public Button m_huliBtn;
     public Text m_Text;
@@ -35,14 +36,20 @@ public class OnboardingGuidePanel : MonoBehaviour
          instance = this;
         if (!GuideDispositionManager.instance.isGuide)
         {
+            if (m_setGame != null) m_setGame.SetActive(false);
             if (isLinding)
             {
+               
                 await TimerSystem.Start((x) => {
-                    m_Image.DOColor(Color.black * 0, 2).OnComplete(async () => {
-                        StartGuide();
+                    StartGuide();
+                }, false, 1);
+
+                await TimerSystem.Start((x) => {
+                    m_Image.DOColor(Color.black * 0, 3).OnComplete(async () => {
                         m_Image.enabled = false;
+                        StartGuide();
                     });
-                },false,1);
+                },false,8);
               
             }
             else
@@ -90,6 +97,16 @@ public class OnboardingGuidePanel : MonoBehaviour
             SoundObject sound = await SoundSystem.instance.Play(guide.sound);
             sound.onStopEvent += OnSoundEndHandler;
         }
+    }
+
+    public void Puase() 
+    {
+        GameManager.instance.GameStateEnum = GameConfig.GameState.State.Pause;
+    }
+
+    public void StartGame()
+    {
+        GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play;
     }
 
     public void WaitNexHandler(float timer) 

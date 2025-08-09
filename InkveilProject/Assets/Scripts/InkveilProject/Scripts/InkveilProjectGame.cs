@@ -17,9 +17,16 @@ public class InkveilProjectGame : MonoBehaviour
         LevelManager.instance.StartGame();
 
         GodManager.instance.OnInitPoint(m_GodPoint);
-
+        m_GodPoint.position = new Vector3(0,0,-11);
         Vector3 vector3 = Camera.main.transform.localPosition;
         vector3.y = 17;
         Camera.main.transform.localPosition = vector3;
+
+        CameraResolutionAdapter cameraResolutionAdapter = Camera.main.GetComponent<CameraResolutionAdapter>();
+
+        if (cameraResolutionAdapter == null)
+        {
+            Camera.main.gameObject.AddComponent<CameraResolutionAdapter>();
+        }
     }
 }

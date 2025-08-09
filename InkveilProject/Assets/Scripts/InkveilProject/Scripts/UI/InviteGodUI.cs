@@ -26,7 +26,7 @@ public class InviteGodUI : MonoBehaviour
     private void Awake()
     {
         godInfo = GodDispositionManager.instance.curGod;
-        m_InviteGodBtn.onClick.AddListener( ()=> { OnInviteGodClickHandler(); });
+        m_InviteGodBtn.onClick.AddListener(() => { OnInviteGodClickHandler(); });
         m_DaZhao.onClick.AddListener(OnDaZhaoClickHandler);
 
         // ³õÊ¼×´Ì¬
@@ -96,31 +96,31 @@ public class InviteGodUI : MonoBehaviour
             TimerSystem.Start(async (x) =>
             {
                 // ÕÙ»½ÉñÃ÷
-
+                GameManager.instance.GameStateEnum = GameConfig.GameState.State.Pause;
 
                 // ÕâÀïµ÷ÓÃÊµ¼ÊÕÙ»½Âß¼­
                 curGodBase = await GodManager.instance.GetGodByName(godInfo.godName);
                 curGodBase.Activate();
-
+                SoundObject sound = null;
                 switch (godInfo.godName)
                 {
                     case "ÄÄß¸":
-                        GuideManager.instance.OnPlayRandomGuideByID(7);
+                        sound = GuideManager.instance.OnPlayRandomGuideByID(7);
                         break;
                     case "Ñîê¯":
-                        GuideManager.instance.OnPlayRandomGuideByID(8);
+                        sound = GuideManager.instance.OnPlayRandomGuideByID(8);
                         break;
                     case "¹ØÓð":
-                        GuideManager.instance.OnPlayRandomGuideByID(9);
+                        sound = GuideManager.instance.OnPlayRandomGuideByID(9);
                         break;
                     case "Îò¿Õ":
-                        GuideManager.instance.OnPlayRandomGuideByID(10);
+                        sound = GuideManager.instance.OnPlayRandomGuideByID(10);
                         break;
                     default:
                         break;
                 }
                 curGodBase.OnIsEnergy += OnIsEnergyHandler;
-
+               if(sound != null) sound.onStopEvent += (sound) => { GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play; };
                 UpdateUI();
             }, false, 1.5f);
         }

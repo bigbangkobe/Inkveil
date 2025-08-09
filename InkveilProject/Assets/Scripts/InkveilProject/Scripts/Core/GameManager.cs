@@ -107,7 +107,7 @@ public class GameManager : MonoSingleton<GameManager>
     {
         SoundSystem.instance.Clear();
         EffectSystem.instance.Clear();
-        EnemyManager.instance.Clear();
+        EnemyManager.instance.ClearAllEnemies();
         WeaponManager.instance.Clear();
         PlayerManager.instance.Clear();
         LevelManager.instance.Clear();

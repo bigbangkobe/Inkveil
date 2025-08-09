@@ -81,7 +81,7 @@ public class EnemyBase : MonoBehaviour
 
         m_Config = enemy;
 
-      
+
 
         m_PlayerTarget = PlayerController.instance.transform;
 
@@ -99,7 +99,7 @@ public class EnemyBase : MonoBehaviour
         // 初始化属性
         m_MaxHP = m_Config.hpBase;
         m_CurrentHP = m_Config.hpBase;
-        m_MoveSpeed = m_Config.moveSpeed;
+        m_MoveSpeed = m_Config.enemyType > 2 ? m_Config.moveSpeed * 0.5f : m_Config.moveSpeed;
         m_AttackDamage = m_Config.attackDamage;
 
         // 初始化材质（URP兼容）
@@ -159,6 +159,7 @@ public class EnemyBase : MonoBehaviour
             vector3.x = 0;
             transform.position = vector3;
         }
+        transform.LookAt(m_PlayerTarget.position);
         // 创建传送门特效
         if (m_PortalEffectPrefab != null)
         {
@@ -178,7 +179,7 @@ public class EnemyBase : MonoBehaviour
 
         // 显示敌人本体
         SetEnemyVisible(true);
-        m_AnimationController.PlayAnimation("spawn");
+        m_AnimationController.PlayAnimationImmediate("spawn");
 
         // 位置调整（从传送门中心出现）
         //transform.position = m_PortalInstance.transform.position;
@@ -195,7 +196,7 @@ public class EnemyBase : MonoBehaviour
         }
 
         m_CurrentState = EnemyState.Run;
-        m_AnimationController.PlayAnimation("run");
+        m_AnimationController.PlayAnimationImmediate("run");
     }
 
     private void SetEnemyVisible(bool visible)
@@ -264,11 +265,11 @@ public class EnemyBase : MonoBehaviour
 
     public async Task TakeDamage(float damage, bool isDivineAttack = false)
     {
-        if (m_IsImmune || m_CurrentState == EnemyState.Dead) return;
+        if (m_CurrentState == EnemyState.Dead) return;
 
         float actualDamage = damage;//CalculateActualDamage(damage, isDivineAttack);
 
-        if (damage> m_CurrentHP)
+        if (damage > m_CurrentHP)
         {
             m_CurrentHP -= m_CurrentHP;
         }
@@ -283,7 +284,7 @@ public class EnemyBase : MonoBehaviour
         // 受伤特效
         if (m_HitEffect != null)
         {
-           
+
             m_HitEffect.transform.position = transform.position + Vector3.up * 1f;
             m_HitEffect.Play();
         }
@@ -467,7 +468,7 @@ public class EnemyBase : MonoBehaviour
 
     private void ShowImmuneEffect()
     {
-        m_AnimationController.PlayAnimation("immune");
+        m_AnimationController.PlayAnimationImmediate("immune");
     }
 
     #endregion

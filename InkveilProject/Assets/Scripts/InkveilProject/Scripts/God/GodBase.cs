@@ -88,7 +88,7 @@ public class GodBase : MonoBehaviour
             TimerSystem.Start((x) =>
             {
                 AddEnergy(100);
-            }, false, 5);
+            }, false, 12);
         }
 
         ChangeState(GodState.Idle); // 初始化为待机状态
@@ -116,6 +116,7 @@ public class GodBase : MonoBehaviour
 
     protected virtual void Update()
     {
+        if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) return;
         UpdateState(); // 每帧更新状态
 
         FindNearestEnemyAndAttack(); // 激活状态下寻找敌人攻击
@@ -295,7 +296,7 @@ public class GodBase : MonoBehaviour
                     //SoundSystem.instance.Play(_godInfo.basicAttackSound, 1);
                 }
 
-                if (_animationController.GetCurrentAnimationProgress() >= 0.95f)
+                if (_animationController.GetCurrentAnimationProgress() >= 0.9f)
                 {
                     ChangeState(GodState.Idle);
                     isAttack = false;

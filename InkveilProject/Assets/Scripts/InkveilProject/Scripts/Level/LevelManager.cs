@@ -39,6 +39,7 @@ public class LevelManager : MonoSingleton<LevelManager>
     internal void Clear()
     {
         EnemyManager.instance.OnEnemyDestroyed -= CheckVictoryCondition;
+        StopAllCoroutines();
         ResetLevel();
     }
 

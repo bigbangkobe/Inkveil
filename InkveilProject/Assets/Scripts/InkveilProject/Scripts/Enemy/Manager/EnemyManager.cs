@@ -64,7 +64,11 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// </summary>
     public void Clear()
     {
-        Destroy(gameObject);
+        for (int i = m_EnemyList.Count - 1;i >= 0; i--)
+        {
+            RemoveEnemy(m_EnemyList[i].gameObject.name, m_EnemyList[i]);
+            //m_EnemyList.RemoveAt(i);
+        }
     }
 
     internal async Task<EnemyBase> SpawnEnemy(int id, Transform transform)
@@ -279,7 +283,7 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// <param name="arg2">额外参数</param>
     private void OnEnemyDisabled(object arg1, object arg2)
     {
-        if (arg1 == null) return;
+        //if (arg1 == null) return;
         EnemyBase Enemy = arg1 as EnemyBase;
         Enemy.gameObject.SetActive(false);
         Enemy.transform.SetParent(transform);
@@ -292,7 +296,7 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     /// <param name="arg2">额外参数</param>
     private void OnEnemyEnabled(object arg1, object arg2)
     {
-        if (arg1 == null) return;
+        //if (arg1 == null) return;
         EnemyBase Enemy = arg1 as EnemyBase;
         Enemy.gameObject.SetActive(true);
         //SetRandomPosition(Enemy.transform);

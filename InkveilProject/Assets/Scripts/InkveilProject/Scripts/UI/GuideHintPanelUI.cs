@@ -48,11 +48,13 @@ public class GuideHintPanelUI : MonoBehaviour
     {
         if (!GuideDispositionManager.instance.isGuide)
         {
-            gameObject.SetActive(false);
+            m_Hint.SetActive(false);
             m_Image.raycastTarget = true;
+            m_Image.color = Color.white * 0;
             TimerSystem.Start((x) =>
             {
-                gameObject.SetActive(true);
+                m_Image.color = Color.white;
+                m_Hint.SetActive(true);
                 transform.position = vector3.position;
                 m_Image.material.SetVector("_Center", new Vector4(transform.localPosition.x, transform.localPosition.y, 0, 0));
                 m_Image.raycastTarget = false;

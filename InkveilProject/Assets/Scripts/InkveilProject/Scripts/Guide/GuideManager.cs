@@ -1,10 +1,11 @@
 ﻿using Framework;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class GuideManager : MonoSingleton<GuideManager>
 {
-    GuidePanel guidePanel;
+   public GuidePanel guidePanel;
 
     protected async override void Awake()
     {
@@ -25,10 +26,10 @@ public class GuideManager : MonoSingleton<GuideManager>
         guidePanel.SetGuide(guide);
     }
 
-    public void OnPlayRandomGuideByID(int id)
+    public SoundObject OnPlayRandomGuideByID(int id)
     {
         Guide guide = GuideDispositionManager.instance.GetGuidesID(id);
 
-        guidePanel.SetGuide(guide);
+        return guidePanel.SetGuide(guide).Result;
     }
 }

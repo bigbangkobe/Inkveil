@@ -18,7 +18,7 @@ public class LegacyAnimationController : MonoBehaviour
     public List<AnimationClipData> animations = new List<AnimationClipData>();
 
     private string currentAnimation;    // 当前播放的动画
-    private Dictionary<string, AnimationClipData> animationDict;
+    private Dictionary<string, AnimationClipData> animationDict = new Dictionary<string, AnimationClipData>();
 
     void Awake()
     {
@@ -42,7 +42,6 @@ public class LegacyAnimationController : MonoBehaviour
         animationComponent.playAutomatically = false;
         animationComponent.Stop();
 
-        animationDict = new Dictionary<string, AnimationClipData>();
         foreach (var animData in animations)
         {
             if (animData.clip == null)
@@ -72,7 +71,7 @@ public class LegacyAnimationController : MonoBehaviour
     }
 
     // 播放动画(带淡入淡出效果)
-    public void PlayAnimation(string animationName,float speed = 1)
+    public void PlayAnimation(string animationName, float speed = 1)
     {
         if (currentAnimation == animationName) return;
         if (animationDict.TryGetValue(animationName, out AnimationClipData animData))
@@ -88,7 +87,7 @@ public class LegacyAnimationController : MonoBehaviour
     }
 
     // 立即播放动画(无淡入淡出)
-    public void PlayAnimationImmediate(string animationName,float speed = 1)
+    public void PlayAnimationImmediate(string animationName, float speed = 1)
     {
         if (animationDict.TryGetValue(animationName, out AnimationClipData animData))
         {

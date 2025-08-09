@@ -29,6 +29,12 @@ public class SettingPanel : BaseUI
         m_SoundSlider.onValueChanged.AddListener(OnSoundVolumeChanged);
     }
 
+    protected override void OnShow(object param)
+    {
+        base.OnShow(param);
+        GameManager.instance.GameStateEnum = GameConfig.GameState.State.Pause;
+    }
+
     protected void OnBGVolumeChanged(float value)
     {
         SoundSystem.instance.SetBgmSound(value);
@@ -70,16 +76,19 @@ public class SettingPanel : BaseUI
         if (currentScene.Equals("Main"))
         {
             gameObject.SetActive(false);
+            GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play;
         }
         else
         {
             // 兼容两种加载方式
             if (Application.CanStreamedLevelBeLoaded("Main"))
             {
+                GameManager.instance.OnClear();
                 SceneManager.LoadSceneAsync("Main");
             }
             else
             {
+                GameManager.instance.OnClear();
                 StartCoroutine(LoadMainSceneWithAddressables());
             }
         }

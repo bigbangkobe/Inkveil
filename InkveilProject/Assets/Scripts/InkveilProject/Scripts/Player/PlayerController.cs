@@ -121,6 +121,11 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        if (transform.parent == null) 
+        {
+            Destroy(gameObject);
+            return;
+        }
         transform.parent.position = initialPoing;
         InitializePlaierInfo();
         SetFacingDirection(initialFacing);

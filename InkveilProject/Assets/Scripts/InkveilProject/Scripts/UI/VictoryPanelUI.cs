@@ -33,7 +33,9 @@ public class VictoryPanelUI : MonoBehaviour
 
             RewardCard reward1 = Instantiate(m_RewardCard, m_RewardCard.transform.parent);
             reward1.OnInit(propertyInfo1);
-            BagManager.instance.AddItem(propertyInfo1);
+            //BagManager.instance.AddItem(propertyInfo1);
+
+            PlayerDispositionManager.instance.AddXianH(1000);
 
             RewardCard reward2 = Instantiate(m_RewardCard, m_RewardCard.transform.parent);
             reward2.OnInit(propertyInfo2);
@@ -49,7 +51,13 @@ public class VictoryPanelUI : MonoBehaviour
             {
                 RewardCard reward = Instantiate(m_RewardCard, m_RewardCard.transform.parent);
                 reward.OnInit(propertyInfos[i]);
-                BagManager.instance.AddItem(propertyInfos[i]);
+
+                if (propertyInfos[i].propertyID == 1)
+                {
+                    PlayerDispositionManager.instance.AddXianH(propertyInfos[i].number);
+                }
+                else
+                    BagManager.instance.AddItem(propertyInfos[i]);
             }
 
             StageRewardsDispositionManager.instance.PassLevel(level - 1);

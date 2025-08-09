@@ -82,8 +82,11 @@ public class FrontSpawner : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             // Apply damage to the enemy
-
-            other.GetComponent<EnemyBase>().TakeDamage(!GuideDispositionManager.instance.isGuide ? 9999999999 : (float)godAttackCtrl._godInfo.skillDamageMulti);
+            EnemyBase enemy = other.GetComponent<EnemyBase>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(!GuideDispositionManager.instance.isGuide ? 9999999999 : (float)godAttackCtrl._godInfo.skillDamageMulti);
+            }
         }
     }
 

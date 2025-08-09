@@ -28,4 +28,6 @@ public class ResourceInfo
     /// 资源路径(Resource资源目录下)
     /// </summary>
     public string Path;
+
+    public ResourceInfo() { }
 }
