@@ -8,7 +8,7 @@ public class SafeAreaAdapter : MonoBehaviour
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-        ApplySafeArea();
+        //ApplySafeArea();
     }
 
     void ApplySafeArea()

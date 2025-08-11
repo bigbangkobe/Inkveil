@@ -38,10 +38,12 @@ namespace Framework
             ResMgr.Instance.Load("GroundHit", this, typeof(GameObject));
             ResMgr.Instance.Load("Lightning front attack", this, typeof(GameObject));
             ResMgr.Instance.Load("Slash wave green", this, typeof(GameObject));
+            ResMgr.Instance.Load("Slash wave green 1", this, typeof(GameObject));
             ResMgr.Instance.Load("Sword Slash 4", this, typeof(GameObject));
             ResMgr.Instance.Load("Sword Slash 5", this, typeof(GameObject));
             ResMgr.Instance.Load("Lightning strike 2", this, typeof(GameObject));
             ResMgr.Instance.Load("Temporary explosion", this, typeof(GameObject));
+            ResMgr.Instance.Load("Sword Slash 15", this, typeof(GameObject));
         }
 
         /// <summary>

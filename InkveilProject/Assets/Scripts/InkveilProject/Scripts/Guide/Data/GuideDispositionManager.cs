@@ -26,7 +26,7 @@ public class GuideDispositionManager : Singleton<GuideDispositionManager>
     public async void OnInit()
     {
         if (m_IsInitialized) return;
-        isGuide = false;// PlayerPrefs.GetInt("Guide") == 1;
+        isGuide = PlayerPrefs.GetInt("Guide") == 1;
         string guide_info = (await ResourceService.LoadAsync<TextAsset>(ConfigDefine.guide_info)).text;
         string onboarding_guide_info = (await ResourceService.LoadAsync<TextAsset>(ConfigDefine.onboarding_guide_info)).text;
         guideList = JsonMapper.ToObject<List<Guide>>(guide_info);

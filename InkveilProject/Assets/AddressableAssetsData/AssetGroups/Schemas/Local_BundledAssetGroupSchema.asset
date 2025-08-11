@@ -22,8 +22,8 @@ MonoBehaviour:
   m_CacheClearBehavior: 0
   m_IncludeInBuild: 1
   m_BundledAssetProviderType:
-    m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider
+    m_AssemblyName: Wx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.WXBundledAssetProvider
   m_ForceUniqueProvider: 0
   m_UseAssetBundleCache: 0
   m_UseAssetBundleCrc: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Id: f4f0510b16be3e34da399c0460ef1623
   m_BundleMode: 0
   m_AssetBundleProviderType:
-    m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider
+    m_AssemblyName: Wx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.WXAssetBundleProvider
   m_BundleNaming: 0
   m_AssetLoadMode: 0

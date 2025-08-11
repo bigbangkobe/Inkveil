@@ -289,6 +289,7 @@ public class GodBase : MonoBehaviour
                     EffectObject effect = await EffectSystem.instance.GetEffect(_godInfo.basicAttackEffect);
                     effect.gameObject.SetActive(true);
                     GodAttackCtrl bullet3D = effect.gameObject.GetComponent<GodAttackCtrl>();
+                    bullet3D.transform.LookAt(_currentTarget.transform);
                     bullet3D.OnInitialFlag(_godInfo, transform, _currentTarget);
                     //bullet3D.transform.position = transform.position + transform.forward * 1 + transform.up * 0.5f;
                     //bullet3D.Initialize(transform.forward, 10, BaseDamage);

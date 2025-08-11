@@ -10,6 +10,13 @@ public class InviteGodUI : MonoBehaviour
 {
     public Image m_Fill;                // ³äÄÜ/³ÖĞøÊ±¼ä½ø¶ÈÌõ
     public Button m_InviteGodBtn;       // ÕÙ»½°´Å¥
+    public Button m_SummonBtn;       // ÕÙ»½°´Å¥
+    public Sprite[] summonSprites;
+    public Transform m_SummonList;       // ÕÙ»½°´Å¥
+    public Button m_SummonBtn1;       // ÕÙ»½°´Å¥
+    public Button m_SummonBtn2;       // ÕÙ»½°´Å¥
+    public Button m_SummonBtn3;       // ÕÙ»½°´Å¥
+    public Button m_SummonBtn4;       // ÕÙ»½°´Å¥
 
     [SerializeField] private Button m_DaZhao;
 
@@ -27,11 +34,44 @@ public class InviteGodUI : MonoBehaviour
     {
         godInfo = GodDispositionManager.instance.curGod;
         m_InviteGodBtn.onClick.AddListener(() => { OnInviteGodClickHandler(); });
+        m_SummonBtn.onClick.AddListener(() => { m_SummonList.gameObject.SetActive(true); });
+        m_SummonBtn1.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("Ñîê¯"); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
+        m_SummonBtn2.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("¹ØÓğ"); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
+        m_SummonBtn3.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("Îò¿Õ"); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
+        m_SummonBtn4.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("ÄÄß¸"); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
         m_DaZhao.onClick.AddListener(OnDaZhaoClickHandler);
 
         // ³õÊ¼×´Ì¬
         UpdateUI();
         m_InviteGodBtn.interactable = false;
+    }
+
+    private void OnEnable()
+    {
+        InitialSummon();
+    }
+
+    private void InitialSummon()
+    {
+        switch (GodDispositionManager.instance.curGod.godName)
+        {
+            case "¹ØÓğ":
+                m_SummonBtn.image.sprite = summonSprites[1];
+                break;
+            case "Îò¿Õ":
+                m_SummonBtn.image.sprite = summonSprites[2];
+                break;
+            case "Ñîê¯":
+                m_SummonBtn.image.sprite = summonSprites[0];
+                break;
+            case "ÄÄß¸":
+                m_SummonBtn.image.sprite = summonSprites[3];
+                break;
+            default:
+                m_SummonBtn.image.sprite = summonSprites[3];
+                break;
+        }
+        godInfo = GodDispositionManager.instance.curGod;
     }
 
     private void Update()
@@ -93,7 +133,7 @@ public class InviteGodUI : MonoBehaviour
             EffectObject effect = await EffectSystem.instance.GetEffect("Temporary explosion");
             effect.transform.position = GodManager.instance.GetInitPoint().position;
             effect.Play();
-            TimerSystem.Start(async (x) =>
+            await TimerSystem.Start(async (x) =>
             {
                 // ÕÙ»½ÉñÃ÷
                 GameManager.instance.GameStateEnum = GameConfig.GameState.State.Pause;

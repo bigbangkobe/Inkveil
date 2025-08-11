@@ -101,7 +101,7 @@ public class EnemyBase : MonoBehaviour
         m_CurrentHP = m_Config.hpBase;
         m_MoveSpeed = m_Config.enemyType > 2 ? m_Config.moveSpeed * 0.5f : m_Config.moveSpeed;
         m_AttackDamage = m_Config.attackDamage;
-
+        //Debug.Log(m_Config.enemyName + "移动速度:" + m_Config.moveSpeed);
         // 初始化材质（URP兼容）
         if (m_SpriteRenderer != null && m_SpriteRenderer.material.HasProperty("_BaseColor"))
         {

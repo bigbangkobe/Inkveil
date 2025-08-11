@@ -119,6 +119,13 @@ public class PlayerController : MonoBehaviour
     public bool isGod;
     private Vector3 initialPoing = new Vector3(0, 0, -15);
 
+    [Header("攻击设置")]
+    public bool autoFireWhenIdle = true;        // 站立自动连射
+    public float baseAttacksPerSecond = 1f;     // 基准射速（1 表示 AttackSpeedBase=1 时每秒1发）
+    private float _nextAttackTime = 0f;         // 下一次可攻击时间戳
+
+
+
     private void Start()
     {
         if (transform.parent == null) 
@@ -377,6 +384,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         keyboardInput = Mathf.Clamp(keyboardInput, -1, 1);
+        bool hasMoveIntent = Mathf.Abs(keyboardInput) > 0.1f;
 
         if (isGod && !GuideDispositionManager.instance.isGuide)
         {
@@ -384,7 +392,7 @@ public class PlayerController : MonoBehaviour
             isMoving = false;
         }
 
-        if (keyboardInput != 0)
+        if (hasMoveIntent)
         {
             moveDirection = keyboardInput;
             isMoving = true;
@@ -437,10 +445,17 @@ public class PlayerController : MonoBehaviour
             //}
         }
 
+        //if (_currentState != PlayerState.Run)
+        //{
+        //    FindNearestEnemyAndAttack();
+        //}
+
         if (_currentState != PlayerState.Run)
         {
-            FindNearestEnemyAndAttack();
+            if (autoFireWhenIdle)
+                TryAutoAttackForward();
         }
+
     }
 
     private void FindNearestEnemyAndAttack()
@@ -482,6 +497,39 @@ public class PlayerController : MonoBehaviour
 
         ChangeState(PlayerState.Attack, AttackSpeedBase);
     }
+
+    private void TryAutoAttackForward()
+    {
+        if (Time.time < _nextAttackTime) return;
+
+        AttackForward(); // 这行里会用 AttackSpeedBase 播放动画
+
+        float aps = Mathf.Max(baseAttacksPerSecond * AttackSpeedBase, 0.01f);
+        _nextAttackTime = Time.time + 1f / aps;
+    }
+
+
+    /// <summary>
+    /// 不锁定目标，按当前朝向向前攻击（发射子弹）
+    /// </summary>
+    public void AttackForward()
+    {
+        // 用 AttackSpeedBase 播放攻击动画（越大越快）
+        ChangeState(PlayerState.Attack, AttackSpeedBase);
+    }
+
+    /// <summary>
+    /// 设置攻速
+    /// </summary>
+    /// <param name="newBase">新的攻速</param>
+    public void SetAttackSpeed(float newBase)
+    {
+        AttackSpeedBase = Mathf.Max(0.1f, newBase);  // 防止 0 或负数
+                                                     // 立刻按新攻速刷新下一发时间
+        float aps = Mathf.Max(baseAttacksPerSecond * AttackSpeedBase, 0.01f);
+        _nextAttackTime = Mathf.Min(_nextAttackTime, Time.time + 1f / aps);
+    }
+
 
     #region 输入和移动控制
     private void UpdateMovement()
