@@ -11,6 +11,7 @@ public class InviteGodUI : MonoBehaviour
     public Image m_Fill;                // ³äÄÜ/³ÖÐøÊ±¼ä½ø¶ÈÌõ
     public Button m_InviteGodBtn;       // ÕÙ»½°´Å¥
     public Button m_SummonBtn;       // ÕÙ»½°´Å¥
+    public Image m_SummonImage;       // ÕÙ»½°´Å¥
     public Sprite[] summonSprites;
     public Transform m_SummonList;       // ÕÙ»½°´Å¥
     public Button m_SummonBtn1;       // ÕÙ»½°´Å¥
@@ -53,22 +54,95 @@ public class InviteGodUI : MonoBehaviour
 
     private void InitialSummon()
     {
+        if (!GuideDispositionManager.instance.isGuide)
+        {
+            m_SummonBtn1.interactable = false;       // ÕÙ»½°´Å¥
+            m_SummonBtn2.interactable = false;      // ÕÙ»½°´Å¥
+            m_SummonBtn3.interactable = false;      // ÕÙ»½°´Å¥
+            m_SummonBtn4.interactable = false;
+
+            return;
+        }
+        else
+        {
+            m_SummonBtn1.interactable = true;       // ÕÙ»½°´Å¥
+            m_SummonBtn2.interactable = true;      // ÕÙ»½°´Å¥
+            m_SummonBtn3.interactable = true;      // ÕÙ»½°´Å¥
+            m_SummonBtn4.interactable = true;
+            switch (GodDispositionManager.instance.curGod.godName)
+            {
+                case "¹ØÓð":
+                    m_SummonImage.sprite = summonSprites[1];
+                    break;
+                case "Îò¿Õ":
+                    m_SummonImage.sprite = summonSprites[2];
+                    break;
+                case "Ñîê¯":
+                    m_SummonImage.sprite = summonSprites[0];
+                    break;
+                case "ÄÄß¸":
+                    m_SummonImage.sprite = summonSprites[3];
+                    break;
+                default:
+                    m_SummonImage.sprite = summonSprites[3];
+                    break;
+            }
+            godInfo = GodDispositionManager.instance.curGod;
+            return;
+        }
+        if (BagManager.instance.GetItem(6) != null)
+        {
+            //Îò¿ÕËéÆ¬
+            m_SummonBtn3.interactable = true;
+        }
+        else
+        {
+            m_SummonBtn3.interactable = false;
+        }
+        if (BagManager.instance.GetItem(7) != null)
+        {
+            //ÄÄß¸ËéÆ¬
+            m_SummonBtn4.interactable = true;
+        }
+        else
+        {
+            m_SummonBtn4.interactable = false;
+        }
+        if (BagManager.instance.GetItem(8) != null)
+        {
+            //Ñîê¯ËéÆ¬
+            m_SummonBtn1.interactable = true;
+        }
+        else
+        {
+            m_SummonBtn1.interactable = false;
+        }
+        if (BagManager.instance.GetItem(9) != null)
+        {
+            //¹ØÓðËéÆ¬
+            m_SummonBtn2.interactable = true;
+        }
+        else
+        {
+            m_SummonBtn2.interactable = false;
+        }
+
         switch (GodDispositionManager.instance.curGod.godName)
         {
             case "¹ØÓð":
-                m_SummonBtn.image.sprite = summonSprites[1];
+                m_SummonImage.sprite = summonSprites[1];
                 break;
             case "Îò¿Õ":
-                m_SummonBtn.image.sprite = summonSprites[2];
+                m_SummonImage.sprite = summonSprites[2];
                 break;
             case "Ñîê¯":
-                m_SummonBtn.image.sprite = summonSprites[0];
+                m_SummonImage.sprite = summonSprites[0];
                 break;
             case "ÄÄß¸":
-                m_SummonBtn.image.sprite = summonSprites[3];
+                m_SummonImage.sprite = summonSprites[3];
                 break;
             default:
-                m_SummonBtn.image.sprite = summonSprites[3];
+                m_SummonImage.sprite = summonSprites[3];
                 break;
         }
         godInfo = GodDispositionManager.instance.curGod;
@@ -82,7 +156,7 @@ public class InviteGodUI : MonoBehaviour
             // ³äÄÜ½×¶Î
             if (chargeProgress < 1f)
             {
-                chargeSpeed += Time.deltaTime;
+                if (GuideDispositionManager.instance.isGuide) chargeSpeed += Time.deltaTime;
 
                 chargeProgress = Mathf.Min(1f, chargeSpeed / godInfo.baseCooldown);
                 UpdateUI();
@@ -99,7 +173,7 @@ public class InviteGodUI : MonoBehaviour
             // ÉñÃ÷ÔÚ³¡Ê±¼äµÝ¼õ
             if (durationProgress > 0f)
             {
-                durationSpeed += Time.deltaTime;
+                if (GuideDispositionManager.instance.isGuide) durationSpeed += Time.deltaTime;
 
                 durationProgress = Mathf.Max(0f, 1 - durationSpeed / godInfo.baseDuration);
                 UpdateUI();
@@ -117,6 +191,8 @@ public class InviteGodUI : MonoBehaviour
         if (!GuideDispositionManager.instance.isGuide)
         {
             guideHintPanelUI.gameObject.SetActive(false);
+            m_DaZhao.gameObject.SetActive(false);
+            TimerSystem.Start((x) => { OnGodExit(); }, false, 3);
         }
         curGodBase.UseSkill();
 
@@ -160,7 +236,7 @@ public class InviteGodUI : MonoBehaviour
                         break;
                 }
                 curGodBase.OnIsEnergy += OnIsEnergyHandler;
-               if(sound != null) sound.onStopEvent += (sound) => { GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play; };
+                if (sound != null) sound.onStopEvent += (sound) => { GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play; };
                 UpdateUI();
             }, false, 1.5f);
         }

@@ -16,6 +16,7 @@ public class GYBaseAttackCtrl : GodAttackCtrl
         isMoving = true;
 
         transform.position = tf1.position;
+        transform.eulerAngles = tf1.eulerAngles;
     }
 
     private void Update()

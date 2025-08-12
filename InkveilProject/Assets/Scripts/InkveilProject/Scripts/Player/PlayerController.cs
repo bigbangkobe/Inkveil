@@ -117,7 +117,7 @@ public class PlayerController : MonoBehaviour
     private bool isLeftButtonPressed;
     private bool isRightButtonPressed;
     public bool isGod;
-    private Vector3 initialPoing = new Vector3(0, 0, -15);
+    private Vector3 initialPoing = new Vector3(0, -2.5f, -15);
 
     [Header("攻击设置")]
     public bool autoFireWhenIdle = true;        // 站立自动连射
@@ -148,7 +148,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnemyDestroyedHandler()
     {
-        SkillBar += 0.02f;
+        if (!GuideDispositionManager.instance.isGuide) return;
+            SkillBar += 0.02f;
         if (SkillBar >= 1)
         {
             //重置状态
@@ -299,6 +300,7 @@ public class PlayerController : MonoBehaviour
     {
 
         if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) { _currentState = PlayerState.Idle; return; }
+        if (GuideDispositionManager.instance.isGuide) 
         SkillBar += Time.deltaTime / 180;
         if (SkillBar >= 1)
         {
@@ -532,20 +534,37 @@ public class PlayerController : MonoBehaviour
 
 
     #region 输入和移动控制
+    private float characterHalfWidth = 10f; // 人物半宽(世界单位)
+
     private void UpdateMovement()
     {
-        if (isMoving)
-        {
-            float actualMoveSpeed = baseMoveSpeed * speedCoefficient;
-            float screenHalfWidth = Camera.main.orthographicSize * Screen.width / Screen.height;
-            float playerHalfWidth = 0.5f;
+        if (!isMoving) return;
 
-            float newX = transform.position.x + moveDirection * actualMoveSpeed * Time.deltaTime;
-            newX = Mathf.Clamp(newX, -screenHalfWidth + playerHalfWidth, screenHalfWidth - playerHalfWidth);
+        var cam = Camera.main;
+        if (!cam) return;
 
-            transform.position = new Vector3(newX, transform.position.y, transform.position.z);
-        }
+        float actualMoveSpeed = baseMoveSpeed * speedCoefficient;
+
+        // 你原本是按世界X移动；若想按屏幕左右移动，换成 cam.transform.right（可选）
+        Vector3 moveAxis = Vector3.right; // 或者：Vector3.ProjectOnPlane(cam.transform.right, Vector3.up).normalized;
+        Vector3 targetWorld = transform.position + moveAxis * (moveDirection * actualMoveSpeed * Time.deltaTime);
+
+        // —— 计算“半宽”的视口等效量（用物体自身的右方向，更贴近模型朝向）——
+        Vector3 vpNow = cam.WorldToViewportPoint(transform.position);
+        float halfWidthVP = Mathf.Abs(
+            cam.WorldToViewportPoint(transform.position + transform.right * characterHalfWidth).x - vpNow.x
+        );
+
+        // 目标位置转到视口坐标，按左右边界(0~1)留边后夹紧
+        Vector3 vpTarget = cam.WorldToViewportPoint(targetWorld);
+        float depth = vpTarget.z; // 保持与目标相同的深度
+        vpTarget.x = Mathf.Clamp(vpTarget.x, 0f + halfWidthVP, 1f - halfWidthVP);
+
+        // 转回世界坐标并应用（保持屏幕Y与深度不变，只修正X越界）
+        Vector3 worldClamped = cam.ViewportToWorldPoint(new Vector3(vpTarget.x, vpTarget.y, depth));
+        transform.position = worldClamped;
     }
+
     #endregion
 
     #region 状态机管理

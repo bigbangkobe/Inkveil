@@ -30,6 +30,7 @@ public class StageRewardsDispositionManager : Singleton<StageRewardsDispositionM
     {
         if (m_IsInitialized) return;
         string stageRewardsStr = PlayerPrefs.GetString("StageRewards");
+        //Test by cpGo
         UnlockLevel = PlayerPrefs.GetInt("StageRewards Level");
         m_CurOpenLevel = UnlockLevel;
         List<List<StageRewardsInfo>> stageRewards = new List<List<StageRewardsInfo>>();

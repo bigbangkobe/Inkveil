@@ -98,7 +98,7 @@ public class LevelPanelUI : BaseUI
         curLevel = StageRewardsDispositionManager.instance.CurOpenLevel;
         m_LeftBtn.interactable = curLevel > 0;
         m_RightBtn.interactable = curLevel < StageRewardsDispositionManager.instance.SumLevel - 1;
-        m_StartBtn.interactable = curLevel <= StageRewardsDispositionManager.instance.UnlockLevel;
+        m_StartBtn.interactable = true;// curLevel <= StageRewardsDispositionManager.instance.UnlockLevel;
       
         m_LevelName.text = stageRewardsInfo[curGrade].stageName;
         m_Level2.interactable = stageRewardsInfo[0].isPass;

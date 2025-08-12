@@ -387,7 +387,7 @@ public class EnemyBase : MonoBehaviour
         // 隐藏敌人
         SetEnemyVisible(false);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForFixedUpdate();
 
         int dropAmount = CalculateDropAmount();
         EnemyManager.instance.RemoveEnemy(m_Config.enemyName, this);

@@ -96,7 +96,7 @@ public class LevelManager : MonoSingleton<LevelManager>
             // 计算触发时间
             float triggerTime = CalculateTriggerTime(waveIndex);
             yield return new WaitUntil(() => m_GameTime >= triggerTime);
-            if (waveIndex == 1)
+            if (waveIndex == 1 && !GuideDispositionManager.instance.isGuide)
             {
                 OnboardingGuidePanel.instance.StartGuide();
             }
