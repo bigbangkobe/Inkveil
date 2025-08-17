@@ -71,6 +71,7 @@ public class GameManager : MonoSingleton<GameManager>
         GodDispositionManager.instance.OnInit();
         GuideDispositionManager.instance.OnInit();
         GuideManager.instance.OnInit();
+        HintPopPanelManager.instance.OnInit();
         isInltial = true;
     }
 

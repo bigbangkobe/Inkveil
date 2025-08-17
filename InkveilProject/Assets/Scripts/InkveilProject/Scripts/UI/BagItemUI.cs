@@ -74,6 +74,7 @@ public class BagItemUI : MonoBehaviour
         m_Lock.gameObject.SetActive(false);
         m_Title.gameObject.SetActive(false);
         m_Number.gameObject.SetActive(false);
+        m_My.sprite = gradeColors[3];
     }
 
     // 根据等级设置背景颜色

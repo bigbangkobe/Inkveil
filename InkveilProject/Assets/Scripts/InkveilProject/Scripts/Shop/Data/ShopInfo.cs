@@ -8,6 +8,8 @@ public class ShopInfo
     public int propertyID;
     public string obtainMethod;
     public string description;
+    public int buyCount = 0;
+    public bool isTodayBuy = false;
 
     private PropertyInfo propertyInfo;
     public PropertyInfo GetPropertyInfo()

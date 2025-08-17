@@ -116,16 +116,31 @@ public class PlayerDispositionManager : Singleton<PlayerDispositionManager>
     internal void AddXianH(int v)
     {
         PlayerAssetsInfo.XianHInit += v;
+        onPlayerAssetsChangde?.Invoke();
     }
 
     internal void AddStaminaInit(int v)
     {
         PlayerAssetsInfo.staminaInit += v;
+        onPlayerAssetsChangde?.Invoke();
+    }
+
+    internal void DeductStaminaInit(int v)
+    {
+        PlayerAssetsInfo.staminaInit -= v;
+        onPlayerAssetsChangde?.Invoke();
     }
 
     internal bool HasEnoughCurrency(int v)
     {
+        if (PlayerAssetsInfo.XianHInit < v) HintPopPanelManager.instance.ShowHintPop("仙玉不足！");
         return PlayerAssetsInfo.XianHInit >= v;
+    }
+
+    internal bool HasEnoughStaminaInit(int v)
+    {
+        if (PlayerAssetsInfo.staminaInit < v) HintPopPanelManager.instance.ShowHintPop("体力不足5！");
+        return PlayerAssetsInfo.staminaInit >= v;
     }
 
     internal void DeductCurrency(int v)

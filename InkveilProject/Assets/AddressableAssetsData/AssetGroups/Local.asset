@@ -912,6 +912,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2ce90c689c56eb4abb884c7b8671867
+    m_Address: HintPopPanelBG
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e2f27ecde52615449b0bff0f095cb4a8
     m_Address: FX_TXT
     m_ReadOnly: 0

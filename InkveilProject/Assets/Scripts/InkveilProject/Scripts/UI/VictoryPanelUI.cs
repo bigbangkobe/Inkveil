@@ -65,7 +65,7 @@ public class VictoryPanelUI : MonoBehaviour
             if (PlayerController.instance.HitPoints >= 0.5f) stageRewardsInfo[LevelManager.instance.curGrade].grade++;
             if (PlayerController.instance.HitPoints >= 1f) stageRewardsInfo[LevelManager.instance.curGrade].grade++;
             stageRewardsInfo[LevelManager.instance.curGrade].isPass = true;
-
+            PlayerDispositionManager.instance.DeductStaminaInit(5);
             StageRewardsDispositionManager.instance.Save();
         }
     }

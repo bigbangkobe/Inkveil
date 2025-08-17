@@ -36,13 +36,20 @@ public class BagManager : Singleton<BagManager>
         }
         else
         {
-            // 创建新物品项
-            bagItemInfos.Add(new BagItemInfo()
+            if (property.propertyID == 1)
             {
-                propertyInfo = property,
-                isLock = false,
-                isNew = true
-            });
+                PlayerDispositionManager.instance.AddXianH(property.number);
+            }
+            else
+            {  
+                // 创建新物品项
+                bagItemInfos.Add(new BagItemInfo()
+                {
+                    propertyInfo = property,
+                    isLock = false,
+                    isNew = true
+                });
+            }   
         }
         SortAndSaveBag(); // 添加后排序并保存
     }
@@ -106,7 +113,11 @@ public class BagManager : Singleton<BagManager>
         BagItemInfo item = bagItemInfos.Find(i =>
             i.propertyInfo.propertyID == propertyID);
 
-        if (item == null) return false;
+        if (item == null) 
+        {
+            HintPopPanelManager.instance.ShowHintPop($"{item.propertyInfo.propertyDes}不足！");
+            return false; 
+        }
 
         if (item.propertyInfo.number >= amount)
         {
@@ -114,13 +125,15 @@ public class BagManager : Singleton<BagManager>
             item.propertyInfo.number -= amount;
 
             // 完全移除
-            if (item.propertyInfo.number == amount) bagItemInfos.Remove(item);
+            if (item.propertyInfo.number <= 0) bagItemInfos.Remove(item);
         }
         else
         {
+            HintPopPanelManager.instance.ShowHintPop($"{item.propertyInfo.propertyDes}不足！");
             return false;
         }
 
+        PlayerDispositionManager.instance.onPlayerAssetsChangde?.Invoke();
         SortAndSaveBag(); // 移除后排序并保存
         return true;
     }

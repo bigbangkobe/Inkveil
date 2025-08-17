@@ -10,6 +10,11 @@ public class GuidePanel : MonoBehaviour
     
     public event Action onStopEvent;
 
+    private void Start()
+    {
+        m_huli.SetActive(false);
+    }
+
     internal async Task<SoundObject> SetGuide(Guide guide)
     {
         if (guide.isText == 1)

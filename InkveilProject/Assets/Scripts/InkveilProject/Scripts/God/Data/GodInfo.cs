@@ -7,6 +7,8 @@
     public string prefabPath { get; set; }      // 预制体资源路径
     public string iconPath { get; set; }        // 图标资源路径
 
+    public int propertyID {  get; set; }        // 商品ID
+
     // 成长属性
     public int level { get; set; }              // 角色等级
     public int baseDuration { get; set; }     // 基础登场时间(秒)

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Framework;
 using UnityEngine;
+using static PlayerController;
 
 public class LevelManager : MonoSingleton<LevelManager>
 {
@@ -24,6 +25,7 @@ public class LevelManager : MonoSingleton<LevelManager>
     public int m_CurLevel = 1;
     public int curGrade = 1;
     private Transform m_EnemyPoint;
+    private WaitForSeconds waitForSeconds =  new WaitForSeconds(0.1f);
 
     private List<Transform> m_EnemyPointList;
 
@@ -88,7 +90,11 @@ public class LevelManager : MonoSingleton<LevelManager>
 
         for (int waveIndex = 0; waveIndex < m_WaveConfigs.Count; waveIndex++)
         {
-           
+            if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) { 
+                yield return waitForSeconds;
+                waveIndex--;
+                continue;
+            }
             WaveConfig currentWave = m_WaveConfigs[waveIndex];
             var waveState = new WaveState { config = currentWave };
             m_WaveStates.Add(waveState);
@@ -96,7 +102,7 @@ public class LevelManager : MonoSingleton<LevelManager>
             // 计算触发时间
             float triggerTime = CalculateTriggerTime(waveIndex);
             yield return new WaitUntil(() => m_GameTime >= triggerTime);
-            if (waveIndex == 1 && !GuideDispositionManager.instance.isGuide)
+            if (waveIndex == 2 && !GuideDispositionManager.instance.isGuide)
             {
                 OnboardingGuidePanel.instance.StartGuide();
             }

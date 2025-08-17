@@ -26,7 +26,13 @@ public class PlayerAssetsUI : MonoBehaviour
     private void OnPlayerAssetsChangde()
     {
         m_PlayerAssetsInfo = PlayerDispositionManager.instance.PlayerAssetsInfo;
-        m_GGTest.text = m_PlayerAssetsInfo.moneyInit.ToString();
+        int curQSLNum = 0;
+        BagItemInfo bagItemInfo = BagManager.instance.GetItem((int)PropertyIDType.pleaseDivineOrder);
+        if(bagItemInfo != null)
+        {
+            curQSLNum = bagItemInfo.propertyInfo.number;
+        }
+        m_GGTest.text = curQSLNum.ToString();//m_PlayerAssetsInfo.moneyInit.ToString();
         m_MHTest.text = m_PlayerAssetsInfo.MHInit.ToString();
         m_XYTest.text = m_PlayerAssetsInfo.XianHInit.ToString();
         m_TLTest.text = m_PlayerAssetsInfo.staminaInit.ToString();

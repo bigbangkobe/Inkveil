@@ -13,9 +13,19 @@ public class ShopPanelUI : MonoBehaviour
         shopInfos = ShopManager.instance.GetAllShopItems();
 
 
-        for (int i = 0; i < shopItems.Length; i++) 
+        for (int i = 0; i < shopItems.Length; i++)
         {
             shopItems[i].OnInit(shopInfos[i]);
+        }
+    }
+
+    public void UpdateShop()
+    {
+        for (int i = 0; i < shopItems.Length; i++)
+        {
+            shopInfos[i].isTodayBuy = false;
+            shopItems[i].OnInit(shopInfos[i]);
+            ShopDispositionManager.instance.SaveShopInfo();
         }
     }
 }

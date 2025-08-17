@@ -20,6 +20,7 @@ public class SkillPanelUI : BaseUI
     /// ÔöÒæ3
     /// </summary>
     public SkillUI mSkill3;
+    private LevelInfo levelInfo;
 
 
     /// <summary>
@@ -53,7 +54,7 @@ public class SkillPanelUI : BaseUI
     /// </summary>
     public void OnUpdateUI()
     {
-        LevelInfo levelInfo = LevelManager.instance.m_CurLevelInfo;
+        levelInfo = LevelManager.instance.m_CurLevelInfo;
         int[] skill1Array = levelInfo.GetSkillGroup()[0];
         int[] skill2Array = levelInfo.GetSkillGroup()[1];
         int[] skill3Array = levelInfo.GetSkillGroup()[2];
@@ -92,6 +93,7 @@ public class SkillPanelUI : BaseUI
     /// </summary>
     public void OnSkill1ButtonClick()
     {
+        PlayerController.instance.AddBaseDamage(levelInfo.GetSkillGroup()[0][2],true);
         Hide();
         GameManager.instance.GameStateEnum = GameState.State.Play;
 
@@ -102,6 +104,7 @@ public class SkillPanelUI : BaseUI
     /// </summary>
     public void OnSkill2ButtonClick()
     {
+        PlayerController.instance.AddAttackSpeed(levelInfo.GetSkillGroup()[1][2]);
         Hide();
         GameManager.instance.GameStateEnum = GameState.State.Play;
     }
@@ -111,6 +114,7 @@ public class SkillPanelUI : BaseUI
     /// </summary>
     public void OnSkill3ButtonClick()
     {
+        PlayerController.instance.AddShieldHP(levelInfo.GetSkillGroup()[2][2]);
         Hide();
         GameManager.instance.GameStateEnum = GameState.State.Play;
     }
@@ -129,6 +133,9 @@ public class SkillPanelUI : BaseUI
     /// </summary>
     public void OnGetAllButtonClick()
     {
+        PlayerController.instance.AddBaseDamage(levelInfo.GetSkillGroup()[0][2], true);
+        PlayerController.instance.AddAttackSpeed(levelInfo.GetSkillGroup()[1][2]);
+        PlayerController.instance.AddShieldHP(levelInfo.GetSkillGroup()[2][2]);
         Hide();
         GameManager.instance.GameStateEnum = GameState.State.Play;
     }

@@ -279,7 +279,7 @@ public class PlayerController : MonoBehaviour
 
     public void InitializePlaierInfo()
     {
-        PlayerLevelsInfo playerLevelsInfo = PlayerManager.instance.GetCurPlayerLevel();
+        playerLevelsInfo = PlayerManager.instance.GetCurPlayerLevel();
 
         if (playerLevelsInfo == null) return;
         ShieldGrowthInfo shieldGrowthInfo = PlayerManager.instance.GetCurShieldGrowthLevel();
@@ -294,6 +294,21 @@ public class PlayerController : MonoBehaviour
         UpdateShieldVisual();
         SkillBar = 0;
         onInitial?.Invoke();
+    }
+
+    public void AddBaseDamage(float attack,bool isBai = false) 
+    {
+        BaseDamage += isBai ? BaseDamage * attack / 100 : attack;
+    }
+
+    public void AddAttackSpeed(float attackSpeed)
+    {
+        AttackSpeedBase += (float)playerLevelsInfo.attackSpeedBase * attackSpeed / 100;
+    }
+
+    public void AddShieldHP(float shieldHP)
+    {
+        currentShieldHealth = Mathf.Clamp(currentShieldHealth + shieldHP,0, maxShieldHealth);
     }
 
     public void Update()
@@ -343,71 +358,73 @@ public class PlayerController : MonoBehaviour
     }
     private void HandleInput()
     {
+        float move = 0f;
+        bool hasMoveIntent = false;
+        bool handledByTouch = false;
 
-        // Keyboard input
-        float keyboardInput = 0;
-        keyboardInput += Input.GetAxisRaw("Horizontal");
-        if (isRightButtonPressed) keyboardInput += 1;
-        if (isLeftButtonPressed) keyboardInput -= 1;
-        // 触屏输入
+        // ========= 触摸输入（移动端/微信） =========
         if (Input.touchCount > 0)
         {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
+            Touch t = Input.GetTouch(0);
+            if (t.phase == TouchPhase.Began || t.phase == TouchPhase.Moved || t.phase == TouchPhase.Stationary)
             {
-                float touchX = touch.position.x;
                 float screenMiddle = Screen.width * 0.5f;
-                if (touchX < screenMiddle)
-                {
-                    keyboardInput -= 1; // 左边屏幕 → 左移
-                }
-                else
-                {
-                    keyboardInput += 1; // 右边屏幕 → 右移
-                }
-
+                move = (t.position.x < screenMiddle) ? -1f : 1f;
+                hasMoveIntent = true;
+                handledByTouch = true;
             }
         }
 
-        // 鼠标点击输入（PC）
-        if (Input.GetMouseButton(0)) // 鼠标左键按下
+        // ========= 鼠标输入（PC/WebGL） =========
+        if (!handledByTouch)
         {
-            float mouseX = Input.mousePosition.x;
-            float screenMiddle = Screen.width * 0.5f;
-
-
-            if (mouseX < screenMiddle)
+            if (Input.GetMouseButton(0))
             {
-                keyboardInput -= 1; // 左边点击 → 左移
-            }
-            else
-            {
-                keyboardInput += 1; // 右边点击 → 右移
+                float screenMiddle = Screen.width * 0.5f;
+                move = (Input.mousePosition.x < screenMiddle) ? -1f : 1f;
+                hasMoveIntent = true;
             }
         }
-        keyboardInput = Mathf.Clamp(keyboardInput, -1, 1);
-        bool hasMoveIntent = Mathf.Abs(keyboardInput) > 0.1f;
 
+        // ========= UI按钮输入 =========
+        if (!hasMoveIntent)
+        {
+            if (isRightButtonPressed) { move = 1f; hasMoveIntent = true; }
+            else if (isLeftButtonPressed) { move = -1f; hasMoveIntent = true; }
+        }
+
+        // ========= 键盘轴（仅编辑器/非WebGL） =========
+#if UNITY_EDITOR || !(UNITY_WEBGL || UNITY_WASM)
+        if (!hasMoveIntent)
+        {
+            float axis = Input.GetAxisRaw("Horizontal");
+            if (Mathf.Abs(axis) >= 0.5f)
+            {
+                move = Mathf.Sign(axis);
+                hasMoveIntent = true;
+            }
+        }
+#endif
+
+        // ========= God/引导限制 =========
         if (isGod && !GuideDispositionManager.instance.isGuide)
         {
-            keyboardInput = 0;
-            isMoving = false;
+            hasMoveIntent = false;
+            move = 0f;
         }
 
+        // ========= 状态更新 =========
         if (hasMoveIntent)
         {
-            moveDirection = keyboardInput;
-            isMoving = true;
-            ChangeState(PlayerState.Run);
+            moveDirection = move;
+            if (!isMoving || _currentState != PlayerState.Run)
+            {
+                isMoving = true;
+                ChangeState(PlayerState.Run);
+            }
 
-            if (keyboardInput > 0)
-            {
-                SetFacingDirection(FacingDirection.Right);
-            }
-            else if (keyboardInput < 0)
-            {
-                SetFacingDirection(FacingDirection.Left);
-            }
+            if (move > 0) SetFacingDirection(FacingDirection.Right);
+            else if (move < 0) SetFacingDirection(FacingDirection.Left);
         }
         else
         {
@@ -418,47 +435,15 @@ public class PlayerController : MonoBehaviour
                 ChangeState(PlayerState.Idle);
                 SetFacingDirection(FacingDirection.Former);
             }
-            //if (Input.GetMouseButtonDown(0))
-            //{
-            //    float clickX = Input.mousePosition.x;
-            //    float screenMiddle = Screen.width * 0.5f;
-
-            //    if (clickX < screenMiddle)
-            //    {
-            //        moveDirection = -1f;
-            //        SetFacingDirection(FacingDirection.Left);
-            //    }
-            //    else
-            //    {
-            //        moveDirection = 1f;
-            //        SetFacingDirection(FacingDirection.Right);
-            //    }
-
-            //    isMoving = true;
-            //    ChangeState(PlayerState.Run);
-            //}
-
-            //if (Input.GetMouseButtonUp(0))
-            //{
-            //    moveDirection = 0f;
-            //    isMoving = false;
-            //    ChangeState(PlayerState.Idle);
-            //    SetFacingDirection(FacingDirection.Former);
-            //}
         }
 
-        //if (_currentState != PlayerState.Run)
-        //{
-        //    FindNearestEnemyAndAttack();
-        //}
-
-        if (_currentState != PlayerState.Run)
+        // ========= 自动攻击逻辑（只在不移动时触发） =========
+        if (_currentState != PlayerState.Run && autoFireWhenIdle)
         {
-            if (autoFireWhenIdle)
-                TryAutoAttackForward();
+            TryAutoAttackForward();
         }
-
     }
+
 
     private void FindNearestEnemyAndAttack()
     {
@@ -535,6 +520,7 @@ public class PlayerController : MonoBehaviour
 
     #region 输入和移动控制
     private float characterHalfWidth = 10f; // 人物半宽(世界单位)
+    private PlayerLevelsInfo playerLevelsInfo;
 
     private void UpdateMovement()
     {

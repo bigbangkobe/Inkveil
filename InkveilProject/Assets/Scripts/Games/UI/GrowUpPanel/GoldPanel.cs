@@ -14,13 +14,16 @@ public class GoldPanel : BaseUI
     [SerializeField] HeroInfo mGYInfo;
     [SerializeField] Button mLevelUpBtn;
     [SerializeField] Text mMessage;
-
+    [SerializeField] Text mSuipianText;
+    [SerializeField] List<Toggle> mStarToggleList = new List<Toggle>();
     //伤害
-    public int mDemage;
+    [SerializeField] Text mDemageText;
     //大招伤害
-    public int mBigDemage;
+    [SerializeField] Text mBigDemageText;
     //持续时间
-    public int mTime;
+    [SerializeField] Text mTimeText;
+
+    private GodInfo mCurGodInfo;
 
     /// <summary>
     /// 初始化函数
@@ -36,24 +39,25 @@ public class GoldPanel : BaseUI
     protected override void OnShowEnable()
     {
         base.OnShowEnable();
-
-        switch (GodDispositionManager.instance.curGod.godName)
-        {
-            case "关羽":
-                mGYInfo.mToggle.isOn = true;
-                break;
-            case "悟空":
-                mWKInfo.mToggle.isOn = true;
-                break;
-            case "杨戬":
-                mYJInfo.mToggle.isOn = true;
-                break;
-            case "哪吒":
-                mNZInfo.mToggle.isOn = true;
-                break;
-            default:
-                break;
-        }
+        mCurGodInfo = GodDispositionManager.instance.curGod;
+        OnUpdateLevelUI();
+        switch (mCurGodInfo.godName)
+            {
+                case "关羽":
+                    mGYInfo.mToggle.isOn = true;
+                    break;
+                case "悟空":
+                    mWKInfo.mToggle.isOn = true;
+                    break;
+                case "杨戬":
+                    mYJInfo.mToggle.isOn = true;
+                    break;
+                case "哪吒":
+                    mNZInfo.mToggle.isOn = true;
+                    break;
+                default:
+                    break;
+            }
 
 
         mYJInfo.mToggle.onValueChanged.AddListener(OnYJToggleValueChanged);
@@ -78,6 +82,45 @@ public class GoldPanel : BaseUI
     }
 
     /// <summary>
+    /// 更新神将等级UI
+    /// </summary>
+    private void OnUpdateLevelUI()
+    {
+        //更新当前碎片以及下一等级所需要的碎片
+        BagItemInfo bagItemInfo =  BagManager.instance.GetItem(mCurGodInfo.propertyID);
+        int curSuipianNum = 0;
+        if (bagItemInfo != null)
+        {
+            curSuipianNum = bagItemInfo.propertyInfo.number;
+        }
+        mSuipianText.text = curSuipianNum + "/" + mCurGodInfo.fragRequire;
+        //如果当前碎片数量小于升级到下一个等级所需要的数量，按钮不点击 
+        if (curSuipianNum >= mCurGodInfo.fragRequire)
+        {
+            mLevelUpBtn.interactable = true;
+        }
+        else
+        {
+            mLevelUpBtn.interactable = false;
+        }
+        for (int i = 0; i < mStarToggleList.Count; i++)
+        {
+            Toggle startToggle = mStarToggleList[i];
+            if (i + 1 <= mCurGodInfo.level)
+            {
+                startToggle.isOn = true;
+            }
+            else
+            {
+                startToggle.isOn = false;
+            }
+        }
+        mDemageText.text = mCurGodInfo.baseAttack.ToString();
+        mBigDemageText.text = mCurGodInfo.skillDamageMulti.ToString();
+        mTimeText.text = mCurGodInfo.maxDuration.ToString();
+    }
+
+    /// <summary>
     /// 点击杨戬
     /// </summary>
     /// <param name="isOn"></param>
@@ -85,14 +128,16 @@ public class GoldPanel : BaseUI
     {
         if (isOn)
         {
-            GodDispositionManager.instance.SetCurGod(mYJInfo.mName);
+            int curNeZaLevel = PlayerPrefs.GetInt(mYJInfo.mName, 1);
+            GodDispositionManager.instance.SetCurGod(mYJInfo.mName, curNeZaLevel);
             mName.text = mYJInfo.mName;
-            mDemage = mYJInfo.mDemage;
-            mBigDemage = mYJInfo.mBigDemage;
-            mTime = mYJInfo.mTime;
             //mMessage.text = "伤害：" + mDemage + "   大招伤害：" + mBigDemage
             //    + "\n 持续时间：" + mTime;
             mIcon.sprite = mYJInfo.mSprite;
+            //设置当前神将
+            mCurGodInfo = GodDispositionManager.instance.curGod;
+            //更新UI
+            OnUpdateLevelUI();
         }
     }
 
@@ -104,14 +149,16 @@ public class GoldPanel : BaseUI
     {
         if (isOn)
         {
-            GodDispositionManager.instance.SetCurGod(mGYInfo.mName);
+            int curLevel = PlayerPrefs.GetInt(mGYInfo.mName, 1);
+            GodDispositionManager.instance.SetCurGod(mGYInfo.mName, curLevel);
             mName.text = mGYInfo.mName;
-            mDemage = mGYInfo.mDemage;
-            mBigDemage = mGYInfo.mBigDemage;
-            mTime = mGYInfo.mTime;
             //mMessage.text = "伤害：" + mDemage + "   大招伤害：" + mBigDemage
             //    + "\n 持续时间：" + mTime;
             mIcon.sprite = mGYInfo.mSprite;
+            //设置当前神将
+            mCurGodInfo = GodDispositionManager.instance.curGod;
+            //更新UI
+            OnUpdateLevelUI();
         }
     }
 
@@ -123,14 +170,16 @@ public class GoldPanel : BaseUI
     {
         if (isOn)
         {
-            GodDispositionManager.instance.SetCurGod(mNZInfo.mName);
+            int curLevel = PlayerPrefs.GetInt(mNZInfo.mName, 1);
+            GodDispositionManager.instance.SetCurGod(mNZInfo.mName, curLevel);
             mName.text = mNZInfo.mName;
-            mDemage = mNZInfo.mDemage;
-            mBigDemage = mNZInfo.mBigDemage;
-            mTime = mNZInfo.mTime;
             //mMessage.text = "伤害：" + mDemage + "   大招伤害：" + mBigDemage
             //    + "\n 持续时间：" + mTime;
             mIcon.sprite = mNZInfo.mSprite;
+            //设置当前神将
+            mCurGodInfo = GodDispositionManager.instance.curGod;
+            //更新UI
+            OnUpdateLevelUI();
         }
     }
 
@@ -142,14 +191,16 @@ public class GoldPanel : BaseUI
     {
         if (isOn)
         {
-            GodDispositionManager.instance.SetCurGod(mWKInfo.mName);
+            int curLevel = PlayerPrefs.GetInt(mWKInfo.mName, 1);
+            GodDispositionManager.instance.SetCurGod(mWKInfo.mName, curLevel);
             mName.text = mWKInfo.mName;
-            mDemage = mWKInfo.mDemage;
-            mBigDemage = mWKInfo.mBigDemage;
-            mTime = mWKInfo.mTime;
             //mMessage.text = "伤害：" + mDemage + "   大招伤害：" + mBigDemage
             //    + "\n 持续时间：" + mTime;
             mIcon.sprite = mWKInfo.mSprite;
+            //设置当前神将
+            mCurGodInfo = GodDispositionManager.instance.curGod;
+            //更新UI
+            OnUpdateLevelUI();
         }
     }
 
@@ -158,6 +209,24 @@ public class GoldPanel : BaseUI
     /// </summary>
     public void OnLevelUpButtonClick()
     {
-        
+        //进行提供升级
+        mCurGodInfo.level++;
+        //扣除碎片
+        BagItemInfo bagItemInfo = BagManager.instance.GetItem(mCurGodInfo.propertyID);
+        if (bagItemInfo != null) {
+            BagManager.instance.UserItem(bagItemInfo.propertyInfo.propertyID, mCurGodInfo.fragRequire);
+        }
+        else
+        {
+            Debug.LogError("错误，不存在碎片道具");
+        }
+        //设置下一个等级的神将配置
+        GodDispositionManager.instance.SetCurGod(mCurGodInfo.godName, mCurGodInfo.level);
+        //重置获得当前神将的数据
+        mCurGodInfo = GodDispositionManager.instance.curGod;
+        //还需要做把神将的数据等级保留下来
+        PlayerPrefs.SetInt(mCurGodInfo.godName, mCurGodInfo.level);
+        //刷新下个等级需要的碎片
+        OnUpdateLevelUI();
     }
 }

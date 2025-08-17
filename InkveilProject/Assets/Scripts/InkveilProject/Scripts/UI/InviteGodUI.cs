@@ -36,10 +36,10 @@ public class InviteGodUI : MonoBehaviour
         godInfo = GodDispositionManager.instance.curGod;
         m_InviteGodBtn.onClick.AddListener(() => { OnInviteGodClickHandler(); });
         m_SummonBtn.onClick.AddListener(() => { m_SummonList.gameObject.SetActive(true); });
-        m_SummonBtn1.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("Ñîê¯"); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
-        m_SummonBtn2.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("¹ØÓð"); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
-        m_SummonBtn3.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("Îò¿Õ"); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
-        m_SummonBtn4.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("ÄÄß¸"); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
+        m_SummonBtn1.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("Ñîê¯", PlayerPrefs.GetInt("Ñîê¯", 1)); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
+        m_SummonBtn2.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("¹ØÓð", PlayerPrefs.GetInt("¹ØÓð", 1)); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
+        m_SummonBtn3.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("Îò¿Õ", PlayerPrefs.GetInt("Îò¿Õ", 1)); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
+        m_SummonBtn4.onClick.AddListener(() => { GodDispositionManager.instance.SetCurGod("ÄÄß¸", PlayerPrefs.GetInt("ÄÄß¸", 1)); InitialSummon(); m_SummonList.gameObject.SetActive(false); });
         m_DaZhao.onClick.AddListener(OnDaZhaoClickHandler);
 
         // ³õÊ¼×´Ì¬
@@ -88,9 +88,9 @@ public class InviteGodUI : MonoBehaviour
                     break;
             }
             godInfo = GodDispositionManager.instance.curGod;
-            return;
+            //return;
         }
-        if (BagManager.instance.GetItem(6) != null)
+        if (BagManager.instance.GetItem((int)PropertyIDType.sunWuKongHeroShard) != null)
         {
             //Îò¿ÕËéÆ¬
             m_SummonBtn3.interactable = true;
@@ -99,7 +99,7 @@ public class InviteGodUI : MonoBehaviour
         {
             m_SummonBtn3.interactable = false;
         }
-        if (BagManager.instance.GetItem(7) != null)
+        if (BagManager.instance.GetItem((int)PropertyIDType.neZhaHeroShard) != null)
         {
             //ÄÄß¸ËéÆ¬
             m_SummonBtn4.interactable = true;
@@ -108,7 +108,7 @@ public class InviteGodUI : MonoBehaviour
         {
             m_SummonBtn4.interactable = false;
         }
-        if (BagManager.instance.GetItem(8) != null)
+        if (BagManager.instance.GetItem((int)PropertyIDType.yangJianHeroShard) != null)
         {
             //Ñîê¯ËéÆ¬
             m_SummonBtn1.interactable = true;
@@ -117,7 +117,7 @@ public class InviteGodUI : MonoBehaviour
         {
             m_SummonBtn1.interactable = false;
         }
-        if (BagManager.instance.GetItem(9) != null)
+        if (BagManager.instance.GetItem((int)PropertyIDType.guanYuHeroShard) != null)
         {
             //¹ØÓðËéÆ¬
             m_SummonBtn2.interactable = true;
@@ -156,9 +156,13 @@ public class InviteGodUI : MonoBehaviour
             // ³äÄÜ½×¶Î
             if (chargeProgress < 1f)
             {
-                if (GuideDispositionManager.instance.isGuide) chargeSpeed += Time.deltaTime;
+                if (GuideDispositionManager.instance.isGuide) 
+                {
+                    chargeSpeed += Time.deltaTime;
+                    chargeProgress = Mathf.Min(1f, chargeSpeed / godInfo.baseCooldown);
+                }
 
-                chargeProgress = Mathf.Min(1f, chargeSpeed / godInfo.baseCooldown);
+
                 UpdateUI();
 
                 // ³äÄÜÍê³ÉÊ±¼¤»î°´Å¥
@@ -173,9 +177,11 @@ public class InviteGodUI : MonoBehaviour
             // ÉñÃ÷ÔÚ³¡Ê±¼äµÝ¼õ
             if (durationProgress > 0f)
             {
-                if (GuideDispositionManager.instance.isGuide) durationSpeed += Time.deltaTime;
-
-                durationProgress = Mathf.Max(0f, 1 - durationSpeed / godInfo.baseDuration);
+                if (GuideDispositionManager.instance.isGuide) 
+                {
+                    durationSpeed += Time.deltaTime;
+                    durationProgress = Mathf.Max(0f, 1 - durationSpeed / godInfo.baseDuration);
+                } 
                 UpdateUI();
             }
             else
@@ -235,8 +241,11 @@ public class InviteGodUI : MonoBehaviour
                     default:
                         break;
                 }
+                await Task.Delay(3000);
+                GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play;
+
                 curGodBase.OnIsEnergy += OnIsEnergyHandler;
-                if (sound != null) sound.onStopEvent += (sound) => { GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play; };
+                //if (sound != null) sound.onStopEvent += (sound) => { GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play; };
                 UpdateUI();
             }, false, 1.5f);
         }

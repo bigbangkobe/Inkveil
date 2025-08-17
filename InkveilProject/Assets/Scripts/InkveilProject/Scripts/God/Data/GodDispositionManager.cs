@@ -7,6 +7,7 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
 {
     // 多维度数据存储
     private Dictionary<int, GodInfo> m_IdGodDict = new Dictionary<int, GodInfo>();
+    private Dictionary<string, Dictionary<int, GodInfo>> m_IdLevelGodDict = new Dictionary<string, Dictionary<int, GodInfo>>();
     private Dictionary<string, GodInfo> m_NameGodDict = new Dictionary<string, GodInfo>();
 
     public GodInfo curGod;
@@ -55,6 +56,11 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
                 }
 
                 // 建立索引
+                if (!m_IdLevelGodDict.ContainsKey(god.godName))
+                {
+                    m_IdLevelGodDict[god.godName] = new Dictionary<int, GodInfo>();
+                }
+                m_IdLevelGodDict[god.godName][god.level] = god;
                 m_IdGodDict[god.godID] = god;
                 m_NameGodDict[god.godName] = god;
             }
@@ -66,16 +72,38 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
         {
             Debug.LogError($"神明配置初始化异常：{ex}");
         }
-
-        SetCurGod("哪吒");
+        int curNeZaLevel = PlayerPrefs.GetInt("哪吒", 1);
+        SetCurGod("哪吒", curNeZaLevel);
     }
 
-    public void SetCurGod(string name) 
+    //public void SetCurGod(string name) 
+    //{
+    //    if (m_NameGodDict.TryGetValue(name, out var god))
+    //    {
+    //        curGod = god;        
+    //    }
+    //}
+
+    /// <summary>
+    /// 设置当前神将
+    /// </summary>
+    /// <param name="name">神将名称</param>
+    /// <param name="godLevel">神将等级</param>
+    public void SetCurGod(string name, int godLevel)
     {
-        if (m_NameGodDict.TryGetValue(name, out var god))
-        {
-            curGod = god;        }
+        curGod = m_IdLevelGodDict[name][godLevel];
     }
+
+    /// <summary>
+    /// 获得神将数据（通过名称和等级）
+    /// </summary>
+    /// <param name="name">神将名称</param>
+    /// <param name="godLevel">神将等级</param>
+    public GodInfo GetGodInfoByNameLevel(string name, int godLevel)
+    {
+        return m_IdLevelGodDict[name][godLevel];
+    }
+
 
     /// <summary>
     /// 按名称获取神明配置

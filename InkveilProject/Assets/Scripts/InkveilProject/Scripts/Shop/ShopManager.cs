@@ -40,6 +40,12 @@ public class ShopManager : Singleton<ShopManager>
                 return PurchaseResult.LimitExceeded;
         }
 
+        if (item.propertyID == 0)
+        {
+            AddPurchaseRecord(shopId, quantity);
+            return PurchaseResult.Success;
+        }
+
         // 检查货币是否充足（实际项目需接入货币系统）
         if (!PlayerDispositionManager.instance.HasEnoughCurrency(item.price * quantity))
             return PurchaseResult.NotEnoughCurrency;

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Duplicate Asset Isolation2
+  m_EditorClassIdentifier: 
+  m_GroupName: Duplicate Asset Isolation2
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 79016aa016f5ecc489af22712f02c1ed
+  m_SerializeEntries:
+  - m_GUID: 8a05c66ffba837746be9ae06574b938a
+    m_Address: "Assets/Resources_moved/Image/Summon/\u6768\u622C\u5934\u50CF.jpg"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9bcb777d3a6d80d4597c47f644daf8ee
+    m_Address: "Assets/Resources_moved/Image/Summon/\u53EC\u5524\u6846.jpg"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b93689256737ccc43bea18acc9459e33
+    m_Address: "Assets/Resources_moved/Image/Summon/\u54EA\u5412\u5934\u50CF.jpg"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd324acbc42a6c246928fd137796d891
+    m_Address: "Assets/Resources_moved/Image/Summon/\u5173\u7FBD\u5934\u50CF.jpg"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf4d310048fdbcf4ca1c5ff5c97590f5
+    m_Address: "Assets/Resources_moved/Image/Summon/\u609F\u7A7A\u5934\u50CF.jpg"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a66064a05dc422748aa5e3d2b5fb62fd, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 35f312ba2d772794b82f61532638aea8, type: 2}
+    - {fileID: 11400000, guid: cb6d05498140a20458184ce8641f0dd9, type: 2}

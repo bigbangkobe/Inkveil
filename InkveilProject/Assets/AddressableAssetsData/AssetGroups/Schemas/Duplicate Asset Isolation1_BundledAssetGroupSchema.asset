@@ -34,9 +34,9 @@ MonoBehaviour:
   m_RedirectLimit: -1
   m_RetryCount: 0
   m_BuildPath:
-    m_Id: bb604228f65463644bac345dc7fd84cf
+    m_Id: 2106d75ec6938dc4fae69b055df3b8f1
   m_LoadPath:
-    m_Id: 3def02b4bf4c2a7419bf48d1dd6bbb5d
+    m_Id: f4f0510b16be3e34da399c0460ef1623
   m_BundleMode: 0
   m_AssetBundleProviderType:
     m_AssemblyName: Wx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

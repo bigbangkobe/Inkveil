@@ -172,19 +172,19 @@ public class ChouJiangPanel : BaseUI
                 switch (rewards[i].propertyID)
                 {
                     case 6:
-                        GodDispositionManager.instance.SetCurGod("¹ØÓð");
+                        GodDispositionManager.instance.SetCurGod("¹ØÓð", PlayerPrefs.GetInt("¹ØÓð", 1));
                         GuideManager.instance.OnPlayRandomGuideByID(4);
                         break;
                     case 7:
-                        GodDispositionManager.instance.SetCurGod("Îò¿Õ");
+                        GodDispositionManager.instance.SetCurGod("Îò¿Õ", PlayerPrefs.GetInt("Îò¿Õ", 1));
                         GuideManager.instance.OnPlayRandomGuideByID(6);
                         break;
                     case 8:
-                        GodDispositionManager.instance.SetCurGod("Ñîê¯");
+                        GodDispositionManager.instance.SetCurGod("Ñîê¯", PlayerPrefs.GetInt("Ñîê¯", 1));
                         GuideManager.instance.OnPlayRandomGuideByID(5);
                         break;
                     case 9:
-                        GodDispositionManager.instance.SetCurGod("ÄÄß¸");
+                        GodDispositionManager.instance.SetCurGod("ÄÄß¸", PlayerPrefs.GetInt("ÄÄß¸", 1));
                         GuideManager.instance.OnPlayRandomGuideByID(3);
                         break;
                     default:

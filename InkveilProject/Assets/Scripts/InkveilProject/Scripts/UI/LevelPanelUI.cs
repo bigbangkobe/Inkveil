@@ -45,9 +45,12 @@ public class LevelPanelUI : BaseUI
 
     private void OnStartHandler()
     {
-        LevelManager.instance.SetCurLevel(curLevel + 1);
-        LevelManager.instance.curGrade = curGrade;
-        SceneLoaderManager.instance.SwitchToScene(LevelManager.instance.m_CurLevelInfo.sceneName);
+        if (PlayerDispositionManager.instance.HasEnoughStaminaInit(5)) 
+        {
+            LevelManager.instance.SetCurLevel(curLevel + 1);
+            LevelManager.instance.curGrade = curGrade;
+            SceneLoaderManager.instance.SwitchToScene(LevelManager.instance.m_CurLevelInfo.sceneName);
+        }
     }
 
     private void OnAwrodHandler(int index)
