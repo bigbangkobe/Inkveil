@@ -972,6 +972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationController: {fileID: 1058808398194653686}
   baseMoveSpeed: 5
+  playerHPRT: {fileID: 0}
+  playerHPImage: {fileID: 0}
   speedCoefficient: 0.5
   BaseDamage: 0
   AttackSpeedBase: 0

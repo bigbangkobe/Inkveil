@@ -25,7 +25,7 @@ public class ShopManager : Singleton<ShopManager>
     /// <param name="shopId">商品ID</param>
     /// <param name="quantity">购买数量</param>
     /// <returns>购买结果状态</returns>
-    public PurchaseResult PurchaseItem(int shopId, int quantity = 1)
+    public PurchaseResult PurchaseItem(int shopId,int isGuanGAO, int quantity = 1)
     {
         // 获取商品配置
         ShopInfo item = ShopDispositionManager.instance.GetShopById(shopId);
@@ -40,7 +40,7 @@ public class ShopManager : Singleton<ShopManager>
                 return PurchaseResult.LimitExceeded;
         }
 
-        if (item.propertyID == 0)
+        if (isGuanGAO == 1)
         {
             AddPurchaseRecord(shopId, quantity);
             return PurchaseResult.Success;

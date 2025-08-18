@@ -158,6 +158,7 @@ public class EnemyBase : MonoBehaviour
             Vector3 vector3 = transform.position;
             vector3.x = 0;
             transform.position = vector3;
+            OnboardingGuidePanel.instance.StartGuide();
         }
         transform.LookAt(m_PlayerTarget.position);
         // 创建传送门特效

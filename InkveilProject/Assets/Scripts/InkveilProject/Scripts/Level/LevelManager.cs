@@ -102,10 +102,10 @@ public class LevelManager : MonoSingleton<LevelManager>
             // 计算触发时间
             float triggerTime = CalculateTriggerTime(waveIndex);
             yield return new WaitUntil(() => m_GameTime >= triggerTime);
-            if (waveIndex == 2 && !GuideDispositionManager.instance.isGuide)
-            {
-                OnboardingGuidePanel.instance.StartGuide();
-            }
+            //if (waveIndex == 2 && !GuideDispositionManager.instance.isGuide)
+            //{
+            //    OnboardingGuidePanel.instance.StartGuide();
+            //}
             // 生成敌人
             EnemyGroupInfo group = LevelDispositionManager.instance.GetEnemyGroupInfoByID(currentWave.enemyGroupID);
             if (group != null)

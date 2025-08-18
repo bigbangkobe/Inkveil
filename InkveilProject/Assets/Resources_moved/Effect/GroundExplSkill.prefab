@@ -54,7 +54,6 @@ MonoBehaviour:
   spawnDuration: 3
   positionOffset: 2
   changeScale: 1
-  godAttackCtrl: {fileID: 4124878537935308658}
 --- !u!54 &9048624458797944669
 Rigidbody:
   m_ObjectHideFlags: 0

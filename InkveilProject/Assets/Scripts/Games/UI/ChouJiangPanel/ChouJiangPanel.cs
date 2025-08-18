@@ -171,21 +171,21 @@ public class ChouJiangPanel : BaseUI
 
                 switch (rewards[i].propertyID)
                 {
-                    case 6:
+                    case 8:
                         GodDispositionManager.instance.SetCurGod("¹ØÓð", PlayerPrefs.GetInt("¹ØÓð", 1));
+                        GuideManager.instance.OnPlayRandomGuideByID(3);
+                        break;
+                    case 5:
+                        GodDispositionManager.instance.SetCurGod("Îò¿Õ", PlayerPrefs.GetInt("Îò¿Õ", 1));
                         GuideManager.instance.OnPlayRandomGuideByID(4);
                         break;
                     case 7:
-                        GodDispositionManager.instance.SetCurGod("Îò¿Õ", PlayerPrefs.GetInt("Îò¿Õ", 1));
-                        GuideManager.instance.OnPlayRandomGuideByID(6);
-                        break;
-                    case 8:
                         GodDispositionManager.instance.SetCurGod("Ñîê¯", PlayerPrefs.GetInt("Ñîê¯", 1));
                         GuideManager.instance.OnPlayRandomGuideByID(5);
                         break;
-                    case 9:
+                    case 6:
                         GodDispositionManager.instance.SetCurGod("ÄÄß¸", PlayerPrefs.GetInt("ÄÄß¸", 1));
-                        GuideManager.instance.OnPlayRandomGuideByID(3);
+                        GuideManager.instance.OnPlayRandomGuideByID(6);
                         break;
                     default:
                         break;
@@ -292,6 +292,6 @@ public class ChouJiangPanel : BaseUI
     /// </summary>
     private bool CheckCanDraw(int drawCount)
     {
-        return BagManager.instance.UserItem(3, drawCount);
+        return BagManager.instance.UserItem((int)PropertyIDType.pleaseDivineOrder, drawCount);
     }
 }

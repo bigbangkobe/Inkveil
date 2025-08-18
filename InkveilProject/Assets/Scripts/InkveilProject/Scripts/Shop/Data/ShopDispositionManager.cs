@@ -42,7 +42,8 @@ public class ShopDispositionManager : Singleton<ShopDispositionManager>
                 return;
             }
 
-            ShopList = JsonMapper.ToObject<List<ShopInfo>>(!string.IsNullOrEmpty(ShopInfo) ? ShopInfo : m_ConfigAsset.text);
+            ShopList = JsonMapper.ToObject<List<ShopInfo>>( m_ConfigAsset.text);
+            List<ShopInfo> ShopListLocal = JsonMapper.ToObject<List<ShopInfo>>(!string.IsNullOrEmpty(ShopInfo) ? ShopInfo : m_ConfigAsset.text);
             if (ShopList == null || ShopList.Count == 0)
             {
                 Debug.LogError("商品配置数据解析失败");
@@ -63,6 +64,11 @@ public class ShopDispositionManager : Singleton<ShopDispositionManager>
                     continue;
                 }
                 if (isUpdate) ShopList[i].isTodayBuy = false;
+                else  
+                {
+                    if(ShopListLocal.Count > i)
+                    ShopList[i].isTodayBuy = ShopListLocal[i].isTodayBuy;
+                }
                
                 // 建立索引
                 m_IdShopDict[ShopList[i].shopID] = ShopList[i];

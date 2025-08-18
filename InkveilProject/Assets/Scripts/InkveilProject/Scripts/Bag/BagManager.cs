@@ -40,16 +40,13 @@ public class BagManager : Singleton<BagManager>
             {
                 PlayerDispositionManager.instance.AddXianH(property.number);
             }
-            else
-            {  
-                // 创建新物品项
-                bagItemInfos.Add(new BagItemInfo()
-                {
-                    propertyInfo = property,
-                    isLock = false,
-                    isNew = true
-                });
-            }   
+            // 创建新物品项
+            bagItemInfos.Add(new BagItemInfo()
+            {
+                propertyInfo = property,
+                isLock = false,
+                isNew = true
+            });
         }
         SortAndSaveBag(); // 添加后排序并保存
     }
@@ -68,6 +65,10 @@ public class BagManager : Singleton<BagManager>
         }
         else
         {
+            if (property.propertyInfo.propertyID == 1)
+            {
+                PlayerDispositionManager.instance.AddXianH(property.propertyInfo.number);
+            }
             // 创建新物品项
             bagItemInfos.Add(new BagItemInfo()
             {
@@ -115,7 +116,7 @@ public class BagManager : Singleton<BagManager>
 
         if (item == null) 
         {
-            HintPopPanelManager.instance.ShowHintPop($"{item.propertyInfo.propertyDes}不足！");
+            HintPopPanelManager.instance.ShowHintPop(HintPopPanelManager.instance.PropertyIDTypeName(propertyID) +"不足！");
             return false; 
         }
 
@@ -133,7 +134,6 @@ public class BagManager : Singleton<BagManager>
             return false;
         }
 
-        PlayerDispositionManager.instance.onPlayerAssetsChangde?.Invoke();
         SortAndSaveBag(); // 移除后排序并保存
         return true;
     }
@@ -178,6 +178,7 @@ public class BagManager : Singleton<BagManager>
     // 保存背包数据
     private void SaveBag()
     {
+        PlayerDispositionManager.instance.onPlayerAssetsChangde?.Invoke();
         string json = JsonMapper.ToJson(bagItemInfos);
         PlayerPrefs.SetString(BAG_KEY, json);
         PlayerPrefs.Save();

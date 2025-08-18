@@ -1,7 +1,5 @@
 ﻿using Framework;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 
 public class GuideManager : MonoSingleton<GuideManager>

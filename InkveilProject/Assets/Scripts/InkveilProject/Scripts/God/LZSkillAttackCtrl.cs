@@ -8,7 +8,7 @@ public class LZSkillAttackCtrl : GodAttackCtrl
     {
         base.OnInitialFlag(godInfo, tf1, tf2);
 
-        //transform.position = tf1.position;
+        transform.position = tf1.position;
     }
 
     private void OnEnable() 

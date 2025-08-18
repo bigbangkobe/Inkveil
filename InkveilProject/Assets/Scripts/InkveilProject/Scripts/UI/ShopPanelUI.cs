@@ -21,11 +21,11 @@ public class ShopPanelUI : MonoBehaviour
 
     public void UpdateShop()
     {
-        for (int i = 0; i < shopItems.Length; i++)
+        for (int i = 0; i < 6; i++)
         {
             shopInfos[i].isTodayBuy = false;
             shopItems[i].OnInit(shopInfos[i]);
-            ShopDispositionManager.instance.SaveShopInfo();
         }
+        ShopDispositionManager.instance.SaveShopInfo();
     }
 }

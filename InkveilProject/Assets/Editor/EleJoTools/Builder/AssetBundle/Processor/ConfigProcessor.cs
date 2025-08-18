@@ -125,6 +125,7 @@ public sealed class ConfigProcessor : BaseProcessor
 	private string ToJson(ExcelWorksheet excelSheet)
 	{
 		JsonData jsonArray = new JsonData();
+		//Debug.Log("Name:" + excelSheet.Name + ",Dimension:" + excelSheet.Dimension);
 		for (int i = 5; i <= excelSheet.Dimension.Rows; ++i)
 		{
 			JsonData jsonData = new JsonData();

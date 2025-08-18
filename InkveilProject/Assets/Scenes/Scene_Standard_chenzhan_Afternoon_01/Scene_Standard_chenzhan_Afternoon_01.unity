@@ -295,6 +295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1074837496}
     m_Modifications:
+    - target: {fileID: 7894409495023021487, guid: 9fd70f1f2010ab7468b723a208c72db0, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1074837496}
     - target: {fileID: 8040044952322776579, guid: 9fd70f1f2010ab7468b723a208c72db0, type: 3}
       propertyPath: m_Name
       value: GameMainPanel (1)
@@ -385,6 +389,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fd70f1f2010ab7468b723a208c72db0, type: 3}
+--- !u!114 &290813164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2380791618624472713, guid: 9fd70f1f2010ab7468b723a208c72db0, type: 3}
+  m_PrefabInstance: {fileID: 290813163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &290813165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1661215792738299739, guid: 9fd70f1f2010ab7468b723a208c72db0, type: 3}
+  m_PrefabInstance: {fileID: 290813163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &569559263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -661,6 +687,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: m_hero_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4653764384498135199, guid: 80236da3029d27d4c905a48db530aa54, type: 3}
+      propertyPath: playerHPImage
+      value: 
+      objectReference: {fileID: 290813164}
+    - target: {fileID: 4653764384498135199, guid: 80236da3029d27d4c905a48db530aa54, type: 3}
+      propertyPath: playerShieldImage
+      value: 
+      objectReference: {fileID: 290813165}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80236da3029d27d4c905a48db530aa54, type: 3}
 --- !u!4 &1017954467 stripped

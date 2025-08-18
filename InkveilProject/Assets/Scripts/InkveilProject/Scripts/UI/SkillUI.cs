@@ -37,13 +37,13 @@ public class SkillUI : BaseUI
         switch (mSkillInfo.skillType)
         {
             case 1:
-                mWeaponText.text = "全部攻击力加成:+" + mSkillInfo.num;
+                mWeaponText.text = "全部攻击力加成:+" + mSkillInfo.num + "%";
                 break;
             case 2:
                 mWeaponText.text = "全部攻速加成:+" + mSkillInfo.num + "%";
                 break;
             case 3:
-                mWeaponText.text = "全部血量加成:+" + mSkillInfo.num + "%";
+                mWeaponText.text = "全部血量加成:+" + mSkillInfo.num;
                 break;
         }
     }

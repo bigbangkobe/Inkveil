@@ -24,13 +24,13 @@ public class ShopItemUI : MonoBehaviour
 
     private void OnBuyClick()
     {
-        PurchaseResult purchaseResult = ShopManager.instance.PurchaseItem(shopInfo.shopID);
+        PurchaseResult purchaseResult = ShopManager.instance.PurchaseItem(shopInfo.shopID, shopInfo.isGuanGAO);
 
         switch (purchaseResult)
         {
             case PurchaseResult.Success:
                 propertyInfo.number = shopInfo.number;
-                shopInfo.isTodayBuy= true;
+                shopInfo.isTodayBuy = true;
                 BagManager.instance.AddItem(propertyInfo);
                 ShopDispositionManager.instance.SaveShopInfo();
                 Debug.Log("¹ºÂò³É¹¦");
@@ -38,7 +38,6 @@ public class ShopItemUI : MonoBehaviour
                 {
                     m_luck.gameObject.SetActive(true);
                 }
-              
                 break;
             case PurchaseResult.ItemNotFound:
                 break;
@@ -57,25 +56,30 @@ public class ShopItemUI : MonoBehaviour
     {
         shopInfo = shop;
         propertyInfo = shop.GetPropertyInfo();
-        if (shopInfo.isTodayBuy && shopInfo.limitCount == 2) 
+        if (m_luck != null)
         {
-            m_luck.gameObject.SetActive(true);
+            m_luck.gameObject.SetActive(shopInfo.isTodayBuy);
         }
         m_Title.text = shopInfo.itemName;
         m_Number.text = "X" + shopInfo.number.ToString();
         m_PriceNumber.text = "X" + shopInfo.price.ToString();
         try
         {
-            Debug.Log("imagePath:" + propertyInfo.imagePath);
-            Sprite iconSprite = await ResourceService.LoadAsync<Sprite>(propertyInfo.imagePath);
-            if (iconSprite != null && isIcon)
+
+            if (propertyInfo != null)
             {
-                m_Icon.sprite = iconSprite;
+                Debug.Log("imagePath:" + propertyInfo.imagePath);
+                Sprite iconSprite = await ResourceService.LoadAsync<Sprite>(propertyInfo.imagePath);
+                if (iconSprite != null && isIcon)
+                {
+                    m_Icon.sprite = iconSprite;
+                }
             }
+           
         }
         catch (Exception e)
         {
-            Debug.Log("imagePath:" + propertyInfo.imagePath);
+            //Debug.Log("imagePath:" + propertyInfo.imagePath);
             Debug.Log(e.ToString());
         }
     }

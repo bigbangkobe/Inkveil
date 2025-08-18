@@ -13,7 +13,6 @@ public class FrontSpawner : MonoBehaviour
     public float spawnDuration = 1f;
     public float positionOffset = 0f;
     public bool changeScale = false;
-    public GodAttackCtrl godAttackCtrl;
     private float randomTimer = 0f;
 
     private float startSpeed = 0f;
@@ -22,7 +21,6 @@ public class FrontSpawner : MonoBehaviour
 
     void Start()
     {
-        pivot.transform.position = new Vector3(0, 0, -14f);
         InvokeRepeating("StartAgain", 0f, repeatingTime);
         startSpeed = speed;
         stepPosition = pivot.position;
@@ -40,7 +38,6 @@ public class FrontSpawner : MonoBehaviour
 
     void Update()
     {
-        //if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) return;
         spawnDur -= Time.deltaTime;
         randomTimer += (Time.deltaTime * 2);
         startSpeed = startSpeed * drug;
@@ -76,18 +73,11 @@ public class FrontSpawner : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        // Check if the object is an enemy (you might need to adjust this check)
         if (other.CompareTag("Enemy"))
         {
-            // Apply damage to the enemy
-            EnemyBase enemy = other.GetComponent<EnemyBase>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(!GuideDispositionManager.instance.isGuide ? 9999999999 : (float)godAttackCtrl._godInfo.skillDamageMulti);
-            }
+            other.GetComponent<EnemyBase>().TakeDamage(!GuideDispositionManager.instance.isGuide ? 99999999 : (float)GodDispositionManager.instance.curGod.skillDamageMulti);
         }
     }
-
 }

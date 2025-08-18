@@ -6,6 +6,7 @@ public class ShopInfo
     public int number;
     public int limitCount;
     public int propertyID;
+    public int isGuanGAO;
     public string obtainMethod;
     public string description;
     public int buyCount = 0;

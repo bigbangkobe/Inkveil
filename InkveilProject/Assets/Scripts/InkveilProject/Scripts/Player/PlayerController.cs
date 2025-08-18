@@ -4,6 +4,7 @@ using Framework;
 using System;
 using static UnityEngine.EventSystems.EventTrigger;
 using System.Threading.Tasks;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -46,6 +47,10 @@ public class PlayerController : MonoBehaviour
 
     [Header("玩家属性")]
     public float baseMoveSpeed = 5f;
+    [Header("玩家血量")]
+    public Image playerHPImage;
+    [Header("玩家护盾")]
+    public Image playerShieldImage;
     [Range(0.1f, 1f)] public float speedCoefficient = 0.5f;
     public float BaseDamage;
     public float AttackSpeedBase;
@@ -294,6 +299,8 @@ public class PlayerController : MonoBehaviour
         UpdateShieldVisual();
         SkillBar = 0;
         onInitial?.Invoke();
+        playerHPImage.fillAmount = currentHitPoints / (float)maxHitPoints;
+        playerShieldImage.fillAmount = ShieldHealth;
     }
 
     public void AddBaseDamage(float attack,bool isBai = false) 
@@ -313,7 +320,6 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-
         if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) { _currentState = PlayerState.Idle; return; }
         if (GuideDispositionManager.instance.isGuide) 
         SkillBar += Time.deltaTime / 180;
@@ -641,22 +647,25 @@ public class PlayerController : MonoBehaviour
         if (currentShieldHealth > 0)
         {
             currentShieldHealth -= damage;
+
             onDamage?.Invoke();
             if (currentShieldHealth <= 0)
             {
                 currentShieldHealth = 0;
                 OnShieldBroken();
             }
+            playerShieldImage.fillAmount = ShieldHealth;
             UpdateShieldVisual();
             return;
         }
 
         currentHitPoints--;
         //ChangeState(PlayerState.Hurt);
-
+        playerHPImage.fillAmount = currentHitPoints / (float)maxHitPoints;
         if (currentHitPoints <= 0)
         {
             currentHitPoints = 0;
+            playerHPImage.fillAmount = 0;
             GameOver();
             //ChangeState(PlayerState.Die);
         }
@@ -725,6 +734,7 @@ public class PlayerController : MonoBehaviour
     {
         maxHitPoints += additionalLives;
         currentHitPoints = maxHitPoints;
+        playerHPImage.fillAmount = currentHitPoints / (float)maxHitPoints;
     }
 
     public void UpgradeMoveSpeed(float speedIncrease)
