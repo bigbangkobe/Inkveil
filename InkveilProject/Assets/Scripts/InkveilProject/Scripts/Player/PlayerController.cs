@@ -133,7 +133,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        if (transform.parent == null) 
+        if (transform.parent == null)
         {
             Destroy(gameObject);
             return;
@@ -151,14 +151,18 @@ public class PlayerController : MonoBehaviour
         EnemyManager.instance.OnEnemyDestroyed -= OnEnemyDestroyedHandler;
     }
 
+    int curKO = 0;
+
     private void OnEnemyDestroyedHandler()
     {
         if (!GuideDispositionManager.instance.isGuide) return;
-            SkillBar += 0.02f;
+        curKO++;
+        SkillBar = (float)curKO / LevelManager.instance.waveEnemySum;
         if (SkillBar >= 1)
         {
             //ÖØÖÃ×´Ì¬
             SkillBar = 0;
+            curKO = 0;
         }
     }
 
@@ -303,7 +307,7 @@ public class PlayerController : MonoBehaviour
         playerShieldImage.fillAmount = ShieldHealth;
     }
 
-    public void AddBaseDamage(float attack,bool isBai = false) 
+    public void AddBaseDamage(float attack, bool isBai = false)
     {
         BaseDamage += isBai ? BaseDamage * attack / 100 : attack;
     }
@@ -315,29 +319,29 @@ public class PlayerController : MonoBehaviour
 
     public void AddShieldHP(float shieldHP)
     {
-        currentShieldHealth = Mathf.Clamp(currentShieldHealth + shieldHP,0, maxShieldHealth);
+        currentShieldHealth = Mathf.Clamp(currentShieldHealth + shieldHP, 0, maxShieldHealth);
     }
 
     public void Update()
     {
         if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) { _currentState = PlayerState.Idle; return; }
-        if (GuideDispositionManager.instance.isGuide) 
-        SkillBar += Time.deltaTime / 180;
-        if (SkillBar >= 1)
-        {
-            SkillBar = 0;
-        }
-        //AttackSpeedBase = Math.Clamp((int)(Time.time / 60) * 0.08f + 1, 1, 5);
-        //int inedx = Math.Clamp((int)(Time.time / 180) + 1, 1, 30);
-        //if (level != inedx)
-        //{
-        //    level = inedx;  
-        //    PlayerManager.instance.SetCurPlayerLevel(level);
-        //    InitializePlaierInfo();
-        //}
+        //if (GuideDispositionManager.instance.isGuide)
+            //SkillBar += Time.deltaTime / 180;
+            //if (SkillBar >= 1)
+            //{
+            //    SkillBar = 0;
+            //}
+            //AttackSpeedBase = Math.Clamp((int)(Time.time / 60) * 0.08f + 1, 1, 5);
+            //int inedx = Math.Clamp((int)(Time.time / 180) + 1, 1, 30);
+            //if (level != inedx)
+            //{
+            //    level = inedx;  
+            //    PlayerManager.instance.SetCurPlayerLevel(level);
+            //    InitializePlaierInfo();
+            //}
 
 
-        HandleInput();
+            HandleInput();
         UpdateMovement();
         UpdateState();
         UpdateMonstersOnShield();

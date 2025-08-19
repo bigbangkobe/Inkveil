@@ -28,7 +28,7 @@ public class VictoryPanelUI : MonoBehaviour
             PropertyInfo propertyInfo1 = PropertyDispositionManager.instance.GetPropertyById(1);
             propertyInfo1.number = 1000;
 
-            PropertyInfo propertyInfo2 = PropertyDispositionManager.instance.GetPropertyById(3);
+            PropertyInfo propertyInfo2 = PropertyDispositionManager.instance.GetPropertyById(2);
             propertyInfo2.number = 10;
 
             RewardCard reward1 = Instantiate(m_RewardCard, m_RewardCard.transform.parent);

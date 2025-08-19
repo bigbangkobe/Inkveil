@@ -4,6 +4,7 @@ using UnityEngine;
 using Framework;
 using UnityEngine.UI;
 using System;
+using System.Linq;
 
 public class BagPanel : BaseUI
 {
@@ -36,7 +37,7 @@ public class BagPanel : BaseUI
 
     private void OninitItems()
     {
-        bagItemInfos = BagManager.instance.ItemInfos;
+        bagItemInfos = BagManager.instance.ItemInfos.ToList();
 
         for (int i = 0; i < mList.Length; i++) 
         {

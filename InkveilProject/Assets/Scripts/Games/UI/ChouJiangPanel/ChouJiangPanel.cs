@@ -292,6 +292,6 @@ public class ChouJiangPanel : BaseUI
     /// </summary>
     private bool CheckCanDraw(int drawCount)
     {
-        return BagManager.instance.UserItem((int)PropertyIDType.pleaseDivineOrder, drawCount);
+        return BagManager.instance.UseItem((int)PropertyIDType.pleaseDivineOrder, drawCount);
     }
 }

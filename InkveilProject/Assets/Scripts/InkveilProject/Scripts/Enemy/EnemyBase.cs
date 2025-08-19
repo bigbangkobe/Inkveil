@@ -20,7 +20,7 @@ public class EnemyBase : MonoBehaviour
     private float m_MaxHP;                   // 最大血量
     private float m_MoveSpeed;               // 移动速度
     private int m_AttackDamage;              // 攻击伤害
-    private float m_AttackRange = 1f;        // 攻击范围
+    private float m_AttackRange = 1.5f;        // 攻击范围
     private float m_LastAttackTime;          // 上次攻击时间
     public EnemyUI m_EnemyUI;                // 血条和伤害显示UI
 
@@ -129,10 +129,13 @@ public class EnemyBase : MonoBehaviour
             float distanceToPlayer = Vector3.Distance(transform.position, m_PlayerTarget.position);
             if (distanceToPlayer <= m_AttackRange && Time.time - m_LastAttackTime >= 1.5f)
             {
+                m_CurrentState = EnemyState.Attacking;
                 StartCoroutine(AttackRoutine());
             }
         }
-
+        Vector3 direction = m_PlayerTarget.position - transform.position;
+        direction.y = 0;
+        transform.LookAt(m_PlayerTarget.position);
         if (m_CurrentState == EnemyState.Run)
         {
             UpdateMovement();
@@ -160,6 +163,8 @@ public class EnemyBase : MonoBehaviour
             transform.position = vector3;
             OnboardingGuidePanel.instance.StartGuide();
         }
+        Vector3 direction = m_PlayerTarget.position - transform.position;
+        direction.y = 0;
         transform.LookAt(m_PlayerTarget.position);
         // 创建传送门特效
         if (m_PortalEffectPrefab != null)
@@ -212,19 +217,18 @@ public class EnemyBase : MonoBehaviour
     {
         if (!m_PlayerTarget && m_CurrentState != EnemyState.Run) return;
 
-        Vector3 direction = m_PlayerTarget.position - transform.position;
-        direction.y = 0;
-        transform.LookAt(m_PlayerTarget.position);
+       
         transform.Translate(Vector3.forward * m_MoveSpeed * Time.deltaTime);
     }
 
     private IEnumerator AttackRoutine()
     {
         m_CurrentState = EnemyState.Attacking;
-        m_Rigidbody.velocity = Vector3.zero;
+        //m_Rigidbody.velocity = Vector3.zero;
         m_LastAttackTime = Time.time;
 
         m_AnimationController.PlayAnimationImmediate("attack");
+
         yield return new WaitForSeconds(0.75f);
 
         PerformAttack();

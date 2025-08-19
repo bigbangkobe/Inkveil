@@ -1,3 +1,6 @@
+using System;
+
+[Serializable]
 public class PropertyInfo
 {
     public int propertyID { get; set; }
@@ -17,6 +20,20 @@ public class PropertyInfo
         this.propertyGrade = propertyGrade;
         this.imagePath = imagePath;
         this.number = number;
+    }
+
+    // дк PropertyInfo Рржа
+    public PropertyInfo Clone()
+    {
+        return new PropertyInfo
+        {
+            propertyID = this.propertyID,
+            propertyName = this.propertyName,
+            propertyDes = this.propertyDes,
+            propertyGrade = this.propertyGrade,
+            imagePath = this.imagePath,
+            number = this.number
+        };
     }
 }
 

@@ -113,8 +113,8 @@ public class GameManager : MonoSingleton<GameManager>
         PlayerManager.instance.Clear();
         LevelManager.instance.Clear();
         PropertyManager.instance.Clear();
-        BagManager.instance.Clear();
-        ShopManager.instance.Clear();
-        LotteryDispositionManager.instance.Clear();
+        //BagManager.instance.Clear();
+        //ShopManager.instance.Clear();
+        //LotteryDispositionManager.instance.Clear();
     }
 }

@@ -26,7 +26,8 @@ public class LevelManager : MonoSingleton<LevelManager>
     public int curGrade = 1;
     private Transform m_EnemyPoint;
     private WaitForSeconds waitForSeconds =  new WaitForSeconds(0.1f);
-
+    public int waveIndex = 0;
+    public int waveEnemySum = 0;
     private List<Transform> m_EnemyPointList;
 
     //============= 核心逻辑 =============
@@ -84,11 +85,13 @@ public class LevelManager : MonoSingleton<LevelManager>
         m_WaveCoroutine = StartCoroutine(ProcessWaves());
     }
 
+
+
     private IEnumerator ProcessWaves()
     {
         m_WaveStates.Clear();
-
-        for (int waveIndex = 0; waveIndex < m_WaveConfigs.Count; waveIndex++)
+        waveIndex = 0;
+        for (waveIndex = 0; waveIndex < m_WaveConfigs.Count; waveIndex++)
         {
             if (GameManager.instance.GameStateEnum != GameConfig.GameState.State.Play) { 
                 yield return waitForSeconds;
@@ -153,8 +156,14 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     private IEnumerator SpawnEnemyGroup(EnemyGroupInfo group, int spawnMode, WaveState waveState)
     {
+        waveEnemySum = 0;
         int[][] enemies = group.GetEnemyGroup();
 
+        foreach (int[] config in enemies)
+        {
+            waveEnemySum += config[1];
+        }
+        waveEnemySum += waveIndex + 1 < m_WaveConfigs.Count ? 0 : 1;
         switch (group.AppearanceMode)
         {
             case 1: // 批量生成

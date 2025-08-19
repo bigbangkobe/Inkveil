@@ -145,7 +145,7 @@ public class PlayerDispositionManager : Singleton<PlayerDispositionManager>
 
     internal void DeductCurrency(int v)
     {
-        BagManager.instance.UserItem(1, v);
+        BagManager.instance.UseItem(1, v);
         PlayerAssetsInfo.XianHInit -= v;
         onPlayerAssetsChangde?.Invoke();
         SavePlayerAsset();

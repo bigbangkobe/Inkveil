@@ -214,7 +214,7 @@ public class GoldPanel : BaseUI
         //¿Û³ýËéÆ¬
         BagItemInfo bagItemInfo = BagManager.instance.GetItem(mCurGodInfo.propertyID);
         if (bagItemInfo != null) {
-            BagManager.instance.UserItem(bagItemInfo.propertyInfo.propertyID, mCurGodInfo.fragRequire);
+            BagManager.instance.UseItem(bagItemInfo.propertyInfo.propertyID, mCurGodInfo.fragRequire);
         }
         else
         {

@@ -21,7 +21,7 @@ public class ShopPanelUI : MonoBehaviour
 
     public void UpdateShop()
     {
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < shopItems.Length; i++)
         {
             shopInfos[i].isTodayBuy = false;
             shopItems[i].OnInit(shopInfos[i]);

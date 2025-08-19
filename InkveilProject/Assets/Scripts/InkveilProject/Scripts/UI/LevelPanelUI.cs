@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LevelPanelUI : BaseUI
 {
+    [SerializeField] private AwrodPanel m_AwrodPanel;
     [SerializeField] private Text m_LevelName;
     [SerializeField] private Image m_LevelIcon;
     [SerializeField] private Button m_RightBtn;
@@ -59,7 +60,7 @@ public class LevelPanelUI : BaseUI
         {
           
             List<PropertyInfo> propertyInfos = stageRewardsInfo[curGrade].GetSpecialAwardsPropertyInfos();
-            BagManager.instance.AddItem(propertyInfos[index]);
+            m_AwrodPanel.InitinlRewards(propertyInfos[index]);
             StageRewardsDispositionManager.instance.Save();
             stageRewardsInfo[curGrade].receive[index] = 1;
             InitialLevel();

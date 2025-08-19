@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Framework;
+﻿using Framework;
 using LitJson;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BagManager : Singleton<BagManager>
@@ -10,81 +9,107 @@ public class BagManager : Singleton<BagManager>
     private List<BagItemInfo> bagItemInfos = new List<BagItemInfo>();
     private const string BAG_KEY = "Bag";
 
-    public List<BagItemInfo> ItemInfos => bagItemInfos; // 只读访问接口
+    // 使用属性而不是公共字段
+    public IReadOnlyList<BagItemInfo> ItemInfos => bagItemInfos.AsReadOnly();
 
     public void OnInit()
     {
         string str = PlayerPrefs.GetString(BAG_KEY);
         if (!string.IsNullOrEmpty(str))
         {
-            bagItemInfos = JsonMapper.ToObject<List<BagItemInfo>>(str);
-            SortBag(); // 初始化时排序
+            try
+            {
+                bagItemInfos = JsonMapper.ToObject<List<BagItemInfo>>(str) ?? new List<BagItemInfo>();
+                SortBag();
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"Failed to load bag data: {ex.Message}");
+                bagItemInfos = new List<BagItemInfo>();
+            }
         }
     }
 
-    // 添加物品到背包
+    // 添加物品到背包（由 PropertyInfo）
     public void AddItem(PropertyInfo property)
     {
-        // 检查是否存在相同ID的物品
+        if (property == null)
+        {
+            Debug.LogWarning("Attempted to add null property to bag");
+            return;
+        }
+
+        // 处理特殊 ID
+        if (property.propertyID == 1)
+        {
+            PlayerDispositionManager.instance?.AddXianH(property.number);
+        }
+
+        // 查找已有条目
         BagItemInfo existingItem = bagItemInfos.Find(item =>
-            item.propertyInfo.propertyID == property.propertyID);
+            item?.propertyInfo != null && item.propertyInfo.propertyID == property.propertyID);
 
         if (existingItem != null)
         {
-            // 叠加数量
             existingItem.propertyInfo.number += property.number;
         }
         else
         {
-            if (property.propertyID == 1)
-            {
-                PlayerDispositionManager.instance.AddXianH(property.number);
-            }
             // 创建新物品项
-            bagItemInfos.Add(new BagItemInfo()
+            bagItemInfos.Add(new BagItemInfo
             {
-                propertyInfo = property,
+                propertyInfo = property.Clone(), // 需要确保 Clone 方法正确实现
                 isLock = false,
                 isNew = true
             });
         }
-        SortAndSaveBag(); // 添加后排序并保存
+
+        SortAndSaveBag();
     }
 
-    // 添加物品到背包
-    public void AddItem(BagItemInfo property)
+    // 添加物品到背包（由 BagItemInfo）
+    public void AddItem(BagItemInfo itemToAdd)
     {
-        // 检查是否存在相同ID的物品
+        if (itemToAdd == null || itemToAdd.propertyInfo == null)
+        {
+            Debug.LogWarning("Attempted to add null item to bag");
+            return;
+        }
+
+        if (itemToAdd.propertyInfo.propertyID == 1)
+        {
+            PlayerDispositionManager.instance?.AddXianH(itemToAdd.propertyInfo.number);
+        }
+
         BagItemInfo existingItem = bagItemInfos.Find(item =>
-            item.propertyInfo.propertyID == property.propertyInfo.propertyID);
+            item?.propertyInfo != null &&
+            item.propertyInfo.propertyID == itemToAdd.propertyInfo.propertyID);
 
         if (existingItem != null)
         {
-            // 叠加数量
-            existingItem.propertyInfo.number += property.propertyInfo.number;
+            existingItem.propertyInfo.number += itemToAdd.propertyInfo.number;
         }
         else
         {
-            if (property.propertyInfo.propertyID == 1)
-            {
-                PlayerDispositionManager.instance.AddXianH(property.propertyInfo.number);
-            }
             // 创建新物品项
-            bagItemInfos.Add(new BagItemInfo()
+            bagItemInfos.Add(new BagItemInfo
             {
-                propertyInfo = property.propertyInfo,
-                isLock = false,
-                isNew = true
+                propertyInfo = itemToAdd.propertyInfo.Clone(), // 需要确保 Clone 方法正确实现
+                isLock = itemToAdd.isLock,
+                isNew = true // 新添加的物品总是标记为新
             });
         }
-        SortAndSaveBag(); // 添加后排序并保存
+
+        SortAndSaveBag();
     }
 
     // 移除物品
     public bool RemoveItem(int propertyID, int amount = 1)
     {
+        if (amount <= 0) return false;
+
         BagItemInfo item = bagItemInfos.Find(i =>
-            i.propertyInfo.propertyID == propertyID);
+            i?.propertyInfo != null && i.propertyInfo.propertyID == propertyID);
 
         if (item == null) return false;
 
@@ -96,45 +121,45 @@ public class BagManager : Singleton<BagManager>
 
         if (item.propertyInfo.number > amount)
         {
-            // 减少数量
             item.propertyInfo.number -= amount;
         }
         else
         {
-            // 完全移除
             bagItemInfos.Remove(item);
         }
 
-        SortAndSaveBag(); // 移除后排序并保存
+        SortAndSaveBag();
         return true;
     }
 
-    public bool UserItem(int propertyID, int amount = 1)
+    // 使用物品
+    public bool UseItem(int propertyID, int amount = 1)
     {
-        BagItemInfo item = bagItemInfos.Find(i =>
-            i.propertyInfo.propertyID == propertyID);
+        if (amount <= 0) return false;
 
-        if (item == null) 
+        BagItemInfo item = bagItemInfos.Find(i =>
+            i?.propertyInfo != null && i.propertyInfo.propertyID == propertyID);
+
+        if (item == null)
         {
-            HintPopPanelManager.instance.ShowHintPop(HintPopPanelManager.instance.PropertyIDTypeName(propertyID) +"不足！");
-            return false; 
+            HintPopPanelManager.instance?.ShowHintPop(
+                $"{HintPopPanelManager.instance?.PropertyIDTypeName(propertyID) ?? "物品"}不足！");
+            return false;
         }
 
         if (item.propertyInfo.number >= amount)
         {
-            // 减少数量
             item.propertyInfo.number -= amount;
-
-            // 完全移除
-            if (item.propertyInfo.number <= 0) bagItemInfos.Remove(item);
+            if (item.propertyInfo.number <= 0)
+                bagItemInfos.Remove(item);
         }
         else
         {
-            HintPopPanelManager.instance.ShowHintPop($"{item.propertyInfo.propertyDes}不足！");
+            HintPopPanelManager.instance?.ShowHintPop($"{item.propertyInfo.propertyDes}不足！");
             return false;
         }
 
-        SortAndSaveBag(); // 移除后排序并保存
+        SortAndSaveBag();
         return true;
     }
 
@@ -142,13 +167,13 @@ public class BagManager : Singleton<BagManager>
     public void UpdateItemState(int propertyID, bool? isLock = null, bool? isNew = null)
     {
         BagItemInfo item = bagItemInfos.Find(i =>
-            i.propertyInfo.propertyID == propertyID);
+            i?.propertyInfo != null && i.propertyInfo.propertyID == propertyID);
 
         if (item != null)
         {
             if (isLock.HasValue) item.isLock = isLock.Value;
             if (isNew.HasValue) item.isNew = isNew.Value;
-            SortAndSaveBag(); // 状态更新后排序并保存
+            SortAndSaveBag();
         }
     }
 
@@ -156,19 +181,37 @@ public class BagManager : Singleton<BagManager>
     public BagItemInfo GetItem(int propertyID)
     {
         return bagItemInfos.Find(item =>
-            item.propertyInfo.propertyID == propertyID);
+            item?.propertyInfo != null && item.propertyInfo.propertyID == propertyID);
     }
 
-    // 排序背包（propertyGrade大的排前面）
+    // 改进的排序比较器
+    private static readonly Comparison<BagItemInfo> BagComparison = (a, b) =>
+    {
+        // 处理 null 情况
+        if (a == null && b == null) return 0;
+        if (a == null) return 1;
+        if (b == null) return -1;
+
+        // 处理 propertyInfo 为 null 的情况
+        if (a.propertyInfo == null && b.propertyInfo == null) return 0;
+        if (a.propertyInfo == null) return 1;
+        if (b.propertyInfo == null) return -1;
+
+        // 先按品质降序
+        int gradeCompare = b.propertyInfo.propertyGrade.CompareTo(a.propertyInfo.propertyGrade);
+        if (gradeCompare != 0) return gradeCompare;
+
+        // 再按 ID 降序
+        return b.propertyInfo.propertyID.CompareTo(a.propertyInfo.propertyID);
+    };
+
     private void SortBag()
     {
-        bagItemInfos = bagItemInfos
-            .OrderByDescending(item => item.propertyInfo.propertyGrade) // 按品质降序
-            .ThenByDescending(item => item.propertyInfo.propertyID)    // 次排序条件：ID降序
-            .ToList();
+        // 先移除所有 null 项
+        bagItemInfos.RemoveAll(item => item == null || item.propertyInfo == null);
+        bagItemInfos.Sort(BagComparison);
     }
 
-    // 排序并保存
     private void SortAndSaveBag()
     {
         SortBag();
@@ -178,10 +221,24 @@ public class BagManager : Singleton<BagManager>
     // 保存背包数据
     private void SaveBag()
     {
-        PlayerDispositionManager.instance.onPlayerAssetsChangde?.Invoke();
-        string json = JsonMapper.ToJson(bagItemInfos);
-        PlayerPrefs.SetString(BAG_KEY, json);
-        PlayerPrefs.Save();
+        try
+        {
+            PlayerDispositionManager.instance?.onPlayerAssetsChangde?.Invoke();
+            string json = JsonMapper.ToJson(bagItemInfos);
+            PlayerPrefs.SetString(BAG_KEY, json);
+            PlayerPrefs.Save();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"Failed to save bag data: {ex.Message}");
+        }
+    }
+
+    // 批量操作优化
+    public void BatchOperation(Action<BagManager> operation)
+    {
+        operation?.Invoke(this);
+        SortAndSaveBag();
     }
 
     // 清空测试数据
@@ -189,10 +246,13 @@ public class BagManager : Singleton<BagManager>
     {
         PlayerPrefs.DeleteKey(BAG_KEY);
         bagItemInfos.Clear();
+        PlayerDispositionManager.instance?.onPlayerAssetsChangde?.Invoke();
     }
 
     internal void Clear()
     {
-        
+        bagItemInfos.Clear();
+        PlayerPrefs.DeleteKey(BAG_KEY);
+        PlayerDispositionManager.instance?.onPlayerAssetsChangde?.Invoke();
     }
 }
