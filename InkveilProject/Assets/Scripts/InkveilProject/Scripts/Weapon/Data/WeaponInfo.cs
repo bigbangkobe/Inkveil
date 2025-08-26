@@ -1,6 +1,6 @@
 ﻿using System;
-using UnityEngine;
 
+[Serializable]
 public class WeaponInfo
 {
     // 技能触发类型

@@ -3,13 +3,12 @@ using System;
 [Serializable]
 public class PropertyInfo
 {
-    public int propertyID { get; set; }
-    public string propertyName { get; set; }
-    public string propertyDes { get; set; }
-    public int propertyGrade { get; set; }
-    public string imagePath { get; set; }
-    public int number { get; set; } = 0;
-
+    public int propertyID;
+    public string propertyName;
+    public string propertyDes;
+    public int propertyGrade;
+    public string imagePath;
+    public int number;
     public PropertyInfo() { }
 
     public PropertyInfo(int propertyID, string propertyName, string propertyDes, int propertyGrade, string imagePath, int number)

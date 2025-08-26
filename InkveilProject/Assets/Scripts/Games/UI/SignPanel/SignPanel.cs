@@ -1,5 +1,4 @@
 using Framework;
-using LitJson;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,7 +39,7 @@ public class SignPanel : BaseUI
             return;
         }
 
-        var signInfoList = JsonMapper.ToObject<List<SignRewardInfo>>(signInfoAsset);
+        var signInfoList = JsonHelper.ToObject<List<SignRewardInfo>>(signInfoAsset);
         if (signInfoList == null || signInfoList.Count == 0)
         {
             Debug.LogError("≈‰÷√ ˝æ›Ω‚Œˆ ß∞‹");
@@ -53,6 +52,7 @@ public class SignPanel : BaseUI
             SignRewardInfo info = signInfoList[i];
             m_SignRewardInfoDic[info.signID] = info;
             mSignDayList[i].mSignRewardInfo = info;
+            mSignDayList[i].SetPropNum(info.count);
         }
     }
 
@@ -188,7 +188,7 @@ public class SignPanel : BaseUI
         UpdateSignUI();
     }
 }
-
+[Serializable]
 public class SignRewardInfo
 {
     public int signID;

@@ -42,8 +42,8 @@ public class ShopDispositionManager : Singleton<ShopDispositionManager>
                 return;
             }
 
-            ShopList = JsonMapper.ToObject<List<ShopInfo>>( m_ConfigAsset.text);
-            List<ShopInfo> ShopListLocal = JsonMapper.ToObject<List<ShopInfo>>(!string.IsNullOrEmpty(ShopInfo) ? ShopInfo : m_ConfigAsset.text);
+            ShopList = JsonHelper.ToObject<List<ShopInfo>>( m_ConfigAsset.text);
+            List<ShopInfo> ShopListLocal = JsonHelper.ToObject<List<ShopInfo>>(!string.IsNullOrEmpty(ShopInfo) ? ShopInfo : m_ConfigAsset.text);
             if (ShopList == null || ShopList.Count == 0)
             {
                 Debug.LogError("商品配置数据解析失败");
@@ -74,7 +74,7 @@ public class ShopDispositionManager : Singleton<ShopDispositionManager>
                 m_IdShopDict[ShopList[i].shopID] = ShopList[i];
                 m_NameShopDict[ShopList[i].itemName] = ShopList[i];
             }
-            PlayerPrefs.SetString(SHOP_INFO_KEY, JsonMapper.ToJson(ShopList));
+            PlayerPrefs.SetString(SHOP_INFO_KEY, JsonHelper.ToJson(ShopList));
             m_IsInitialized = true;
             Debug.Log($"商品配置加载完成，总计{ShopList.Count}件商品");
         }
@@ -104,7 +104,7 @@ public class ShopDispositionManager : Singleton<ShopDispositionManager>
 
     public void SaveShopInfo() 
     {
-        PlayerPrefs.SetString(SHOP_INFO_KEY, JsonMapper.ToJson(ShopList));
+        PlayerPrefs.SetString(SHOP_INFO_KEY, JsonHelper.ToJson(ShopList));
     }
 
     /// <summary>

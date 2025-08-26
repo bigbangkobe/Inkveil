@@ -1,4 +1,7 @@
-﻿public class ShieldGrowthInfo
+﻿using System;
+
+[Serializable]
+public class ShieldGrowthInfo
 {
     public int level;
     public int shieldHP;

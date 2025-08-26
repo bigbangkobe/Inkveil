@@ -61,7 +61,7 @@ public class GodManager : MonoBehaviour
     /// <returns></returns>
     public async Task<GodBase> GetGodByName(string name)
     {
-        GodInfo godInfo = GodDispositionManager.instance.GetGodByName(name);
+        GodInfo godInfo = GodDispositionManager.instance.GetGodInfoByNameLevel(name, PlayerPrefs.GetInt(name, 1));
         ObjectPool GodPool = GetGodPool(name);
         GodBase God = await GodPool.GetAsync(name) as GodBase;
         God.transform.position = m_GodPoint.position;

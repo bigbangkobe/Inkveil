@@ -13,6 +13,8 @@ public class SignToggle : BaseUI
 
     [SerializeField] private Button mClaimButton;
 
+    [SerializeField] private Text mPropNum;
+
     public int mPropType; // 第几天，1~7
 
     public Action<int> OnClaimReward; // 从 SignPanel 注入的领奖回调
@@ -164,5 +166,14 @@ public class SignToggle : BaseUI
         {
             mPropImg.sprite = sprite;
         }
+    }
+
+    /// <summary>
+    /// 设置签到奖励的数量
+    /// </summary>
+    /// <param name="num"></param>
+    public void SetPropNum(int num)
+    {
+        mPropNum.text = num.ToString();
     }
 }

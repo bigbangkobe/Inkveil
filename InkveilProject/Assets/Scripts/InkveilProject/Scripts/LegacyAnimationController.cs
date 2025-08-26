@@ -97,7 +97,7 @@ public class LegacyAnimationController : MonoBehaviour
         }
         else
         {
-            Debug.Log($"LegacyAnimationController: 未找到名为 {animationName} 的动画.");
+            //Debug.Log($"LegacyAnimationController: 未找到名为 {animationName} 的动画.");
         }
     }
 

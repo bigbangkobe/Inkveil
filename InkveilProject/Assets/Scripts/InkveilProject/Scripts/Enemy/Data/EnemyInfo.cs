@@ -19,7 +19,7 @@ public enum EnemyAbility
     DamageImmunity = 2, // 伤害免疫
     AuraEnhance = 4     // 光环增强
 }
-
+[Serializable]
 public class EnemyInfo
 {
     public int enemyID;              // 唯一ID

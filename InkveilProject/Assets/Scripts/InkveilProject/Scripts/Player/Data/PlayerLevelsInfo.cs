@@ -1,4 +1,7 @@
-﻿public class PlayerLevelsInfo
+﻿using System;
+
+[Serializable]
+public class PlayerLevelsInfo
 {
     public int playerLevels;
     public int expRequired;

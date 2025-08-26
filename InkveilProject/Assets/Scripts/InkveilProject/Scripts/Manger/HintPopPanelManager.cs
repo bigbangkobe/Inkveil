@@ -33,7 +33,7 @@ public class HintPopPanelManager : MonoSingleton<HintPopPanelManager>
                 propertyName = "»êÄ«";
                 break;
             case PropertyIDType.pleaseDivineOrder:
-                propertyName = "ÇëÉñÁî";
+                propertyName = "ÆíÔ¸Áî";
                 break;
             case PropertyIDType.refinedIron:
                 propertyName = "¾«Ìú";

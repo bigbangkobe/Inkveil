@@ -19,7 +19,7 @@ public class BagManager : Singleton<BagManager>
         {
             try
             {
-                bagItemInfos = JsonMapper.ToObject<List<BagItemInfo>>(str) ?? new List<BagItemInfo>();
+                bagItemInfos = JsonHelper.ToObject<List<BagItemInfo>>(str) ?? new List<BagItemInfo>();
                 SortBag();
             }
             catch (Exception ex)
@@ -224,7 +224,7 @@ public class BagManager : Singleton<BagManager>
         try
         {
             PlayerDispositionManager.instance?.onPlayerAssetsChangde?.Invoke();
-            string json = JsonMapper.ToJson(bagItemInfos);
+            string json = JsonHelper.ToJson(bagItemInfos);
             PlayerPrefs.SetString(BAG_KEY, json);
             PlayerPrefs.Save();
         }

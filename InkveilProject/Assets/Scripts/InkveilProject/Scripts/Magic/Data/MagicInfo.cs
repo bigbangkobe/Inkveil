@@ -1,6 +1,7 @@
 ﻿// 法宝类型枚举
+using System;
 using UnityEngine;
-
+[Serializable]
 public class MagicInfo
 {
     public enum MagicType

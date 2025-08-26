@@ -30,6 +30,12 @@ public class InviteGodUI : MonoBehaviour
     private GodBase curGodBase;
     public GuideHintPanelUI guideHintPanelUI;
 
+    public Image mIconImage;
+
+    public Sprite mNormalIconSprite;
+
+    public Sprite mHighLightIconSprite;
+
 
     private void Awake()
     {
@@ -45,6 +51,7 @@ public class InviteGodUI : MonoBehaviour
         // 初始状态
         UpdateUI();
         m_InviteGodBtn.interactable = false;
+        mIconImage.sprite = mNormalIconSprite;
     }
 
     private void OnEnable()
@@ -90,7 +97,7 @@ public class InviteGodUI : MonoBehaviour
             godInfo = GodDispositionManager.instance.curGod;
             //return;
         }
-        if (BagManager.instance.GetItem((int)PropertyIDType.sunWuKongHeroShard) != null)
+        if (PlayerPrefs.GetInt("悟空", 0) != 0)
         {
             //悟空碎片
             m_SummonBtn3.interactable = true;
@@ -99,7 +106,7 @@ public class InviteGodUI : MonoBehaviour
         {
             m_SummonBtn3.interactable = false;
         }
-        if (BagManager.instance.GetItem((int)PropertyIDType.neZhaHeroShard) != null)
+        if (PlayerPrefs.GetInt("哪吒", 0) != 0)
         {
             //哪吒碎片
             m_SummonBtn4.interactable = true;
@@ -108,7 +115,7 @@ public class InviteGodUI : MonoBehaviour
         {
             m_SummonBtn4.interactable = false;
         }
-        if (BagManager.instance.GetItem((int)PropertyIDType.yangJianHeroShard) != null)
+        if (PlayerPrefs.GetInt("杨戬", 0) != 0)
         {
             //杨戬碎片
             m_SummonBtn1.interactable = true;
@@ -117,7 +124,7 @@ public class InviteGodUI : MonoBehaviour
         {
             m_SummonBtn1.interactable = false;
         }
-        if (BagManager.instance.GetItem((int)PropertyIDType.guanYuHeroShard) != null)
+        if (PlayerPrefs.GetInt("关羽", 0) != 0)
         {
             //关羽碎片
             m_SummonBtn2.interactable = true;
@@ -161,14 +168,20 @@ public class InviteGodUI : MonoBehaviour
                     chargeSpeed += Time.deltaTime;
                     chargeProgress = Mathf.Min(1f, chargeSpeed / godInfo.baseCooldown);
                 }
-
-
+                if(mIconImage.sprite != mNormalIconSprite)
+                {
+                    mIconImage.sprite = mNormalIconSprite;
+                }
                 UpdateUI();
 
                 // 充能完成时激活按钮
                 if (chargeProgress >= 1f)
                 {
                     m_InviteGodBtn.interactable = true;
+                    if (mIconImage.sprite != mHighLightIconSprite)
+                    {
+                        mIconImage.sprite = mHighLightIconSprite;
+                    }
                 }
             }
         }
@@ -203,52 +216,126 @@ public class InviteGodUI : MonoBehaviour
         curGodBase.UseSkill();
 
     }
-    private async Task OnInviteGodClickHandler()
+    //private async Task OnInviteGodClickHandler()
+    //{
+    //    if (chargeProgress >= 1f && !isGodActive)
+    //    {
+    //        isGodActive = true;
+    //        durationProgress = 1f;
+    //        chargeProgress = 0f;
+    //        m_InviteGodBtn.interactable = false;
+    //        mIconImage.sprite = mNormalIconSprite;
+    //        EffectObject effect = await EffectSystem.instance.GetEffect("Temporary explosion");
+    //        effect.transform.position = GodManager.instance.GetInitPoint().position;
+    //        effect.Play();
+    //        await TimerSystem.Start(async (x) =>
+    //        {
+    //            // 召唤神明
+    //            GameManager.instance.GameStateEnum = GameConfig.GameState.State.Pause;
+
+    //            // 这里调用实际召唤逻辑
+    //            curGodBase = await GodManager.instance.GetGodByName(godInfo.godName);
+    //            curGodBase.Activate();
+    //            SoundObject sound = null;
+    //            switch (godInfo.godName)
+    //            {
+    //                case "哪吒":
+    //                    sound = GuideManager.instance.OnPlayRandomGuideByID(7);
+    //                    break;
+    //                case "杨戬":
+    //                    sound = GuideManager.instance.OnPlayRandomGuideByID(8);
+    //                    break;
+    //                case "关羽":
+    //                    sound = GuideManager.instance.OnPlayRandomGuideByID(9);
+    //                    break;
+    //                case "悟空":
+    //                    sound = GuideManager.instance.OnPlayRandomGuideByID(10);
+    //                    break;
+    //                default:
+    //                    break;
+    //            }
+    //            Debug.Log("等待时间");
+    //            if (!GuideDispositionManager.instance.isGuide) await Task.Delay(3000);
+    //            Debug.Log("等待结束");
+    //            GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play;
+
+    //            curGodBase.OnIsEnergy += OnIsEnergyHandler;
+    //            //if (sound != null) sound.onStopEvent += (sound) => { GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play; };
+    //            UpdateUI();
+    //        }, false, 1.5f);
+    //    }
+    //}
+
+    public void OnInviteGodClickHandler()
     {
-        if (chargeProgress >= 1f && !isGodActive)
+        StartCoroutine(OnInviteGodClickHandler_Coroutine());
+    }
+
+    private IEnumerator OnInviteGodClickHandler_Coroutine()
+    {
+        if (!(chargeProgress >= 1f && !isGodActive))
+            yield break;
+
+        isGodActive = true;
+        durationProgress = 1f;
+        chargeProgress = 0f;
+        m_InviteGodBtn.interactable = false;
+        mIconImage.sprite = mNormalIconSprite;
+
+        // --- 等待特效对象（原：await EffectSystem.instance.GetEffect(...)）---
+        var effectTask = EffectSystem.instance.GetEffect("Temporary explosion");
+        while (!effectTask.IsCompleted) yield return null;
+        if (effectTask.IsFaulted)
         {
-            isGodActive = true;
-            durationProgress = 1f;
-            chargeProgress = 0f;
-            m_InviteGodBtn.interactable = false;
-
-            EffectObject effect = await EffectSystem.instance.GetEffect("Temporary explosion");
-            effect.transform.position = GodManager.instance.GetInitPoint().position;
-            effect.Play();
-            await TimerSystem.Start(async (x) =>
-            {
-                // 召唤神明
-                GameManager.instance.GameStateEnum = GameConfig.GameState.State.Pause;
-
-                // 这里调用实际召唤逻辑
-                curGodBase = await GodManager.instance.GetGodByName(godInfo.godName);
-                curGodBase.Activate();
-                SoundObject sound = null;
-                switch (godInfo.godName)
-                {
-                    case "哪吒":
-                        sound = GuideManager.instance.OnPlayRandomGuideByID(7);
-                        break;
-                    case "杨戬":
-                        sound = GuideManager.instance.OnPlayRandomGuideByID(8);
-                        break;
-                    case "关羽":
-                        sound = GuideManager.instance.OnPlayRandomGuideByID(9);
-                        break;
-                    case "悟空":
-                        sound = GuideManager.instance.OnPlayRandomGuideByID(10);
-                        break;
-                    default:
-                        break;
-                }
-                await Task.Delay(3000);
-                GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play;
-
-                curGodBase.OnIsEnergy += OnIsEnergyHandler;
-                //if (sound != null) sound.onStopEvent += (sound) => { GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play; };
-                UpdateUI();
-            }, false, 1.5f);
+            Debug.LogError(effectTask.Exception);
+            yield break;
         }
+        EffectObject effect = effectTask.Result;
+        effect.transform.position = GodManager.instance.GetInitPoint().position;
+        effect.Play();
+
+        // 原 TimerSystem.Start(..., 1.5f) 的启动延时
+        // 如果此时游戏未暂停，用 scaled 时间更贴近原逻辑：
+        yield return new WaitForSeconds(1.5f);
+
+        // 召唤前先暂停
+        GameManager.instance.GameStateEnum = GameConfig.GameState.State.Pause;
+
+        // --- 等待获取神明（原：await GodManager.instance.GetGodByName(...)）---
+        var godTask = GodManager.instance.GetGodByName(godInfo.godName);
+        while (!godTask.IsCompleted) yield return null;
+        if (godTask.IsFaulted)
+        {
+            Debug.LogError(godTask.Exception);
+            GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play;
+            yield break;
+        }
+        curGodBase = godTask.Result;
+        curGodBase.Activate();
+
+        // 语音
+        SoundObject sound = null;
+        switch (godInfo.godName)
+        {
+            case "哪吒": sound = GuideManager.instance.OnPlayRandomGuideByID(7); break;
+            case "杨戬": sound = GuideManager.instance.OnPlayRandomGuideByID(8); break;
+            case "关羽": sound = GuideManager.instance.OnPlayRandomGuideByID(9); break;
+            case "悟空": sound = GuideManager.instance.OnPlayRandomGuideByID(10); break;
+        }
+
+        //Debug.Log("等待时间");
+        //if (!GuideDispositionManager.instance.isGuide)
+        //{
+        //    // 此时游戏已暂停，多数情况下 timeScale=0，因此必须用实时等待
+        //    yield return new WaitForSecondsRealtime(3f);
+        //}
+        //Debug.Log("等待结束");
+
+        GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play;
+
+        curGodBase.OnIsEnergy += OnIsEnergyHandler;
+        // if (sound != null) sound.onStopEvent += (s) => { GameManager.instance.GameStateEnum = GameConfig.GameState.State.Play; };
+        UpdateUI();
     }
 
     private void OnIsEnergyHandler(bool obj)
@@ -301,6 +388,7 @@ public class InviteGodUI : MonoBehaviour
 
             if (chargeProgress >= 1f)
             {
+                mIconImage.sprite = mHighLightIconSprite;
                 m_InviteGodBtn.interactable = true;
             }
         }

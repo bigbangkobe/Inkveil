@@ -816,6 +816,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b2fd6fc8764d846b7aef8f3ada5db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  adaptSafeArea: 1
+  adjustReferenceResolution: 1
+  safeAreaMargins: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1244213030
 GameObject:
   m_ObjectHideFlags: 0

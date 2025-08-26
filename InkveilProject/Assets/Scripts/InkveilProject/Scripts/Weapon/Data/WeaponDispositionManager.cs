@@ -31,7 +31,7 @@ public class WeaponDispositionManager : Singleton<WeaponDispositionManager>
                 return;
             }
 
-            var weaponList = JsonMapper.ToObject<List<WeaponInfo>>(m_ConfigAsset.text);
+            var weaponList = JsonHelper.ToObject<List<WeaponInfo>>(m_ConfigAsset.text);
             if (weaponList == null || weaponList.Count == 0)
             {
                 Debug.LogError("武器配置数据解析失败");

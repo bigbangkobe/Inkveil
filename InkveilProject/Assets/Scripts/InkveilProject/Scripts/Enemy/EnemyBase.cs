@@ -97,8 +97,8 @@ public class EnemyBase : MonoBehaviour
         }
 
         // 初始化属性
-        m_MaxHP = m_Config.hpBase;
-        m_CurrentHP = m_Config.hpBase;
+        m_MaxHP = m_Config.hpBase + m_Config.hpBase * Mathf.Clamp( LevelManager.instance.m_CurLevel,1, LevelManager.instance.m_CurLevel) * (float)m_Config.hpGrowthPerLevel;
+        m_CurrentHP = m_MaxHP;
         m_MoveSpeed = m_Config.enemyType > 2 ? m_Config.moveSpeed * 0.5f : m_Config.moveSpeed;
         m_AttackDamage = m_Config.attackDamage;
         //Debug.Log(m_Config.enemyName + "移动速度:" + m_Config.moveSpeed);
@@ -273,8 +273,8 @@ public class EnemyBase : MonoBehaviour
         if (m_CurrentState == EnemyState.Dead) return;
 
         float actualDamage = damage;//CalculateActualDamage(damage, isDivineAttack);
-
-        if (damage > m_CurrentHP)
+        //Debug.Log("actualDamage:"+ actualDamage);
+        if (actualDamage > m_CurrentHP)
         {
             m_CurrentHP -= m_CurrentHP;
         }
@@ -474,6 +474,11 @@ public class EnemyBase : MonoBehaviour
     private void ShowImmuneEffect()
     {
         m_AnimationController.PlayAnimationImmediate("immune");
+    }
+
+    internal void OnJiTui()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.x + 5);
     }
 
     #endregion

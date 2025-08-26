@@ -31,7 +31,7 @@ public class PropertyDispositionManager : Singleton<PropertyDispositionManager>
                 return;
             }
 
-            var propertyList = JsonMapper.ToObject<List<PropertyInfo>>(m_ConfigAsset.text);
+            List<PropertyInfo> propertyList = JsonHelper.ToObject<List<PropertyInfo>>(m_ConfigAsset.text);
             if (propertyList == null || propertyList.Count == 0)
             {
                 Debug.LogError("物品配置数据解析失败");

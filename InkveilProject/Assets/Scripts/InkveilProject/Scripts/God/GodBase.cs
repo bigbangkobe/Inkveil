@@ -88,7 +88,7 @@ public class GodBase : MonoBehaviour
             TimerSystem.Start((x) =>
             {
                 AddEnergy(100);
-            }, false, 12);
+            }, false, 9);
         }
 
         ChangeState(GodState.Idle); // 初始化为待机状态

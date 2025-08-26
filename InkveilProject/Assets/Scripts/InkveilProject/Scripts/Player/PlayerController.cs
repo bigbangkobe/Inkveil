@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
     public LegacyAnimationController animationController;
 
     [Header("玩家属性")]
-    public float baseMoveSpeed = 5f;
+    private float baseMoveSpeed = 10f;
     [Header("玩家血量")]
     public Image playerHPImage;
     [Header("玩家护盾")]
@@ -370,34 +370,36 @@ public class PlayerController : MonoBehaviour
     {
         float move = 0f;
         bool hasMoveIntent = false;
-        bool handledByTouch = false;
+
+        // 重置按钮状态标志
+        bool anyButtonPressed = isLeftButtonPressed || isRightButtonPressed;
 
         // ========= 触摸输入（移动端/微信） =========
         if (Input.touchCount > 0)
         {
-            Touch t = Input.GetTouch(0);
-            if (t.phase == TouchPhase.Began || t.phase == TouchPhase.Moved || t.phase == TouchPhase.Stationary)
+            for (int i = 0; i < Input.touchCount; i++)
             {
-                float screenMiddle = Screen.width * 0.5f;
-                move = (t.position.x < screenMiddle) ? -1f : 1f;
-                hasMoveIntent = true;
-                handledByTouch = true;
+                Touch t = Input.GetTouch(i);
+                if (t.phase == TouchPhase.Began || t.phase == TouchPhase.Moved || t.phase == TouchPhase.Stationary)
+                {
+                    float screenMiddle = Screen.width * 0.5f;
+                    move = (t.position.x < screenMiddle) ? -1f : 1f;
+                    hasMoveIntent = true;
+                    break; // 只需一个有效的触摸
+                }
             }
         }
 
         // ========= 鼠标输入（PC/WebGL） =========
-        if (!handledByTouch)
+        if (!hasMoveIntent && Input.GetMouseButton(0))
         {
-            if (Input.GetMouseButton(0))
-            {
-                float screenMiddle = Screen.width * 0.5f;
-                move = (Input.mousePosition.x < screenMiddle) ? -1f : 1f;
-                hasMoveIntent = true;
-            }
+            float screenMiddle = Screen.width * 0.5f;
+            move = (Input.mousePosition.x < screenMiddle) ? -1f : 1f;
+            hasMoveIntent = true;
         }
 
         // ========= UI按钮输入 =========
-        if (!hasMoveIntent)
+        if (!hasMoveIntent && anyButtonPressed)
         {
             if (isRightButtonPressed) { move = 1f; hasMoveIntent = true; }
             else if (isLeftButtonPressed) { move = -1f; hasMoveIntent = true; }
@@ -438,7 +440,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (isMoving)
+            if (isMoving || _currentState == PlayerState.Run)
             {
                 moveDirection = 0f;
                 isMoving = false;
@@ -448,7 +450,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // ========= 自动攻击逻辑（只在不移动时触发） =========
-        if (_currentState != PlayerState.Run && autoFireWhenIdle)
+        if (_currentState == PlayerState.Idle && autoFireWhenIdle)
         {
             TryAutoAttackForward();
         }
@@ -608,10 +610,11 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     private async Task UpdateState()
     {
+        float animationNumber = Mathf.Repeat(animationController.GetCurrentAnimationProgress(), 1.0f);
         switch (_currentState)
         {
             case PlayerState.Attack:
-                if (animationController.GetCurrentAnimationProgress() >= 0.5f && !isAttack)
+                if (animationNumber >= 0.5f && animationNumber < 0.9f && !isAttack)
                 {
                     isAttack = true;
                     EffectObject effect = await EffectSystem.instance.GetEffect(curWeaponInfo.trailEffect);
@@ -623,9 +626,9 @@ public class PlayerController : MonoBehaviour
                     SoundSystem.instance.Play(curWeaponInfo.attackSound, 1);
                 }
 
-                if (animationController.GetCurrentAnimationProgress() >= 0.95f)
+                if (animationNumber >= 0.9f)
                 {
-                    ChangeState(PlayerState.Idle);
+                    //ChangeState(PlayerState.Idle);
                     isAttack = false;
                 }
                 break;

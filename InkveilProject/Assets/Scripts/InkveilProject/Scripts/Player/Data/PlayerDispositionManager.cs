@@ -36,11 +36,11 @@ public class PlayerDispositionManager : Singleton<PlayerDispositionManager>
         {
             playerAssetsStr = (await ResourceService.LoadAsync<TextAsset>(ConfigDefine.playerAssets)).text;
             
-            PlayerAssetsInfo = JsonMapper.ToObject<List<PlayerAssetsInfo>>(playerAssetsStr)[0];
+            PlayerAssetsInfo = JsonHelper.ToObject<List<PlayerAssetsInfo>>(playerAssetsStr)[0];
         }
         else 
         {
-            PlayerAssetsInfo = JsonMapper.ToObject<PlayerAssetsInfo>(playerAssetsStr);
+            PlayerAssetsInfo = JsonHelper.ToObject<PlayerAssetsInfo>(playerAssetsStr);
         }
 
         if (playerLevelAsset == null)
@@ -49,10 +49,10 @@ public class PlayerDispositionManager : Singleton<PlayerDispositionManager>
             return;
         }
 
-        var playerLevelList = JsonMapper.ToObject<List<PlayerLevelsInfo>>(playerLevelAsset);
+        List<PlayerLevelsInfo> playerLevelList = JsonHelper.ToObject<List<PlayerLevelsInfo>>(playerLevelAsset);
         if (playerLevelList == null || playerLevelList.Count == 0)
         {
-            Debug.LogError("配置数据解析失败");
+            Debug.LogError("配置数据解析失败" + playerLevelAsset);
             return;
         }
 
@@ -68,7 +68,7 @@ public class PlayerDispositionManager : Singleton<PlayerDispositionManager>
             return;
         }
 
-        var shieldGrowthList = JsonMapper.ToObject<List<ShieldGrowthInfo>>(shieldGrowthAsset);
+        List<ShieldGrowthInfo> shieldGrowthList = JsonHelper.ToObject<List<ShieldGrowthInfo>>(shieldGrowthAsset);
         if (shieldGrowthList == null || shieldGrowthList.Count == 0)
         {
             Debug.LogError("配置数据解析失败");
@@ -98,7 +98,7 @@ public class PlayerDispositionManager : Singleton<PlayerDispositionManager>
 
     public void SavePlayerAsset() 
     {
-        string str = JsonMapper.ToJson(PlayerAssetsInfo);
+        string str = JsonHelper.ToJson(PlayerAssetsInfo);
         PlayerPrefs.SetString("PlayerAssetsInfo", str);
         Debug.Log($"玩家资产:{str}");
     }

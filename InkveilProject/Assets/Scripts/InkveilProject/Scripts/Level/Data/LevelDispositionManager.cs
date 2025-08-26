@@ -30,7 +30,7 @@ public class LevelDispositionManager : Singleton<LevelDispositionManager>
                 return;
             }
 
-            var levelList = JsonMapper.ToObject<List<LevelInfo>>(m_LevelConfigAsset);
+            var levelList = JsonHelper.ToObject<List<LevelInfo>>(m_LevelConfigAsset);
             if (levelList == null || levelList.Count == 0)
             {
                 Debug.LogError("关卡配置数据解析失败");
@@ -56,7 +56,7 @@ public class LevelDispositionManager : Singleton<LevelDispositionManager>
                 return;
             }
 
-            var enemyGroupList = JsonMapper.ToObject<List<EnemyGroupInfo>>(m_EnemyGroupConfigAsset);
+            var enemyGroupList = JsonHelper.ToObject<List<EnemyGroupInfo>>(m_EnemyGroupConfigAsset);
             if (enemyGroupList == null || enemyGroupList.Count == 0)
             {
                 Debug.LogError("敌人组合配置数据解析失败");

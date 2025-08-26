@@ -1,5 +1,5 @@
 ﻿using System;
-
+[Serializable]
 public class LevelInfo
 {
     public int levelID;

@@ -1,4 +1,7 @@
-﻿public class Guide
+﻿using System;
+
+[Serializable]
+public class Guide
 {
     public int id;
     public string guideText;

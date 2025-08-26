@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
-
+[Serializable]
 public class StageRewardsInfo
 {
-    public int stageID { get; set; }
-    public string stageName { get; set; }
-    public int firstClearExp { get; set; }
-    public string rewards { get; set; }
-    public string specialAwards { get; set; }
-    public bool isPass { get; set; } = false;
-    public int grade { get; set; } = 0;
-    public int[] receive { get; set; } = new int[3];
+    public int stageID;
+    public string stageName;
+    public int firstClearExp;
+    public string rewards;
+    public string specialAwards;
+    public bool isPass;
+    public int grade;
+    public int[] receive = new int[3];
 
     private int[][] rewardsArry;
     public int[][] GetRewards()

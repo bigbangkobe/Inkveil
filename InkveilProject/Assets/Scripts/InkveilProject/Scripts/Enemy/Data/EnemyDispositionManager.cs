@@ -32,7 +32,7 @@ public class EnemyDispositionManager : Singleton<EnemyDispositionManager>
                 return;
             }
 
-            var enemyList = JsonMapper.ToObject<List<EnemyInfo>>(m_EnemyConfigAsset.text);
+            var enemyList = JsonHelper.ToObject<List<EnemyInfo>>(m_EnemyConfigAsset.text);
             if (enemyList == null || enemyList.Count == 0)
             {
                 Debug.LogError("敌人配置数据解析失败");

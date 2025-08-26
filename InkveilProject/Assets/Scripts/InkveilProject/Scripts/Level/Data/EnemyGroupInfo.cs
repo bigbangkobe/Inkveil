@@ -1,6 +1,5 @@
 ﻿using System;
-using UnityEngine;
-
+[Serializable]
 public class EnemyGroupInfo
 {
     public int enemyGroupID;

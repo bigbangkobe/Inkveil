@@ -31,7 +31,7 @@ public class MagicDispositionManager : Singleton<MagicDispositionManager>
                 return;
             }
 
-            var magicList = JsonMapper.ToObject<List<MagicInfo>>(m_ConfigAsset.text);
+            var magicList = JsonHelper.ToObject<List<MagicInfo>>(m_ConfigAsset.text);
             if (magicList == null || magicList.Count == 0)
             {
                 Debug.LogError("法宝配置数据解析失败");

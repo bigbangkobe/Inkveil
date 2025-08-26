@@ -40,13 +40,13 @@ public class StageRewardsDispositionManager : Singleton<StageRewardsDispositionM
             string str2 = (await ResourceService.LoadAsync<TextAsset>(ConfigDefine.stageRewardsDifficultyInfo)).text;
             string str3 = (await ResourceService.LoadAsync<TextAsset>(ConfigDefine.stageRewardsAbyssInfo)).text;
 
-            stageRewards.Add(JsonMapper.ToObject<List<StageRewardsInfo>>(str1));
-            stageRewards.Add(JsonMapper.ToObject<List<StageRewardsInfo>>(str2));
-            stageRewards.Add(JsonMapper.ToObject<List<StageRewardsInfo>>(str3));
+            stageRewards.Add(JsonHelper.ToObject<List<StageRewardsInfo>>(str1));
+            stageRewards.Add(JsonHelper.ToObject<List<StageRewardsInfo>>(str2));
+            stageRewards.Add(JsonHelper.ToObject<List<StageRewardsInfo>>(str3));
         }
         else
         {
-            stageRewards = JsonMapper.ToObject<List<List<StageRewardsInfo>>>(stageRewardsStr);
+            stageRewards = JsonHelper.ToObject<List<List<StageRewardsInfo>>>(stageRewardsStr);
         }
 
 
@@ -73,7 +73,7 @@ public class StageRewardsDispositionManager : Singleton<StageRewardsDispositionM
             }
 
         }
-        string data = JsonMapper.ToJson(stageRewardList);
+        string data = JsonHelper.ToJson(stageRewardList);
         Debug.Log($"关卡奖励数据：{data}");
         m_IsInitialized = true;
         try
@@ -94,7 +94,7 @@ public class StageRewardsDispositionManager : Singleton<StageRewardsDispositionM
 
     public void Save()
     {
-        string data = JsonMapper.ToJson(stageRewardList);
+        string data = JsonHelper.ToJson(stageRewardList);
         Debug.Log($"关卡奖励数据：{data}");
         PlayerPrefs.SetString("StageRewards", data);
 

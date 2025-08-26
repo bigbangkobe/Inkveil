@@ -381,4 +381,12 @@ public class EnemyManager : MonoSingleton<EnemyManager>
         // 清空列表记录
         m_EnemyList.Clear();
     }
+
+    internal void OnJiTui()
+    {
+        for (int i = 0; i < m_EnemyList.Count; i++) 
+        {
+            m_EnemyList[i].OnJiTui();
+        }
+    }
 }

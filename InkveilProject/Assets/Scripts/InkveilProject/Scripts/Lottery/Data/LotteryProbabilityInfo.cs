@@ -1,3 +1,6 @@
+using System;
+
+[Serializable]
 public class LotteryProbabilityInfo 
 {
     public int lotteryGrade;

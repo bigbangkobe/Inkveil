@@ -68,7 +68,7 @@ namespace Framework
             mProcessorCount = SystemInfo.processorCount > 0 && SystemInfo.processorCount <= 8 ? SystemInfo.processorCount : 1;
 
             TextAsset tex = await ResourceService.LoadAsync<TextAsset>("Config/resourcesConfig");
-            List<ResourceInfo> resourceInfos = JsonMapper.ToObject<List<ResourceInfo>>(tex.text);
+            List<ResourceInfo> resourceInfos = JsonHelper.ToObject<List<ResourceInfo>>(tex.text);
 
             for (int i = 0; i < resourceInfos.Count; i++)
             {

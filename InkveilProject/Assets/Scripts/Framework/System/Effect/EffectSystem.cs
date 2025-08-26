@@ -54,7 +54,7 @@ namespace Framework
         /// <returns></returns>
         public async Task<EffectObject> GetEffect(string name)
         {
-			Debug.Log("获得特效对象:" + name);
+			//Debug.Log("获得特效对象:" + name);
             ObjectPool effectPool = GetEffectPool(name);
             EffectObject effectObject = await effectPool.GetAsync(name) as EffectObject;
             return effectObject;

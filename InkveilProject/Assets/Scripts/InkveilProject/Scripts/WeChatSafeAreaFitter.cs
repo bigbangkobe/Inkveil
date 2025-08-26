@@ -1,98 +1,115 @@
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 
+#if UNITY_WECHAT
+using WeChatWASM;
+#endif
+
+[RequireComponent(typeof(Canvas))]
 public class WeChatSafeAreaFitter : MonoBehaviour
 {
-//    public RectTransform safeRoot;     // 全屏 Stretch 的容器
-//    public CanvasScaler canvasScaler;  // CanvasScaler (Scale With Screen Size)
+    private Canvas canvas;
+    private RectTransform canvasRect;
 
-//    // 缓存
-//    private int _lw, _lh;
-//    private Rect _lastSafe;
+    [Tooltip("是否适配安全区域")]
+    public bool adaptSafeArea = true;
 
-//    void Awake()
-//    {
-//        if (safeRoot == null)
-//            safeRoot = GetComponentInParent<RectTransform>();
-//        if (canvasScaler == null)
-//            canvasScaler = GetComponentInParent<CanvasScaler>();
-//    }
+    [Tooltip("是否调整参考分辨率")]
+    public bool adjustReferenceResolution = true;
 
-//    void Start() => Apply();
+    [Tooltip("安全区域边距（用于测试）")]
+    public Vector4 safeAreaMargins = Vector4.zero;
 
-//    void Update()
-//    {
-//        // 分辨率或 Unity 安全区有变化则重算
-//        if (Screen.width != _lw || Screen.height != _lh || Screen.safeArea != _lastSafe)
-//            Apply();
-//    }
+    private void Start()
+    {
+        canvas = GetComponent<Canvas>();
+        canvasRect = GetComponent<RectTransform>();
 
-//    public void Apply()
-//    {
-//        if (safeRoot == null || canvasScaler == null) return;
+        // 设置初始锚点
+        canvasRect.anchorMin = Vector2.zero;
+        canvasRect.anchorMax = Vector2.one;
 
-//        _lw = Screen.width; _lh = Screen.height; _lastSafe = Screen.safeArea;
+        // 适配安全区域
+        if (adaptSafeArea)
+        {
+            StartCoroutine(AdaptToSafeArea());
+        }
+    }
 
-//        // —— 1) Unity 自带 safeArea（圆角/刘海/Home 条，单位：物理 px）——
-//        float insetTopPx = Screen.height - (Screen.safeArea.y + Screen.safeArea.height);
-//        float insetBottomPx = Screen.safeArea.y;
-//        float insetLeftPx = Screen.safeArea.x;
-//        float insetRightPx = Screen.width - (Screen.safeArea.x + Screen.safeArea.width);
+    private IEnumerator AdaptToSafeArea()
+    {
+        // 等待一帧确保微信API已初始化
+        yield return null;
 
-//        // —— 2) 叠加微信 SystemInfo.safeArea（逻辑 px，需要 × pixelRatio → 物理 px）——
-//#if UNITY_WEBGL && !UNITY_EDITOR
-//        try
-//        {
-//            // 按你接入的包名命名空间替换（示例：WeChatWASM）
-//            var info = WeChatWASM.WX.GetSystemInfoSync();
-//            if (info != null && info.safeArea != null)
-//            {
-//                float dpr = (float)info.pixelRatio;
-//                // 微信坐标原点在左上，数值是逻辑 px
-//                float topPx    = (float)info.safeArea.top    * dpr;
-//                float bottomPx = ((float)info.windowHeight - (float)info.safeArea.bottom) * dpr;
-//                float leftPx   = (float)info.safeArea.left   * dpr;
-//                float rightPx  = ((float)info.windowWidth - (float)info.safeArea.right)  * dpr;
+#if UNITY_WECHAT
+        // 获取微信窗口信息
+        var windowInfo = WX.GetWindowInfo();
+        
+        // 使用真实安全区域或测试值
+        Rect safeArea;
+        if (safeAreaMargins != Vector4.zero)
+        {
+            // 使用测试值
+            safeArea = new Rect(
+                safeAreaMargins.x,
+                safeAreaMargins.y,
+                windowInfo.windowWidth - safeAreaMargins.x - safeAreaMargins.z,
+                windowInfo.windowHeight - safeAreaMargins.y - safeAreaMargins.w
+            );
+        }
+        else
+        {
+            // 使用真实安全区域
+            safeArea = new Rect(
+                windowInfo.safeArea.left,
+                windowInfo.safeArea.top,
+                windowInfo.safeArea.width,
+                windowInfo.safeArea.height
+            );
+        }
+        
+        // 计算安全区域比例
+        float left = safeArea.x / windowInfo.windowWidth;
+        float bottom = safeArea.y / windowInfo.windowHeight;
+        float right = (windowInfo.windowWidth - (safeArea.x + safeArea.width)) / windowInfo.windowWidth;
+        float top = (windowInfo.windowHeight - (safeArea.y + safeArea.height)) / windowInfo.windowHeight;
+        
+        // 应用安全区域
+        canvasRect.anchorMin = new Vector2(left, bottom);
+        canvasRect.anchorMax = new Vector2(1 - right, 1 - top);
+        
+        // 调整参考分辨率
+        if (adjustReferenceResolution)
+        {
+            CanvasScaler scaler = GetComponent<CanvasScaler>();
+            if (scaler != null)
+            {
+                // 根据安全区域高度调整参考分辨率
+                float heightRatio = safeArea.height / windowInfo.windowHeight;
+                scaler.referenceResolution = new Vector2(
+                    scaler.referenceResolution.x,
+                    scaler.referenceResolution.y / heightRatio
+                );
+            }
+        }
+#endif
+    }
 
-//                // 取更大值，避免“谁小取谁”导致被遮
-//                insetTopPx    = Mathf.Max(insetTopPx,    topPx);
-//                insetBottomPx = Mathf.Max(insetBottomPx, bottomPx);
-//                insetLeftPx   = Mathf.Max(insetLeftPx,   leftPx);
-//                insetRightPx  = Mathf.Max(insetRightPx,  rightPx);
-//            }
+    // 编辑器测试方法
+    [ContextMenu("Test Safe Area")]
+    public void TestSafeArea()
+    {
+        if (Application.isPlaying) return;
 
-//            // —— 3) 叠加“胶囊按钮”：以胶囊 bottom 作为顶部下缘（逻辑 px × dpr）——
-//            var cap = WeChatWASM.WX.GetMenuButtonBoundingClientRect();
-//            if (cap != null)
-//            {
-//                float dpr = (float)info.pixelRatio;
-//                float capsuleBottomPx = (float)cap.bottom * dpr;
-//                insetTopPx = Mathf.Max(insetTopPx, capsuleBottomPx);
-//            }
-//        }
-//        catch { /* 非微信环境或老基础库，忽略 */ }
-//#endif
-
-//        // —— 4) 物理 px → UI 像素（匹配 CanvasScaler 规则）——
-//        float topUI = DevicePxToUI(insetTopPx);
-//        float bottomUI = DevicePxToUI(insetBottomPx);
-//        float leftUI = DevicePxToUI(insetLeftPx);
-//        float rightUI = DevicePxToUI(insetRightPx);
-
-//        // —— 5) 应用到 safeRoot（四边内边距）——
-//        // safeRoot 要求 AnchorMin(0,0) AnchorMax(1,1) sizeDelta(0,0)
-//        safeRoot.offsetMin = new Vector2(leftUI, bottomUI);
-//        safeRoot.offsetMax = new Vector2(-rightUI, -topUI);
-//    }
-
-//    float DevicePxToUI(float devicePx)
-//    {
-//        // 与 CanvasScaler 的缩放一致
-//        var refRes = canvasScaler.referenceResolution;
-//        float match = canvasScaler.matchWidthOrHeight;
-//        float scaleX = Screen.width / refRes.x;
-//        float scaleY = Screen.height / refRes.y;
-//        float scale = Mathf.Lerp(scaleX, scaleY, match); // Match=0:按宽，1:按高
-//        return devicePx / scale;
-//    }
+        // 模拟安全区域
+        canvasRect = GetComponent<RectTransform>();
+        canvasRect.anchorMin = new Vector2(
+            safeAreaMargins.x / Screen.width,
+            safeAreaMargins.y / Screen.height
+        );
+        canvasRect.anchorMax = new Vector2(
+            1 - safeAreaMargins.z / Screen.width,
+            1 - safeAreaMargins.w / Screen.height
+        );
+    }
 }

@@ -30,8 +30,8 @@ public class LotteryDispositionManager : Singleton<LotteryDispositionManager>
                 return;
             } 
 
-            LotteryList = JsonMapper.ToObject<List<LotteryProbabilityInfo>>(m_ConfigAsset.text);
-            List<LotteryCardPools> lotteryCardPools = JsonMapper.ToObject<List<LotteryCardPools>>(m_ConfigAssetCardPools);
+            LotteryList = JsonHelper.ToObject<List<LotteryProbabilityInfo>>(m_ConfigAsset.text);
+            List<LotteryCardPools> lotteryCardPools = JsonHelper.ToObject<List<LotteryCardPools>>(m_ConfigAssetCardPools);
             if (LotteryList == null || LotteryList.Count == 0)
             {
                 Debug.LogError("抽奖配置数据解析失败");

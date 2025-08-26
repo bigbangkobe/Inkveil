@@ -951,7 +951,7 @@ MonoBehaviour:
   - name: attack
     clip: {fileID: 7400000, guid: d4109cf71f3430846a95bd25d8b244e8, type: 2}
     fadeTime: 0.3
-    loop: 0
+    loop: 1
     speed: 0.5
   - name: run
     clip: {fileID: 7400000, guid: fbe63dbbd447070439e83b5a4b6942bb, type: 2}
@@ -971,9 +971,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationController: {fileID: 1058808398194653686}
-  baseMoveSpeed: 5
-  playerHPRT: {fileID: 0}
   playerHPImage: {fileID: 0}
+  playerShieldImage: {fileID: 0}
   speedCoefficient: 0.5
   BaseDamage: 0
   AttackSpeedBase: 0

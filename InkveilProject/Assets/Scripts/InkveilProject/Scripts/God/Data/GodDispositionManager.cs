@@ -10,6 +10,8 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
     private Dictionary<string, Dictionary<int, GodInfo>> m_IdLevelGodDict = new Dictionary<string, Dictionary<int, GodInfo>>();
     private Dictionary<string, GodInfo> m_NameGodDict = new Dictionary<string, GodInfo>();
 
+
+
     public GodInfo curGod;
 
     // 资源管理
@@ -33,7 +35,7 @@ public class GodDispositionManager : Singleton<GodDispositionManager>
                 return;
             }
 
-            var godList = JsonMapper.ToObject<List<GodInfo>>(m_ConfigAsset.text);
+            var godList = JsonHelper.ToObject<List<GodInfo>>(m_ConfigAsset.text);
             if (godList == null || godList.Count == 0)
             {
                 Debug.LogError("神明配置数据解析失败");

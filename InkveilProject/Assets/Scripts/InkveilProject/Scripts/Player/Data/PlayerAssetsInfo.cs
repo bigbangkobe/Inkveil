@@ -1,3 +1,6 @@
+using System;
+
+[Serializable]
 public class PlayerAssetsInfo
 {
     public int moneyInit;

@@ -127,6 +127,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15fe3ed4df2dee54099ac6d35686c713
+    m_Address: GamePanel/12JN-DB.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1631a97d2cb7f6c4eb690f2436d76813
     m_Address: 06
     m_ReadOnly: 0
@@ -597,6 +602,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a05c66ffba837746be9ae06574b938a
+    m_Address: "Assets/Resources_moved/Image/Summon/\u6768\u622C\u5934\u50CF.jpg"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8dc3c47f9444e3a47b6bc002ae57457f
     m_Address: "\u7EAF\u9ED1"
     m_ReadOnly: 0
@@ -654,6 +664,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9bc8752aef5d9484ca23f9749c5b615c
     m_Address: e234e0df57
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9bcb777d3a6d80d4597c47f644daf8ee
+    m_Address: "Assets/Resources_moved/Image/Summon/\u53EC\u5524\u6846.jpg"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -762,6 +777,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b93689256737ccc43bea18acc9459e33
+    m_Address: "Assets/Resources_moved/Image/Summon/\u54EA\u5412\u5934\u50CF.jpg"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b94db93c89a3d5446a22242c345529f3
     m_Address: "\u9009\u4E2D"
     m_ReadOnly: 0
@@ -774,6 +794,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bcf4b94366c48c242b9d813ab6a12cfb
     m_Address: "\u8BF7\u795E\u4EE4"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd324acbc42a6c246928fd137796d891
+    m_Address: "Assets/Resources_moved/Image/Summon/\u5173\u7FBD\u5934\u50CF.jpg"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -804,6 +829,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c591f0ebb24790540914923a2d74195d
     m_Address: MainBG
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c77a917cfbd583d45a56edce75bbfc40
+    m_Address: Assets/Resources_moved/Image/hudun.png
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -839,6 +869,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cdf10d8d7d26165479d2e5c1f6493930
     m_Address: "\u661F"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf4d310048fdbcf4ca1c5ff5c97590f5
+    m_Address: "Assets/Resources_moved/Image/Summon/\u609F\u7A7A\u5934\u50CF.jpg"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

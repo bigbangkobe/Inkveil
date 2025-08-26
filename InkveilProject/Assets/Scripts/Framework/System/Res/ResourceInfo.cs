@@ -1,7 +1,10 @@
 ﻿
+using System;
+
 /// <summary>
 /// 资源json数据类
 /// </summary>
+[Serializable]
 public class ResourceInfo
 {
     /// <summary>
